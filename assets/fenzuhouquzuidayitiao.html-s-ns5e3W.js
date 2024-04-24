@@ -1,0 +1,8 @@
+import{_ as s,o as n,c as a,d as e}from"./app-2hhlzFPm.js";const t={},o=e(`<div class="language-sql line-numbers-mode" data-ext="sql"><pre class="language-sql"><code><span class="token comment"># 先分组使用max函数取最大的id</span>
+
+<span class="token comment"># 子查询id最大值</span>
+
+<span class="token comment"># 使用not exists取最大的id</span>
+<span class="token keyword">select</span> a<span class="token punctuation">.</span>id <span class="token keyword">from</span> table_1 a <span class="token keyword">where</span> 
+<span class="token operator">not</span> <span class="token keyword">exists</span><span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token number">1</span> <span class="token keyword">from</span> table_1 b <span class="token keyword">where</span> a<span class="token punctuation">.</span>user_id <span class="token operator">=</span> b<span class="token punctuation">.</span>user_id <span class="token operator">and</span> a<span class="token punctuation">.</span>id <span class="token operator">&lt;</span> b<span class="token punctuation">.</span>id<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,1),c=[o];function p(i,l){return n(),a("div",null,c)}const r=s(t,[["render",p],["__file","fenzuhouquzuidayitiao.html.vue"]]);export{r as default};

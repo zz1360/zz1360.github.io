@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as s,a as c}from"./app-2hhlzFPm.js";const n={},o=c("p",null,"反射的真正价值在于，处理编译时未知的类型，从而编写更具有通用性的代码。",-1),_=[o];function a(r,l){return t(),s("div",null,_)}const d=e(n,[["render",a],["__file","fanshe.html.vue"]]);export{d as default};

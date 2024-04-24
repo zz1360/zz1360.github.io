@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-6b5f2b14","path":"/blogs/shujuku/MySQL/suoyin.html","title":"数据库索引","lang":"en-US","frontmatter":{"title":"数据库索引","date":"2024/04/18","categories":["数据库/MySQL"],"tags":["MySQL"]},"headers":[],"git":{},"filePathRelative":"blogs/数据库/MySQL/索引.md"}');export{t as data};

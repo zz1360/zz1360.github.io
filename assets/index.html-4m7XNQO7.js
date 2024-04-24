@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-1410a59b","path":"/categories/shujuku/Oracle/1/","title":"","lang":"en-US","frontmatter":{"layout":"Categories"},"headers":[],"git":{},"filePathRelative":null}');export{e as data};

@@ -1,0 +1,1 @@
+import{_ as e,o as t,c,a as o}from"./app-2hhlzFPm.js";const _={},s=o("p",null,"读书的好处。",-1),n=[s];function l(a,r){return t(),c("div",null,n)}const f=e(_,[["render",l],["__file","lt001.html.vue"]]);export{f as default};

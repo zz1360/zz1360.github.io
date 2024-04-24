@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-477b4c36","path":"/categories/bingfa/jichu/1/","title":"","lang":"en-US","frontmatter":{"layout":"Categories"},"headers":[],"git":{},"filePathRelative":null}');export{e as data};
