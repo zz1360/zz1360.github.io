@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-7a45eac8","path":"/docs/prod-experience/design-pattern/dp-b006.html","title":"组合模式","lang":"en-US","frontmatter":{"title":"组合模式","date":"2023/09/25"},"headers":[{"level":2,"title":"组合模式的应用场景举例","slug":"组合模式的应用场景举例","link":"#组合模式的应用场景举例","children":[]}],"git":{},"filePathRelative":"docs/prod-experience/design-pattern/dp-b006.md"}');export{e as data};

@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-39338150","path":"/docs/prod-experience/design-pattern/dp-c010.html","title":"解释器模式","lang":"en-US","frontmatter":{"title":"解释器模式","date":"2023/10/03"},"headers":[],"git":{},"filePathRelative":"docs/prod-experience/design-pattern/dp-c010.md"}');export{e as data};

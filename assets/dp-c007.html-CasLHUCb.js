@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-103f3268","path":"/docs/prod-experience/design-pattern/dp-c007.html","title":"访问者模式","lang":"en-US","frontmatter":{"title":"访问者模式","date":"2023/09/30"},"headers":[],"git":{},"filePathRelative":"docs/prod-experience/design-pattern/dp-c007.md"}');export{e as data};

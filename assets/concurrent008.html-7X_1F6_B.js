@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-5153285a","path":"/blogs/Java/concurrent/concurrent008.html","title":"volatile关键字","lang":"en-US","frontmatter":{"title":"volatile关键字","date":"2022/06/08","tags":["年份2022"]},"headers":[],"git":{},"filePathRelative":"blogs/Java/concurrent/concurrent008.md"}');export{t as data};

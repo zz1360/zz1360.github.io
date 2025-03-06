@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-68d495a4","path":"/blogs/Middleware/RocketMQ/rocket000.html","title":"RocketMQ系列","lang":"en-US","frontmatter":{"title":"RocketMQ系列","date":"2023/04/01","categories":["RocketMQ"],"tags":["年份2023"]},"headers":[],"git":{},"filePathRelative":"blogs/Middleware/RocketMQ/rocket000.md"}');export{e as data};

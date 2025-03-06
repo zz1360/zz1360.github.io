@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-3738484d","path":"/docs/prod-experience/optimization/code001.html","title":"使用泛型优化实体的序列化和反序列化","lang":"en-US","frontmatter":{"title":"使用泛型优化实体的序列化和反序列化","date":"2024/05/20"},"headers":[],"git":{},"filePathRelative":"docs/prod-experience/optimization/code001.md"}');export{e as data};

@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-0bbdb3c4","path":"/blogs/Java/JDK_New_Feature/jdk11/feature001.html","title":"String增强","lang":"en-US","frontmatter":{"title":"String增强","date":"2024/04/25","tags":["年份2023"]},"headers":[],"git":{},"filePathRelative":"blogs/Java/JDK_New_Feature/jdk11/feature001.md"}');export{e as data};

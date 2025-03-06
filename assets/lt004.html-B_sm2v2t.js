@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-13bd71d4","path":"/docs/life-thinking/lt004.html","title":"金刚经","lang":"en-US","frontmatter":{"title":"金刚经","date":"2023/06/29"},"headers":[],"git":{},"filePathRelative":"docs/life-thinking/lt004.md"}');export{t as data};

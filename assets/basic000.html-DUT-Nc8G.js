@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-4b819be0","path":"/blogs/Java/basic/basic000.html","title":"基础","lang":"en-US","frontmatter":{"title":"基础","date":"2022/03/01","categories":["Java"]},"headers":[{"level":2,"title":"简介","slug":"简介","link":"#简介","children":[]}],"git":{},"filePathRelative":"blogs/Java/basic/basic000.md"}');export{a as data};

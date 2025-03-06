@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-a9b21164","path":"/blogs/Vue/vue001.html","title":"Vue概述","lang":"en-US","frontmatter":{"title":"Vue概述","date":"2023/04/09","categories":["Vue"],"tags":["年份2023"]},"headers":[],"git":{},"filePathRelative":"blogs/Vue/vue001.md"}');export{e as data};

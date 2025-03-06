@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-2d129c52","path":"/blogs/Java/JDK_New_Feature/jdk8/feature001.html","title":"Stream","lang":"en-US","frontmatter":{"title":"Stream","date":"2024/04/25","tags":["年份2023"]},"headers":[],"git":{},"filePathRelative":"blogs/Java/JDK_New_Feature/jdk8/feature001.md"}');export{e as data};

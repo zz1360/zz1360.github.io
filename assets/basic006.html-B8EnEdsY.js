@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-55beaf9a","path":"/blogs/Java/basic/basic006.html","title":"接口和抽象类","lang":"en-US","frontmatter":{"title":"接口和抽象类","date":"2022/04/07","tags":["年份2022"]},"headers":[{"level":3,"title":"","slug":"","link":"#","children":[]}],"git":{},"filePathRelative":"blogs/Java/basic/basic006.md"}');export{a as data};

@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-4cc538ab","path":"/blogs/Middleware/Dubbo/dubbo005.html","title":"Dubbo的服务自省","lang":"en-US","frontmatter":{"title":"Dubbo的服务自省","date":"2023/10/17"},"headers":[],"git":{},"filePathRelative":"blogs/Middleware/Dubbo/dubbo005.md"}');export{e as data};

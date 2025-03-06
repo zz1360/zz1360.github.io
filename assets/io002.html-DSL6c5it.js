@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-63fd7a40","path":"/blogs/Java/IO/io002.html","title":"缓冲流","lang":"en-US","frontmatter":{"title":"缓冲流","date":"2022/07/13","tags":["年份2022"]},"headers":[{"level":2,"title":"概述","slug":"概述","link":"#概述","children":[]}],"git":{},"filePathRelative":"blogs/Java/IO/io002.md"}');export{t as data};

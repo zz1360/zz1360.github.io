@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-1a90d450","path":"/docs/life-thinking/lt002.html","title":"如何在这个时代让心保持宁静","lang":"en-US","frontmatter":{"title":"如何在这个时代让心保持宁静","date":"2020/05/29"},"headers":[],"git":{},"filePathRelative":"docs/life-thinking/lt002.md"}');export{t as data};

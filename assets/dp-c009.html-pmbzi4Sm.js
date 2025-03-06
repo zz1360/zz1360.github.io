@@ -1,0 +1,1 @@
+import{_ as t,c as n,o,e as r}from"./app-CnoWjds5.js";const c={};function l(s,e){return o(),n("div",null,e[0]||(e[0]=[r("p",null,"不怎么常用的模式。",-1)]))}const a=t(c,[["render",l],["__file","dp-c009.html.vue"]]);export{a as default};
