@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-811ecd3e","path":"/blogs/DB/MySQL/mysql003.html","title":"MVVC","lang":"en-US","frontmatter":{"title":"MVVC","date":"2024/04/20","categories":["MySQL"],"tags":["年份2022"]},"headers":[{"level":2,"title":"多版本并发控制","slug":"多版本并发控制","link":"#多版本并发控制","children":[]}],"git":{},"filePathRelative":"blogs/DB/MySQL/mysql003.md"}');export{e as data};

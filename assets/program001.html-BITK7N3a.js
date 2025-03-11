@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-5f6f614b","path":"/docs/program-experience/program001.html","title":"如何在项目中运用新技术","lang":"en-US","frontmatter":{"title":"如何在项目中运用新技术","date":"2022/05/29"},"headers":[],"git":{},"filePathRelative":"docs/program-experience/program001.md"}');export{e as data};

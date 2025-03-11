@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-fdca4c84","path":"/blogs/Java/concurrent/concurrent015.html","title":"LongAdder","lang":"en-US","frontmatter":{"title":"LongAdder","date":"2022/06/01","tags":["年份2022"]},"headers":[{"level":2,"title":"简介","slug":"简介","link":"#简介","children":[]}],"git":{},"filePathRelative":"blogs/Java/concurrent/concurrent015.md"}');export{e as data};

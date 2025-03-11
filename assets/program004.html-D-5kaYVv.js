@@ -1,0 +1,1 @@
+import{_ as o,c as r,o as a,b as t,f as n}from"./app-DukR-6js.js";const s={};function c(d,e){return a(),r("div",null,e[0]||(e[0]=[t("h2",{id:"什么是dto、vo、bo、entity",tabindex:"-1"},[t("a",{class:"header-anchor",href:"#什么是dto、vo、bo、entity","aria-hidden":"true"},"#"),n(" 什么是DTO、VO、BO、ENTITY")],-1)]))}const l=o(s,[["render",c],["__file","program004.html.vue"]]);export{l as default};

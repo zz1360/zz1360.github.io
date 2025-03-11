@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-7db51c00","path":"/blogs/DB/MySQL/mysql004.html","title":"日期类型选择建议","lang":"en-US","frontmatter":{"title":"日期类型选择建议","date":"2024/04/21","categories":["MySQL"],"tags":["年份2022"]},"headers":[{"level":2,"title":"变化","slug":"变化","link":"#变化","children":[]}],"git":{},"filePathRelative":"blogs/DB/MySQL/mysql004.md"}');export{t as data};

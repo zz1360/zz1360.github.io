@@ -1,0 +1,1 @@
+import{_ as r,c as t,o,b as a,f as n}from"./app-DukR-6js.js";const s={};function c(d,e){return o(),t("div",null,e[0]||(e[0]=[a("h2",{id:"装饰者模式",tabindex:"-1"},[a("a",{class:"header-anchor",href:"#装饰者模式","aria-hidden":"true"},"#"),n(" 装饰者模式")],-1)]))}const l=r(s,[["render",c],["__file","io003.html.vue"]]);export{l as default};

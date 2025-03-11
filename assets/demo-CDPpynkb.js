@@ -1,0 +1,1 @@
+import{_ as t,c as n,o as a,b as s,t as r}from"./app-DukR-6js.js";const i={},c={class:"demo-container"},_={style:{}};function d(o,e){return a(),n("div",c,[s("h3",_,"My name is "+r(o.name)+".",1),e[0]||(e[0]=s("p",null,"This is a vue preview demo.",-1))])}const m=t(i,[["render",d],["__file","demo.vue"]]);export{m as default};

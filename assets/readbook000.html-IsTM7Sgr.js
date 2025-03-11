@@ -1,0 +1,1 @@
+import{_ as r,c as o,o as t,b as a,f as n}from"./app-DukR-6js.js";const s={};function c(d,e){return t(),o("div",null,e[0]||(e[0]=[a("h1",{id:"目录",tabindex:"-1"},[a("a",{class:"header-anchor",href:"#目录","aria-hidden":"true"},"#"),n(" 目录")],-1)]))}const _=r(s,[["render",c],["__file","readbook000.html.vue"]]);export{_ as default};

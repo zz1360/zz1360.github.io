@@ -1,0 +1,1 @@
+import{_ as t,c as l,o as n,b as o}from"./app-DukR-6js.js";const r={};function s(c,e){return n(),l("div",null,e[0]||(e[0]=[o("p",null,"读书的好处。",-1)]))}const a=t(r,[["render",s],["__file","lt001.html.vue"]]);export{a as default};

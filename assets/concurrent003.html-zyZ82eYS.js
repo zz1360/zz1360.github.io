@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-48caed3f","path":"/blogs/Java/concurrent/concurrent003.html","title":"同步和异步","lang":"en-US","frontmatter":{"title":"同步和异步","date":"2022/06/03","tags":["年份2022"]},"headers":[],"git":{},"filePathRelative":"blogs/Java/concurrent/concurrent003.md"}');export{t as data};

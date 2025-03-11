@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-0cd5812a","path":"/docs/prod-experience/design-pattern/dp-c005.html","title":"状态模式","lang":"en-US","frontmatter":{"title":"状态模式","date":"2023/09/26"},"headers":[],"git":{},"filePathRelative":"docs/prod-experience/design-pattern/dp-c005.md"}');export{e as data};

@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-62ca8578","path":"/blogs/Java/JDK_New_Feature/jdk21/feature000.html","title":"JDK21新特性","lang":"en-US","frontmatter":{"title":"JDK21新特性","date":"2024/09/25","categories":["Java"]},"headers":[],"git":{},"filePathRelative":"blogs/Java/JDK_New_Feature/jdk21/feature000.md"}');export{e as data};

@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-17272312","path":"/docs/life-thinking/lt003.html","title":"山月记","lang":"en-US","frontmatter":{"title":"山月记","date":"2024/12/30"},"headers":[],"git":{},"filePathRelative":"docs/life-thinking/lt003.md"}');export{t as data};

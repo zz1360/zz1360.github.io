@@ -1,0 +1,1 @@
+import{_ as t,c as l,o,b as r}from"./app-DukR-6js.js";const s={};function n(c,e){return o(),l("div",null,e[0]||(e[0]=[r("p",null,"This is theme-reco.",-1)]))}const a=t(s,[["render",n],["__file","lt002.html.vue"]]);export{a as default};

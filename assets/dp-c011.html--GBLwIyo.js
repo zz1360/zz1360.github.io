@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-3ae859ef","path":"/docs/prod-experience/design-pattern/dp-c011.html","title":"中介模式","lang":"en-US","frontmatter":{"title":"中介模式","date":"2023/10/04"},"headers":[],"git":{},"filePathRelative":"docs/prod-experience/design-pattern/dp-c011.md"}');export{e as data};

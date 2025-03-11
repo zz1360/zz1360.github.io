@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-13a8e3a6","path":"/docs/prod-experience/design-pattern/dp-c009.html","title":"命令模式","lang":"en-US","frontmatter":{"title":"命令模式","date":"2023/10/02"},"headers":[],"git":{},"filePathRelative":"docs/prod-experience/design-pattern/dp-c009.md"}');export{e as data};

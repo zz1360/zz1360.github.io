@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-63e8e1ca","path":"/blogs/Spring/SpringBoot/spring000.html","title":"SpringBoot系列","lang":"en-US","frontmatter":{"title":"SpringBoot系列","date":"2024/03/21","categories":["Spring"],"tags":["年份2023"]},"headers":[],"git":{},"filePathRelative":"blogs/Spring/SpringBoot/spring000.md"}');export{t as data};

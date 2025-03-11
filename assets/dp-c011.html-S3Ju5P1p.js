@@ -1,0 +1,1 @@
+import{_ as t,c as n,o,b as r}from"./app-DukR-6js.js";const c={};function l(s,e){return o(),n("div",null,e[0]||(e[0]=[r("p",null,"不怎么常用的模式。",-1)]))}const a=t(c,[["render",l],["__file","dp-c011.html.vue"]]);export{a as default};

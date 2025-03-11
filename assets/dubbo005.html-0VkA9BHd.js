@@ -1,0 +1,1 @@
+import{_ as t,c as r,o as c,b as o}from"./app-DukR-6js.js";const s={};function n(l,e){return c(),r("div",null,e[0]||(e[0]=[o("img",{src:"https://1drv.ms/i/c/8a42701fc3426df4/IQO949Mm8ZjRTLGIj8JBK-EjAcVEV1frVtvpEOgUWHZqx5E?width=701&height=520"},null,-1)]))}const d=t(s,[["render",n],["__file","dubbo005.html.vue"]]);export{d as default};

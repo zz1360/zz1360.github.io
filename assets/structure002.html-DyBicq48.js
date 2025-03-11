@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-50e94620","path":"/blogs/Algorithm/data_structure/structure002.html","title":"黑树","lang":"en-US","frontmatter":{"title":"黑树","date":"2023/03/02","tags":["年份2023"]},"headers":[{"level":2,"title":"简介","slug":"简介","link":"#简介","children":[]}],"git":{},"filePathRelative":"blogs/Algorithm/data_structure/structure002.md"}');export{t as data};

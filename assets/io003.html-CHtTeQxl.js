@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-65b252df","path":"/blogs/Java/IO/io003.html","title":"IO流的设计模式","lang":"en-US","frontmatter":{"title":"IO流的设计模式","date":"2022/07/16","tags":["年份2022"]},"headers":[{"level":2,"title":"装饰者模式","slug":"装饰者模式","link":"#装饰者模式","children":[]}],"git":{},"filePathRelative":"blogs/Java/IO/io003.md"}');export{t as data};

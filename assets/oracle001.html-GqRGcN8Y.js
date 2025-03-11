@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-a5328a06","path":"/blogs/DB/Oracle/oracle001.html","title":"存储过程","lang":"en-US","frontmatter":{"title":"存储过程","date":"2024/04/18","categories":["Oracle"],"tags":["年份2022"]},"headers":[],"git":{},"filePathRelative":"blogs/DB/Oracle/oracle001.md"}');export{e as data};

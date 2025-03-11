@@ -1,0 +1,1 @@
+import{_ as t,c as a,o as s,b as r,f as c}from"./app-DukR-6js.js";const n={};function o(d,e){return s(),a("div",null,e[0]||(e[0]=[r("h2",{id:"简介",tabindex:"-1"},[r("a",{class:"header-anchor",href:"#简介","aria-hidden":"true"},"#"),c(" 简介")],-1)]))}const u=t(n,[["render",o],["__file","structure001.html.vue"]]);export{u as default};
