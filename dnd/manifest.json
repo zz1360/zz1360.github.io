@@ -1,0 +1,341 @@
+{
+  "source_sha256": "e08fb0cf90b539112d8038a9ba566ad7823626590e4690e0744021639704b190",
+  "url": "https://blog.luckydogs.top/dnd/",
+  "originals": [
+    {
+      "id": "elminster",
+      "name": "伊尔明斯特",
+      "url": "/dnd/assets/art-fef2fbae94e586e5f4b7.webp",
+      "sha256": "fef2fbae94e586e5f4b7b6828e5f4a8b66eacb77a2c5d4bc1d47cb74589b0f80"
+    },
+    {
+      "id": "drizzt",
+      "name": "崔斯特",
+      "url": "/dnd/assets/art-15b704d8bc3f4d714fa5.webp",
+      "sha256": "15b704d8bc3f4d714fa5ca15e3a520fecc8ce81ea94d429b9c59d575c26f8718"
+    },
+    {
+      "id": "bruenor",
+      "name": "布鲁诺 · 战锤",
+      "url": "/dnd/assets/art-047b81d91419a815faf4.webp",
+      "sha256": "047b81d91419a815faf445fcb3bd3a698091ffed9fa3351202d21ccf7f2b5f05"
+    },
+    {
+      "id": "laeral",
+      "name": "莱拉尔 · 银手",
+      "url": "/dnd/assets/art-d072669c253e6f8fe92b.webp",
+      "sha256": "d072669c253e6f8fe92b30e606260c6efcd78c05f4512a9f7e4459a0ed3424fc"
+    },
+    {
+      "id": "alustriel",
+      "name": "艾拉斯卓 · 银手",
+      "url": "/dnd/assets/art-30e9f821acfcf76cf684.webp",
+      "sha256": "30e9f821acfcf76cf68461db7b4992c00e661dfbcdad52d9105fd2f9e2c84ae2"
+    },
+    {
+      "id": "minsc",
+      "name": "明斯克与布布",
+      "url": "/dnd/assets/art-727afe80e607e60713b2.webp",
+      "sha256": "727afe80e607e60713b248e85fcc3c8542f97920e704816863f1809c088c7157"
+    },
+    {
+      "id": "jarlaxle",
+      "name": "贾拉索",
+      "url": "/dnd/assets/art-02f9fd192910a1e5530f.webp",
+      "sha256": "02f9fd192910a1e5530f03e67933cd1f8f78652a1e7019cdcd008443e076d587"
+    },
+    {
+      "id": "karsus",
+      "name": "卡尔萨斯",
+      "url": "/dnd/assets/art-de8ef19f303d6e392668.webp",
+      "sha256": "de8ef19f303d6e3926687c45678dc038e111a40bc6508b0b2fbc5dc612da90e0"
+    },
+    {
+      "id": "mordenkainen",
+      "name": "魔邓肯",
+      "url": "/dnd/assets/art-65d49d68513da068570c.webp",
+      "sha256": "65d49d68513da068570cd593495a734481dc98f94564a8100b73943d324845d8"
+    },
+    {
+      "id": "tasha",
+      "name": "塔莎",
+      "url": "/dnd/assets/art-af7c2037472296770bb5.webp",
+      "sha256": "af7c2037472296770bb54b3c34e3d0c2cf2871a0231d6eb8466c9193e7010f9b"
+    },
+    {
+      "id": "vecna",
+      "name": "维克那",
+      "url": "/dnd/assets/art-5d80ceae63ceb5ea40f4.webp",
+      "sha256": "5d80ceae63ceb5ea40f4aabf00a87c6bea61c260b2db42f817ff2ec67f8cdd6e"
+    },
+    {
+      "id": "strahd",
+      "name": "斯特拉德",
+      "url": "/dnd/assets/art-5a4fc618a749fca0a877.webp",
+      "sha256": "5a4fc618a749fca0a877a57db7043522ecb2526ea03669a56876178cea1babdb"
+    },
+    {
+      "id": "lady",
+      "name": "痛苦女士",
+      "url": "/dnd/assets/art-b3e2408fa9aabd511476.webp",
+      "sha256": "b3e2408fa9aabd511476fbb157a4ce870fe5751e97b637a2e302ed9edcfc81b0"
+    },
+    {
+      "id": "mystra",
+      "name": "密斯特拉",
+      "url": "/dnd/assets/art-c2d205de7fcaab6a69c4.webp",
+      "sha256": "c2d205de7fcaab6a69c457e04dcfbf62854c629591190979c66f830483400126"
+    },
+    {
+      "id": "shar",
+      "name": "莎尔",
+      "url": "/dnd/assets/art-346dd0d3aa7639fc88bd.webp",
+      "sha256": "346dd0d3aa7639fc88bdd8b353ce28e9057cb8485cf87689f89f0719a12d7aef"
+    },
+    {
+      "id": "selune",
+      "name": "塞伦涅",
+      "url": "/dnd/assets/art-70e6ebbbb4910b9ed5cc.webp",
+      "sha256": "70e6ebbbb4910b9ed5cc1be99f0d4e57637cf332c5ec98344ce71d8d79bf1e5d"
+    },
+    {
+      "id": "deadthree",
+      "name": "死亡三神",
+      "url": "/dnd/assets/art-f59e0c6101cddc206c9d.webp",
+      "sha256": "f59e0c6101cddc206c9d9341b0f2d65d23f50c06d41c1a9eaa561f2529e1bc8f"
+    },
+    {
+      "id": "lolth",
+      "name": "罗丝",
+      "url": "/dnd/assets/art-247f3efa121f4fa6bc3a.webp",
+      "sha256": "247f3efa121f4fa6bc3a50997a4bb5524f030640fc4eb2d5eec8774fbdf18973"
+    },
+    {
+      "id": "zariel",
+      "name": "扎瑞尔",
+      "url": "/dnd/assets/art-17332a031acdf682866b.webp",
+      "sha256": "17332a031acdf682866b7f9429b388ce1e7b853b8290391acd760ad010fb9c4a"
+    },
+    {
+      "id": "raistlin",
+      "name": "雷斯林 · 马哲理",
+      "url": "/dnd/assets/art-c475b2558c86efc6704b.webp",
+      "sha256": "c475b2558c86efc6704b03339c0ef849b97a648a9f18f2bad79fce6ca34115d0"
+    },
+    {
+      "id": "tanis",
+      "name": "半精灵坦尼斯",
+      "url": "/dnd/assets/art-058fc3f2bf505fa24d55.webp",
+      "sha256": "058fc3f2bf505fa24d55e5a5d5885b6dc1804839fa8e16b515cfce94d7a90bed"
+    },
+    {
+      "id": "blades",
+      "name": "刀锋领主",
+      "url": "/dnd/assets/art-1e348d2ed12c7cb4b2d9.webp",
+      "sha256": "1e348d2ed12c7cb4b2d9fda5717b12afb78fb6f349c8872dad47545820716fe0"
+    },
+    {
+      "id": "icewind",
+      "name": "冰风谷",
+      "url": "/dnd/assets/art-42d0cb2c35631cf153c2.webp",
+      "sha256": "42d0cb2c35631cf153c2166234bd9c6077c5d75023b55182d0674221338266e2"
+    },
+    {
+      "id": "neverwinter",
+      "name": "无冬城",
+      "url": "/dnd/assets/art-5bba9591273f39c72b0a.webp",
+      "sha256": "5bba9591273f39c72b0a8b3e2f364ef29d4117b4fd6c3bb2d958d0442c1d4bd2"
+    },
+    {
+      "id": "waterdeep",
+      "name": "深水城",
+      "url": "/dnd/assets/art-70ab96bc30301250acbb.webp",
+      "sha256": "70ab96bc30301250acbbbc8db13b7f18498aac8e59e3a0871604f8dbc95508eb"
+    },
+    {
+      "id": "baldurs",
+      "name": "博德之门",
+      "url": "/dnd/assets/art-d9fa5d884a20453764e7.webp",
+      "sha256": "d9fa5d884a20453764e7bdcaf1c60003229865591b0a98b625b15384e0ffea22"
+    },
+    {
+      "id": "candlekeep",
+      "name": "烛堡",
+      "url": "/dnd/assets/art-dbe524ea12df30313ee6.webp",
+      "sha256": "dbe524ea12df30313ee6ef1e599e0317cca16616c5002624b694011df4f71c75"
+    },
+    {
+      "id": "phandalin",
+      "name": "凡达林",
+      "url": "/dnd/assets/art-4be6163112adfab82e0f.webp",
+      "sha256": "4be6163112adfab82e0f340052c1d84c1d034bec21eeb1f54fc9e113b8592fc8"
+    },
+    {
+      "id": "underdark",
+      "name": "幽暗地域",
+      "url": "/dnd/assets/art-8aa780988cfb17e8889c.webp",
+      "sha256": "8aa780988cfb17e8889c25664578c4db7b3cd05edcff98cbafc61e0ca9b5d805"
+    },
+    {
+      "id": "menzo",
+      "name": "魔索布莱城",
+      "url": "/dnd/assets/art-c4458653b06dc5137851.webp",
+      "sha256": "c4458653b06dc51378513a35e83ae09871aa172016fac594d8d9db4376019e43"
+    }
+  ],
+  "galleries": {
+    "laeral": [
+      {
+        "title": "街巷巡行",
+        "url": "/dnd/assets/art-383da2c6afc9d2b32c4a.webp",
+        "sha256": "383da2c6afc9d2b32c4aba344c920bdd3b57beff3b09c845a5af02460f89d7ee"
+      },
+      {
+        "title": "议事时刻",
+        "url": "/dnd/assets/art-32fbce7174206c28a9a2.webp",
+        "sha256": "32fbce7174206c28a9a251e1d67a8a77a91a359652620fe6d7c0ba503cd72353"
+      },
+      {
+        "title": "银火护盾",
+        "url": "/dnd/assets/art-5ccff1af1cfd1749aefd.webp",
+        "sha256": "5ccff1af1cfd1749aefdbee3479008f995d2c8ead5cc84558bddf67af2ddc0de"
+      }
+    ],
+    "alustriel": [
+      {
+        "title": "林间读书",
+        "url": "/dnd/assets/art-49c003913d778c075475.webp",
+        "sha256": "49c003913d778c0754754a3d362f38dbac56e6bb012c7956cdba8c102345fb47"
+      },
+      {
+        "title": "月桥施法",
+        "url": "/dnd/assets/art-8be773b17d98ab5b233e.webp",
+        "sha256": "8be773b17d98ab5b233e66bef061407951a7b0e3b4b78837e0573f7e02ab0d1e"
+      },
+      {
+        "title": "迎风远行",
+        "url": "/dnd/assets/art-9d22a8735f2b5da9876c.webp",
+        "sha256": "9d22a8735f2b5da9876ce7e41c56381837d6fd2f2f0f9155031e007d6a4e9253"
+      }
+    ],
+    "tasha": [
+      {
+        "title": "秘仪研究",
+        "url": "/dnd/assets/art-9b720ee458e8d878f345.webp",
+        "sha256": "9b720ee458e8d878f345cc40f613c65daa3dce85927141f1953b8a6ee8dc9b7c"
+      },
+      {
+        "title": "夜行女巫",
+        "url": "/dnd/assets/art-ec299d56f3b7f73dcb75.webp",
+        "sha256": "ec299d56f3b7f73dcb75113137ef0ff15171e49f589ee142e76d3f615622670f"
+      },
+      {
+        "title": "书房闲坐",
+        "url": "/dnd/assets/art-72d10732410bb495fdb9.webp",
+        "sha256": "72d10732410bb495fdb9ded405e96d97b8c535c48d3447418cd1f1a5c183f1d0"
+      }
+    ],
+    "lady": [
+      {
+        "title": "门扉之前",
+        "url": "/dnd/assets/art-fcc058e7b5624d281f0f.webp",
+        "sha256": "fcc058e7b5624d281f0f96ff17bfbc883c79b1f24c60045c142c08308c9ee3ce"
+      },
+      {
+        "title": "环城漫步",
+        "url": "/dnd/assets/art-5d5f66a8dc1411089c10.webp",
+        "sha256": "5d5f66a8dc1411089c107a3914fbdbb766271a61e6f9b1342be2815de105de59"
+      },
+      {
+        "title": "迷宫回望",
+        "url": "/dnd/assets/art-fe251e49677419443941.webp",
+        "sha256": "fe251e49677419443941a66081924a994eff2e39cac47e15ba3d4e8183f8eaf6"
+      }
+    ],
+    "mystra": [
+      {
+        "title": "织星之舞",
+        "url": "/dnd/assets/art-6b2398a1a08936ed2674.webp",
+        "sha256": "6b2398a1a08936ed2674f71a6f96c53494521b4fc8e46ceabd9d34c2fd7541f8"
+      },
+      {
+        "title": "星穹静思",
+        "url": "/dnd/assets/art-aaad28f8182c44c6da77.webp",
+        "sha256": "aaad28f8182c44c6da774f91c7104b896e53faa0dd43c7bbd29ace7c1893d81b"
+      },
+      {
+        "title": "魔网展开",
+        "url": "/dnd/assets/art-4bdba8de1b5813027e30.webp",
+        "sha256": "4bdba8de1b5813027e30abd522ee7c14580443c927bf476b809003ed5cf3451a"
+      }
+    ],
+    "shar": [
+      {
+        "title": "暗殿静坐",
+        "url": "/dnd/assets/art-8b0fb816ed07a28f5598.webp",
+        "sha256": "8b0fb816ed07a28f5598b5ae6c8b3ee8aa071eba670f6cd1881bcdec0fe4983c"
+      },
+      {
+        "title": "暮影行旅",
+        "url": "/dnd/assets/art-8ace24d1f1838b083b1a.webp",
+        "sha256": "8ace24d1f1838b083b1a47a032c5ab0ccd4c3e8f7d7af90ba4da79138d8071fe"
+      },
+      {
+        "title": "失落之环",
+        "url": "/dnd/assets/art-37a0d7a207a6bdfc7899.webp",
+        "sha256": "37a0d7a207a6bdfc7899c87704e5e068b0ae988996190e4699bb30a8d6ef42ee"
+      }
+    ],
+    "selune": [
+      {
+        "title": "月下旅途",
+        "url": "/dnd/assets/art-bd9b08f80546d269f71e.webp",
+        "sha256": "bd9b08f80546d269f71e977b5a8016f6aae4f0d3eb76f23c6089c522c6d2303e"
+      },
+      {
+        "title": "星池静坐",
+        "url": "/dnd/assets/art-ab6a5052ffc53a65a41d.webp",
+        "sha256": "ab6a5052ffc53a65a41dca100e76475100ec4595f8bd3f17caff8f54568b010d"
+      },
+      {
+        "title": "银辉祈愿",
+        "url": "/dnd/assets/art-784fb77168fda433e6e6.webp",
+        "sha256": "784fb77168fda433e6e607b048300105f5f2baaba67bb2005f449b4df3083235"
+      }
+    ],
+    "lolth": [
+      {
+        "title": "黑曜王座",
+        "url": "/dnd/assets/art-29d101590fd36c2f3e62.webp",
+        "sha256": "29d101590fd36c2f3e6246d738cb38f1f3bf259855469bfc94831eb871f85d1c"
+      },
+      {
+        "title": "蛛网织法",
+        "url": "/dnd/assets/art-2190ec809c062a5b2cff.webp",
+        "sha256": "2190ec809c062a5b2cff3e73223180f176cca9ac279f91594dccdf6bb5a7fa9c"
+      },
+      {
+        "title": "暗城回望",
+        "url": "/dnd/assets/art-c7cd38a9ecb0fab4dab9.webp",
+        "sha256": "c7cd38a9ecb0fab4dab9bd7ce916f2561457512931158b11b8c25ab80183feee"
+      }
+    ],
+    "zariel": [
+      {
+        "title": "焦土巡视",
+        "url": "/dnd/assets/art-42eba4f036b670f6f2f1.webp",
+        "sha256": "42eba4f036b670f6f2f15ba5cb1daa4c572dbe4116f165b5137b39143b6ae667"
+      },
+      {
+        "title": "铁座沉思",
+        "url": "/dnd/assets/art-76e60be537dab7e000aa.webp",
+        "sha256": "76e60be537dab7e000aad7fb4ef0bab626ddfcf15add303469a856556e485ec8"
+      },
+      {
+        "title": "战翼展开",
+        "url": "/dnd/assets/art-aeace1acbe880106ce3c.webp",
+        "sha256": "aeace1acbe880106ce3cde896d0a46b5f84cf0a76e61fa6463dbed593760b8d0"
+      }
+    ]
+  }
+}
