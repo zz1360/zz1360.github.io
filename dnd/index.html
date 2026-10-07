@@ -31,7 +31,7 @@ function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports):"f
 </script><script>'use strict';
 const DATA=JSON.parse(document.getElementById('codex-data').textContent);
 const ALL=[...DATA.worlds,...DATA.planes,...DATA.history,...DATA.people,...DATA.locations,...DATA.factions,...DATA.terms];
-const BYID=Object.fromEntries(ALL.map(x=>[x.id,x]));
+const BYID=Object.assign(Object.create(null),Object.fromEntries(ALL.map(x=>[x.id,x])));
 const sectionNames={overview:'阅览入口',worlds:'世界图谱',cosmos:'位面宇宙',history:'历史年表',people:'人物与神祇',atlas:'地理与势力',primer:'术语与入门',sources:'资料与边界'};
 const sourceNums=Object.fromEntries(Object.keys(DATA.sources).map((k,i)=>[k,String(i+1).padStart(2,'0')]));
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
