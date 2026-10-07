@@ -1,186 +1,816 @@
 {
-  "source_sha256": "e08fb0cf90b539112d8038a9ba566ad7823626590e4690e0744021639704b190",
   "url": "https://blog.luckydogs.top/dnd/",
+  "source_sha256": "b451882afcf47c36259058707183775fdd28d82128b9d8af7c84a69dca2a7520",
   "originals": [
     {
       "id": "elminster",
       "name": "伊尔明斯特",
       "url": "/dnd/assets/art-fef2fbae94e586e5f4b7.webp",
-      "sha256": "fef2fbae94e586e5f4b7b6828e5f4a8b66eacb77a2c5d4bc1d47cb74589b0f80"
+      "sha256": "fef2fbae94e586e5f4b7b6828e5f4a8b66eacb77a2c5d4bc1d47cb74589b0f80",
+      "width": 1536,
+      "variants": [
+        {
+          "width": 320,
+          "url": "/dnd/assets/art-fef2fbae94e586e5f4b7-w320-q82-v1.webp",
+          "sha256": "8bb32ff51c29e9d8c5703cc4e4901c812b7ff15c71c5a0852bcec2797af5e0a0",
+          "bytes": 22264
+        },
+        {
+          "width": 640,
+          "url": "/dnd/assets/art-fef2fbae94e586e5f4b7-w640-q82-v1.webp",
+          "sha256": "065aa1f325a7cd26f8d391f60eb51f713ae4a3452e5d50f82e37c9248f878658",
+          "bytes": 68520
+        },
+        {
+          "width": 960,
+          "url": "/dnd/assets/art-fef2fbae94e586e5f4b7-w960-q82-v1.webp",
+          "sha256": "8e2054352a37d097d3b6be50b8aa2eaf1c7b0d00fa0b37d22b89c0a3d5b05f15",
+          "bytes": 120252
+        }
+      ]
     },
     {
       "id": "drizzt",
       "name": "崔斯特",
       "url": "/dnd/assets/art-15b704d8bc3f4d714fa5.webp",
-      "sha256": "15b704d8bc3f4d714fa5ca15e3a520fecc8ce81ea94d429b9c59d575c26f8718"
+      "sha256": "15b704d8bc3f4d714fa5ca15e3a520fecc8ce81ea94d429b9c59d575c26f8718",
+      "width": 1536,
+      "variants": [
+        {
+          "width": 320,
+          "url": "/dnd/assets/art-15b704d8bc3f4d714fa5-w320-q82-v1.webp",
+          "sha256": "698712fbbd8f6cad6c16db45bd3092710c2ef000d8e7b074bc85442c6caadec4",
+          "bytes": 19194
+        },
+        {
+          "width": 640,
+          "url": "/dnd/assets/art-15b704d8bc3f4d714fa5-w640-q82-v1.webp",
+          "sha256": "5ddda4538e81c1e37fec71b00fe5586af33a2186d4d121f662f136e99cb53ede",
+          "bytes": 62032
+        },
+        {
+          "width": 960,
+          "url": "/dnd/assets/art-15b704d8bc3f4d714fa5-w960-q82-v1.webp",
+          "sha256": "b34956477bb903b839fed4f5df07eee1424ef8f4cb457445638435005fcda6a1",
+          "bytes": 113310
+        }
+      ]
     },
     {
       "id": "bruenor",
       "name": "布鲁诺 · 战锤",
       "url": "/dnd/assets/art-047b81d91419a815faf4.webp",
-      "sha256": "047b81d91419a815faf445fcb3bd3a698091ffed9fa3351202d21ccf7f2b5f05"
+      "sha256": "047b81d91419a815faf445fcb3bd3a698091ffed9fa3351202d21ccf7f2b5f05",
+      "width": 1536,
+      "variants": [
+        {
+          "width": 320,
+          "url": "/dnd/assets/art-047b81d91419a815faf4-w320-q82-v1.webp",
+          "sha256": "fbcf02c71545bf0255464e1c4edafb18e1309b07bc69358ed89875bf90b040d0",
+          "bytes": 22510
+        },
+        {
+          "width": 640,
+          "url": "/dnd/assets/art-047b81d91419a815faf4-w640-q82-v1.webp",
+          "sha256": "ba146e8c3b938eaf442286db2ecb5a96e6c6f12f9b4aa9b9f9c28250d7497df6",
+          "bytes": 71746
+        },
+        {
+          "width": 960,
+          "url": "/dnd/assets/art-047b81d91419a815faf4-w960-q82-v1.webp",
+          "sha256": "06600f2e54291e97590aac0f353f41b934c80e06fc8d9705e96bc8cdc05f9856",
+          "bytes": 131400
+        }
+      ]
     },
     {
       "id": "laeral",
       "name": "莱拉尔 · 银手",
       "url": "/dnd/assets/art-d072669c253e6f8fe92b.webp",
-      "sha256": "d072669c253e6f8fe92b30e606260c6efcd78c05f4512a9f7e4459a0ed3424fc"
+      "sha256": "d072669c253e6f8fe92b30e606260c6efcd78c05f4512a9f7e4459a0ed3424fc",
+      "width": 1536,
+      "variants": [
+        {
+          "width": 320,
+          "url": "/dnd/assets/art-d072669c253e6f8fe92b-w320-q82-v1.webp",
+          "sha256": "f7eff622b237d24f6fdfb7a9ef9a1f9871ec0bfd7be5f832fe61c2a6da844953",
+          "bytes": 22636
+        },
+        {
+          "width": 640,
+          "url": "/dnd/assets/art-d072669c253e6f8fe92b-w640-q82-v1.webp",
+          "sha256": "47f742c7486a71ba6e47d9f10101644fc7d8858692f94a48d800238cc03e5ab4",
+          "bytes": 65014
+        },
+        {
+          "width": 960,
+          "url": "/dnd/assets/art-d072669c253e6f8fe92b-w960-q82-v1.webp",
+          "sha256": "5e09657893005ec25d9f37748a86773c552ba595a6a1b2ba221e1f8b24ababc4",
+          "bytes": 115146
+        }
+      ]
     },
     {
       "id": "alustriel",
       "name": "艾拉斯卓 · 银手",
       "url": "/dnd/assets/art-30e9f821acfcf76cf684.webp",
-      "sha256": "30e9f821acfcf76cf68461db7b4992c00e661dfbcdad52d9105fd2f9e2c84ae2"
+      "sha256": "30e9f821acfcf76cf68461db7b4992c00e661dfbcdad52d9105fd2f9e2c84ae2",
+      "width": 1536,
+      "variants": [
+        {
+          "width": 320,
+          "url": "/dnd/assets/art-30e9f821acfcf76cf684-w320-q82-v1.webp",
+          "sha256": "28f516d19007ce3c3e63c40bc311455044aeb2ee0ad7f293006865c3ca0dee62",
+          "bytes": 26676
+        },
+        {
+          "width": 640,
+          "url": "/dnd/assets/art-30e9f821acfcf76cf684-w640-q82-v1.webp",
+          "sha256": "080ed14b9382a58cc739bd645da288d47b4afc2b3a4feaab8e3bce1a8ee9f727",
+          "bytes": 87300
+        },
+        {
+          "width": 960,
+          "url": "/dnd/assets/art-30e9f821acfcf76cf684-w960-q82-v1.webp",
+          "sha256": "532a1a791f0e572d9377f26cb8f49b64873d018c6db16e61bb8d817359e12372",
+          "bytes": 162300
+        }
+      ]
     },
     {
       "id": "minsc",
       "name": "明斯克与布布",
       "url": "/dnd/assets/art-727afe80e607e60713b2.webp",
-      "sha256": "727afe80e607e60713b248e85fcc3c8542f97920e704816863f1809c088c7157"
+      "sha256": "727afe80e607e60713b248e85fcc3c8542f97920e704816863f1809c088c7157",
+      "width": 1536,
+      "variants": [
+        {
+          "width": 320,
+          "url": "/dnd/assets/art-727afe80e607e60713b2-w320-q82-v1.webp",
+          "sha256": "33605201adf9b1152dd067ff50c8bc2dcdc4072b62419184a51e2c22fed113f7",
+          "bytes": 20992
+        },
+        {
+          "width": 640,
+          "url": "/dnd/assets/art-727afe80e607e60713b2-w640-q82-v1.webp",
+          "sha256": "3403b1acd33579bc0edb4e320fa9ea989fd5171fe0a84f29571640629b048077",
+          "bytes": 59358
+        },
+        {
+          "width": 960,
+          "url": "/dnd/assets/art-727afe80e607e60713b2-w960-q82-v1.webp",
+          "sha256": "19d55bc3e26fe4ca565c95703165ce07b46f5083e0edea0d2923032c02340ee2",
+          "bytes": 106724
+        }
+      ]
     },
     {
       "id": "jarlaxle",
       "name": "贾拉索",
       "url": "/dnd/assets/art-02f9fd192910a1e5530f.webp",
-      "sha256": "02f9fd192910a1e5530f03e67933cd1f8f78652a1e7019cdcd008443e076d587"
+      "sha256": "02f9fd192910a1e5530f03e67933cd1f8f78652a1e7019cdcd008443e076d587",
+      "width": 1536,
+      "variants": [
+        {
+          "width": 320,
+          "url": "/dnd/assets/art-02f9fd192910a1e5530f-w320-q82-v1.webp",
+          "sha256": "64da6627d4319c352e1f998dbe22f4adf72c1d315661f4c00702146bc82dd92e",
+          "bytes": 18270
+        },
+        {
+          "width": 640,
+          "url": "/dnd/assets/art-02f9fd192910a1e5530f-w640-q82-v1.webp",
+          "sha256": "47eb8cb17a39f65c1f838251665363598306fdb8c3c7965fce49e1603682efd0",
+          "bytes": 55104
+        },
+        {
+          "width": 960,
+          "url": "/dnd/assets/art-02f9fd192910a1e5530f-w960-q82-v1.webp",
+          "sha256": "00466fd7d6a2c94a8555b66e8dccccca6b3ae2622737c4014660df5592f40bbc",
+          "bytes": 99792
+        }
+      ]
     },
     {
       "id": "karsus",
       "name": "卡尔萨斯",
       "url": "/dnd/assets/art-de8ef19f303d6e392668.webp",
-      "sha256": "de8ef19f303d6e3926687c45678dc038e111a40bc6508b0b2fbc5dc612da90e0"
+      "sha256": "de8ef19f303d6e3926687c45678dc038e111a40bc6508b0b2fbc5dc612da90e0",
+      "width": 1536,
+      "variants": [
+        {
+          "width": 320,
+          "url": "/dnd/assets/art-de8ef19f303d6e392668-w320-q82-v1.webp",
+          "sha256": "9229c27c0531809a60fda410b255f51874b4debc5f0b0f418be0cb88dd6ce235",
+          "bytes": 24444
+        },
+        {
+          "width": 640,
+          "url": "/dnd/assets/art-de8ef19f303d6e392668-w640-q82-v1.webp",
+          "sha256": "de477dbf5f5ecb1156ed2775470dd325f6e154575af20a89820b63ab80f5bf06",
+          "bytes": 78478
+        },
+        {
+          "width": 960,
+          "url": "/dnd/assets/art-de8ef19f303d6e392668-w960-q82-v1.webp",
+          "sha256": "600642ab20bcd0201505a849dfc9fb778c9642060589cb6524806dd91074e226",
+          "bytes": 149342
+        }
+      ]
     },
     {
       "id": "mordenkainen",
       "name": "魔邓肯",
       "url": "/dnd/assets/art-65d49d68513da068570c.webp",
-      "sha256": "65d49d68513da068570cd593495a734481dc98f94564a8100b73943d324845d8"
+      "sha256": "65d49d68513da068570cd593495a734481dc98f94564a8100b73943d324845d8",
+      "width": 1536,
+      "variants": [
+        {
+          "width": 320,
+          "url": "/dnd/assets/art-65d49d68513da068570c-w320-q82-v1.webp",
+          "sha256": "7f2780bb6bff42325b9f6cd689b33438e1bec434239462d368cec6f955c10c11",
+          "bytes": 19368
+        },
+        {
+          "width": 640,
+          "url": "/dnd/assets/art-65d49d68513da068570c-w640-q82-v1.webp",
+          "sha256": "ba0fb2ad920cc9301a783e62dbbaa0a4c284ec23e055aa9147e3666e561c8f60",
+          "bytes": 60958
+        },
+        {
+          "width": 960,
+          "url": "/dnd/assets/art-65d49d68513da068570c-w960-q82-v1.webp",
+          "sha256": "37b435699a8ac55d4798fb4b8095080b501de3449d519ee5030e8b1698decfee",
+          "bytes": 115770
+        }
+      ]
     },
     {
       "id": "tasha",
       "name": "塔莎",
       "url": "/dnd/assets/art-af7c2037472296770bb5.webp",
-      "sha256": "af7c2037472296770bb54b3c34e3d0c2cf2871a0231d6eb8466c9193e7010f9b"
+      "sha256": "af7c2037472296770bb54b3c34e3d0c2cf2871a0231d6eb8466c9193e7010f9b",
+      "width": 1536,
+      "variants": [
+        {
+          "width": 320,
+          "url": "/dnd/assets/art-af7c2037472296770bb5-w320-q82-v1.webp",
+          "sha256": "79f293df71328045a1fb75fd70c637a4362652d2c1cb57c11d3d5beec2aa28c3",
+          "bytes": 18538
+        },
+        {
+          "width": 640,
+          "url": "/dnd/assets/art-af7c2037472296770bb5-w640-q82-v1.webp",
+          "sha256": "87eced9b59b5c6b47b4e51a78d35e53741b7007d7f6674398506a505259fb370",
+          "bytes": 53860
+        },
+        {
+          "width": 960,
+          "url": "/dnd/assets/art-af7c2037472296770bb5-w960-q82-v1.webp",
+          "sha256": "00ff7402cabf3e2d6343c6bdf95dbcfdcc3376de466210353f9b86836ddfc16a",
+          "bytes": 94358
+        }
+      ]
     },
     {
       "id": "vecna",
       "name": "维克那",
       "url": "/dnd/assets/art-5d80ceae63ceb5ea40f4.webp",
-      "sha256": "5d80ceae63ceb5ea40f4aabf00a87c6bea61c260b2db42f817ff2ec67f8cdd6e"
+      "sha256": "5d80ceae63ceb5ea40f4aabf00a87c6bea61c260b2db42f817ff2ec67f8cdd6e",
+      "width": 1536,
+      "variants": [
+        {
+          "width": 320,
+          "url": "/dnd/assets/art-5d80ceae63ceb5ea40f4-w320-q82-v1.webp",
+          "sha256": "9836635343079073530754f580366cee15b1224de5ca3621792c19d535633000",
+          "bytes": 21846
+        },
+        {
+          "width": 640,
+          "url": "/dnd/assets/art-5d80ceae63ceb5ea40f4-w640-q82-v1.webp",
+          "sha256": "30567b53deb1ee06e846d9448b570417f309cd5ea2fd39ac566ef5ff9eef2e60",
+          "bytes": 70538
+        },
+        {
+          "width": 960,
+          "url": "/dnd/assets/art-5d80ceae63ceb5ea40f4-w960-q82-v1.webp",
+          "sha256": "ec59c6fa069e0f40889f6c62df31ca028c7a0d39b07cd6ef955634f0395742b1",
+          "bytes": 128742
+        }
+      ]
     },
     {
       "id": "strahd",
       "name": "斯特拉德",
       "url": "/dnd/assets/art-5a4fc618a749fca0a877.webp",
-      "sha256": "5a4fc618a749fca0a877a57db7043522ecb2526ea03669a56876178cea1babdb"
+      "sha256": "5a4fc618a749fca0a877a57db7043522ecb2526ea03669a56876178cea1babdb",
+      "width": 1536,
+      "variants": [
+        {
+          "width": 320,
+          "url": "/dnd/assets/art-5a4fc618a749fca0a877-w320-q82-v1.webp",
+          "sha256": "919b773622ba2bcd16babe8dac2057c7209a3400d7e7d161c394b3b96df77904",
+          "bytes": 17484
+        },
+        {
+          "width": 640,
+          "url": "/dnd/assets/art-5a4fc618a749fca0a877-w640-q82-v1.webp",
+          "sha256": "39496073d60301c67df422ea2066a50a67657ae8094c0cc56b4d82f05051783b",
+          "bytes": 54528
+        },
+        {
+          "width": 960,
+          "url": "/dnd/assets/art-5a4fc618a749fca0a877-w960-q82-v1.webp",
+          "sha256": "f9735a1c3af3f53043b6771a7a43e8a86f9533b9c23a6c04b128be6097a9a8d3",
+          "bytes": 101922
+        }
+      ]
     },
     {
       "id": "lady",
       "name": "痛苦女士",
       "url": "/dnd/assets/art-b3e2408fa9aabd511476.webp",
-      "sha256": "b3e2408fa9aabd511476fbb157a4ce870fe5751e97b637a2e302ed9edcfc81b0"
+      "sha256": "b3e2408fa9aabd511476fbb157a4ce870fe5751e97b637a2e302ed9edcfc81b0",
+      "width": 1536,
+      "variants": [
+        {
+          "width": 320,
+          "url": "/dnd/assets/art-b3e2408fa9aabd511476-w320-q82-v1.webp",
+          "sha256": "8bb35b0405991a6600dbd7c886ce4849cbda50f988d8de042e4e7a75e461dd89",
+          "bytes": 23662
+        },
+        {
+          "width": 640,
+          "url": "/dnd/assets/art-b3e2408fa9aabd511476-w640-q82-v1.webp",
+          "sha256": "e1fc20f02245cc8bdac8b20b30e3651795e7c46c4054e4fa9b56eaa5926e0d6c",
+          "bytes": 72316
+        },
+        {
+          "width": 960,
+          "url": "/dnd/assets/art-b3e2408fa9aabd511476-w960-q82-v1.webp",
+          "sha256": "fa3811a85c6ddc2dc8405ce47b07d47f559b27deaefe7ae7c7725d72cf8aba61",
+          "bytes": 132044
+        }
+      ]
     },
     {
       "id": "mystra",
       "name": "密斯特拉",
       "url": "/dnd/assets/art-c2d205de7fcaab6a69c4.webp",
-      "sha256": "c2d205de7fcaab6a69c457e04dcfbf62854c629591190979c66f830483400126"
+      "sha256": "c2d205de7fcaab6a69c457e04dcfbf62854c629591190979c66f830483400126",
+      "width": 1536,
+      "variants": [
+        {
+          "width": 320,
+          "url": "/dnd/assets/art-c2d205de7fcaab6a69c4-w320-q82-v1.webp",
+          "sha256": "6571b147df2a45757228e47b7258708a47d095e792f81c538e28783dd9b82332",
+          "bytes": 23772
+        },
+        {
+          "width": 640,
+          "url": "/dnd/assets/art-c2d205de7fcaab6a69c4-w640-q82-v1.webp",
+          "sha256": "58b3ef6a41bc737380f3aa08626732da23ebdb3b369fa79833fceddd1f5b8222",
+          "bytes": 79402
+        },
+        {
+          "width": 960,
+          "url": "/dnd/assets/art-c2d205de7fcaab6a69c4-w960-q82-v1.webp",
+          "sha256": "48f73e0fca12b7876ab0af29be9350ed12056ab9c8a34cd70659957962369e4b",
+          "bytes": 150716
+        }
+      ]
     },
     {
       "id": "shar",
       "name": "莎尔",
       "url": "/dnd/assets/art-346dd0d3aa7639fc88bd.webp",
-      "sha256": "346dd0d3aa7639fc88bdd8b353ce28e9057cb8485cf87689f89f0719a12d7aef"
+      "sha256": "346dd0d3aa7639fc88bdd8b353ce28e9057cb8485cf87689f89f0719a12d7aef",
+      "width": 1536,
+      "variants": [
+        {
+          "width": 320,
+          "url": "/dnd/assets/art-346dd0d3aa7639fc88bd-w320-q82-v1.webp",
+          "sha256": "e902269bf78d63845809081d5d4d2e6a20223bbff12f4bfe866ae0505f96a55d",
+          "bytes": 15126
+        },
+        {
+          "width": 640,
+          "url": "/dnd/assets/art-346dd0d3aa7639fc88bd-w640-q82-v1.webp",
+          "sha256": "0e1f9b02f3f696643e72e120e4ab6eec6769fa69fd732ff36c20506b10f3aec2",
+          "bytes": 48152
+        },
+        {
+          "width": 960,
+          "url": "/dnd/assets/art-346dd0d3aa7639fc88bd-w960-q82-v1.webp",
+          "sha256": "835ea234096438aa36da06c707f23595dd8df448dbadcf82dcda4b7494131b7e",
+          "bytes": 90392
+        }
+      ]
     },
     {
       "id": "selune",
       "name": "塞伦涅",
       "url": "/dnd/assets/art-70e6ebbbb4910b9ed5cc.webp",
-      "sha256": "70e6ebbbb4910b9ed5cc1be99f0d4e57637cf332c5ec98344ce71d8d79bf1e5d"
+      "sha256": "70e6ebbbb4910b9ed5cc1be99f0d4e57637cf332c5ec98344ce71d8d79bf1e5d",
+      "width": 1536,
+      "variants": [
+        {
+          "width": 320,
+          "url": "/dnd/assets/art-70e6ebbbb4910b9ed5cc-w320-q82-v1.webp",
+          "sha256": "a52ecbdb32ed111b713d2df78b5cb02c1ff524863ff2ba46b730726325d437e9",
+          "bytes": 22536
+        },
+        {
+          "width": 640,
+          "url": "/dnd/assets/art-70e6ebbbb4910b9ed5cc-w640-q82-v1.webp",
+          "sha256": "9f05eedc772aad98af63d13a32e7b31c9d1505fc19dfad2f245cacdf3ca6deaf",
+          "bytes": 70046
+        },
+        {
+          "width": 960,
+          "url": "/dnd/assets/art-70e6ebbbb4910b9ed5cc-w960-q82-v1.webp",
+          "sha256": "e4db495ea16433fa7f2189fc306c51875ee88889f6bf792069f1400625aa3781",
+          "bytes": 130694
+        }
+      ]
     },
     {
       "id": "deadthree",
       "name": "死亡三神",
       "url": "/dnd/assets/art-f59e0c6101cddc206c9d.webp",
-      "sha256": "f59e0c6101cddc206c9d9341b0f2d65d23f50c06d41c1a9eaa561f2529e1bc8f"
+      "sha256": "f59e0c6101cddc206c9d9341b0f2d65d23f50c06d41c1a9eaa561f2529e1bc8f",
+      "width": 1536,
+      "variants": [
+        {
+          "width": 320,
+          "url": "/dnd/assets/art-f59e0c6101cddc206c9d-w320-q82-v1.webp",
+          "sha256": "73ee5107edb0c5d32fbbb7ff3df9f6dc35e1c880335d06f291f115dbd14125a5",
+          "bytes": 18316
+        },
+        {
+          "width": 640,
+          "url": "/dnd/assets/art-f59e0c6101cddc206c9d-w640-q82-v1.webp",
+          "sha256": "0f9277eebad597d1d278d5d3976f39dd18b68212146eaaec4bd9d2615ff41d21",
+          "bytes": 58236
+        },
+        {
+          "width": 960,
+          "url": "/dnd/assets/art-f59e0c6101cddc206c9d-w960-q82-v1.webp",
+          "sha256": "87d922276a364354bec5f84a8061f8152b28f1fdc4a154cc86c41d6dc2ad7a1e",
+          "bytes": 109792
+        }
+      ]
     },
     {
       "id": "lolth",
       "name": "罗丝",
       "url": "/dnd/assets/art-247f3efa121f4fa6bc3a.webp",
-      "sha256": "247f3efa121f4fa6bc3a50997a4bb5524f030640fc4eb2d5eec8774fbdf18973"
+      "sha256": "247f3efa121f4fa6bc3a50997a4bb5524f030640fc4eb2d5eec8774fbdf18973",
+      "width": 1536,
+      "variants": [
+        {
+          "width": 320,
+          "url": "/dnd/assets/art-247f3efa121f4fa6bc3a-w320-q82-v1.webp",
+          "sha256": "d407db4b7b03680716a757506accc587d7a88abd4682f18aab5811720c4c25dd",
+          "bytes": 22490
+        },
+        {
+          "width": 640,
+          "url": "/dnd/assets/art-247f3efa121f4fa6bc3a-w640-q82-v1.webp",
+          "sha256": "86ce1d3a7332cba46f6ee602ea374e2d5533eebc0d0c6e7733b34cc463d65391",
+          "bytes": 75360
+        },
+        {
+          "width": 960,
+          "url": "/dnd/assets/art-247f3efa121f4fa6bc3a-w960-q82-v1.webp",
+          "sha256": "5462ed62f316fc265ffccf28fead564fcc509388870a5c2bb1a63c21f2c7686f",
+          "bytes": 145172
+        }
+      ]
     },
     {
       "id": "zariel",
       "name": "扎瑞尔",
       "url": "/dnd/assets/art-17332a031acdf682866b.webp",
-      "sha256": "17332a031acdf682866b7f9429b388ce1e7b853b8290391acd760ad010fb9c4a"
+      "sha256": "17332a031acdf682866b7f9429b388ce1e7b853b8290391acd760ad010fb9c4a",
+      "width": 1536,
+      "variants": [
+        {
+          "width": 320,
+          "url": "/dnd/assets/art-17332a031acdf682866b-w320-q82-v1.webp",
+          "sha256": "573653d1fc8f4c2e6b69ef59ac691bf6eaf4620901fc19d0b34c6861e69dff43",
+          "bytes": 20998
+        },
+        {
+          "width": 640,
+          "url": "/dnd/assets/art-17332a031acdf682866b-w640-q82-v1.webp",
+          "sha256": "326dd7178183c6cb69cfe6614df6efcb105e5ae1d13e75a8a6ec6e21361ede7e",
+          "bytes": 64600
+        },
+        {
+          "width": 960,
+          "url": "/dnd/assets/art-17332a031acdf682866b-w960-q82-v1.webp",
+          "sha256": "e71b047ef112030e0e33df103be33724674f5c4448361e8b6ea56be2d3a0f2cb",
+          "bytes": 119244
+        }
+      ]
     },
     {
       "id": "raistlin",
       "name": "雷斯林 · 马哲理",
       "url": "/dnd/assets/art-c475b2558c86efc6704b.webp",
-      "sha256": "c475b2558c86efc6704b03339c0ef849b97a648a9f18f2bad79fce6ca34115d0"
+      "sha256": "c475b2558c86efc6704b03339c0ef849b97a648a9f18f2bad79fce6ca34115d0",
+      "width": 1536,
+      "variants": [
+        {
+          "width": 320,
+          "url": "/dnd/assets/art-c475b2558c86efc6704b-w320-q82-v1.webp",
+          "sha256": "8fa0ad7147411fe75040209061a9547c4d8645b01e40d51c1008bd3eacb5fe1d",
+          "bytes": 17128
+        },
+        {
+          "width": 640,
+          "url": "/dnd/assets/art-c475b2558c86efc6704b-w640-q82-v1.webp",
+          "sha256": "98faf8dd2c97df76366ae7e3bcfe5e6861cc3f0f8379f3c6572caa77ea7e33e4",
+          "bytes": 49096
+        },
+        {
+          "width": 960,
+          "url": "/dnd/assets/art-c475b2558c86efc6704b-w960-q82-v1.webp",
+          "sha256": "28819338ff1026cbe6cf23ce945ffcd3c2b6e688e5e8fb189851392665d55f37",
+          "bytes": 83936
+        }
+      ]
     },
     {
       "id": "tanis",
       "name": "半精灵坦尼斯",
       "url": "/dnd/assets/art-058fc3f2bf505fa24d55.webp",
-      "sha256": "058fc3f2bf505fa24d55e5a5d5885b6dc1804839fa8e16b515cfce94d7a90bed"
+      "sha256": "058fc3f2bf505fa24d55e5a5d5885b6dc1804839fa8e16b515cfce94d7a90bed",
+      "width": 1536,
+      "variants": [
+        {
+          "width": 320,
+          "url": "/dnd/assets/art-058fc3f2bf505fa24d55-w320-q82-v1.webp",
+          "sha256": "18dee9d845655920c58228acf0603fe03e94b7bd23616fc904f437b61df5f49a",
+          "bytes": 22982
+        },
+        {
+          "width": 640,
+          "url": "/dnd/assets/art-058fc3f2bf505fa24d55-w640-q82-v1.webp",
+          "sha256": "0187a087656ee6730f1a5ae25d24c896a44da4a04bccd2258a1d9048b3c07267",
+          "bytes": 75362
+        },
+        {
+          "width": 960,
+          "url": "/dnd/assets/art-058fc3f2bf505fa24d55-w960-q82-v1.webp",
+          "sha256": "47bd2df965793f9004c90c3f2fba79a41b0a103226e4a7d0426369713b804b09",
+          "bytes": 139110
+        }
+      ]
     },
     {
       "id": "blades",
       "name": "刀锋领主",
       "url": "/dnd/assets/art-1e348d2ed12c7cb4b2d9.webp",
-      "sha256": "1e348d2ed12c7cb4b2d9fda5717b12afb78fb6f349c8872dad47545820716fe0"
+      "sha256": "1e348d2ed12c7cb4b2d9fda5717b12afb78fb6f349c8872dad47545820716fe0",
+      "width": 1536,
+      "variants": [
+        {
+          "width": 320,
+          "url": "/dnd/assets/art-1e348d2ed12c7cb4b2d9-w320-q82-v1.webp",
+          "sha256": "d71a92982e5feb673b7100a9b96ee23bfba78dff8ca23331d8a3d03d59baf129",
+          "bytes": 20072
+        },
+        {
+          "width": 640,
+          "url": "/dnd/assets/art-1e348d2ed12c7cb4b2d9-w640-q82-v1.webp",
+          "sha256": "284baaf6c55224a1e50e39cddb9df32c42260f40f514ac1d9898b5472471b332",
+          "bytes": 60792
+        },
+        {
+          "width": 960,
+          "url": "/dnd/assets/art-1e348d2ed12c7cb4b2d9-w960-q82-v1.webp",
+          "sha256": "9c99a0767d620ef0f0ff5a858c5e35b3fcfde7af7fc5850df01991f125af5985",
+          "bytes": 112112
+        }
+      ]
     },
     {
       "id": "icewind",
       "name": "冰风谷",
       "url": "/dnd/assets/art-42d0cb2c35631cf153c2.webp",
-      "sha256": "42d0cb2c35631cf153c2166234bd9c6077c5d75023b55182d0674221338266e2"
+      "sha256": "42d0cb2c35631cf153c2166234bd9c6077c5d75023b55182d0674221338266e2",
+      "width": 1536,
+      "variants": [
+        {
+          "width": 320,
+          "url": "/dnd/assets/art-42d0cb2c35631cf153c2-w320-q82-v1.webp",
+          "sha256": "dd394c8f1d36102e792fcdc06cb02183f75eca7be54416563aa6444d65bc174c",
+          "bytes": 25512
+        },
+        {
+          "width": 640,
+          "url": "/dnd/assets/art-42d0cb2c35631cf153c2-w640-q82-v1.webp",
+          "sha256": "f9b5042460b05c35d05c2c19f98fdd1f6d5ecd9f12f4bfefa4a1ce4cdf222989",
+          "bytes": 84212
+        },
+        {
+          "width": 960,
+          "url": "/dnd/assets/art-42d0cb2c35631cf153c2-w960-q82-v1.webp",
+          "sha256": "fa46b528348dc3d5945d8693a4c3039c6028ad8d14cf3224c626839e0e5e3312",
+          "bytes": 161268
+        }
+      ]
     },
     {
       "id": "neverwinter",
       "name": "无冬城",
       "url": "/dnd/assets/art-5bba9591273f39c72b0a.webp",
-      "sha256": "5bba9591273f39c72b0a8b3e2f364ef29d4117b4fd6c3bb2d958d0442c1d4bd2"
+      "sha256": "5bba9591273f39c72b0a8b3e2f364ef29d4117b4fd6c3bb2d958d0442c1d4bd2",
+      "width": 1536,
+      "variants": [
+        {
+          "width": 320,
+          "url": "/dnd/assets/art-5bba9591273f39c72b0a-w320-q82-v1.webp",
+          "sha256": "e7c31d6c00d25a729cd9ce3415d32e210dd2f4725b2bf3942d5ed00e549e498b",
+          "bytes": 26598
+        },
+        {
+          "width": 640,
+          "url": "/dnd/assets/art-5bba9591273f39c72b0a-w640-q82-v1.webp",
+          "sha256": "0e6ea41281aaec6c9b5a7d190c3b00e63a30f7b79d07f7e5dc57a1e7c682f37b",
+          "bytes": 92192
+        },
+        {
+          "width": 960,
+          "url": "/dnd/assets/art-5bba9591273f39c72b0a-w960-q82-v1.webp",
+          "sha256": "09e51847f7079df32c720f20c4faefa39f50b359ca22bcc254ff9b445ee454f2",
+          "bytes": 175676
+        }
+      ]
     },
     {
       "id": "waterdeep",
       "name": "深水城",
       "url": "/dnd/assets/art-70ab96bc30301250acbb.webp",
-      "sha256": "70ab96bc30301250acbbbc8db13b7f18498aac8e59e3a0871604f8dbc95508eb"
+      "sha256": "70ab96bc30301250acbbbc8db13b7f18498aac8e59e3a0871604f8dbc95508eb",
+      "width": 1536,
+      "variants": [
+        {
+          "width": 320,
+          "url": "/dnd/assets/art-70ab96bc30301250acbb-w320-q82-v1.webp",
+          "sha256": "8006a676cd4aea4a18095d515ce2c307eabdf74162d3b282ecfad5d2210484e3",
+          "bytes": 27858
+        },
+        {
+          "width": 640,
+          "url": "/dnd/assets/art-70ab96bc30301250acbb-w640-q82-v1.webp",
+          "sha256": "d929c14d7c3c618d325c30d14b29015ca84e04c6a2b5fd94f1be7aa52c43913e",
+          "bytes": 95424
+        },
+        {
+          "width": 960,
+          "url": "/dnd/assets/art-70ab96bc30301250acbb-w960-q82-v1.webp",
+          "sha256": "2c28b0aac3786a42cbadc1e6289d2affab87dd9b3a5a706a09b6847a72053bbe",
+          "bytes": 185886
+        }
+      ]
     },
     {
       "id": "baldurs",
       "name": "博德之门",
       "url": "/dnd/assets/art-d9fa5d884a20453764e7.webp",
-      "sha256": "d9fa5d884a20453764e7bdcaf1c60003229865591b0a98b625b15384e0ffea22"
+      "sha256": "d9fa5d884a20453764e7bdcaf1c60003229865591b0a98b625b15384e0ffea22",
+      "width": 1536,
+      "variants": [
+        {
+          "width": 320,
+          "url": "/dnd/assets/art-d9fa5d884a20453764e7-w320-q82-v1.webp",
+          "sha256": "f662a5dc193716bb6ce2286f1939a04467290e40c550c42e584311b26ddfa870",
+          "bytes": 23698
+        },
+        {
+          "width": 640,
+          "url": "/dnd/assets/art-d9fa5d884a20453764e7-w640-q82-v1.webp",
+          "sha256": "d87fa80455105114bf4d8e8f9d66d3000908b7cfa930d21af1d28b5357b6ebc3",
+          "bytes": 80454
+        },
+        {
+          "width": 960,
+          "url": "/dnd/assets/art-d9fa5d884a20453764e7-w960-q82-v1.webp",
+          "sha256": "0b568d143b84fa49b280005238ef0453ec908c74344fd892a8bb9292bc2ddd46",
+          "bytes": 157078
+        }
+      ]
     },
     {
       "id": "candlekeep",
       "name": "烛堡",
       "url": "/dnd/assets/art-dbe524ea12df30313ee6.webp",
-      "sha256": "dbe524ea12df30313ee6ef1e599e0317cca16616c5002624b694011df4f71c75"
+      "sha256": "dbe524ea12df30313ee6ef1e599e0317cca16616c5002624b694011df4f71c75",
+      "width": 1536,
+      "variants": [
+        {
+          "width": 320,
+          "url": "/dnd/assets/art-dbe524ea12df30313ee6-w320-q82-v1.webp",
+          "sha256": "9cc5661e8ac9e7e6fc183b3796ad9234ec388ce3964cb5a96aa6e893f847e95f",
+          "bytes": 27138
+        },
+        {
+          "width": 640,
+          "url": "/dnd/assets/art-dbe524ea12df30313ee6-w640-q82-v1.webp",
+          "sha256": "9ca4394612dec953cbf7b2aeee23b0f8825221d9bc3b1b2724901409550f7d32",
+          "bytes": 94196
+        },
+        {
+          "width": 960,
+          "url": "/dnd/assets/art-dbe524ea12df30313ee6-w960-q82-v1.webp",
+          "sha256": "7fa1d008cf73be8d957dc9b1257800dd26707f1ca9e1ec160e8ab1cb6098e981",
+          "bytes": 185196
+        }
+      ]
     },
     {
       "id": "phandalin",
       "name": "凡达林",
       "url": "/dnd/assets/art-4be6163112adfab82e0f.webp",
-      "sha256": "4be6163112adfab82e0f340052c1d84c1d034bec21eeb1f54fc9e113b8592fc8"
+      "sha256": "4be6163112adfab82e0f340052c1d84c1d034bec21eeb1f54fc9e113b8592fc8",
+      "width": 1536,
+      "variants": [
+        {
+          "width": 320,
+          "url": "/dnd/assets/art-4be6163112adfab82e0f-w320-q82-v1.webp",
+          "sha256": "a988de76369f5f691180dac5672f9da9067cb75f11265f6ae71172e6747972e9",
+          "bytes": 28184
+        },
+        {
+          "width": 640,
+          "url": "/dnd/assets/art-4be6163112adfab82e0f-w640-q82-v1.webp",
+          "sha256": "51046dd459f36025397007df0a5df2763bd2c4c46729972fef43c05358099d04",
+          "bytes": 98758
+        },
+        {
+          "width": 960,
+          "url": "/dnd/assets/art-4be6163112adfab82e0f-w960-q82-v1.webp",
+          "sha256": "7d608ed5422d9d4f2a9569d219c62040d81855bb387c423b19d5171a9046ec28",
+          "bytes": 194544
+        }
+      ]
     },
     {
       "id": "underdark",
       "name": "幽暗地域",
       "url": "/dnd/assets/art-8aa780988cfb17e8889c.webp",
-      "sha256": "8aa780988cfb17e8889c25664578c4db7b3cd05edcff98cbafc61e0ca9b5d805"
+      "sha256": "8aa780988cfb17e8889c25664578c4db7b3cd05edcff98cbafc61e0ca9b5d805",
+      "width": 1536,
+      "variants": [
+        {
+          "width": 320,
+          "url": "/dnd/assets/art-8aa780988cfb17e8889c-w320-q82-v1.webp",
+          "sha256": "5575aaa747ffa35c2bc2e6df9bd4fdfe983fb44988bd45cd00068a8b850f89ea",
+          "bytes": 21900
+        },
+        {
+          "width": 640,
+          "url": "/dnd/assets/art-8aa780988cfb17e8889c-w640-q82-v1.webp",
+          "sha256": "44d7e34566256bf11813e4ae26b21ee7a8eef380223a45e609cc100c477f088e",
+          "bytes": 76938
+        },
+        {
+          "width": 960,
+          "url": "/dnd/assets/art-8aa780988cfb17e8889c-w960-q82-v1.webp",
+          "sha256": "42b2fd92f7dff25d365f98bc5a955842a2ffc66f96abc8187f3211702db9bb1b",
+          "bytes": 150006
+        }
+      ]
     },
     {
       "id": "menzo",
       "name": "魔索布莱城",
       "url": "/dnd/assets/art-c4458653b06dc5137851.webp",
-      "sha256": "c4458653b06dc51378513a35e83ae09871aa172016fac594d8d9db4376019e43"
+      "sha256": "c4458653b06dc51378513a35e83ae09871aa172016fac594d8d9db4376019e43",
+      "width": 1536,
+      "variants": [
+        {
+          "width": 320,
+          "url": "/dnd/assets/art-c4458653b06dc5137851-w320-q82-v1.webp",
+          "sha256": "0807d7558031fa170deec27eb30943bfdcdcd3ed623ede9e49929adae4700d16",
+          "bytes": 25046
+        },
+        {
+          "width": 640,
+          "url": "/dnd/assets/art-c4458653b06dc5137851-w640-q82-v1.webp",
+          "sha256": "b46ba51cc5e171514e93caa082b0f31d290ff3eeffbd27d51332d73504cca8a4",
+          "bytes": 83244
+        },
+        {
+          "width": 960,
+          "url": "/dnd/assets/art-c4458653b06dc5137851-w960-q82-v1.webp",
+          "sha256": "776685796bd87588b8e9b273f7293b42afed858471113adecbd2ec684360e6f5",
+          "bytes": 161286
+        }
+      ]
     }
   ],
   "galleries": {
@@ -188,154 +818,957 @@
       {
         "title": "街巷巡行",
         "url": "/dnd/assets/art-383da2c6afc9d2b32c4a.webp",
-        "sha256": "383da2c6afc9d2b32c4aba344c920bdd3b57beff3b09c845a5af02460f89d7ee"
+        "sha256": "383da2c6afc9d2b32c4aba344c920bdd3b57beff3b09c845a5af02460f89d7ee",
+        "width": 1536,
+        "variants": [
+          {
+            "width": 320,
+            "url": "/dnd/assets/art-383da2c6afc9d2b32c4a-w320-q82-v1.webp",
+            "sha256": "12def29af35ec54771aa5d44e2c441e4d96965a1ebee82c367c4b4b0848501d6",
+            "bytes": 27270
+          },
+          {
+            "width": 640,
+            "url": "/dnd/assets/art-383da2c6afc9d2b32c4a-w640-q82-v1.webp",
+            "sha256": "c39bd3461cfb03012417b4c2c2297edc9060219e9153b1f2bd867a8c50fd16be",
+            "bytes": 86130
+          },
+          {
+            "width": 960,
+            "url": "/dnd/assets/art-383da2c6afc9d2b32c4a-w960-q82-v1.webp",
+            "sha256": "128b1bae32e2502d7efc46774ffc011085b55cef27611badd647ef71bdf92091",
+            "bytes": 154608
+          }
+        ]
       },
       {
         "title": "议事时刻",
         "url": "/dnd/assets/art-32fbce7174206c28a9a2.webp",
-        "sha256": "32fbce7174206c28a9a251e1d67a8a77a91a359652620fe6d7c0ba503cd72353"
+        "sha256": "32fbce7174206c28a9a251e1d67a8a77a91a359652620fe6d7c0ba503cd72353",
+        "width": 1536,
+        "variants": [
+          {
+            "width": 320,
+            "url": "/dnd/assets/art-32fbce7174206c28a9a2-w320-q82-v1.webp",
+            "sha256": "c036470319ef2da7726e30f0cc4b716a3c885b487db2ed7da607f5908faf91fa",
+            "bytes": 24782
+          },
+          {
+            "width": 640,
+            "url": "/dnd/assets/art-32fbce7174206c28a9a2-w640-q82-v1.webp",
+            "sha256": "be0a78883e5c569f8d7e848bd8a5817f4792a3f1950cc3241a7329fb0dfb3c2d",
+            "bytes": 74266
+          },
+          {
+            "width": 960,
+            "url": "/dnd/assets/art-32fbce7174206c28a9a2-w960-q82-v1.webp",
+            "sha256": "09022e0bc70acb7719c55fb6dc23a3e88d17466629dc1bd1e00101c720de20c7",
+            "bytes": 129834
+          }
+        ]
       },
       {
         "title": "银火护盾",
         "url": "/dnd/assets/art-5ccff1af1cfd1749aefd.webp",
-        "sha256": "5ccff1af1cfd1749aefdbee3479008f995d2c8ead5cc84558bddf67af2ddc0de"
+        "sha256": "5ccff1af1cfd1749aefdbee3479008f995d2c8ead5cc84558bddf67af2ddc0de",
+        "width": 1536,
+        "variants": [
+          {
+            "width": 320,
+            "url": "/dnd/assets/art-5ccff1af1cfd1749aefd-w320-q82-v1.webp",
+            "sha256": "f8d6ae5c6d39d61b7dacee67547229c9ad59cfd0c7b540cf38d637ebecb82f03",
+            "bytes": 26192
+          },
+          {
+            "width": 640,
+            "url": "/dnd/assets/art-5ccff1af1cfd1749aefd-w640-q82-v1.webp",
+            "sha256": "d8433ba46cc2c34e56636ac0b951f25528c25c642f3e75b144b634ccdba88727",
+            "bytes": 81866
+          },
+          {
+            "width": 960,
+            "url": "/dnd/assets/art-5ccff1af1cfd1749aefd-w960-q82-v1.webp",
+            "sha256": "925efa62dcdec568b103eb68022fc804e40feb87376d4dde34a09b8dabac213f",
+            "bytes": 147372
+          }
+        ]
       }
     ],
     "alustriel": [
       {
         "title": "林间读书",
         "url": "/dnd/assets/art-49c003913d778c075475.webp",
-        "sha256": "49c003913d778c0754754a3d362f38dbac56e6bb012c7956cdba8c102345fb47"
+        "sha256": "49c003913d778c0754754a3d362f38dbac56e6bb012c7956cdba8c102345fb47",
+        "width": 1536,
+        "variants": [
+          {
+            "width": 320,
+            "url": "/dnd/assets/art-49c003913d778c075475-w320-q82-v1.webp",
+            "sha256": "3926976976e217f9fcd14b719132633975edff6fcf4cf26c082c626348b16161",
+            "bytes": 29008
+          },
+          {
+            "width": 640,
+            "url": "/dnd/assets/art-49c003913d778c075475-w640-q82-v1.webp",
+            "sha256": "12d26102857df48c20345132482d5f7de2079a99ac4ad7a5823d3f20ef2348f3",
+            "bytes": 94698
+          },
+          {
+            "width": 960,
+            "url": "/dnd/assets/art-49c003913d778c075475-w960-q82-v1.webp",
+            "sha256": "21e887879bbbadcc8efcf4ac0763623fa57f605f95e8528e0bd7d9101c454ba5",
+            "bytes": 179320
+          }
+        ]
       },
       {
         "title": "月桥施法",
         "url": "/dnd/assets/art-8be773b17d98ab5b233e.webp",
-        "sha256": "8be773b17d98ab5b233e66bef061407951a7b0e3b4b78837e0573f7e02ab0d1e"
+        "sha256": "8be773b17d98ab5b233e66bef061407951a7b0e3b4b78837e0573f7e02ab0d1e",
+        "width": 1536,
+        "variants": [
+          {
+            "width": 320,
+            "url": "/dnd/assets/art-8be773b17d98ab5b233e-w320-q82-v1.webp",
+            "sha256": "1de293ee1834400498b026978f7116c3bfdd5b645a3f3823bc849ebece84a4d6",
+            "bytes": 27112
+          },
+          {
+            "width": 640,
+            "url": "/dnd/assets/art-8be773b17d98ab5b233e-w640-q82-v1.webp",
+            "sha256": "3f8adb0f0d9175f2f13be706fdc5f87abf22e9747a3e60a476f982c676981272",
+            "bytes": 89930
+          },
+          {
+            "width": 960,
+            "url": "/dnd/assets/art-8be773b17d98ab5b233e-w960-q82-v1.webp",
+            "sha256": "82ce7f501ac5187d3e9f94acb0b53eedcb1a0accc03418eb865a5f7ea9087d19",
+            "bytes": 172856
+          }
+        ]
       },
       {
         "title": "迎风远行",
         "url": "/dnd/assets/art-9d22a8735f2b5da9876c.webp",
-        "sha256": "9d22a8735f2b5da9876ce7e41c56381837d6fd2f2f0f9155031e007d6a4e9253"
+        "sha256": "9d22a8735f2b5da9876ce7e41c56381837d6fd2f2f0f9155031e007d6a4e9253",
+        "width": 1536,
+        "variants": [
+          {
+            "width": 320,
+            "url": "/dnd/assets/art-9d22a8735f2b5da9876c-w320-q82-v1.webp",
+            "sha256": "03b86f49158b606c37862489b16e1fe449377c9ce8ce4d93c9048d97ab5fc359",
+            "bytes": 30662
+          },
+          {
+            "width": 640,
+            "url": "/dnd/assets/art-9d22a8735f2b5da9876c-w640-q82-v1.webp",
+            "sha256": "2a2e4beb0ba241bebe36c17d298732becd7adedc109be6fb267a738e3b0b920e",
+            "bytes": 104128
+          },
+          {
+            "width": 960,
+            "url": "/dnd/assets/art-9d22a8735f2b5da9876c-w960-q82-v1.webp",
+            "sha256": "f8fc5f15b2bc1028adc03f1112bf232d9f8c5b86f332b803c860e534f4e93cd9",
+            "bytes": 201012
+          }
+        ]
       }
     ],
     "tasha": [
       {
         "title": "秘仪研究",
         "url": "/dnd/assets/art-9b720ee458e8d878f345.webp",
-        "sha256": "9b720ee458e8d878f345cc40f613c65daa3dce85927141f1953b8a6ee8dc9b7c"
+        "sha256": "9b720ee458e8d878f345cc40f613c65daa3dce85927141f1953b8a6ee8dc9b7c",
+        "width": 1536,
+        "variants": [
+          {
+            "width": 320,
+            "url": "/dnd/assets/art-9b720ee458e8d878f345-w320-q82-v1.webp",
+            "sha256": "7f9ca04b20f31b056ebefb6b0d51a5fe00c718055a578ed6b9caaeb062bb5f7b",
+            "bytes": 24922
+          },
+          {
+            "width": 640,
+            "url": "/dnd/assets/art-9b720ee458e8d878f345-w640-q82-v1.webp",
+            "sha256": "c3a41328bad3b8bf7741a77cd5c1a1698b6190b2f820336e721737f1d4045e9a",
+            "bytes": 82302
+          },
+          {
+            "width": 960,
+            "url": "/dnd/assets/art-9b720ee458e8d878f345-w960-q82-v1.webp",
+            "sha256": "1ccf74271cb07f3ad14f03416f696c46985690fb99001b63209a83fca76541f6",
+            "bytes": 155420
+          }
+        ]
       },
       {
         "title": "夜行女巫",
         "url": "/dnd/assets/art-ec299d56f3b7f73dcb75.webp",
-        "sha256": "ec299d56f3b7f73dcb75113137ef0ff15171e49f589ee142e76d3f615622670f"
+        "sha256": "ec299d56f3b7f73dcb75113137ef0ff15171e49f589ee142e76d3f615622670f",
+        "width": 1536,
+        "variants": [
+          {
+            "width": 320,
+            "url": "/dnd/assets/art-ec299d56f3b7f73dcb75-w320-q82-v1.webp",
+            "sha256": "b687a1f036e3da0fd0cca82dc493b14a917573309fe057dd449b40958990869a",
+            "bytes": 25536
+          },
+          {
+            "width": 640,
+            "url": "/dnd/assets/art-ec299d56f3b7f73dcb75-w640-q82-v1.webp",
+            "sha256": "ccd459e55a98f0cf378dab562a9c65879a7260c44c9f25c5f0fc872b53c27541",
+            "bytes": 82946
+          },
+          {
+            "width": 960,
+            "url": "/dnd/assets/art-ec299d56f3b7f73dcb75-w960-q82-v1.webp",
+            "sha256": "8318250f9cbe5fb7d8d995ce32052664ad123fea4a55749a9283391b1da4f417",
+            "bytes": 156612
+          }
+        ]
       },
       {
         "title": "书房闲坐",
         "url": "/dnd/assets/art-72d10732410bb495fdb9.webp",
-        "sha256": "72d10732410bb495fdb9ded405e96d97b8c535c48d3447418cd1f1a5c183f1d0"
+        "sha256": "72d10732410bb495fdb9ded405e96d97b8c535c48d3447418cd1f1a5c183f1d0",
+        "width": 1536,
+        "variants": [
+          {
+            "width": 320,
+            "url": "/dnd/assets/art-72d10732410bb495fdb9-w320-q82-v1.webp",
+            "sha256": "e0b0bdb15a84b25382367da01979447469320b7a8a982d3567d4b8b159d97713",
+            "bytes": 22332
+          },
+          {
+            "width": 640,
+            "url": "/dnd/assets/art-72d10732410bb495fdb9-w640-q82-v1.webp",
+            "sha256": "cfbf7ffc99f0c6338830543933c2af7a52d66247a131f6104eeeddfeeabb88cf",
+            "bytes": 69410
+          },
+          {
+            "width": 960,
+            "url": "/dnd/assets/art-72d10732410bb495fdb9-w960-q82-v1.webp",
+            "sha256": "676e983b6899a1d662f3d44acccd51cfc9619d8041617360f05a5740aafb0566",
+            "bytes": 126092
+          }
+        ]
       }
     ],
     "lady": [
       {
         "title": "门扉之前",
         "url": "/dnd/assets/art-fcc058e7b5624d281f0f.webp",
-        "sha256": "fcc058e7b5624d281f0f96ff17bfbc883c79b1f24c60045c142c08308c9ee3ce"
+        "sha256": "fcc058e7b5624d281f0f96ff17bfbc883c79b1f24c60045c142c08308c9ee3ce",
+        "width": 1536,
+        "variants": [
+          {
+            "width": 320,
+            "url": "/dnd/assets/art-fcc058e7b5624d281f0f-w320-q82-v1.webp",
+            "sha256": "54f97599e811ab8b53cf5a7435eb86bc045baa7448bf4d808963a1016480ab0c",
+            "bytes": 27894
+          },
+          {
+            "width": 640,
+            "url": "/dnd/assets/art-fcc058e7b5624d281f0f-w640-q82-v1.webp",
+            "sha256": "ad4f2898a935005edaae39fc1237b9331759f411f8e3cf2c63ff3abbdfaf24e7",
+            "bytes": 90528
+          },
+          {
+            "width": 960,
+            "url": "/dnd/assets/art-fcc058e7b5624d281f0f-w960-q82-v1.webp",
+            "sha256": "fc4c42932648f34a0bcd2d8646fa4bb88e64c965ea9f4995b1a45ad55f9c657d",
+            "bytes": 173566
+          }
+        ]
       },
       {
         "title": "环城漫步",
         "url": "/dnd/assets/art-5d5f66a8dc1411089c10.webp",
-        "sha256": "5d5f66a8dc1411089c107a3914fbdbb766271a61e6f9b1342be2815de105de59"
+        "sha256": "5d5f66a8dc1411089c107a3914fbdbb766271a61e6f9b1342be2815de105de59",
+        "width": 1536,
+        "variants": [
+          {
+            "width": 320,
+            "url": "/dnd/assets/art-5d5f66a8dc1411089c10-w320-q82-v1.webp",
+            "sha256": "b20043cb8300304f490b1e1f20d804541eb1e7855d3830842220232794549dd5",
+            "bytes": 24870
+          },
+          {
+            "width": 640,
+            "url": "/dnd/assets/art-5d5f66a8dc1411089c10-w640-q82-v1.webp",
+            "sha256": "e60fd7755aff6d4a5baf43d027654c71431145e89260da91b9c619abb98a2642",
+            "bytes": 79394
+          },
+          {
+            "width": 960,
+            "url": "/dnd/assets/art-5d5f66a8dc1411089c10-w960-q82-v1.webp",
+            "sha256": "3462159f0df17412f99b2ee84884f852db00918cb73991b91cdb6870e5bc4083",
+            "bytes": 147620
+          }
+        ]
       },
       {
         "title": "迷宫回望",
         "url": "/dnd/assets/art-fe251e49677419443941.webp",
-        "sha256": "fe251e49677419443941a66081924a994eff2e39cac47e15ba3d4e8183f8eaf6"
+        "sha256": "fe251e49677419443941a66081924a994eff2e39cac47e15ba3d4e8183f8eaf6",
+        "width": 1536,
+        "variants": [
+          {
+            "width": 320,
+            "url": "/dnd/assets/art-fe251e49677419443941-w320-q82-v1.webp",
+            "sha256": "56e4eab241f67e19aac4c4f5e355d146b788daa642d3a4751444fb35c1ba1234",
+            "bytes": 25538
+          },
+          {
+            "width": 640,
+            "url": "/dnd/assets/art-fe251e49677419443941-w640-q82-v1.webp",
+            "sha256": "18811cb11a23c20a4e8c6dae2290bdf76c6ce3841404cd6ea1e8fcb9f5322c5a",
+            "bytes": 83144
+          },
+          {
+            "width": 960,
+            "url": "/dnd/assets/art-fe251e49677419443941-w960-q82-v1.webp",
+            "sha256": "36c789818081c7ce9c19a82196d8c98d6afdd4c0db6a5c7b260fc172cbf00cdc",
+            "bytes": 161282
+          }
+        ]
       }
     ],
     "mystra": [
       {
         "title": "织星之舞",
         "url": "/dnd/assets/art-6b2398a1a08936ed2674.webp",
-        "sha256": "6b2398a1a08936ed2674f71a6f96c53494521b4fc8e46ceabd9d34c2fd7541f8"
+        "sha256": "6b2398a1a08936ed2674f71a6f96c53494521b4fc8e46ceabd9d34c2fd7541f8",
+        "width": 1536,
+        "variants": [
+          {
+            "width": 320,
+            "url": "/dnd/assets/art-6b2398a1a08936ed2674-w320-q82-v1.webp",
+            "sha256": "322198b05badebf63d274eace20e3ea80e471b795b1dac7982f351585b30b6a0",
+            "bytes": 28748
+          },
+          {
+            "width": 640,
+            "url": "/dnd/assets/art-6b2398a1a08936ed2674-w640-q82-v1.webp",
+            "sha256": "3105414746ec3fcb312e890234deb76d19ee1d0d09c1e121ae956dd4454e6829",
+            "bytes": 96114
+          },
+          {
+            "width": 960,
+            "url": "/dnd/assets/art-6b2398a1a08936ed2674-w960-q82-v1.webp",
+            "sha256": "489d4f1599382823ecb426930dea08aaea37b19d3c8cff69de9a61989e5744cb",
+            "bytes": 184218
+          }
+        ]
       },
       {
         "title": "星穹静思",
         "url": "/dnd/assets/art-aaad28f8182c44c6da77.webp",
-        "sha256": "aaad28f8182c44c6da774f91c7104b896e53faa0dd43c7bbd29ace7c1893d81b"
+        "sha256": "aaad28f8182c44c6da774f91c7104b896e53faa0dd43c7bbd29ace7c1893d81b",
+        "width": 1536,
+        "variants": [
+          {
+            "width": 320,
+            "url": "/dnd/assets/art-aaad28f8182c44c6da77-w320-q82-v1.webp",
+            "sha256": "fc5bdd7672d5e680daee9d2eb6e9857f7a655125be8eb6007ba34877f9490885",
+            "bytes": 26986
+          },
+          {
+            "width": 640,
+            "url": "/dnd/assets/art-aaad28f8182c44c6da77-w640-q82-v1.webp",
+            "sha256": "6516f4fbfa062a8fb3ac5edc1bfc59c9c43a52200c6d879fadbd1190d73b4db8",
+            "bytes": 92968
+          },
+          {
+            "width": 960,
+            "url": "/dnd/assets/art-aaad28f8182c44c6da77-w960-q82-v1.webp",
+            "sha256": "0e68ba2759e48e3c4409165ddc52c070c95f6b5153414f32d5602a1987aa9c0b",
+            "bytes": 177388
+          }
+        ]
       },
       {
         "title": "魔网展开",
         "url": "/dnd/assets/art-4bdba8de1b5813027e30.webp",
-        "sha256": "4bdba8de1b5813027e30abd522ee7c14580443c927bf476b809003ed5cf3451a"
+        "sha256": "4bdba8de1b5813027e30abd522ee7c14580443c927bf476b809003ed5cf3451a",
+        "width": 1536,
+        "variants": [
+          {
+            "width": 320,
+            "url": "/dnd/assets/art-4bdba8de1b5813027e30-w320-q82-v1.webp",
+            "sha256": "d823f374884a49e0b7fa6b108d47224efeebe4155bb7d88ae5f0e10699c2f076",
+            "bytes": 27104
+          },
+          {
+            "width": 640,
+            "url": "/dnd/assets/art-4bdba8de1b5813027e30-w640-q82-v1.webp",
+            "sha256": "9fe3bac8a5f4e82ba9581deafb6c4394bce874a1ae2ff1b68c3ed89a9d4151a4",
+            "bytes": 90120
+          },
+          {
+            "width": 960,
+            "url": "/dnd/assets/art-4bdba8de1b5813027e30-w960-q82-v1.webp",
+            "sha256": "81feeb4bc156bab71702612d2e158c33a0f0c0a2e297a7eec7600617d886d21b",
+            "bytes": 169344
+          }
+        ]
       }
     ],
     "shar": [
       {
         "title": "暗殿静坐",
         "url": "/dnd/assets/art-8b0fb816ed07a28f5598.webp",
-        "sha256": "8b0fb816ed07a28f5598b5ae6c8b3ee8aa071eba670f6cd1881bcdec0fe4983c"
+        "sha256": "8b0fb816ed07a28f5598b5ae6c8b3ee8aa071eba670f6cd1881bcdec0fe4983c",
+        "width": 1536,
+        "variants": [
+          {
+            "width": 320,
+            "url": "/dnd/assets/art-8b0fb816ed07a28f5598-w320-q82-v1.webp",
+            "sha256": "f0df318c4905f4decc8d395887a5141c84d0cc11bf43d6bd9e3d93c175879fc3",
+            "bytes": 20530
+          },
+          {
+            "width": 640,
+            "url": "/dnd/assets/art-8b0fb816ed07a28f5598-w640-q82-v1.webp",
+            "sha256": "6c9570fc2f6831fbf58626a2d35f447ca6be7c9efd37f9e8c92a2766c167b2de",
+            "bytes": 68752
+          },
+          {
+            "width": 960,
+            "url": "/dnd/assets/art-8b0fb816ed07a28f5598-w960-q82-v1.webp",
+            "sha256": "e433706959e94d216d5212293a057b30acf9d9b55841b9b8b4a469c932a2fc02",
+            "bytes": 130654
+          }
+        ]
       },
       {
         "title": "暮影行旅",
         "url": "/dnd/assets/art-8ace24d1f1838b083b1a.webp",
-        "sha256": "8ace24d1f1838b083b1a47a032c5ab0ccd4c3e8f7d7af90ba4da79138d8071fe"
+        "sha256": "8ace24d1f1838b083b1a47a032c5ab0ccd4c3e8f7d7af90ba4da79138d8071fe",
+        "width": 1536,
+        "variants": [
+          {
+            "width": 320,
+            "url": "/dnd/assets/art-8ace24d1f1838b083b1a-w320-q82-v1.webp",
+            "sha256": "1f7ff2fcf0bbb932f38e4a75901c6e5507c39117e7702a8f1353ce9cce33a271",
+            "bytes": 18194
+          },
+          {
+            "width": 640,
+            "url": "/dnd/assets/art-8ace24d1f1838b083b1a-w640-q82-v1.webp",
+            "sha256": "f44238ab4a521ad4b703485bb37e0ed23fe121715f906686c0f0c781787c36c7",
+            "bytes": 58146
+          },
+          {
+            "width": 960,
+            "url": "/dnd/assets/art-8ace24d1f1838b083b1a-w960-q82-v1.webp",
+            "sha256": "45d07175c6f42e9afef90313aec8223b709ad12012f2ad38a2387f2292cbcddb",
+            "bytes": 109870
+          }
+        ]
       },
       {
         "title": "失落之环",
         "url": "/dnd/assets/art-37a0d7a207a6bdfc7899.webp",
-        "sha256": "37a0d7a207a6bdfc7899c87704e5e068b0ae988996190e4699bb30a8d6ef42ee"
+        "sha256": "37a0d7a207a6bdfc7899c87704e5e068b0ae988996190e4699bb30a8d6ef42ee",
+        "width": 1536,
+        "variants": [
+          {
+            "width": 320,
+            "url": "/dnd/assets/art-37a0d7a207a6bdfc7899-w320-q82-v1.webp",
+            "sha256": "9dbdbdff1bba00ecd6badae6081a1be7b90b8d9b4fdb177c6b986e44be05f99d",
+            "bytes": 19606
+          },
+          {
+            "width": 640,
+            "url": "/dnd/assets/art-37a0d7a207a6bdfc7899-w640-q82-v1.webp",
+            "sha256": "0c951e90d413a806c6d2a92627be256c00e148637e82835ff5bee88e69ffd6bf",
+            "bytes": 65580
+          },
+          {
+            "width": 960,
+            "url": "/dnd/assets/art-37a0d7a207a6bdfc7899-w960-q82-v1.webp",
+            "sha256": "410516d07a471a0b29414c78d8d23deec5f65ca954c2ae82806cc10cfd81725d",
+            "bytes": 123108
+          }
+        ]
       }
     ],
     "selune": [
       {
         "title": "月下旅途",
         "url": "/dnd/assets/art-bd9b08f80546d269f71e.webp",
-        "sha256": "bd9b08f80546d269f71e977b5a8016f6aae4f0d3eb76f23c6089c522c6d2303e"
+        "sha256": "bd9b08f80546d269f71e977b5a8016f6aae4f0d3eb76f23c6089c522c6d2303e",
+        "width": 1536,
+        "variants": [
+          {
+            "width": 320,
+            "url": "/dnd/assets/art-bd9b08f80546d269f71e-w320-q82-v1.webp",
+            "sha256": "c601c4414266b2f97f5105bd1a3f631dbed8b0181afac70eaea018fcf6952c85",
+            "bytes": 26956
+          },
+          {
+            "width": 640,
+            "url": "/dnd/assets/art-bd9b08f80546d269f71e-w640-q82-v1.webp",
+            "sha256": "fe59b128b54eab15f33861919db27e8afd140a03a5581b3a809b1e8f87d1d5d4",
+            "bytes": 87470
+          },
+          {
+            "width": 960,
+            "url": "/dnd/assets/art-bd9b08f80546d269f71e-w960-q82-v1.webp",
+            "sha256": "a95ea29ab1715106540235af7e4dcd8978b9f30a44a6ec4d67d8a1d1d816e6ab",
+            "bytes": 165634
+          }
+        ]
       },
       {
         "title": "星池静坐",
         "url": "/dnd/assets/art-ab6a5052ffc53a65a41d.webp",
-        "sha256": "ab6a5052ffc53a65a41dca100e76475100ec4595f8bd3f17caff8f54568b010d"
+        "sha256": "ab6a5052ffc53a65a41dca100e76475100ec4595f8bd3f17caff8f54568b010d",
+        "width": 1536,
+        "variants": [
+          {
+            "width": 320,
+            "url": "/dnd/assets/art-ab6a5052ffc53a65a41d-w320-q82-v1.webp",
+            "sha256": "754ecd3b50cf32e110ba2310691717b4c82c8a9cca83fcc711e2d800c5f7df7d",
+            "bytes": 26850
+          },
+          {
+            "width": 640,
+            "url": "/dnd/assets/art-ab6a5052ffc53a65a41d-w640-q82-v1.webp",
+            "sha256": "b17203a3cdb5de668ae29bed27b6954e08963d891fb2fbb8ec99ecc4893690fd",
+            "bytes": 89846
+          },
+          {
+            "width": 960,
+            "url": "/dnd/assets/art-ab6a5052ffc53a65a41d-w960-q82-v1.webp",
+            "sha256": "7210cd0d4cca120a0880a0d48bd3ea90d84e059489d6967420de0cd3df0be34d",
+            "bytes": 170970
+          }
+        ]
       },
       {
         "title": "银辉祈愿",
         "url": "/dnd/assets/art-784fb77168fda433e6e6.webp",
-        "sha256": "784fb77168fda433e6e607b048300105f5f2baaba67bb2005f449b4df3083235"
+        "sha256": "784fb77168fda433e6e607b048300105f5f2baaba67bb2005f449b4df3083235",
+        "width": 1536,
+        "variants": [
+          {
+            "width": 320,
+            "url": "/dnd/assets/art-784fb77168fda433e6e6-w320-q82-v1.webp",
+            "sha256": "8fe7672e08b18f46f5e7e1265f14f5011b1e9e0dd1b0d6b7a93b67895ebfeb7e",
+            "bytes": 24626
+          },
+          {
+            "width": 640,
+            "url": "/dnd/assets/art-784fb77168fda433e6e6-w640-q82-v1.webp",
+            "sha256": "86522227405fd44fa6e753591731b2ce6b4cb23d81b3fd74237c28d9501339f6",
+            "bytes": 79824
+          },
+          {
+            "width": 960,
+            "url": "/dnd/assets/art-784fb77168fda433e6e6-w960-q82-v1.webp",
+            "sha256": "84a1519c5b683171f47c70157982aa3c758cf976327ba4ffa8f3602098cacb3f",
+            "bytes": 153932
+          }
+        ]
       }
     ],
     "lolth": [
       {
         "title": "黑曜王座",
         "url": "/dnd/assets/art-29d101590fd36c2f3e62.webp",
-        "sha256": "29d101590fd36c2f3e6246d738cb38f1f3bf259855469bfc94831eb871f85d1c"
+        "sha256": "29d101590fd36c2f3e6246d738cb38f1f3bf259855469bfc94831eb871f85d1c",
+        "width": 1536,
+        "variants": [
+          {
+            "width": 320,
+            "url": "/dnd/assets/art-29d101590fd36c2f3e62-w320-q82-v1.webp",
+            "sha256": "268c3799de4c125c6fa027446ff5f13eff875ff262676667aa050e1adc75ecb5",
+            "bytes": 24336
+          },
+          {
+            "width": 640,
+            "url": "/dnd/assets/art-29d101590fd36c2f3e62-w640-q82-v1.webp",
+            "sha256": "87bd3a40428042d11650de9e5bef8df76663845458d5eea3d4c227ec09404a68",
+            "bytes": 80990
+          },
+          {
+            "width": 960,
+            "url": "/dnd/assets/art-29d101590fd36c2f3e62-w960-q82-v1.webp",
+            "sha256": "481964b8ff8811ee3924912c06f56b99ce8e6a083641b6c376a5874f81725ade",
+            "bytes": 158664
+          }
+        ]
       },
       {
         "title": "蛛网织法",
         "url": "/dnd/assets/art-2190ec809c062a5b2cff.webp",
-        "sha256": "2190ec809c062a5b2cff3e73223180f176cca9ac279f91594dccdf6bb5a7fa9c"
+        "sha256": "2190ec809c062a5b2cff3e73223180f176cca9ac279f91594dccdf6bb5a7fa9c",
+        "width": 1536,
+        "variants": [
+          {
+            "width": 320,
+            "url": "/dnd/assets/art-2190ec809c062a5b2cff-w320-q82-v1.webp",
+            "sha256": "79cc15e1189b0eb1b470653e4f869b711e45a873747bdd4afe8a6976be9a6dab",
+            "bytes": 26326
+          },
+          {
+            "width": 640,
+            "url": "/dnd/assets/art-2190ec809c062a5b2cff-w640-q82-v1.webp",
+            "sha256": "7b7270057e703da560dfb369dbbde2373a3ba00956b6304a15a80f3597886a13",
+            "bytes": 90684
+          },
+          {
+            "width": 960,
+            "url": "/dnd/assets/art-2190ec809c062a5b2cff-w960-q82-v1.webp",
+            "sha256": "864c36e0b7b3177f5385fac95e1733d749c0e28bf2db6d90a308ad74b17c56b7",
+            "bytes": 176300
+          }
+        ]
       },
       {
         "title": "暗城回望",
         "url": "/dnd/assets/art-c7cd38a9ecb0fab4dab9.webp",
-        "sha256": "c7cd38a9ecb0fab4dab9bd7ce916f2561457512931158b11b8c25ab80183feee"
+        "sha256": "c7cd38a9ecb0fab4dab9bd7ce916f2561457512931158b11b8c25ab80183feee",
+        "width": 1536,
+        "variants": [
+          {
+            "width": 320,
+            "url": "/dnd/assets/art-c7cd38a9ecb0fab4dab9-w320-q82-v1.webp",
+            "sha256": "bc500bc79b77b2e46a38a08f37eef5b0297f0618fb57ecf66061f077d85602ba",
+            "bytes": 24008
+          },
+          {
+            "width": 640,
+            "url": "/dnd/assets/art-c7cd38a9ecb0fab4dab9-w640-q82-v1.webp",
+            "sha256": "29ca37785b4592f768aaf11a356eeeee793a656b4de64b1b864c04402d69fe24",
+            "bytes": 82548
+          },
+          {
+            "width": 960,
+            "url": "/dnd/assets/art-c7cd38a9ecb0fab4dab9-w960-q82-v1.webp",
+            "sha256": "b0c01257e988af3f0480e0d33e791ab1216df1998aad482b715ad204e5242ae1",
+            "bytes": 161558
+          }
+        ]
       }
     ],
     "zariel": [
       {
         "title": "焦土巡视",
         "url": "/dnd/assets/art-42eba4f036b670f6f2f1.webp",
-        "sha256": "42eba4f036b670f6f2f15ba5cb1daa4c572dbe4116f165b5137b39143b6ae667"
+        "sha256": "42eba4f036b670f6f2f15ba5cb1daa4c572dbe4116f165b5137b39143b6ae667",
+        "width": 1536,
+        "variants": [
+          {
+            "width": 320,
+            "url": "/dnd/assets/art-42eba4f036b670f6f2f1-w320-q82-v1.webp",
+            "sha256": "e7913902dfa2c4805b8a4a5cc7c46fa2194da7e8c0b8e69d40a77eb0abd060c7",
+            "bytes": 26898
+          },
+          {
+            "width": 640,
+            "url": "/dnd/assets/art-42eba4f036b670f6f2f1-w640-q82-v1.webp",
+            "sha256": "105bf5ef1f4b4fb2dbd15b032dd01fe6f3bf697eae9675480769af82565cc976",
+            "bytes": 86496
+          },
+          {
+            "width": 960,
+            "url": "/dnd/assets/art-42eba4f036b670f6f2f1-w960-q82-v1.webp",
+            "sha256": "46e4064939c97ab3582bf85b6832ec48c4cc4e80fd0f6a8fae4212aa8adf7d9d",
+            "bytes": 164278
+          }
+        ]
       },
       {
         "title": "铁座沉思",
         "url": "/dnd/assets/art-76e60be537dab7e000aa.webp",
-        "sha256": "76e60be537dab7e000aad7fb4ef0bab626ddfcf15add303469a856556e485ec8"
+        "sha256": "76e60be537dab7e000aad7fb4ef0bab626ddfcf15add303469a856556e485ec8",
+        "width": 1536,
+        "variants": [
+          {
+            "width": 320,
+            "url": "/dnd/assets/art-76e60be537dab7e000aa-w320-q82-v1.webp",
+            "sha256": "488418a42eaed2b2cc196da82fae05558e960573f991aa0a62bb2243bd4aef05",
+            "bytes": 21762
+          },
+          {
+            "width": 640,
+            "url": "/dnd/assets/art-76e60be537dab7e000aa-w640-q82-v1.webp",
+            "sha256": "64470f8245e7bf5dbc24dc979dc85798a371b0d2e667eaf750159079a4ded6ba",
+            "bytes": 68944
+          },
+          {
+            "width": 960,
+            "url": "/dnd/assets/art-76e60be537dab7e000aa-w960-q82-v1.webp",
+            "sha256": "89f25b8f8f4539452ea65f678aaf46c68e45a5ac5f0c4bfde6245238d0bafaf1",
+            "bytes": 125986
+          }
+        ]
       },
       {
         "title": "战翼展开",
         "url": "/dnd/assets/art-aeace1acbe880106ce3c.webp",
-        "sha256": "aeace1acbe880106ce3cde896d0a46b5f84cf0a76e61fa6463dbed593760b8d0"
+        "sha256": "aeace1acbe880106ce3cde896d0a46b5f84cf0a76e61fa6463dbed593760b8d0",
+        "width": 1536,
+        "variants": [
+          {
+            "width": 320,
+            "url": "/dnd/assets/art-aeace1acbe880106ce3c-w320-q82-v1.webp",
+            "sha256": "1650cefb82b180becfd047713ef676b3cca841403ab40c613358399f035576bd",
+            "bytes": 25590
+          },
+          {
+            "width": 640,
+            "url": "/dnd/assets/art-aeace1acbe880106ce3c-w640-q82-v1.webp",
+            "sha256": "e6173047f6965ee306e28c3cb22f0dc394ad9340d5f47efd61f12b17b0358e00",
+            "bytes": 82294
+          },
+          {
+            "width": 960,
+            "url": "/dnd/assets/art-aeace1acbe880106ce3c-w960-q82-v1.webp",
+            "sha256": "a48c6b8ecd8316a7b5445e4dd873b8f5136d02fb4e228802e7d5eee9ccd5e91c",
+            "bytes": 157732
+          }
+        ]
       }
     ]
-  }
+  },
+  "image_count": 57,
+  "responsive_sizes": [
+    320,
+    640,
+    960
+  ],
+  "generated_files": [
+    "art-02f9fd192910a1e5530f-w320-q82-v1.webp",
+    "art-02f9fd192910a1e5530f-w640-q82-v1.webp",
+    "art-02f9fd192910a1e5530f-w960-q82-v1.webp",
+    "art-02f9fd192910a1e5530f.webp",
+    "art-047b81d91419a815faf4-w320-q82-v1.webp",
+    "art-047b81d91419a815faf4-w640-q82-v1.webp",
+    "art-047b81d91419a815faf4-w960-q82-v1.webp",
+    "art-047b81d91419a815faf4.webp",
+    "art-058fc3f2bf505fa24d55-w320-q82-v1.webp",
+    "art-058fc3f2bf505fa24d55-w640-q82-v1.webp",
+    "art-058fc3f2bf505fa24d55-w960-q82-v1.webp",
+    "art-058fc3f2bf505fa24d55.webp",
+    "art-15b704d8bc3f4d714fa5-w320-q82-v1.webp",
+    "art-15b704d8bc3f4d714fa5-w640-q82-v1.webp",
+    "art-15b704d8bc3f4d714fa5-w960-q82-v1.webp",
+    "art-15b704d8bc3f4d714fa5.webp",
+    "art-17332a031acdf682866b-w320-q82-v1.webp",
+    "art-17332a031acdf682866b-w640-q82-v1.webp",
+    "art-17332a031acdf682866b-w960-q82-v1.webp",
+    "art-17332a031acdf682866b.webp",
+    "art-1e348d2ed12c7cb4b2d9-w320-q82-v1.webp",
+    "art-1e348d2ed12c7cb4b2d9-w640-q82-v1.webp",
+    "art-1e348d2ed12c7cb4b2d9-w960-q82-v1.webp",
+    "art-1e348d2ed12c7cb4b2d9.webp",
+    "art-2190ec809c062a5b2cff-w320-q82-v1.webp",
+    "art-2190ec809c062a5b2cff-w640-q82-v1.webp",
+    "art-2190ec809c062a5b2cff-w960-q82-v1.webp",
+    "art-2190ec809c062a5b2cff.webp",
+    "art-247f3efa121f4fa6bc3a-w320-q82-v1.webp",
+    "art-247f3efa121f4fa6bc3a-w640-q82-v1.webp",
+    "art-247f3efa121f4fa6bc3a-w960-q82-v1.webp",
+    "art-247f3efa121f4fa6bc3a.webp",
+    "art-29d101590fd36c2f3e62-w320-q82-v1.webp",
+    "art-29d101590fd36c2f3e62-w640-q82-v1.webp",
+    "art-29d101590fd36c2f3e62-w960-q82-v1.webp",
+    "art-29d101590fd36c2f3e62.webp",
+    "art-30e9f821acfcf76cf684-w320-q82-v1.webp",
+    "art-30e9f821acfcf76cf684-w640-q82-v1.webp",
+    "art-30e9f821acfcf76cf684-w960-q82-v1.webp",
+    "art-30e9f821acfcf76cf684.webp",
+    "art-32fbce7174206c28a9a2-w320-q82-v1.webp",
+    "art-32fbce7174206c28a9a2-w640-q82-v1.webp",
+    "art-32fbce7174206c28a9a2-w960-q82-v1.webp",
+    "art-32fbce7174206c28a9a2.webp",
+    "art-346dd0d3aa7639fc88bd-w320-q82-v1.webp",
+    "art-346dd0d3aa7639fc88bd-w640-q82-v1.webp",
+    "art-346dd0d3aa7639fc88bd-w960-q82-v1.webp",
+    "art-346dd0d3aa7639fc88bd.webp",
+    "art-37a0d7a207a6bdfc7899-w320-q82-v1.webp",
+    "art-37a0d7a207a6bdfc7899-w640-q82-v1.webp",
+    "art-37a0d7a207a6bdfc7899-w960-q82-v1.webp",
+    "art-37a0d7a207a6bdfc7899.webp",
+    "art-383da2c6afc9d2b32c4a-w320-q82-v1.webp",
+    "art-383da2c6afc9d2b32c4a-w640-q82-v1.webp",
+    "art-383da2c6afc9d2b32c4a-w960-q82-v1.webp",
+    "art-383da2c6afc9d2b32c4a.webp",
+    "art-42d0cb2c35631cf153c2-w320-q82-v1.webp",
+    "art-42d0cb2c35631cf153c2-w640-q82-v1.webp",
+    "art-42d0cb2c35631cf153c2-w960-q82-v1.webp",
+    "art-42d0cb2c35631cf153c2.webp",
+    "art-42eba4f036b670f6f2f1-w320-q82-v1.webp",
+    "art-42eba4f036b670f6f2f1-w640-q82-v1.webp",
+    "art-42eba4f036b670f6f2f1-w960-q82-v1.webp",
+    "art-42eba4f036b670f6f2f1.webp",
+    "art-49c003913d778c075475-w320-q82-v1.webp",
+    "art-49c003913d778c075475-w640-q82-v1.webp",
+    "art-49c003913d778c075475-w960-q82-v1.webp",
+    "art-49c003913d778c075475.webp",
+    "art-4bdba8de1b5813027e30-w320-q82-v1.webp",
+    "art-4bdba8de1b5813027e30-w640-q82-v1.webp",
+    "art-4bdba8de1b5813027e30-w960-q82-v1.webp",
+    "art-4bdba8de1b5813027e30.webp",
+    "art-4be6163112adfab82e0f-w320-q82-v1.webp",
+    "art-4be6163112adfab82e0f-w640-q82-v1.webp",
+    "art-4be6163112adfab82e0f-w960-q82-v1.webp",
+    "art-4be6163112adfab82e0f.webp",
+    "art-5a4fc618a749fca0a877-w320-q82-v1.webp",
+    "art-5a4fc618a749fca0a877-w640-q82-v1.webp",
+    "art-5a4fc618a749fca0a877-w960-q82-v1.webp",
+    "art-5a4fc618a749fca0a877.webp",
+    "art-5bba9591273f39c72b0a-w320-q82-v1.webp",
+    "art-5bba9591273f39c72b0a-w640-q82-v1.webp",
+    "art-5bba9591273f39c72b0a-w960-q82-v1.webp",
+    "art-5bba9591273f39c72b0a.webp",
+    "art-5ccff1af1cfd1749aefd-w320-q82-v1.webp",
+    "art-5ccff1af1cfd1749aefd-w640-q82-v1.webp",
+    "art-5ccff1af1cfd1749aefd-w960-q82-v1.webp",
+    "art-5ccff1af1cfd1749aefd.webp",
+    "art-5d5f66a8dc1411089c10-w320-q82-v1.webp",
+    "art-5d5f66a8dc1411089c10-w640-q82-v1.webp",
+    "art-5d5f66a8dc1411089c10-w960-q82-v1.webp",
+    "art-5d5f66a8dc1411089c10.webp",
+    "art-5d80ceae63ceb5ea40f4-w320-q82-v1.webp",
+    "art-5d80ceae63ceb5ea40f4-w640-q82-v1.webp",
+    "art-5d80ceae63ceb5ea40f4-w960-q82-v1.webp",
+    "art-5d80ceae63ceb5ea40f4.webp",
+    "art-65d49d68513da068570c-w320-q82-v1.webp",
+    "art-65d49d68513da068570c-w640-q82-v1.webp",
+    "art-65d49d68513da068570c-w960-q82-v1.webp",
+    "art-65d49d68513da068570c.webp",
+    "art-6b2398a1a08936ed2674-w320-q82-v1.webp",
+    "art-6b2398a1a08936ed2674-w640-q82-v1.webp",
+    "art-6b2398a1a08936ed2674-w960-q82-v1.webp",
+    "art-6b2398a1a08936ed2674.webp",
+    "art-70ab96bc30301250acbb-w320-q82-v1.webp",
+    "art-70ab96bc30301250acbb-w640-q82-v1.webp",
+    "art-70ab96bc30301250acbb-w960-q82-v1.webp",
+    "art-70ab96bc30301250acbb.webp",
+    "art-70e6ebbbb4910b9ed5cc-w320-q82-v1.webp",
+    "art-70e6ebbbb4910b9ed5cc-w640-q82-v1.webp",
+    "art-70e6ebbbb4910b9ed5cc-w960-q82-v1.webp",
+    "art-70e6ebbbb4910b9ed5cc.webp",
+    "art-727afe80e607e60713b2-w320-q82-v1.webp",
+    "art-727afe80e607e60713b2-w640-q82-v1.webp",
+    "art-727afe80e607e60713b2-w960-q82-v1.webp",
+    "art-727afe80e607e60713b2.webp",
+    "art-72d10732410bb495fdb9-w320-q82-v1.webp",
+    "art-72d10732410bb495fdb9-w640-q82-v1.webp",
+    "art-72d10732410bb495fdb9-w960-q82-v1.webp",
+    "art-72d10732410bb495fdb9.webp",
+    "art-76e60be537dab7e000aa-w320-q82-v1.webp",
+    "art-76e60be537dab7e000aa-w640-q82-v1.webp",
+    "art-76e60be537dab7e000aa-w960-q82-v1.webp",
+    "art-76e60be537dab7e000aa.webp",
+    "art-784fb77168fda433e6e6-w320-q82-v1.webp",
+    "art-784fb77168fda433e6e6-w640-q82-v1.webp",
+    "art-784fb77168fda433e6e6-w960-q82-v1.webp",
+    "art-784fb77168fda433e6e6.webp",
+    "art-8aa780988cfb17e8889c-w320-q82-v1.webp",
+    "art-8aa780988cfb17e8889c-w640-q82-v1.webp",
+    "art-8aa780988cfb17e8889c-w960-q82-v1.webp",
+    "art-8aa780988cfb17e8889c.webp",
+    "art-8ace24d1f1838b083b1a-w320-q82-v1.webp",
+    "art-8ace24d1f1838b083b1a-w640-q82-v1.webp",
+    "art-8ace24d1f1838b083b1a-w960-q82-v1.webp",
+    "art-8ace24d1f1838b083b1a.webp",
+    "art-8b0fb816ed07a28f5598-w320-q82-v1.webp",
+    "art-8b0fb816ed07a28f5598-w640-q82-v1.webp",
+    "art-8b0fb816ed07a28f5598-w960-q82-v1.webp",
+    "art-8b0fb816ed07a28f5598.webp",
+    "art-8be773b17d98ab5b233e-w320-q82-v1.webp",
+    "art-8be773b17d98ab5b233e-w640-q82-v1.webp",
+    "art-8be773b17d98ab5b233e-w960-q82-v1.webp",
+    "art-8be773b17d98ab5b233e.webp",
+    "art-9b720ee458e8d878f345-w320-q82-v1.webp",
+    "art-9b720ee458e8d878f345-w640-q82-v1.webp",
+    "art-9b720ee458e8d878f345-w960-q82-v1.webp",
+    "art-9b720ee458e8d878f345.webp",
+    "art-9d22a8735f2b5da9876c-w320-q82-v1.webp",
+    "art-9d22a8735f2b5da9876c-w640-q82-v1.webp",
+    "art-9d22a8735f2b5da9876c-w960-q82-v1.webp",
+    "art-9d22a8735f2b5da9876c.webp",
+    "art-aaad28f8182c44c6da77-w320-q82-v1.webp",
+    "art-aaad28f8182c44c6da77-w640-q82-v1.webp",
+    "art-aaad28f8182c44c6da77-w960-q82-v1.webp",
+    "art-aaad28f8182c44c6da77.webp",
+    "art-ab6a5052ffc53a65a41d-w320-q82-v1.webp",
+    "art-ab6a5052ffc53a65a41d-w640-q82-v1.webp",
+    "art-ab6a5052ffc53a65a41d-w960-q82-v1.webp",
+    "art-ab6a5052ffc53a65a41d.webp",
+    "art-aeace1acbe880106ce3c-w320-q82-v1.webp",
+    "art-aeace1acbe880106ce3c-w640-q82-v1.webp",
+    "art-aeace1acbe880106ce3c-w960-q82-v1.webp",
+    "art-aeace1acbe880106ce3c.webp",
+    "art-af7c2037472296770bb5-w320-q82-v1.webp",
+    "art-af7c2037472296770bb5-w640-q82-v1.webp",
+    "art-af7c2037472296770bb5-w960-q82-v1.webp",
+    "art-af7c2037472296770bb5.webp",
+    "art-b3e2408fa9aabd511476-w320-q82-v1.webp",
+    "art-b3e2408fa9aabd511476-w640-q82-v1.webp",
+    "art-b3e2408fa9aabd511476-w960-q82-v1.webp",
+    "art-b3e2408fa9aabd511476.webp",
+    "art-bd9b08f80546d269f71e-w320-q82-v1.webp",
+    "art-bd9b08f80546d269f71e-w640-q82-v1.webp",
+    "art-bd9b08f80546d269f71e-w960-q82-v1.webp",
+    "art-bd9b08f80546d269f71e.webp",
+    "art-c2d205de7fcaab6a69c4-w320-q82-v1.webp",
+    "art-c2d205de7fcaab6a69c4-w640-q82-v1.webp",
+    "art-c2d205de7fcaab6a69c4-w960-q82-v1.webp",
+    "art-c2d205de7fcaab6a69c4.webp",
+    "art-c4458653b06dc5137851-w320-q82-v1.webp",
+    "art-c4458653b06dc5137851-w640-q82-v1.webp",
+    "art-c4458653b06dc5137851-w960-q82-v1.webp",
+    "art-c4458653b06dc5137851.webp",
+    "art-c475b2558c86efc6704b-w320-q82-v1.webp",
+    "art-c475b2558c86efc6704b-w640-q82-v1.webp",
+    "art-c475b2558c86efc6704b-w960-q82-v1.webp",
+    "art-c475b2558c86efc6704b.webp",
+    "art-c7cd38a9ecb0fab4dab9-w320-q82-v1.webp",
+    "art-c7cd38a9ecb0fab4dab9-w640-q82-v1.webp",
+    "art-c7cd38a9ecb0fab4dab9-w960-q82-v1.webp",
+    "art-c7cd38a9ecb0fab4dab9.webp",
+    "art-d072669c253e6f8fe92b-w320-q82-v1.webp",
+    "art-d072669c253e6f8fe92b-w640-q82-v1.webp",
+    "art-d072669c253e6f8fe92b-w960-q82-v1.webp",
+    "art-d072669c253e6f8fe92b.webp",
+    "art-d9fa5d884a20453764e7-w320-q82-v1.webp",
+    "art-d9fa5d884a20453764e7-w640-q82-v1.webp",
+    "art-d9fa5d884a20453764e7-w960-q82-v1.webp",
+    "art-d9fa5d884a20453764e7.webp",
+    "art-dbe524ea12df30313ee6-w320-q82-v1.webp",
+    "art-dbe524ea12df30313ee6-w640-q82-v1.webp",
+    "art-dbe524ea12df30313ee6-w960-q82-v1.webp",
+    "art-dbe524ea12df30313ee6.webp",
+    "art-de8ef19f303d6e392668-w320-q82-v1.webp",
+    "art-de8ef19f303d6e392668-w640-q82-v1.webp",
+    "art-de8ef19f303d6e392668-w960-q82-v1.webp",
+    "art-de8ef19f303d6e392668.webp",
+    "art-ec299d56f3b7f73dcb75-w320-q82-v1.webp",
+    "art-ec299d56f3b7f73dcb75-w640-q82-v1.webp",
+    "art-ec299d56f3b7f73dcb75-w960-q82-v1.webp",
+    "art-ec299d56f3b7f73dcb75.webp",
+    "art-f59e0c6101cddc206c9d-w320-q82-v1.webp",
+    "art-f59e0c6101cddc206c9d-w640-q82-v1.webp",
+    "art-f59e0c6101cddc206c9d-w960-q82-v1.webp",
+    "art-f59e0c6101cddc206c9d.webp",
+    "art-fcc058e7b5624d281f0f-w320-q82-v1.webp",
+    "art-fcc058e7b5624d281f0f-w640-q82-v1.webp",
+    "art-fcc058e7b5624d281f0f-w960-q82-v1.webp",
+    "art-fcc058e7b5624d281f0f.webp",
+    "art-fe251e49677419443941-w320-q82-v1.webp",
+    "art-fe251e49677419443941-w640-q82-v1.webp",
+    "art-fe251e49677419443941-w960-q82-v1.webp",
+    "art-fe251e49677419443941.webp",
+    "art-fef2fbae94e586e5f4b7-w320-q82-v1.webp",
+    "art-fef2fbae94e586e5f4b7-w640-q82-v1.webp",
+    "art-fef2fbae94e586e5f4b7-w960-q82-v1.webp",
+    "art-fef2fbae94e586e5f4b7.webp"
+  ]
 }
