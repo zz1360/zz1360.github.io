@@ -1,8 +1,9 @@
 'use strict';
 const DATA=JSON.parse(document.getElementById('codex-data').textContent);
+const WORKS=JSON.parse(document.getElementById('works-data')?.textContent||'[]');
 const ALL=[...DATA.worlds,...DATA.planes,...DATA.history,...DATA.people,...DATA.locations,...DATA.factions,...DATA.terms];
 const BYID=Object.assign(Object.create(null),Object.fromEntries(ALL.map(x=>[x.id,x])));
-const sectionNames={overview:'阅览入口',worlds:'世界图谱',cosmos:'位面宇宙',history:'历史年表',people:'人物与神祇',atlas:'地理与势力',primer:'术语与入门',sources:'资料与边界'};
+const sectionNames={overview:'阅览入口',worlds:'世界图谱',cosmos:'位面宇宙',history:'历史年表',people:'人物与神祇',atlas:'地理与势力',primer:'术语与入门',sources:'资料与边界',works:'衍生作品'};
 const sourceNums=Object.fromEntries(Object.keys(DATA.sources).map((k,i)=>[k,String(i+1).padStart(2,'0')]));
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const refHtml=x=>`<div class="sources-inline"><span>来源</span>${[...new Set(x.src)].map(k=>`<a href="${esc(DATA.sources[k].url)}" target="_blank" rel="noopener noreferrer">[${sourceNums[k]}] ${esc(DATA.sources[k].title)}</a>`).join('')}</div>`;
@@ -42,8 +43,10 @@ searchInput.addEventListener('input',()=>{
  const q=searchInput.value.trim().toLocaleLowerCase();const results=document.getElementById('search-results');
  if(!q){results.innerHTML='';document.getElementById('search-status').textContent='输入关键词，检索全部知识条目。';return}
  const found=ALL.filter(x=>[x.name,x.en,x.id,...(x.aliases||[]),x.body,x.date||'',x.setting||'',...x.details.flat()].join(' ').toLocaleLowerCase().includes(q));
- document.getElementById('search-status').textContent=`找到 ${found.length} 个相关条目`;
- results.innerHTML=found.length?found.map(x=>`<button class="search-result" data-result="${x.id}"><small>${esc(sectionNames[x.section])}${x.date?' · '+esc(x.date):''}</small><strong>${esc(x.name)}</strong><small>${esc(x.en)}</small><p>${esc(x.body)}</p></button>`).join(''):'<p class="empty">没有找到相关条目。试试英文原名，或缩短关键词。</p>';
+ const foundWorks=WORKS.filter(x=>[x.title,x.author,x.category,x.description,x.scope].join(' ').toLocaleLowerCase().includes(q));
+ document.getElementById('search-status').textContent=`找到 ${found.length+foundWorks.length} 个相关条目${foundWorks.length?'（含 '+foundWorks.length+' 部衍生作品）':''}`;
+ const workResults=foundWorks.map(x=>`<a class="search-result work-result" href="${esc(x.url)}"><small>衍生作品 · ${esc(x.category)}</small><strong>《${esc(x.title)}》</strong><small>${esc(x.author)}</small><p>${esc(x.description)}</p></a>`).join('');
+ results.innerHTML=found.length+foundWorks.length?found.map(x=>`<button class="search-result" data-result="${x.id}"><small>${esc(sectionNames[x.section])}${x.date?' · '+esc(x.date):''}</small><strong>${esc(x.name)}</strong><small>${esc(x.en)}</small><p>${esc(x.body)}</p></button>`).join('')+workResults:'<p class="empty">没有找到相关条目。试试英文原名，或缩短关键词。</p>';
 });
 document.getElementById('search-results').addEventListener('click',e=>{const b=e.target.closest('[data-result]');if(b){searchDialog.close();openEntry(b.dataset.result)}});
 function groupFilter(group,attr,list,container,count,noun){

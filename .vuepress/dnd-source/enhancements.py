@@ -27,4 +27,7 @@ def enhance(page,data,root):
     page=page.replace('</body>','<script>'+(root/'explore.js').read_text()+'</script></body>',1)
     page=page.replace('<figure class="art-stage">','<div id="art-tools" class="entry-tools"></div><figure class="art-stage">',1)
     page=page.replace('单文件离线插图版</span>','探索功能更新 2026.10.08 · 离线插图版</span>')
+    from works import catalogue
+    page=catalogue(page,root)
+    page=page.replace("</head>","<style>"+(root/"works.css").read_text()+"</style></head>",1)
     return page

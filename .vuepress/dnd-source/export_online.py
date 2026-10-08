@@ -11,6 +11,9 @@ class PlateParser(HTMLParser):
             self.plates.append(dict(id=attrs['id'][4:],src=attrs['src']))
 
 def export(source,output):
+    offline_source_sha256=hashlib.sha256(source.encode()).hexdigest()
+    from works import prepare_online_works
+    source,works=prepare_online_works(source,output,Path(__file__).resolve().parent)
     output=Path(output);plates=PlateParser();plates.feed(source)
     gallery=json.loads(re.search(r'<script id="art-gallery-data" type="application/json">(.*?)</script>',source,re.S)[1])
     data=json.loads(re.search(r'<script id="codex-data" type="application/json">(.*?)</script>',source,re.S)[1])
@@ -48,7 +51,7 @@ def export(source,output):
     page=page.replace(marker,marker+'<a href="/" aria-label="返回小酒馆博客"><span>↩</span>返回博客</a>',1)
     page=page.replace('正文、样式、内容索引、插图和 Three.js 均嵌入本文件','正文、样式、内容索引和 Three.js 内置于页面；插图采用独立 WebP 文件与响应式尺寸')
     page=page.replace('可离线阅读 / 来源联网打开','博客在线版 / 来源联网打开').replace('可离线阅读，','在线阅读，').replace('无需联网加载字体或脚本。','无需联网加载字体或第三方脚本。').replace('离线插图版</span>','博客探索版</span>')
-    manifest=dict(url='https://blog.luckydogs.top/dnd/',source_sha256=hashlib.sha256(source.encode()).hexdigest(),originals=[],galleries={},image_count=len(images),responsive_sizes=[320,640,960],generated_files=sorted(all_files))
+    manifest=dict(url='https://blog.luckydogs.top/dnd/',works=works,source_sha256=offline_source_sha256,originals=[],galleries={},image_count=len(images),responsive_sizes=[320,640,960],generated_files=sorted(all_files))
     def asset_record(uri):return {k:v for k,v in images[uri].items() if k not in ['srcset','card','thumb']}
     for p in plates.plates:manifest['originals'].append(dict(id=p['id'],name=entries[p['id']]['name'],**asset_record(p['src'])))
     for id,a in gallery.items():manifest['galleries'][id]=[dict(title=x['title'],**asset_record(x['src'])) for x in a]
