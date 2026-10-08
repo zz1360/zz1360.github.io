@@ -34,7 +34,16 @@ if '视觉预览' in (dist/'index.html').read_text() or '排版样例' in (dist/
 
 with tempfile.TemporaryDirectory(prefix='bit-tavern-release-') as temporary:
     release = Path(temporary)/'site'
-    git('clone', '--depth', '1', '--branch', 'main', 'https://github.com/zz1360/zz1360.github.io.git', str(release))
+    # Reuse cached objects when available; remote main remains the release baseline.
+    cache = root.parent/'published-site'
+    remote = 'https://github.com/zz1360/zz1360.github.io.git'
+    if (cache/'.git').is_dir():
+        git('clone', '--no-hardlinks', str(cache), str(release))
+        git('remote', 'set-url', 'origin', remote, cwd=release)
+        git('fetch', '--depth', '1', 'origin', 'main', cwd=release)
+        git('checkout', '--detach', 'FETCH_HEAD', cwd=release)
+    else:
+        git('clone', '--depth', '1', '--branch', 'main', remote, str(release))
     baseline = git('rev-parse', 'HEAD', cwd=release, capture=True)
     if args.expected_base and baseline != args.expected_base:
         raise SystemExit('The published branch changed; refresh and verify before retrying. Current: '+baseline)

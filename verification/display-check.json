@@ -1,0 +1,52 @@
+{
+  "passed": true,
+  "origin": "http://127.0.0.1:8887",
+  "sizes": [
+    {
+      "width": 1920,
+      "height": 1080,
+      "dndArchives": 30,
+      "yinhunCharacters": 12
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "dndArchives": 30,
+      "yinhunCharacters": 12
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "dndArchives": 30,
+      "yinhunCharacters": 12
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "dndArchives": 30,
+      "yinhunCharacters": 12
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "dndArchives": 30,
+      "yinhunCharacters": 12
+    },
+    {
+      "width": 320,
+      "height": 760,
+      "dndArchives": 30,
+      "yinhunCharacters": 12
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "dndArchives": 30,
+      "yinhunCharacters": 12
+    }
+  ],
+  "fullIllustrations": true,
+  "dialogBounds": true,
+  "jsErrors": [],
+  "failedResources": []
+}

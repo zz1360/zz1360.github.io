@@ -94,7 +94,7 @@ def prepare_online_works(codex,output,root):
             if not info:return tag
             hero='data-portrait=' not in tag
             tag=tag.replace('src="'+info['url']+'"','src="'+(info['card'] if hero else info['thumb'])+'"',1)
-            attrs=f' data-full="{info["url"]}" data-thumb="{info["thumb"]}" data-srcset="{info["srcset"]}" srcset="{info["srcset"]}" sizes="'+('(max-width:700px) 90vw, 520px' if hero else '(max-width:700px) 45vw, 280px')+'"'
+            attrs=f' data-full="{info["url"]}" data-thumb="{info["thumb"]}" data-srcset="{info["srcset"]}" srcset="{info["srcset"]}" sizes="'+('(max-width:700px) 90vw, 360px' if hero else '(max-width:700px) 45vw, 280px')+'"'
             if 'decoding=' not in tag:attrs+=' decoding="async"'
             if 'loading=' not in tag and not hero:attrs+=' loading="lazy"'
             return tag[:-1]+attrs+'>'

@@ -48,7 +48,7 @@ def export(source,output):
     page=re.sub(r'(<script id="art-gallery-data" type="application/json">).*?(</script>)',lambda m:m[1]+json.dumps(online_gallery,ensure_ascii=False).replace('</','<\\/')+m[2],page,flags=re.S)
     page=page.replace('<head>','<head><link rel="canonical" href="https://blog.luckydogs.top/dnd/">',1)
     marker='<nav class="nav" aria-label="百科章节">';assert page.count(marker)==1
-    page=page.replace(marker,marker+'<a href="/" aria-label="返回小酒馆博客"><span>↩</span>返回博客</a>',1)
+    page=page.replace(marker,marker+'<a href="/" aria-label="返回比特酒馆"><span>↩</span>返回酒馆</a>',1)
     page=page.replace('正文、样式、内容索引、插图和 Three.js 均嵌入本文件','正文、样式、内容索引和 Three.js 内置于页面；插图采用独立 WebP 文件与响应式尺寸')
     page=page.replace('可离线阅读 / 来源联网打开','博客在线版 / 来源联网打开').replace('可离线阅读，','在线阅读，').replace('无需联网加载字体或脚本。','无需联网加载字体或第三方脚本。').replace('离线插图版</span>','博客探索版</span>')
     manifest=dict(url='https://blog.luckydogs.top/dnd/',works=works,source_sha256=offline_source_sha256,originals=[],galleries={},image_count=len(images),responsive_sizes=[320,640,960],generated_files=sorted(all_files))
