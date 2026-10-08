@@ -1,0 +1,798 @@
+[
+  {
+    "a": "mystra",
+    "b": "elminster",
+    "label": "选民",
+    "note": "伊尔明斯特是密斯特拉的选民。",
+    "src": [
+      "heroes"
+    ]
+  },
+  {
+    "a": "mystra",
+    "b": "laeral",
+    "label": "选民",
+    "note": "莱拉尔是密斯特拉的选民；城市身份须按具体作品理解。",
+    "src": [
+      "heroes"
+    ]
+  },
+  {
+    "a": "mystra",
+    "b": "alustriel",
+    "label": "选民",
+    "note": "艾拉斯卓是密斯特拉的选民。",
+    "src": [
+      "heroes"
+    ]
+  },
+  {
+    "a": "laeral",
+    "b": "waterdeep",
+    "label": "城市治理",
+    "note": "《深水城：龙劫》的莱拉尔担任深水城公开领主。",
+    "src": [
+      "heroes",
+      "places"
+    ]
+  },
+  {
+    "a": "mystra",
+    "b": "weave-term",
+    "label": "魔法体系",
+    "note": "密斯特拉与魔网相连；魔网是凡人运用魔法的媒介。",
+    "src": [
+      "weave",
+      "gods"
+    ]
+  },
+  {
+    "a": "karsus",
+    "b": "netheril-fall",
+    "label": "灾难参与者",
+    "note": "卡尔萨斯试图夺取的是密斯翠尔的神力；不要与后来的午夜混为一人。",
+    "src": [
+      "karsus"
+    ]
+  },
+  {
+    "a": "mystra",
+    "b": "netheril-fall",
+    "label": "神格沿革",
+    "note": "这里追踪魔法女神的沿革，不是把所有事件写成午夜个人的生平。",
+    "src": [
+      "karsus"
+    ]
+  },
+  {
+    "a": "mystra",
+    "b": "time-troubles",
+    "label": "神格沿革",
+    "note": "动荡之年后，午夜成为新的密斯特拉。",
+    "src": [
+      "tot"
+    ]
+  },
+  {
+    "a": "mystra",
+    "b": "spellplague",
+    "label": "魔网危机",
+    "note": "1385 DR 女神遇害，魔网崩溃，引发法术瘟疫。",
+    "src": [
+      "plague",
+      "weave"
+    ]
+  },
+  {
+    "a": "shar",
+    "b": "spellplague",
+    "label": "事件参与者",
+    "note": "莎尔协助希瑞克对密斯特拉的谋杀；背景须按相应时期理解。",
+    "src": [
+      "plague"
+    ]
+  },
+  {
+    "a": "shar",
+    "b": "selune",
+    "label": "神祇对立",
+    "note": "莎尔与苏伦的对立是费伦神话的重要线索。",
+    "src": [
+      "shar",
+      "gods"
+    ]
+  },
+  {
+    "a": "shar",
+    "b": "shade-return",
+    "label": "阴影与帝国",
+    "note": "莎尔的阴影力量与阴魂城的历史相连。",
+    "src": [
+      "shar",
+      "shade"
+    ]
+  },
+  {
+    "a": "elminster",
+    "b": "shade-fall",
+    "label": "终局冲突",
+    "note": "伊尔明斯特参与阴魂城与密斯·卓诺的终局冲突。",
+    "src": [
+      "shade",
+      "myth"
+    ]
+  },
+  {
+    "a": "drizzt",
+    "b": "bruenor",
+    "label": "同伴",
+    "note": "布鲁诺与崔斯特是重要伙伴。",
+    "src": [
+      "heroes"
+    ]
+  },
+  {
+    "a": "drizzt",
+    "b": "menzo",
+    "label": "人物出身",
+    "note": "崔斯特出身魔索布莱城，后来走向地表。",
+    "src": [
+      "heroes",
+      "drizzt"
+    ]
+  },
+  {
+    "a": "drizzt",
+    "b": "icewind",
+    "label": "早期故事",
+    "note": "冰风谷是认识崔斯特早期故事的入口。",
+    "src": [
+      "drizzt",
+      "places"
+    ]
+  },
+  {
+    "a": "drizzt",
+    "b": "lolth",
+    "label": "个人选择",
+    "note": "崔斯特背离罗丝主导的卓尔社会道路。",
+    "src": [
+      "heroes",
+      "gods"
+    ]
+  },
+  {
+    "a": "jarlaxle",
+    "b": "menzo",
+    "label": "人物出身",
+    "note": "贾拉索的故事根植于魔索布莱城。",
+    "src": [
+      "jarlaxle",
+      "heroes"
+    ]
+  },
+  {
+    "a": "jarlaxle",
+    "b": "bregan",
+    "label": "组织领袖",
+    "note": "贾拉索领导达耶特佣兵团。",
+    "src": [
+      "jarlaxle"
+    ]
+  },
+  {
+    "a": "lolth",
+    "b": "menzo",
+    "label": "当地信仰",
+    "note": "罗丝信仰与魔索布莱城的卓尔社会相连。",
+    "src": [
+      "heroes",
+      "gods"
+    ]
+  },
+  {
+    "a": "menzo",
+    "b": "underdark",
+    "label": "地理层次",
+    "note": "魔索布莱城属于幽暗地域；地下世界不是地表道路上的下一站。",
+    "src": [
+      "places",
+      "heroes"
+    ]
+  },
+  {
+    "a": "neverwinter",
+    "b": "ruining",
+    "label": "城市灾变",
+    "note": "无冬城大灾变与后来的重建构成城市背景。",
+    "src": [
+      "hotenow",
+      "places"
+    ]
+  },
+  {
+    "a": "neverwinter",
+    "b": "phandalin",
+    "label": "区域阅读",
+    "note": "从无冬城与北地背景阅读凡达林；这是区域导航关联。",
+    "src": [
+      "places"
+    ]
+  },
+  {
+    "a": "baldurs",
+    "b": "minsc",
+    "label": "作品背景",
+    "note": "明斯克与布布是博德之门故事中的标志性组合。",
+    "src": [
+      "heroes",
+      "places"
+    ]
+  },
+  {
+    "a": "zariel",
+    "b": "hells",
+    "label": "阿弗纳斯",
+    "note": "扎瑞尔的基础身份与九层地狱第一层相连；冒险分支可能改变其状态。",
+    "src": [
+      "zariel",
+      "planes"
+    ]
+  },
+  {
+    "a": "hells",
+    "b": "abyss",
+    "label": "血战",
+    "note": "魔鬼与恶魔的漫长战争连接两类下层位面。",
+    "src": [
+      "blood"
+    ]
+  },
+  {
+    "a": "fiends",
+    "b": "hells",
+    "label": "魔鬼领域",
+    "note": "九层地狱是认识魔鬼的重要入口。",
+    "src": [
+      "planes",
+      "devil"
+    ]
+  },
+  {
+    "a": "fiends",
+    "b": "abyss",
+    "label": "恶魔领域",
+    "note": "无底深渊是认识恶魔的重要入口。",
+    "src": [
+      "planes",
+      "blood"
+    ]
+  },
+  {
+    "a": "lady",
+    "b": "sigil",
+    "label": "城市秩序",
+    "note": "痛苦女士与印记城秩序相连；真实身份仍未知。",
+    "src": [
+      "sigil"
+    ]
+  },
+  {
+    "a": "planescape",
+    "b": "sigil",
+    "label": "设定舞台",
+    "note": "印记城是异度风景的重要舞台。",
+    "src": [
+      "planescape",
+      "sigil"
+    ]
+  },
+  {
+    "a": "portal",
+    "b": "sigil",
+    "label": "旅行方式",
+    "note": "印记城的传送门是认识位面旅行的入口。",
+    "src": [
+      "sigil",
+      "planes"
+    ]
+  },
+  {
+    "a": "spelljammer",
+    "b": "astral",
+    "label": "航行框架",
+    "note": "这里采用 2022 年第五版魔法船的星界航行框架。",
+    "src": [
+      "spelljammer"
+    ]
+  },
+  {
+    "a": "ravenloft",
+    "b": "shadowfell",
+    "label": "第五版框架",
+    "note": "第五版以暗影冥界中的恐惧领域介绍鸦阁。",
+    "src": [
+      "raven"
+    ]
+  },
+  {
+    "a": "strahd",
+    "b": "ravenloft",
+    "label": "领域统治者",
+    "note": "斯特拉德与鸦阁的巴洛维亚相连。",
+    "src": [
+      "raven"
+    ]
+  },
+  {
+    "a": "greyhawk",
+    "b": "tasha",
+    "label": "故事根源",
+    "note": "塔莎的故事根植于灰鹰，后来出现于跨位面叙事。",
+    "src": [
+      "three"
+    ]
+  },
+  {
+    "a": "greyhawk",
+    "b": "mordenkainen",
+    "label": "故事根源",
+    "note": "魔邓肯的故事根植于灰鹰。",
+    "src": [
+      "three"
+    ]
+  },
+  {
+    "a": "greyhawk",
+    "b": "vecna",
+    "label": "故事根源",
+    "note": "维克那的故事根植于灰鹰，威胁延伸到多元宇宙。",
+    "src": [
+      "greyhawk",
+      "vecna"
+    ]
+  },
+  {
+    "a": "alustriel",
+    "b": "vecna",
+    "label": "跨位面故事",
+    "note": "《维克那：毁灭前夕》提供交会背景；这不确定冒险最终结局。",
+    "src": [
+      "three"
+    ]
+  },
+  {
+    "a": "vecna",
+    "b": "lich",
+    "label": "身份层次",
+    "note": "维克那从巫妖发展为神祇；巫妖并不自动等于神。",
+    "src": [
+      "vecna"
+    ]
+  },
+  {
+    "a": "krynn",
+    "b": "raistlin",
+    "label": "设定人物",
+    "note": "雷斯林属于龙枪叙事。",
+    "src": [
+      "raistlin"
+    ]
+  },
+  {
+    "a": "krynn",
+    "b": "tanis",
+    "label": "设定人物",
+    "note": "坦尼斯属于龙枪叙事。",
+    "src": [
+      "tanis"
+    ]
+  },
+  {
+    "a": "eberron",
+    "b": "blades",
+    "label": "战后背景",
+    "note": "刀锋领主属于艾伯伦的战后背景；动机与秘密保留未知。",
+    "src": [
+      "eberron"
+    ]
+  },
+  {
+    "a": "mythal",
+    "b": "myth-golden",
+    "label": "城市魔法",
+    "note": "迷锁帮助理解密斯·卓诺的魔法与城市背景。",
+    "src": [
+      "myth"
+    ]
+  },
+  {
+    "a": "dr",
+    "b": "standing-stone",
+    "label": "历法基准",
+    "note": "立石盟约与谷地纪年的起点相关。",
+    "src": [
+      "stone"
+    ]
+  },
+  {
+    "a": "chosen",
+    "b": "mystra",
+    "label": "选民概念",
+    "note": "通过密斯特拉的选民理解这一神祇授予身份。",
+    "src": [
+      "heroes"
+    ]
+  },
+  {
+    "a": "material",
+    "b": "setting",
+    "label": "概念层次",
+    "note": "设定与物质位面分别回答叙事背景与存在分类的问题。",
+    "src": [
+      "planes",
+      "fr"
+    ]
+  },
+  {
+    "a": "outer",
+    "b": "alignment",
+    "label": "理念领域",
+    "note": "外层位面与理念、道德及神祇领域相连。",
+    "src": [
+      "planes",
+      "gods"
+    ]
+  },
+  {
+    "a": "feywild",
+    "b": "material",
+    "label": "凡世映像",
+    "note": "妖精荒野是物质位面的映像之一。",
+    "src": [
+      "planes"
+    ]
+  },
+  {
+    "a": "shadowfell",
+    "b": "material",
+    "label": "凡世映像",
+    "note": "暗影冥界是物质位面的映像之一。",
+    "src": [
+      "planes"
+    ]
+  },
+  {
+    "a": "ethereal",
+    "b": "material",
+    "label": "过渡层次",
+    "note": "以太位面帮助理解与凡世相连的过渡层次。",
+    "src": [
+      "planes"
+    ]
+  },
+  {
+    "a": "demiplane",
+    "b": "portal",
+    "label": "概念阅读",
+    "note": "共同阅读半位面与位面入口，不表示每个半位面都有同一种门户。",
+    "src": [
+      "planes",
+      "sigil"
+    ]
+  },
+  {
+    "a": "elemental",
+    "b": "material",
+    "label": "存在分类",
+    "note": "比较物质与元素位面；这不是天体轨道或距离。",
+    "src": [
+      "planes"
+    ]
+  },
+  {
+    "a": "athas",
+    "b": "setting",
+    "label": "设定差异",
+    "note": "阿塔斯提醒读者分别理解各个设定的宇宙观与魔法条件。",
+    "src": [
+      "athas",
+      "planes"
+    ]
+  },
+  {
+    "a": "dnd",
+    "b": "setting",
+    "label": "入门概念",
+    "note": "先区分规则语言与具体故事设定。",
+    "src": [
+      "planes",
+      "fr"
+    ]
+  },
+  {
+    "a": "fr",
+    "b": "setting",
+    "label": "设定尺度",
+    "note": "从被遗忘的国度理解设定、世界、大陆与区域的尺度。",
+    "src": [
+      "fr"
+    ]
+  },
+  {
+    "a": "waterdeep",
+    "b": "harpers",
+    "label": "城市势力阅读",
+    "note": "在深水城背景下阅读竖琴手的理念与网络。",
+    "src": [
+      "factions"
+    ]
+  },
+  {
+    "a": "waterdeep",
+    "b": "zhents",
+    "label": "城市势力阅读",
+    "note": "在深水城背景下阅读散塔林会的利益与行动。",
+    "src": [
+      "factions"
+    ]
+  },
+  {
+    "a": "lords",
+    "b": "waterdeep",
+    "label": "城邦合作阅读",
+    "note": "结合城市条目理解领主联盟的合作模式，不代表成员在所有年代不变。",
+    "src": [
+      "factions",
+      "places"
+    ]
+  },
+  {
+    "a": "emerald",
+    "b": "phandalin",
+    "label": "自然与边境阅读",
+    "note": "共同阅读边境生活与翡翠结社理念；不声称此处发生某场行动。",
+    "src": [
+      "factions",
+      "places"
+    ]
+  },
+  {
+    "a": "gauntlet",
+    "b": "fiends",
+    "label": "威胁与信仰阅读",
+    "note": "比较铁手教团的理念与邪魔类别；不声称一次具体战役。",
+    "src": [
+      "factions",
+      "blood"
+    ]
+  },
+  {
+    "a": "candlekeep",
+    "b": "portal",
+    "label": "冒险入口阅读",
+    "note": "把知识探索与位面旅行作为两条阅读线索，不声称某座传送门存在。",
+    "src": [
+      "places",
+      "sigil"
+    ]
+  },
+  {
+    "a": "deadthree",
+    "b": "time-troubles",
+    "label": "神祇时代变化",
+    "note": "死亡三神的状态依赖故事时代；结合动荡之年阅读神职更替。",
+    "src": [
+      "gods",
+      "tot",
+      "second"
+    ]
+  },
+  {
+    "a": "first-sundering",
+    "b": "crown-wars",
+    "label": "年表后续",
+    "note": "按年表先后继续阅读；相邻排列不表示直接因果。",
+    "src": [
+      "first",
+      "crown"
+    ]
+  },
+  {
+    "a": "crown-wars",
+    "b": "netheril-fall",
+    "label": "年表后续",
+    "note": "按年表先后继续阅读；相邻排列不表示直接因果。",
+    "src": [
+      "crown",
+      "karsus"
+    ]
+  },
+  {
+    "a": "netheril-fall",
+    "b": "standing-stone",
+    "label": "年表后续",
+    "note": "按年表先后继续阅读；相邻排列不表示直接因果。",
+    "src": [
+      "karsus",
+      "stone"
+    ]
+  },
+  {
+    "a": "standing-stone",
+    "b": "myth-golden",
+    "label": "年表后续",
+    "note": "按年表先后继续阅读；相邻排列不表示直接因果。",
+    "src": [
+      "stone",
+      "myth"
+    ]
+  },
+  {
+    "a": "myth-golden",
+    "b": "myth-fall",
+    "label": "年表后续",
+    "note": "按年表先后继续阅读；相邻排列不表示直接因果。",
+    "src": [
+      "myth"
+    ]
+  },
+  {
+    "a": "myth-fall",
+    "b": "time-troubles",
+    "label": "年表后续",
+    "note": "按年表先后继续阅读；相邻排列不表示直接因果。",
+    "src": [
+      "myth",
+      "tot",
+      "fr"
+    ]
+  },
+  {
+    "a": "time-troubles",
+    "b": "shade-return",
+    "label": "年表后续",
+    "note": "按年表先后继续阅读；相邻排列不表示直接因果。",
+    "src": [
+      "tot",
+      "fr",
+      "shade"
+    ]
+  },
+  {
+    "a": "shade-return",
+    "b": "spellplague",
+    "label": "年表后续",
+    "note": "按年表先后继续阅读；相邻排列不表示直接因果。",
+    "src": [
+      "shade",
+      "plague",
+      "weave",
+      "second"
+    ]
+  },
+  {
+    "a": "spellplague",
+    "b": "ruining",
+    "label": "年表后续",
+    "note": "按年表先后继续阅读；相邻排列不表示直接因果。",
+    "src": [
+      "plague",
+      "weave",
+      "second",
+      "hotenow",
+      "places"
+    ]
+  },
+  {
+    "a": "ruining",
+    "b": "second-sundering",
+    "label": "年表后续",
+    "note": "按年表先后继续阅读；相邻排列不表示直接因果。",
+    "src": [
+      "hotenow",
+      "places",
+      "second"
+    ]
+  },
+  {
+    "a": "second-sundering",
+    "b": "shade-fall",
+    "label": "年表后续",
+    "note": "按年表先后继续阅读；相邻排列不表示直接因果。",
+    "src": [
+      "second",
+      "shade",
+      "myth"
+    ]
+  },
+  {
+    "a": "shade-fall",
+    "b": "modern",
+    "label": "年表后续",
+    "note": "按年表先后继续阅读；相邻排列不表示直接因果。",
+    "src": [
+      "shade",
+      "myth",
+      "fr"
+    ]
+  },
+  {
+    "a": "fr",
+    "b": "icewind",
+    "label": "所属设定",
+    "note": "这是被遗忘的国度的地点入口；城市状态须按作品与年代理解。",
+    "src": [
+      "places",
+      "drizzt"
+    ]
+  },
+  {
+    "a": "fr",
+    "b": "neverwinter",
+    "label": "所属设定",
+    "note": "这是被遗忘的国度的地点入口；城市状态须按作品与年代理解。",
+    "src": [
+      "places",
+      "hotenow"
+    ]
+  },
+  {
+    "a": "fr",
+    "b": "waterdeep",
+    "label": "所属设定",
+    "note": "这是被遗忘的国度的地点入口；城市状态须按作品与年代理解。",
+    "src": [
+      "places",
+      "heroes",
+      "factions"
+    ]
+  },
+  {
+    "a": "fr",
+    "b": "baldurs",
+    "label": "所属设定",
+    "note": "这是被遗忘的国度的地点入口；城市状态须按作品与年代理解。",
+    "src": [
+      "places"
+    ]
+  },
+  {
+    "a": "fr",
+    "b": "candlekeep",
+    "label": "所属设定",
+    "note": "这是被遗忘的国度的地点入口；城市状态须按作品与年代理解。",
+    "src": [
+      "places"
+    ]
+  },
+  {
+    "a": "fr",
+    "b": "phandalin",
+    "label": "所属设定",
+    "note": "这是被遗忘的国度的地点入口；城市状态须按作品与年代理解。",
+    "src": [
+      "places"
+    ]
+  },
+  {
+    "a": "fr",
+    "b": "underdark",
+    "label": "所属设定",
+    "note": "这是被遗忘的国度的地点入口；城市状态须按作品与年代理解。",
+    "src": [
+      "places",
+      "heroes"
+    ]
+  },
+  {
+    "a": "fr",
+    "b": "menzo",
+    "label": "所属设定",
+    "note": "这是被遗忘的国度的地点入口；城市状态须按作品与年代理解。",
+    "src": [
+      "heroes",
+      "jarlaxle"
+    ]
+  }
+]

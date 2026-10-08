@@ -1,0 +1,14 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { publishedPosts, displayDate, postUrl } from '../../lib/posts';
+import preview from '../../assets/book.svg?raw';
+const posts = await publishedPosts();
+
+---
+<Layout title="Blog" description="0101 比特酒馆的个人记录：想法、经验与生活中的小发现。" view="blog">
+  <section class="view wrap blog-view">
+    <div class="page-heading"><p class="eyebrow">01 / THE JOURNAL</p><h1>Blog<span class="heading-rule"></span></h1><p>把值得记住的事，慢慢写下来。</p></div>
+    <div class="blog-bar"><span class="active-tab">全部记录 <b>{posts.length}</b></span>{posts.length > 0 ? <a class="rss-link" href="/rss.xml">RSS 订阅 ↗</a> : <span class="subtle">新的旅程，从第一篇开始</span>}</div>
+    {posts.length === 0 ? <section class="empty-state"><div class="empty-book" aria-hidden="true" set:html={preview}></div><p class="eyebrow">A NEW CHAPTER</p><h2>新的记录，从这里开始。</h2><p>这里暂时没有文章。<br/>留给下一次灵感、一次发现，或一个值得记住的夜晚。</p></section> : <div class="post-list">{posts.map(post => <a class="post-card" href={postUrl(post.id)}><time datetime={post.data.date.toISOString()}>{displayDate(post.data.date)}</time><h2>{post.data.title}</h2><p>{post.data.description}</p><span class="card-link">继续阅读 ↗</span></a>)}</div>}
+  </section>
+</Layout>

@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.astro/
+public/dnd/
+.DS_Store
+__pycache__/
+verification/*.png
+verification/import.json
+verification/invalid.json
+verification/*backup.json
+verification/last-release.json

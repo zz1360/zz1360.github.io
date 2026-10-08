@@ -1,0 +1,58 @@
+---
+import '../styles/site.css';
+import Logo from '../components/Logo.astro';
+interface Props { title?: string; description?: string; view?: string; noindex?: boolean; }
+const { title = '0101 比特酒馆', description = '记录所见，探索未至之境。0101 比特酒馆：个人博客与 DND 奇幻世界探索。', view = 'home', noindex = false } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+---
+<!doctype html>
+<html lang="zh-CN" data-view={view} data-season="regular" data-reading-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#101118" />
+    <title>{title === '0101 比特酒馆' ? title : `${title} · 0101 比特酒馆`}</title>
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="alternate" type="application/rss+xml" title="0101 比特酒馆 · Blog" href="/rss.xml" />
+    <meta property="og:type" content={view === 'article' ? 'article' : 'website'} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={new URL('/assets/tavern-hero.webp', Astro.site)} />
+    {noindex && <meta name="robots" content="noindex" />}
+    <script is:inline>
+      (() => {
+        const parts = new Intl.DateTimeFormat('en-US', { timeZone: 'Asia/Shanghai', month: '2-digit', day: '2-digit' }).formatToParts(new Date());
+        let choice = 'auto', reading = 'dark';
+        try { choice = localStorage.getItem('bit-tavern-season') || 'auto'; reading = localStorage.getItem('bit-tavern-reading') || 'dark'; } catch {}
+        const auto = parts.find(p => p.type === 'month').value === '10' && parts.find(p => p.type === 'day').value === '31' ? 'halloween' : 'regular';
+        document.documentElement.dataset.season = ['regular', 'halloween'].includes(choice) ? choice : auto;
+        document.documentElement.dataset.readingTheme = reading === 'light' ? 'light' : 'dark';
+      })();
+    </script>
+  </head>
+  <body>
+    <a class="skip" href="#main">跳到内容</a>
+    <div class="site-shell">
+      <header class="site-header wrap">
+        <a class="brand" href="/" aria-label="0101 比特酒馆 · 返回首页"><span class="brand-mark"><Logo /></span><span class="brand-name">比特酒馆<small>THE BIT TAVERN</small></span></a>
+        <nav aria-label="主导航"><a href="/blog/" aria-current={['blog','article'].includes(view) ? 'page' : undefined}>Blog</a><a href="/explore/dnd/" aria-current={view === 'dnd' ? 'page' : undefined}>DND</a></nav>
+        <button class="preview-trigger icon-button" id="appearance-trigger" aria-label="打开外观设置" aria-expanded="false" aria-controls="appearance-panel" title="外观设置"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><g stroke="currentColor" stroke-width="1.5"><path d="M4 7h16M4 17h16"/><circle cx="9" cy="7" r="3" fill="var(--bg)"/><circle cx="15" cy="17" r="3" fill="var(--bg)"/></g></svg></button>
+      </header>
+      <main id="main" tabindex="-1"><slot /></main>
+      <footer class="site-footer wrap"><div><span class="footer-star">✦</span> 0101 比特酒馆 <span class="footer-divider">/</span><span class="footer-note">记录与探索，都有一处落脚。</span></div><div><span>WRITE · WANDER · WONDER</span><button class="footer-license" id="license-button">字体与素材</button></div></footer>
+    </div>
+    <section id="appearance-panel" class="preview-panel" hidden aria-labelledby="appearance-title">
+      <div class="preview-panel-head"><h2 id="appearance-title">外观设置</h2><button class="icon-button" id="preview-close" aria-label="关闭外观设置">×</button></div>
+      <label for="season-select">0101 节日标志</label><select id="season-select"><option value="auto">按节日自动切换</option><option value="regular">常规版</option><option value="halloween">万圣节版</option></select>
+      <div class="preview-mini"><Logo /></div><p>自动模式按北京时间在 10 月 31 日使用万圣节版，其余日期使用常规版。</p>
+      <label for="reading-select">文章阅读配色</label><select id="reading-select"><option value="dark">夜读</option><option value="light">日读</option></select><p>阅读配色用于 Blog 文章，设置仅保存在当前浏览器。</p>
+    </section>
+    <dialog id="license-dialog" aria-labelledby="license-title"><div class="license-top"><h2 id="license-title">字体与素材</h2><button class="icon-button" id="license-close" aria-label="关闭字体与素材说明">×</button></div><div class="license-copy"><p>英文标题使用 Cinzel，中文展示标题使用 Noto Serif SC，正文使用系统字体。两款展示字体采用 SIL Open Font License 1.1，可免费使用。</p><p><a href="/licenses/Cinzel-OFL.txt" target="_blank" rel="noopener">Cinzel 完整字体许可 ↗</a><br/><a href="/licenses/NotoSerifSC-OFL.txt" target="_blank" rel="noopener">Noto Serif SC 完整字体许可 ↗</a></p><p>0101 两版标志为原创 SVG。酒馆主视觉由内置 imagegen 生成；DND 城市图复用百科的 AI 概念插画，属于艺术演绎，不作为官方地图。</p></div></dialog>
+    <script>
+      import '../scripts/site';
+    </script>
+  </body>
+</html>

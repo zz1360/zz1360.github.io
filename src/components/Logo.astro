@@ -1,0 +1,8 @@
+---
+import regularSvg from '../assets/0101-regular.svg?raw';
+import halloweenSvg from '../assets/0101-halloween.svg?raw';
+const id = crypto.randomUUID();
+const regular = regularSvg.replaceAll('regular-mark', id+'-regular');
+const halloween = halloweenSvg.replaceAll('halloween-mark', id+'-halloween');
+---
+<span class="season-mark regular" aria-hidden="true" set:html={regular}></span><span class="season-mark halloween" aria-hidden="true" set:html={halloween}></span>

@@ -1,0 +1,19 @@
+---
+import { render } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import { publishedPosts, displayDate } from '../../lib/posts';
+export async function getStaticPaths() {
+  return (await publishedPosts()).map(post => ({ params: { id: post.id }, props: { post } }));
+}
+interface Props { post: CollectionEntry<'blog'>; }
+const { post } = Astro.props;
+const { Content, headings } = await render(post);
+---
+<Layout title={post.data.title} description={post.data.description} view="article">
+  <section class="view article-view"><div class="article-wrap">
+    <a class="article-back" href="/blog/">← 返回 Blog</a>
+    <header class="article-header"><div class="article-kicker"><span class="label">{post.data.category}</span><span>{post.data.tags.join(' · ')}</span></div><h1>{post.data.title}</h1><p class="article-deck">{post.data.description}</p><div class="article-meta"><time datetime={post.data.date.toISOString()}>{displayDate(post.data.date)}</time>{post.data.updated && <span>更新于 {displayDate(post.data.updated)}</span>}<div class="reading-switch" role="group" aria-label="文章阅读配色"><button data-reading="dark" aria-pressed="true">夜读</button><button data-reading="light" aria-pressed="false">日读</button></div></div></header>
+    <div class="article-layout"><article class="article-body"><Content /><div class="article-end"><span>✦</span><p>灯还亮着，故事慢慢写。</p></div></article><aside class="article-toc" aria-label="文章目录"><p class="eyebrow">ON THIS PAGE</p>{headings.filter(h => h.depth === 2 || h.depth === 3).map(h => <a href={`#${h.slug}`}>{h.text}</a>)}<div class="toc-seal">0101<small>KEEP WONDERING</small></div></aside></div>
+  </div></section>
+</Layout>

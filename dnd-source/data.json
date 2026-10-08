@@ -1,0 +1,1859 @@
+{
+  "sources": {
+    "planes": {
+      "title": "Basic Rules · Appendix D: The Planes of Existence",
+      "url": "https://www.dndbeyond.com/sources/dnd/basic-rules-2014/appendix-d-the-planes-of-existence",
+      "kind": "官方基础规则",
+      "note": "采用第五版的基本位面分类；其他版本和具体设定可能不同。"
+    },
+    "gods": {
+      "title": "Basic Rules · Appendix B: Gods of the Multiverse",
+      "url": "https://www.dndbeyond.com/sources/dnd/basic-rules-2014/appendix-b-gods-of-the-multiverse",
+      "kind": "官方基础规则",
+      "note": ""
+    },
+    "fey": {
+      "title": "Welcome to the Feywild",
+      "url": "https://www.dndbeyond.com/posts/1015-welcome-to-the-feywild-a-beginners-guide-to-the",
+      "kind": "官方文章",
+      "note": ""
+    },
+    "echo": {
+      "title": "Shadowfell and Feywild Explained",
+      "url": "https://www.dndbeyond.com/posts/43-d-ds-shadowfell-and-feywild-explained",
+      "kind": "官方文章",
+      "note": ""
+    },
+    "ethereal": {
+      "title": "What Is the Ethereal Plane?",
+      "url": "https://www.dndbeyond.com/posts/1239-what-is-the-ethereal-plane-get-lost-in-this-realm",
+      "kind": "官方文章",
+      "note": ""
+    },
+    "spelljammer": {
+      "title": "Set Sail for the Stars With Spelljammer",
+      "url": "https://www.dndbeyond.com/posts/1312-set-sail-for-the-stars-with-spelljammer-adventures",
+      "kind": "官方文章",
+      "note": ""
+    },
+    "sigil": {
+      "title": "What to Know Before You Visit Sigil",
+      "url": "https://www.dndbeyond.com/posts/1576-what-to-know-before-you-visit-sigil-the-city-at",
+      "kind": "官方文章",
+      "note": ""
+    },
+    "planescape": {
+      "title": "What Is Planescape?",
+      "url": "https://www.dndbeyond.com/posts/1529-what-is-planescape-adventures-in-the-multiverse-a",
+      "kind": "官方文章",
+      "note": ""
+    },
+    "blood": {
+      "title": "The Blood War: Too Big, Too Small, or Just Right?",
+      "url": "https://www.dndbeyond.com/posts/233-the-blood-war-too-big-too-small-or-just-right",
+      "kind": "官方文章",
+      "note": ""
+    },
+    "zariel": {
+      "title": "Welcome to Avernus",
+      "url": "https://www.dndbeyond.com/posts/494-live-from-the-descent-welcome-to-avernus",
+      "kind": "官方文章",
+      "note": ""
+    },
+    "devil": {
+      "title": "How to Play a Devil like a Lawyer from Hell",
+      "url": "https://www.dndbeyond.com/posts/595-how-to-play-a-devil-like-a-lawyer-from-hell",
+      "kind": "官方文章",
+      "note": ""
+    },
+    "heroes": {
+      "title": "Legendary Heroes: The Forgotten Realms’ Greatest Adventurers",
+      "url": "https://www.dndbeyond.com/posts/2026-legendary-heroes-the-forgotten-realms-greatest",
+      "kind": "官方文章",
+      "note": ""
+    },
+    "drizzt": {
+      "title": "The Legend of Drizzt",
+      "url": "https://www.dndbeyond.com/posts/300-the-legend-of-drizzt-becoming-the-face-of-the",
+      "kind": "官方文章",
+      "note": ""
+    },
+    "three": {
+      "title": "Who Are the Wizards Three?",
+      "url": "https://www.dndbeyond.com/posts/1703-who-are-the-wizards-three-in-vecna-eve-of-ruin",
+      "kind": "官方文章",
+      "note": ""
+    },
+    "vecna": {
+      "title": "Who Is Vecna, and Why Must He Die?",
+      "url": "https://www.dndbeyond.com/posts/1700-who-is-vecna-and-why-must-he-die",
+      "kind": "官方文章",
+      "note": ""
+    },
+    "jarlaxle": {
+      "title": "Rogues’ Gallery: Jarlaxle",
+      "url": "https://www.dndbeyond.com/posts/244-rogues-gallery-jarlaxle",
+      "kind": "官方文章",
+      "note": ""
+    },
+    "raven": {
+      "title": "Strahd’s Barovia",
+      "url": "https://www.dndbeyond.com/posts/977-strahds-barovia-a-guide-to-d-ds-most-famous-horror",
+      "kind": "官方文章",
+      "note": ""
+    },
+    "dragonlance": {
+      "title": "What Is Dragonlance? Krynn: A World at War",
+      "url": "https://www.dndbeyond.com/posts/1324-what-is-dragonlance-krynn-a-world-at-war",
+      "kind": "官方文章",
+      "note": ""
+    },
+    "eberron": {
+      "title": "Eberron: Where To Begin? · Keith Baker",
+      "url": "https://www.dndbeyond.com/posts/667-eberron-where-to-begin",
+      "kind": "官方文章",
+      "note": ""
+    },
+    "greyhawk": {
+      "title": "Greyhawk Returns in the 2024 DMG",
+      "url": "https://www.dndbeyond.com/posts/1834-greyhawk-returns-in-the-2024-dungeon-masters-guide",
+      "kind": "官方文章",
+      "note": ""
+    },
+    "places": {
+      "title": "Take a Tour of the Forgotten Realms",
+      "url": "https://www.dndbeyond.com/posts/1485-take-a-tour-of-these-popular-locations-in-the",
+      "kind": "官方文章",
+      "note": ""
+    },
+    "factions": {
+      "title": "Waterdeep: Dragon Heist’s Factions",
+      "url": "https://www.dndbeyond.com/posts/317-waterdeep-dragon-heists-factions-are-perfect-for",
+      "kind": "官方文章",
+      "note": ""
+    },
+    "first": {
+      "title": "First Sundering",
+      "url": "https://forgottenrealms.fandom.com/wiki/First_Sundering",
+      "kind": "社区资料汇编",
+      "note": "年代及相关历史通过检索到的条目核对；条目附有原始书籍参考。"
+    },
+    "crown": {
+      "title": "Crown Wars timeline",
+      "url": "https://forgottenrealms.fandom.com/wiki/Crown_Wars_timeline",
+      "kind": "社区资料汇编",
+      "note": "年代及相关历史通过检索到的条目核对；条目附有原始书籍参考。"
+    },
+    "karsus": {
+      "title": "Karsus’s Folly",
+      "url": "https://forgottenrealms.fandom.com/wiki/Karsus%27s_Folly",
+      "kind": "社区资料汇编",
+      "note": "年代及相关历史通过检索到的条目核对；条目附有原始书籍参考。"
+    },
+    "stone": {
+      "title": "1 DR · Standing Stone",
+      "url": "https://forgottenrealms.fandom.com/wiki/1_DR",
+      "kind": "社区资料汇编",
+      "note": "年代及相关历史通过检索到的条目核对；条目附有原始书籍参考。"
+    },
+    "myth": {
+      "title": "History of Myth Drannor",
+      "url": "https://forgottenrealms.fandom.com/wiki/History_of_Myth_Drannor",
+      "kind": "社区资料汇编",
+      "note": "年代及相关历史通过检索到的条目核对；条目附有原始书籍参考。"
+    },
+    "tot": {
+      "title": "1358 DR · Time of Troubles",
+      "url": "https://forgottenrealms.fandom.com/wiki/1358_DR",
+      "kind": "社区资料汇编",
+      "note": "年代及相关历史通过检索到的条目核对；条目附有原始书籍参考。"
+    },
+    "shade": {
+      "title": "Thultanthar",
+      "url": "https://forgottenrealms.fandom.com/wiki/Thultanthar",
+      "kind": "社区资料汇编",
+      "note": "年代及相关历史通过检索到的条目核对；条目附有原始书籍参考。"
+    },
+    "plague": {
+      "title": "1385 DR · Spellplague",
+      "url": "https://forgottenrealms.fandom.com/wiki/1385_DR",
+      "kind": "社区资料汇编",
+      "note": "年代及相关历史通过检索到的条目核对；条目附有原始书籍参考。"
+    },
+    "weave": {
+      "title": "Weave",
+      "url": "https://forgottenrealms.fandom.com/wiki/Weave",
+      "kind": "社区资料汇编",
+      "note": "年代及相关历史通过检索到的条目核对；条目附有原始书籍参考。"
+    },
+    "hotenow": {
+      "title": "1451 DR · The Ruining",
+      "url": "https://forgottenrealms.fandom.com/wiki/1451_DR",
+      "kind": "社区资料汇编",
+      "note": "年代及相关历史通过检索到的条目核对；条目附有原始书籍参考。"
+    },
+    "second": {
+      "title": "Second Sundering",
+      "url": "https://forgottenrealms.fandom.com/wiki/Second_Sundering",
+      "kind": "社区资料汇编",
+      "note": "年代及相关历史通过检索到的条目核对；条目附有原始书籍参考。"
+    },
+    "fr": {
+      "title": "Forgotten Realms · Editions and chronology",
+      "url": "https://forgottenrealms.fandom.com/wiki/Forgotten_Realms",
+      "kind": "社区资料汇编",
+      "note": "年代及相关历史通过检索到的条目核对；条目附有原始书籍参考。"
+    },
+    "shar": {
+      "title": "Shar",
+      "url": "https://forgottenrealms.fandom.com/wiki/Shar",
+      "kind": "社区资料汇编",
+      "note": "年代及相关历史通过检索到的条目核对；条目附有原始书籍参考。"
+    },
+    "mourning": {
+      "title": "Day of Mourning",
+      "url": "https://eberron.fandom.com/wiki/Day_of_Mourning",
+      "kind": "社区资料汇编",
+      "note": ""
+    },
+    "athas": {
+      "title": "Dark Sun · Setting overview",
+      "url": "https://en.wikipedia.org/wiki/Dark_Sun",
+      "kind": "百科资料汇编",
+      "note": ""
+    },
+    "eberron-planes": {
+      "title": "Origin of the Planes · Keith Baker",
+      "url": "https://keith-baker.com/origin-of-the-planes/",
+      "kind": "设定作者解读",
+      "note": "作者博客的解释与补充不自动等同于官方出版物正典。"
+    },
+    "raistlin": {
+      "title": "Raistlin Majere",
+      "url": "https://dragonlance.fandom.com/wiki/Raistlin_Majere",
+      "kind": "社区资料汇编",
+      "note": ""
+    },
+    "tanis": {
+      "title": "Tanis Half-Elven",
+      "url": "https://dragonlance.fandom.com/wiki/Tanis_Half-Elven",
+      "kind": "社区资料汇编",
+      "note": ""
+    },
+    "faerun-map": {
+      "title": "Map of Faerûn · 官方地图资源",
+      "url": "https://www.dndbeyond.com/resources/1782-map-of-faerun",
+      "kind": "官方地图入口",
+      "note": "用于查阅官方地图；本页绘制的是方向导航示意，无比例或里程。入口核对于 2026-10-07。"
+    }
+  },
+  "worlds": [
+    {
+      "id": "fr",
+      "name": "被遗忘的国度",
+      "en": "Forgotten Realms",
+      "tag": "主线 · 托瑞尔 / 费伦",
+      "body": "神祇、城邦、古代魔法帝国与冒险者共同塑造的高魔奇幻世界。剑湾只是费伦西侧的一部分。",
+      "details": [
+        [
+          "尺度",
+          "设定：被遗忘的国度 → 星球：托瑞尔 Toril → 大陆：费伦 Faerûn → 区域：剑湾 Sword Coast。不要把这四层当成同义词。"
+        ],
+        [
+          "历史线索",
+          "帝国遗产、精灵文明的兴衰、魔网的破坏与恢复，是理解费伦的三条主线。"
+        ],
+        [
+          "认识入口",
+          "博德之门、无冬城、深水城和崔斯特故事都属于这个设定，但作品的年代和具体情节未必一致。"
+        ]
+      ],
+      "src": [
+        "fr",
+        "places",
+        "drizzt"
+      ],
+      "color": "#ceaa72",
+      "kind": "物质世界",
+      "section": "worlds",
+      "aliases": [
+        "Toril",
+        "Faerun",
+        "Faerûn",
+        "Sword Coast",
+        "托瑞尔",
+        "费伦",
+        "剑湾"
+      ]
+    },
+    {
+      "id": "greyhawk",
+      "name": "灰鹰",
+      "en": "Greyhawk",
+      "tag": "欧斯 Oerth · 古典冒险",
+      "body": "以城邦、势力竞争、危险荒野与地下城见长；强大法师并不意味着魔法便利普及到每个平民。",
+      "details": [
+        [
+          "世界特色",
+          "灰鹰既是设定名称，也是一座著名城市。理解故事时，需要区分城市与欧斯整个世界。"
+        ],
+        [
+          "人物坐标",
+          "魔邓肯、塔莎和维克那的故事根源与灰鹰有关，后来这些人物也进入多元宇宙叙事。"
+        ]
+      ],
+      "src": [
+        "greyhawk",
+        "three",
+        "vecna"
+      ],
+      "color": "#83afa8",
+      "kind": "物质世界",
+      "section": "worlds",
+      "aliases": []
+    },
+    {
+      "id": "krynn",
+      "name": "龙枪",
+      "en": "Dragonlance",
+      "tag": "克莱恩 Krynn · 战争史诗",
+      "body": "神祇的离去与回归、巨龙与龙人军团、骑士和法师传统，是这个世界的核心。",
+      "details": [
+        [
+          "历史线索",
+          "大灾变摧毁旧秩序，随后出现长期黑暗时代；龙枪战争中，塔克西丝的龙军团威胁克莱恩。"
+        ],
+        [
+          "事件边界",
+          "龙枪战争发生在克莱恩，不是费伦的战争，也不能直接套用 DR 历法。"
+        ],
+        [
+          "故事焦点",
+          "与其只记住神器龙枪，更应关注普通人如何在神祇、巨龙和军事机器之间作出选择。"
+        ]
+      ],
+      "src": [
+        "dragonlance"
+      ],
+      "color": "#c27d65",
+      "kind": "物质世界",
+      "section": "worlds",
+      "aliases": []
+    },
+    {
+      "id": "eberron",
+      "name": "艾伯伦",
+      "en": "Eberron",
+      "tag": "魔法工业 · 战后悬疑",
+      "body": "魔法进入交通与日常产业，战后政治、谍战和黑色侦探故事与遗迹探险并行。",
+      "details": [
+        [
+          "历史线索",
+          "末次战争结束后，国家间仍存在猜疑。哀伤之日将塞尔 Cyre 化为危险的哀伤之地，灾难真因被保留为谜团。"
+        ],
+        [
+          "阅读场景",
+          "沙恩 Sharn 的城市街区适合犯罪与调查；哀伤之地适合危险勘探；古老遗迹适合动作冒险。"
+        ],
+        [
+          "不要混用",
+          "艾伯伦有独立的历法、神学和位面体系。不能把费伦魔网、神祇干预模式或通用大轮宇宙机械套入。"
+        ]
+      ],
+      "src": [
+        "eberron",
+        "mourning",
+        "eberron-planes"
+      ],
+      "color": "#9ba7c8",
+      "kind": "物质世界",
+      "section": "worlds",
+      "aliases": []
+    },
+    {
+      "id": "ravenloft",
+      "name": "鸦阁 / 魔域",
+      "en": "Ravenloft",
+      "tag": "恐怖领域 · 哥特恐怖",
+      "body": "迷雾、黑暗领主和反复上演的悲剧构成恐怖领域；巴洛维亚只是其中最著名的一个。",
+      "details": [
+        [
+          "世界特色",
+          "第五版常把这些恐怖领域置于影界。它们并不是所有都位于一颗普通星球上的邻国。"
+        ],
+        [
+          "人物坐标",
+          "吸血鬼斯特拉德统治巴洛维亚；他的权力与永不满足的欲望，也是这个领域的恐怖核心。"
+        ],
+        [
+          "主题",
+          "这里的重点常是逃离、记忆、诅咒与代价，而不是征服一片普通大陆。"
+        ]
+      ],
+      "src": [
+        "raven"
+      ],
+      "color": "#aa809d",
+      "kind": "位面设定",
+      "section": "worlds",
+      "aliases": []
+    },
+    {
+      "id": "athas",
+      "name": "浩劫残阳",
+      "en": "Dark Sun",
+      "tag": "阿塔斯 Athas · 荒漠求生",
+      "body": "赤色太阳下的残酷荒漠世界；亵渎魔法消耗生态，巫王统治城邦，生存资源决定政治。",
+      "details": [
+        [
+          "与常见奇幻的差异",
+          "水和物资的稀缺比一袋金币更能驱动故事。魔法可能直接造成环境代价，强权控制城市与生命。"
+        ],
+        [
+          "版本边界",
+          "这里概述经典设定主题，不提供或暗示某个最新版本的专用规则。"
+        ]
+      ],
+      "src": [
+        "athas"
+      ],
+      "color": "#c99969",
+      "kind": "物质世界",
+      "section": "worlds",
+      "aliases": []
+    },
+    {
+      "id": "planescape",
+      "name": "异度风景",
+      "en": "Planescape",
+      "tag": "印记城 Sigil · 位面哲学",
+      "body": "把位面、传送门、信念与哲学派系放到前台；印记城是著名的诸门之城。",
+      "details": [
+        [
+          "不是一颗星球",
+          "Planescape 是以跨位面生活为中心的设定框架。印记城与外域是重要舞台。"
+        ],
+        [
+          "权力边界",
+          "痛苦女士维持印记城秩序，神祇被拒于城外。她的真实本质不应被写成已经证实的神格或战斗等级。"
+        ]
+      ],
+      "src": [
+        "planescape",
+        "sigil"
+      ],
+      "color": "#8fa89a",
+      "kind": "位面设定",
+      "section": "worlds",
+      "aliases": []
+    },
+    {
+      "id": "spelljammer",
+      "name": "魔法船",
+      "en": "Spelljammer",
+      "tag": "宇宙航行 · 太空奇幻",
+      "body": "魔法船让冒险者离开地面，在狂野空间与星界之海之间航行，访问遥远的世界。",
+      "details": [
+        [
+          "第五版航行",
+          "这里采用 2022 年第五版的狂野空间—星界之海框架。星界成为连接不同空间系统的重要通道。"
+        ],
+        [
+          "版本差异",
+          "旧版的水晶球与燃素海模型，不能无说明地与新版航行图合并。"
+        ],
+        [
+          "连接不等于统一",
+          "跨世界冒险能连接不同设定，却不会让它们共享一条历史或同一组社会规则。"
+        ]
+      ],
+      "src": [
+        "spelljammer"
+      ],
+      "color": "#8fa7c5",
+      "kind": "航行框架",
+      "section": "worlds",
+      "aliases": []
+    }
+  ],
+  "planes": [
+    {
+      "id": "material",
+      "name": "物质位面",
+      "en": "Material Plane",
+      "cat": "凡世",
+      "body": "凡人、山川与多数战役世界所在的现实层。",
+      "details": [
+        [
+          "理解这一层",
+          "托瑞尔、欧斯和克莱恩是不同世界；物质位面不是“只有一颗星球”。"
+        ]
+      ],
+      "src": [
+        "planes"
+      ],
+      "color": "#d7b478",
+      "section": "cosmos",
+      "aliases": []
+    },
+    {
+      "id": "feywild",
+      "name": "妖精荒野",
+      "en": "Feywild",
+      "cat": "映像",
+      "body": "与凡世相映的魔法领域，情绪、自然和奇异时间都被放大。",
+      "details": [
+        [
+          "理解这一层",
+          "古老森林或妖精交界可能连向这里。景观相似不代表能按普通地图可靠导航，也不保证安全。"
+        ]
+      ],
+      "src": [
+        "fey"
+      ],
+      "color": "#79baa5",
+      "section": "cosmos",
+      "aliases": []
+    },
+    {
+      "id": "shadowfell",
+      "name": "影界",
+      "en": "Shadowfell",
+      "cat": "映像",
+      "body": "与凡世相映的阴影领域，衰败、死亡与失落是常见主题。",
+      "details": [
+        [
+          "理解这一层",
+          "影界不等于九层地狱；第五版鸦阁恐怖领域与影界有关，但不是影界的全部。"
+        ]
+      ],
+      "src": [
+        "echo",
+        "raven"
+      ],
+      "color": "#a58bab",
+      "section": "cosmos",
+      "aliases": []
+    },
+    {
+      "id": "ethereal",
+      "name": "以太位面",
+      "en": "Ethereal Plane",
+      "cat": "过渡",
+      "body": "雾状的现实夹层；边界以太与相邻位面重叠。",
+      "details": [
+        [
+          "理解这一层",
+          "深层以太能通向其他边界以太区域。不要把以太位面与星界之海混为同一个空间。"
+        ]
+      ],
+      "src": [
+        "ethereal"
+      ],
+      "color": "#a4b9c1",
+      "section": "cosmos",
+      "aliases": []
+    },
+    {
+      "id": "astral",
+      "name": "星界",
+      "en": "Astral Plane",
+      "cat": "过渡",
+      "body": "思想与灵性之海，也是通向其他存在层的路径。",
+      "details": [
+        [
+          "理解这一层",
+          "在第五版魔法船框架中，狂野空间系统之间可经星界之海连接。这里的“空间”不是普通天文学尺度。"
+        ]
+      ],
+      "src": [
+        "planes",
+        "spelljammer"
+      ],
+      "color": "#8e9cc7",
+      "section": "cosmos",
+      "aliases": []
+    },
+    {
+      "id": "elemental",
+      "name": "内层位面",
+      "en": "Inner Planes",
+      "cat": "元素",
+      "body": "气、土、火、水提供构成世界的原初物质与能量。",
+      "details": [
+        [
+          "理解这一层",
+          "靠近凡世的区域可能仍有混合景观，远处则趋向纯粹元素，并融入元素混沌。"
+        ]
+      ],
+      "src": [
+        "planes"
+      ],
+      "color": "#d39771",
+      "section": "cosmos",
+      "aliases": []
+    },
+    {
+      "id": "outer",
+      "name": "外层位面",
+      "en": "Outer Planes",
+      "cat": "理念",
+      "body": "伦理、信念与精神原则构成的领域，常与神祇和来世有关。",
+      "details": [
+        [
+          "理解这一层",
+          "大轮排列是概念模型。位面距离、层级和空间规律可能不遵循物质世界的规则。"
+        ]
+      ],
+      "src": [
+        "planes"
+      ],
+      "color": "#ccbe98",
+      "section": "cosmos",
+      "aliases": []
+    },
+    {
+      "id": "sigil",
+      "name": "外域与印记城",
+      "en": "Outlands & Sigil",
+      "cat": "枢纽",
+      "body": "中立的外域与诸门之城，是跨位面故事的重要节点。",
+      "details": [
+        [
+          "理解这一层",
+          "印记城凭传送门连接不同领域，痛苦女士是其神秘统治者。城门能通往哪里，比地面道路更重要。"
+        ]
+      ],
+      "src": [
+        "sigil"
+      ],
+      "color": "#94b3a6",
+      "section": "cosmos",
+      "aliases": []
+    },
+    {
+      "id": "hells",
+      "name": "九层地狱",
+      "en": "Nine Hells / Baator",
+      "cat": "下层",
+      "body": "魔鬼的领域；等级、契约、支配与灵魂交易构成秩序。",
+      "details": [
+        [
+          "理解这一层",
+          "阿弗纳斯 Avernus 是第一层，也是血战前线。魔鬼 Devil 与恶魔 Demon 属于不同类别。"
+        ]
+      ],
+      "src": [
+        "devil",
+        "zariel"
+      ],
+      "color": "#c77c66",
+      "section": "cosmos",
+      "aliases": []
+    },
+    {
+      "id": "abyss",
+      "name": "无底深渊",
+      "en": "The Abyss",
+      "cat": "下层",
+      "body": "恶魔的领域；混乱、毁灭与层出不穷的恐怖相连。",
+      "details": [
+        [
+          "理解这一层",
+          "血战中恶魔与魔鬼持续争斗；“双方都邪恶”不意味着它们同属一支阵营。"
+        ]
+      ],
+      "src": [
+        "blood"
+      ],
+      "color": "#a76a81",
+      "section": "cosmos",
+      "aliases": []
+    },
+    {
+      "id": "demiplane",
+      "name": "半位面",
+      "en": "Demiplanes",
+      "cat": "特殊空间",
+      "body": "独立的小型现实空间，可以具有自身规则。",
+      "details": [
+        [
+          "理解这一层",
+          "半位面可能自然形成，也可能被强大魔法创造；进入方式和边界由具体设定决定。"
+        ]
+      ],
+      "src": [
+        "planes"
+      ],
+      "color": "#adabcb",
+      "section": "cosmos",
+      "aliases": []
+    }
+  ],
+  "history": [
+    {
+      "id": "first-sundering",
+      "date": "约 −17,600 DR",
+      "name": "第一次分裂",
+      "en": "First Sundering",
+      "era": "古代",
+      "body": "精灵高等魔法创造永聚岛，同时造成广泛地理灾变。",
+      "details": [
+        [
+          "前因",
+          "精灵寻求建立自己的避难地，施行改变世界的高等魔法仪式。"
+        ],
+        [
+          "后果",
+          "永聚岛诞生；沿岸与大陆受创。这一远古仪式不能简单等同于 1480 年代的第二次分裂。"
+        ]
+      ],
+      "src": [
+        "first"
+      ],
+      "section": "history",
+      "aliases": []
+    },
+    {
+      "id": "crown-wars",
+      "date": "约 −12,000 至 −9,000 DR",
+      "name": "皇冠战争",
+      "en": "Crown Wars",
+      "era": "古代",
+      "body": "持续数千年的精灵王国战争，瓦解早期精灵世界的秩序。",
+      "details": [
+        [
+          "前因",
+          "精灵王国间的扩张、敌意与长期冲突彼此叠加。"
+        ],
+        [
+          "后果",
+          "理解精灵文明的分裂，不能归结为单一种族的天生善恶；具体战争过程须按各轮战事区分。"
+        ]
+      ],
+      "src": [
+        "crown"
+      ],
+      "section": "history",
+      "aliases": []
+    },
+    {
+      "id": "netheril-fall",
+      "date": "−339 DR",
+      "name": "卡尔萨斯之愚 · 耐瑟瑞尔覆灭",
+      "en": "Karsus’s Folly",
+      "era": "古代",
+      "body": "卡尔萨斯试图夺取魔法女神密斯瑞尔的神力，导致魔法短暂停摆，大多数浮空城坠落。",
+      "details": [
+        [
+          "前因",
+          "面对帝国危机，他选择以神力解决问题，却无法接管维持魔网的职责。"
+        ],
+        [
+          "后果",
+          "密斯瑞尔牺牲；魔法女神以密斯特拉之名重生并重建魔网。帝国虽崩溃，幸存者与遗产仍延续。"
+        ]
+      ],
+      "src": [
+        "karsus"
+      ],
+      "section": "history",
+      "aliases": [
+        "Netheril",
+        "Mystryl",
+        "Fall of Netheril",
+        "耐瑟瑞尔",
+        "密斯瑞尔"
+      ]
+    },
+    {
+      "id": "standing-stone",
+      "date": "1 DR",
+      "name": "立石与谷地纪年",
+      "en": "Standing Stone & Dale Reckoning",
+      "era": "古代",
+      "body": "谷地人类与科曼索精灵建立协议并竖立纪念石，成为谷地纪年的基准。",
+      "details": [
+        [
+          "前因",
+          "人类定居者与精灵需要界定共处及森林保护关系。"
+        ],
+        [
+          "后果",
+          "DR 是地方历史的计年方式，不是 D&D 全多元宇宙的共同历法。"
+        ]
+      ],
+      "src": [
+        "stone"
+      ],
+      "section": "history",
+      "aliases": []
+    },
+    {
+      "id": "myth-golden",
+      "date": "261 DR",
+      "name": "迷斯卓诺的开放",
+      "en": "Myth Drannor’s Golden Age",
+      "era": "古代",
+      "body": "迷锁完成后，这座精灵城市向其他族群开放。",
+      "details": [
+        [
+          "前因",
+          "精灵统治者推动受魔法保护的共处城市。"
+        ],
+        [
+          "后果",
+          "它成为多族群文明的重要象征，也引发内部保守势力反对。"
+        ]
+      ],
+      "src": [
+        "myth"
+      ],
+      "section": "history",
+      "aliases": []
+    },
+    {
+      "id": "myth-fall",
+      "date": "714 DR",
+      "name": "迷斯卓诺陷落",
+      "en": "Fall of Myth Drannor",
+      "era": "古代",
+      "body": "黑暗军团压垮城市，黄金时代成为遗迹与传说。",
+      "details": [
+        [
+          "前因",
+          "战争与围攻最终击穿守城体系。"
+        ],
+        [
+          "后果",
+          "城市衰亡与精灵撤离传统相连；后世的收复与再次毁灭说明它并非永远停留在同一状态。"
+        ]
+      ],
+      "src": [
+        "myth"
+      ],
+      "section": "history",
+      "aliases": []
+    },
+    {
+      "id": "time-troubles",
+      "date": "1358 DR",
+      "name": "动荡之年",
+      "en": "Time of Troubles",
+      "era": "动荡时代",
+      "body": "艾欧将多数神祇逐出神域，让他们以凡人化身行走托瑞尔。",
+      "details": [
+        [
+          "前因",
+          "命运石板被盗，神祇失职触发惩罚；海姆承担守卫神域的特殊职责。"
+        ],
+        [
+          "后果",
+          "多位神祇死亡，午夜成为新的密斯特拉，希瑞克升神。魔法与神职秩序随之改变。"
+        ]
+      ],
+      "src": [
+        "tot",
+        "fr"
+      ],
+      "section": "history",
+      "aliases": []
+    },
+    {
+      "id": "shade-return",
+      "date": "1372 DR",
+      "name": "阴魂城归来",
+      "en": "Return of Shade",
+      "era": "动荡时代",
+      "body": "幸存的耐瑟瑞尔浮空城苏尔坦萨从阴影中重返费伦。",
+      "details": [
+        [
+          "前因",
+          "这座古帝国城市在原帝国覆灭时避入阴影位面。"
+        ],
+        [
+          "后果",
+          "阴魂势力尝试重建帝国，将古代耐瑟瑞尔遗产重新带入当代权力斗争。"
+        ]
+      ],
+      "src": [
+        "shade"
+      ],
+      "section": "history",
+      "aliases": [
+        "Netheril",
+        "Thultanthar",
+        "耐瑟瑞尔"
+      ]
+    },
+    {
+      "id": "spellplague",
+      "date": "1385 DR",
+      "name": "法术瘟疫",
+      "en": "Spellplague",
+      "era": "动荡时代",
+      "body": "希瑞克在莎尔协助下杀死密斯特拉，魔网崩溃，蓝焰灾难爆发。",
+      "details": [
+        [
+          "前因",
+          "魔法女神的遇害破坏了托瑞尔施法秩序的基础。"
+        ],
+        [
+          "后果",
+          "魔法、生命和地理遭到重塑；阿贝尔与托瑞尔的部分地域互换，影响延续远超最初爆发。"
+        ]
+      ],
+      "src": [
+        "plague",
+        "weave",
+        "second"
+      ],
+      "section": "history",
+      "aliases": [
+        "Mystra",
+        "Cyric",
+        "Shar",
+        "魔网"
+      ]
+    },
+    {
+      "id": "ruining",
+      "date": "1451 DR",
+      "name": "霍特诺火山灾变",
+      "en": "The Ruining of Neverwinter",
+      "era": "动荡时代",
+      "body": "原初存在梅格拉的力量引发火山喷发，重创无冬城。",
+      "details": [
+        [
+          "前因",
+          "古代矮人熔炉下被束缚的原初存在遭唤醒。"
+        ],
+        [
+          "后果",
+          "大批建筑与居民被毁，城市随后进入长期重建和权力争夺。"
+        ]
+      ],
+      "src": [
+        "hotenow",
+        "places"
+      ],
+      "section": "history",
+      "aliases": []
+    },
+    {
+      "id": "second-sundering",
+      "date": "1482—1487 DR",
+      "name": "第二次分裂",
+      "en": "Second Sundering",
+      "era": "重整时代",
+      "body": "托瑞尔与阿贝尔再次分离，魔网与诸神秩序经历重整。",
+      "details": [
+        [
+          "前因",
+          "世界长期动荡之后，艾欧推动秩序重新确立，诸神与选民卷入其间。"
+        ],
+        [
+          "后果",
+          "多位神祇回归，部分地貌恢复；但泰曼瑟等地区仍保留变化，不能理解为所有历史完全重置。"
+        ]
+      ],
+      "src": [
+        "second"
+      ],
+      "section": "history",
+      "aliases": []
+    },
+    {
+      "id": "shade-fall",
+      "date": "1487 DR",
+      "name": "阴魂城与迷斯卓诺毁灭",
+      "en": "Fall of Thultanthar",
+      "era": "重整时代",
+      "body": "阴魂城从天空坠落在迷斯卓诺，两城同遭毁灭。",
+      "details": [
+        [
+          "前因",
+          "耐瑟瑞尔势力与对手长期交锋，伊尔明斯特参与终局冲突。"
+        ],
+        [
+          "后果",
+          "古帝国复兴遭重挫，精灵幸存者撤离；这个事件与 −339 DR 的帝国覆灭是两次不同灾难。"
+        ]
+      ],
+      "src": [
+        "shade",
+        "myth"
+      ],
+      "section": "history",
+      "aliases": [
+        "Netheril",
+        "Myth Drannor",
+        "耐瑟瑞尔"
+      ]
+    },
+    {
+      "id": "modern",
+      "date": "1480 年代末—1490 年代",
+      "name": "第五版常见故事窗口",
+      "en": "A Common 5e Story Window",
+      "era": "重整时代",
+      "body": "许多第五版国度冒险发生在第二次分裂之后，但各书并不共享一个永远不变的“现在”。",
+      "details": [
+        [
+          "前因",
+          "出版物选择不同年代和地点，电子游戏与小说也有各自连续性。"
+        ],
+        [
+          "后果",
+          "查阅人物在任、城市状况或世界地图时，应同时核对作品与年份；本页不把 1492 DR 宣称为统一现今。"
+        ]
+      ],
+      "src": [
+        "fr"
+      ],
+      "section": "history",
+      "aliases": []
+    }
+  ],
+  "people": [
+    {
+      "id": "elminster",
+      "name": "伊尔明斯特",
+      "en": "Elminster Aumar",
+      "role": "英雄与法师",
+      "setting": "被遗忘的国度",
+      "body": "阴影谷贤者，密斯特拉的选民，参与魔网的维护与恢复。",
+      "details": [
+        [
+          "为什么重要",
+          "将凡人冒险、神祇政治与费伦长期历史连接起来。不能把小说中的力量直接当作所有规则版本的固定数值。"
+        ]
+      ],
+      "src": [
+        "heroes"
+      ],
+      "section": "people",
+      "aliases": []
+    },
+    {
+      "id": "drizzt",
+      "name": "崔斯特",
+      "en": "Drizzt Do’Urden",
+      "role": "英雄与法师",
+      "setting": "被遗忘的国度",
+      "body": "离开魔索布莱城的卓尔英雄，凭自身选择拒绝罗丝的残酷秩序。",
+      "details": [
+        [
+          "伙伴",
+          "秘银厅伙伴与黑豹关海法是他的故事坐标。"
+        ],
+        [
+          "为什么重要",
+          "他的故事说明出身与社会预期不必决定个人道德。"
+        ]
+      ],
+      "src": [
+        "heroes",
+        "drizzt"
+      ],
+      "section": "people",
+      "aliases": []
+    },
+    {
+      "id": "bruenor",
+      "name": "布鲁诺 · 战锤",
+      "en": "Bruenor Battlehammer",
+      "role": "英雄与法师",
+      "setting": "被遗忘的国度",
+      "body": "矮人王，与崔斯特一起夺回秘银厅，也与冈特格瑞姆故事相连。",
+      "details": [
+        [
+          "伙伴",
+          "凯蒂布莉与沃夫加是他的养育子女；他是秘银厅伙伴的重要成员。"
+        ]
+      ],
+      "src": [
+        "heroes"
+      ],
+      "section": "people",
+      "aliases": []
+    },
+    {
+      "id": "laeral",
+      "name": "莱拉尔 · 银手",
+      "en": "Laeral Silverhand",
+      "role": "英雄与法师",
+      "setting": "被遗忘的国度",
+      "body": "密斯特拉选民；《深水城：龙劫》中担任深水城公开领主。",
+      "details": [
+        [
+          "权力关系",
+          "与黑杖法师合作，治理也受到蒙面领主与城市政治制约。"
+        ]
+      ],
+      "src": [
+        "heroes"
+      ],
+      "section": "people",
+      "aliases": []
+    },
+    {
+      "id": "alustriel",
+      "name": "艾拉斯卓 · 银手",
+      "en": "Alustriel Silverhand",
+      "role": "英雄与法师",
+      "setting": "被遗忘的国度",
+      "body": "曾统治银月城的密斯特拉选民，推动北方城市合作。",
+      "details": [
+        [
+          "跨位面活动",
+          "她也参与对抗维克那的多元宇宙故事；所属国度不限制她永远停留在托瑞尔。"
+        ]
+      ],
+      "src": [
+        "heroes",
+        "three"
+      ],
+      "section": "people",
+      "aliases": []
+    },
+    {
+      "id": "minsc",
+      "name": "明斯克与布布",
+      "en": "Minsc & Boo",
+      "role": "英雄与法师",
+      "setting": "被遗忘的国度",
+      "body": "拉什曼游侠与他的仓鼠伙伴，博德之门故事中的标志组合。",
+      "details": [
+        [
+          "叙事特色",
+          "直率、勇猛、富于喜剧色彩；具体经历以正在阅读的作品为准。"
+        ]
+      ],
+      "src": [
+        "heroes"
+      ],
+      "section": "people",
+      "aliases": []
+    },
+    {
+      "id": "jarlaxle",
+      "name": "贾拉索",
+      "en": "Jarlaxle Baenre",
+      "role": "权力与反派",
+      "setting": "被遗忘的国度",
+      "body": "卓尔佣兵领袖，创立达耶特佣兵团，以手腕、利益与自由为行动轴心。",
+      "details": [
+        [
+          "为什么重要",
+          "他连接幽暗地域、北地城市与秘密行动，常在敌友之间游移。"
+        ]
+      ],
+      "src": [
+        "jarlaxle"
+      ],
+      "section": "people",
+      "aliases": []
+    },
+    {
+      "id": "karsus",
+      "name": "卡尔萨斯",
+      "en": "Karsus",
+      "role": "权力与反派",
+      "setting": "被遗忘的国度",
+      "body": "耐瑟瑞尔大奥术师；夺取神力的尝试引发 −339 DR 的帝国灾难。",
+      "details": [
+        [
+          "需要区分",
+          "他瞄准的是密斯瑞尔 Mystryl，不是 1358 DR 升神的午夜。跨年代混用“密斯特拉”会掩盖不同神格阶段。"
+        ]
+      ],
+      "src": [
+        "karsus"
+      ],
+      "section": "people",
+      "aliases": [
+        "Netheril",
+        "Mystryl",
+        "耐瑟瑞尔"
+      ]
+    },
+    {
+      "id": "mordenkainen",
+      "name": "魔邓肯",
+      "en": "Mordenkainen",
+      "role": "英雄与法师",
+      "setting": "灰鹰 / 多元宇宙",
+      "body": "来自欧斯的大法师、八人会创建者，以维护宇宙平衡为著名主张。",
+      "details": [
+        [
+          "立场",
+          "“平衡”是人物理念，不是百科对所有冲突的道德裁定。他的位面旅行将灰鹰与其他设定相连。"
+        ]
+      ],
+      "src": [
+        "three"
+      ],
+      "section": "people",
+      "aliases": []
+    },
+    {
+      "id": "tasha",
+      "name": "塔莎",
+      "en": "Tasha / Iggwilv",
+      "role": "英雄与法师",
+      "setting": "灰鹰 / 多元宇宙",
+      "body": "出身欧斯的法师与恶魔学研究者，也以伊格维尔芙之名进入传说。",
+      "details": [
+        [
+          "版本与身份",
+          "同一人物在不同生命阶段、身份和冒险中的表现不能简单压成一个静态形象。本页保留概述，避免揭示冒险谜底。"
+        ]
+      ],
+      "src": [
+        "three"
+      ],
+      "section": "people",
+      "aliases": []
+    },
+    {
+      "id": "vecna",
+      "name": "维克那",
+      "en": "Vecna",
+      "role": "权力与反派",
+      "setting": "灰鹰 / 多元宇宙",
+      "body": "从巫妖迈向神格的秘密与力量追逐者，其威胁延伸至多个世界。",
+      "details": [
+        [
+          "遗产",
+          "维克那之手与维克那之眼是与他相关的著名邪恶神器。"
+        ],
+        [
+          "故事边界",
+          "《维克那：毁灭前夕》提出重塑多元宇宙的威胁；实际冒险结果由游玩与作品决定，本页不将玩家结局写为统一历史。"
+        ]
+      ],
+      "src": [
+        "vecna"
+      ],
+      "section": "people",
+      "aliases": []
+    },
+    {
+      "id": "strahd",
+      "name": "斯特拉德",
+      "en": "Strahd von Zarovich",
+      "role": "权力与反派",
+      "setting": "鸦阁 / 魔域",
+      "body": "巴洛维亚的吸血鬼统治者，哥特恐怖与悲剧执念的核心人物。",
+      "details": [
+        [
+          "领域逻辑",
+          "迷雾、诅咒与黑暗领主构成故事框架，不能把他的领地当成普通邻国。"
+        ]
+      ],
+      "src": [
+        "raven"
+      ],
+      "section": "people",
+      "aliases": []
+    },
+    {
+      "id": "lady",
+      "name": "痛苦女士",
+      "en": "The Lady of Pain",
+      "role": "神秘存在",
+      "setting": "异度风景",
+      "body": "印记城的神秘统治者，控制城市秩序与进出。",
+      "details": [
+        [
+          "未明之处",
+          "她的本质、来历和力量极限不被公开设定完整解释；“一定是某位神”或具体排名都不应作为已确认事实。"
+        ]
+      ],
+      "src": [
+        "sigil"
+      ],
+      "section": "people",
+      "aliases": []
+    },
+    {
+      "id": "mystra",
+      "name": "密斯特拉",
+      "en": "Mystra",
+      "role": "神祇",
+      "setting": "被遗忘的国度",
+      "body": "魔法女神，与托瑞尔的魔网密不可分。",
+      "details": [
+        [
+          "神格沿革",
+          "密斯瑞尔、其后的密斯特拉、1358 DR 升神的午夜不是同一个简单的个人传记；女神更替与回归需结合年代理解。"
+        ],
+        [
+          "历史连接",
+          "−339、1358 和 1385 DR 的三次危机都涉及魔法女神，起因与结局却不同。"
+        ]
+      ],
+      "src": [
+        "gods",
+        "karsus",
+        "tot",
+        "weave"
+      ],
+      "section": "people",
+      "aliases": []
+    },
+    {
+      "id": "shar",
+      "name": "莎尔",
+      "en": "Shar",
+      "role": "神祇",
+      "setting": "被遗忘的国度",
+      "body": "黑暗与失落的女神，塞伦涅的对手，参与法术瘟疫的阴谋。",
+      "details": [
+        [
+          "为什么重要",
+          "她的信仰、阴影魔法与阴魂势力相连，连接宗教、魔法和帝国政治。"
+        ]
+      ],
+      "src": [
+        "gods",
+        "shar",
+        "plague"
+      ],
+      "section": "people",
+      "aliases": []
+    },
+    {
+      "id": "selune",
+      "name": "塞伦涅",
+      "en": "Selûne",
+      "role": "神祇",
+      "setting": "被遗忘的国度",
+      "body": "月亮女神；与莎尔的对立是费伦神话的重要线索。",
+      "details": [
+        [
+          "阅读提示",
+          "“月亮”“黑暗”等神职是理解信仰的入口，不能直接据此推出所有信徒的性格与行为。"
+        ]
+      ],
+      "src": [
+        "gods",
+        "shar"
+      ],
+      "section": "people",
+      "aliases": []
+    },
+    {
+      "id": "deadthree",
+      "name": "死亡三神",
+      "en": "Bane · Bhaal · Myrkul",
+      "role": "神祇",
+      "setting": "被遗忘的国度",
+      "body": "班恩掌暴政，巴尔掌谋杀，米尔寇掌死亡；三者是不同神祇。",
+      "details": [
+        [
+          "常见误区",
+          "死亡、谋杀与暴政并非同义神职。神祇曾死亡、复归或改变状态，应核对故事时代。"
+        ]
+      ],
+      "src": [
+        "gods",
+        "tot",
+        "second"
+      ],
+      "section": "people",
+      "aliases": []
+    },
+    {
+      "id": "lolth",
+      "name": "罗丝",
+      "en": "Lolth",
+      "role": "神祇",
+      "setting": "跨设定 / 卓尔神话",
+      "body": "与蜘蛛和卓尔社会相关的神祇，崔斯特拒绝的秩序与她有关。",
+      "details": [
+        [
+          "角色选择",
+          "神祇的影响与族群刻板印象不能替代个体选择；并非所有卓尔都服从她或属于同一文化。"
+        ]
+      ],
+      "src": [
+        "gods",
+        "heroes"
+      ],
+      "section": "people",
+      "aliases": []
+    },
+    {
+      "id": "zariel",
+      "name": "扎瑞尔",
+      "en": "Zariel",
+      "role": "权力与反派",
+      "setting": "九层地狱",
+      "body": "阿弗纳斯的统治者之一，以在血战前线率领魔鬼军队著称。",
+      "details": [
+        [
+          "故事窗口",
+          "这里采用《博德之门：坠入阿弗纳斯》的开场设定；不把可分支的冒险结局固定为永久状态。"
+        ]
+      ],
+      "src": [
+        "zariel"
+      ],
+      "section": "people",
+      "aliases": []
+    },
+    {
+      "id": "raistlin",
+      "name": "雷斯林 · 马哲理",
+      "en": "Raistlin Majere",
+      "role": "英雄与法师",
+      "setting": "龙枪",
+      "body": "龙枪英雄中的法师；与孪生兄弟卡拉蒙的关系、对力量的追求构成重要故事线。",
+      "details": [
+        [
+          "为什么重要",
+          "龙枪史诗并不只有战场胜败，也追问野心、脆弱、亲情与力量的代价。"
+        ]
+      ],
+      "src": [
+        "raistlin"
+      ],
+      "section": "people",
+      "aliases": []
+    },
+    {
+      "id": "tanis",
+      "name": "半精灵坦尼斯",
+      "en": "Tanis Half-Elven",
+      "role": "英雄与法师",
+      "setting": "龙枪",
+      "body": "龙枪英雄的重要成员，串联同伴与克莱恩的战争故事。",
+      "details": [
+        [
+          "人物坐标",
+          "他是龙枪故事中的角色，不是费伦城市的领袖；族群身份与同伴关系是阅读入口。"
+        ]
+      ],
+      "src": [
+        "tanis"
+      ],
+      "section": "people",
+      "aliases": []
+    },
+    {
+      "id": "blades",
+      "name": "刀锋领主",
+      "en": "Lord of Blades",
+      "role": "权力与反派",
+      "setting": "艾伯伦",
+      "body": "与哀伤之地中战俑追随者有关的神秘强权。",
+      "details": [
+        [
+          "人物坐标",
+          "他把战后身份、被制造者的自由与危险的哀伤之地联系起来。本页不替读者确定他的神秘起源。"
+        ]
+      ],
+      "src": [
+        "eberron"
+      ],
+      "section": "people",
+      "aliases": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "icewind",
+      "name": "冰风谷",
+      "en": "Icewind Dale",
+      "body": "世界之脊北方的严寒地区，十镇围绕湖泊谋生。",
+      "details": [
+        [
+          "在故事中的位置",
+          "崔斯特早期故事与此有关；生存、隔绝与冰封遗迹是典型主题。"
+        ]
+      ],
+      "src": [
+        "places",
+        "drizzt"
+      ],
+      "section": "atlas",
+      "kind": "地点",
+      "aliases": []
+    },
+    {
+      "id": "neverwinter",
+      "name": "无冬城",
+      "en": "Neverwinter",
+      "body": "剑湾北部的城市，以工艺与重建历史著称。",
+      "details": [
+        [
+          "在故事中的位置",
+          "霍特诺火山灾变后，城市复兴与统治权竞争交织。"
+        ]
+      ],
+      "src": [
+        "places",
+        "hotenow"
+      ],
+      "section": "atlas",
+      "kind": "地点",
+      "aliases": []
+    },
+    {
+      "id": "waterdeep",
+      "name": "深水城",
+      "en": "Waterdeep",
+      "body": "剑湾的重要都市，蒙面领主与公开领主参与治理。",
+      "details": [
+        [
+          "在故事中的位置",
+          "莱拉尔与黑杖法师、派系和财富争夺，让城市冒险具有政治层次。"
+        ]
+      ],
+      "src": [
+        "places",
+        "heroes",
+        "factions"
+      ],
+      "section": "atlas",
+      "kind": "地点",
+      "aliases": []
+    },
+    {
+      "id": "baldurs",
+      "name": "博德之门",
+      "en": "Baldur’s Gate",
+      "body": "剑湾的大港口城市，也是多部电子游戏与桌面冒险的舞台。",
+      "details": [
+        [
+          "在故事中的位置",
+          "一座城市承载多段作品历史；不要把游戏中任一分支选择当成全设定唯一结局。"
+        ]
+      ],
+      "src": [
+        "places"
+      ],
+      "section": "atlas",
+      "kind": "地点",
+      "aliases": []
+    },
+    {
+      "id": "candlekeep",
+      "name": "烛堡",
+      "en": "Candlekeep",
+      "body": "剑湾的著名知识宝库与图书馆堡垒。",
+      "details": [
+        [
+          "在故事中的位置",
+          "调查、书籍和秘密适合作为通往更广阔世界的入口。"
+        ]
+      ],
+      "src": [
+        "places"
+      ],
+      "section": "atlas",
+      "kind": "地点",
+      "aliases": []
+    },
+    {
+      "id": "phandalin",
+      "name": "凡达林",
+      "en": "Phandalin",
+      "body": "无冬城一带的边境聚落，常见低等级冒险舞台。",
+      "details": [
+        [
+          "在故事中的位置",
+          "村镇、矿山与地方威胁帮助读者理解：宏大世界历史也会落在普通人的日常。"
+        ]
+      ],
+      "src": [
+        "places"
+      ],
+      "section": "atlas",
+      "kind": "地点",
+      "aliases": []
+    },
+    {
+      "id": "underdark",
+      "name": "幽暗地域",
+      "en": "Underdark",
+      "body": "地表下庞大的洞穴、地下水路和文明网络。",
+      "details": [
+        [
+          "在故事中的位置",
+          "不是另一颗星球或单独的位面；卓尔、灰矮人和其他地下居民生活在不同区域。"
+        ]
+      ],
+      "src": [
+        "places",
+        "heroes"
+      ],
+      "section": "atlas",
+      "kind": "地点",
+      "aliases": []
+    },
+    {
+      "id": "menzo",
+      "name": "魔索布莱城",
+      "en": "Menzoberranzan",
+      "body": "幽暗地域的卓尔城市，家族竞争与罗丝信仰构成著名社会背景。",
+      "details": [
+        [
+          "在故事中的位置",
+          "崔斯特和贾拉索都来自这里，却采取不同方式对待城市的规则。"
+        ]
+      ],
+      "src": [
+        "heroes",
+        "jarlaxle"
+      ],
+      "section": "atlas",
+      "kind": "地点",
+      "aliases": []
+    }
+  ],
+  "factions": [
+    {
+      "id": "harpers",
+      "name": "竖琴手同盟",
+      "en": "Harpers",
+      "body": "以秘密行动、情报和反抗压迫著称的松散网络。",
+      "details": [
+        [
+          "理解其行动",
+          "阅读城市故事时，注意个人判断与组织理念之间的距离；成员未必拥有统一做法。"
+        ]
+      ],
+      "src": [
+        "factions"
+      ],
+      "section": "atlas",
+      "kind": "组织",
+      "aliases": []
+    },
+    {
+      "id": "lords",
+      "name": "领主联盟",
+      "en": "Lords’ Alliance",
+      "body": "城市与统治者的合作联盟，维护安全、贸易及自身利益。",
+      "details": [
+        [
+          "理解其行动",
+          "联盟是政治合作，并不意味着所有成员城邦变成同一个国家。"
+        ]
+      ],
+      "src": [
+        "factions"
+      ],
+      "section": "atlas",
+      "kind": "组织",
+      "aliases": []
+    },
+    {
+      "id": "zhents",
+      "name": "散塔林会",
+      "en": "Zhentarim",
+      "body": "以佣兵、商贸与影响力扩张为轴心的权力网络。",
+      "details": [
+        [
+          "理解其行动",
+          "不同年代与分支的组织面貌会变化；在城市冒险中利益常比单一标签更能解释行动。"
+        ]
+      ],
+      "src": [
+        "factions"
+      ],
+      "section": "atlas",
+      "kind": "组织",
+      "aliases": []
+    },
+    {
+      "id": "emerald",
+      "name": "翠绿闲庭",
+      "en": "Emerald Enclave",
+      "body": "关注自然秩序及文明与荒野平衡的网络。",
+      "details": [
+        [
+          "理解其行动",
+          "保护自然不必然意味着反对一切城镇；具体冲突仍须看地方问题。"
+        ]
+      ],
+      "src": [
+        "factions"
+      ],
+      "section": "atlas",
+      "kind": "组织",
+      "aliases": []
+    },
+    {
+      "id": "gauntlet",
+      "name": "铁手教团",
+      "en": "Order of the Gauntlet",
+      "body": "由有信仰的战士等组成，主动对抗邪恶威胁。",
+      "details": [
+        [
+          "理解其行动",
+          "信仰与合作是重要纽带；成员的神祇不必完全相同。"
+        ]
+      ],
+      "src": [
+        "factions"
+      ],
+      "section": "atlas",
+      "kind": "组织",
+      "aliases": []
+    },
+    {
+      "id": "bregan",
+      "name": "达耶特佣兵团",
+      "en": "Bregan D’aerthe",
+      "body": "贾拉索创立的卓尔佣兵与秘密行动组织。",
+      "details": [
+        [
+          "理解其行动",
+          "比起把它固定为英雄或恶人阵营，关注领袖利益、雇佣关系与政治自由更有解释力。"
+        ]
+      ],
+      "src": [
+        "jarlaxle",
+        "factions"
+      ],
+      "section": "atlas",
+      "kind": "组织",
+      "aliases": []
+    }
+  ],
+  "terms": [
+    {
+      "id": "dnd",
+      "name": "D&D 是什么",
+      "en": "Dungeons & Dragons",
+      "body": "一套桌面角色扮演游戏及其世界设定传统。主持人 DM 描述情境、裁定规则，玩家以角色选择推动故事；本百科侧重设定知识，不是完整规则书。",
+      "details": [],
+      "src": [
+        "planes",
+        "fr"
+      ],
+      "section": "primer",
+      "aliases": [
+        "DnD",
+        "DND",
+        "龙与地下城"
+      ]
+    },
+    {
+      "id": "setting",
+      "name": "设定 ≠ 位面 ≠ 星球",
+      "en": "Setting / Plane / World",
+      "body": "“设定”是故事背景框架；“位面”是存在层；“世界”通常指某个具体冒险世界。托瑞尔是星球，物质位面是存在层，被遗忘的国度是设定。",
+      "details": [],
+      "src": [
+        "planes",
+        "fr"
+      ],
+      "section": "primer",
+      "aliases": []
+    },
+    {
+      "id": "weave-term",
+      "name": "魔网",
+      "en": "The Weave",
+      "body": "托瑞尔上接触和塑造魔法的重要体系，与密斯特拉相连。魔网是理解费伦历史的关键，不能当成所有 D&D 设定唯一通用的魔法解释。",
+      "details": [],
+      "src": [
+        "weave"
+      ],
+      "section": "primer",
+      "aliases": []
+    },
+    {
+      "id": "mythal",
+      "name": "迷锁",
+      "en": "Mythal",
+      "body": "大型、持续的魔法防护及效果网络，常见于精灵城市。“迷锁”和遍及托瑞尔的“魔网”不是同一概念。",
+      "details": [],
+      "src": [
+        "myth"
+      ],
+      "section": "primer",
+      "aliases": []
+    },
+    {
+      "id": "chosen",
+      "name": "选民",
+      "en": "Chosen",
+      "body": "被特定神祇赋予力量或使命的凡人。伊尔明斯特和银手姐妹与密斯特拉有关；不是每位强大法师都是选民。",
+      "details": [],
+      "src": [
+        "heroes"
+      ],
+      "section": "primer",
+      "aliases": []
+    },
+    {
+      "id": "dr",
+      "name": "谷地纪年",
+      "en": "Dale Reckoning / DR",
+      "body": "费伦常用历法之一，立石事件定在 1 DR。负号表示纪元前；DR 年份不能直接与艾伯伦 YK 或龙枪 AC 年份互换。",
+      "details": [],
+      "src": [
+        "stone"
+      ],
+      "section": "primer",
+      "aliases": []
+    },
+    {
+      "id": "alignment",
+      "name": "阵营",
+      "en": "Alignment",
+      "body": "常以善—恶、守序—混乱两轴描述理念。它是理解角色和某些位面的工具，不能取代动机、背景和个体行为。",
+      "details": [],
+      "src": [
+        "gods",
+        "planes"
+      ],
+      "section": "primer",
+      "aliases": []
+    },
+    {
+      "id": "fiends",
+      "name": "恶魔与魔鬼",
+      "en": "Demon / Devil",
+      "body": "恶魔通常关联无底深渊及混乱；魔鬼通常关联九层地狱及等级契约。它们在血战中互为对手，尤格罗斯等邪魔又可能另有立场。",
+      "details": [],
+      "src": [
+        "blood",
+        "devil"
+      ],
+      "section": "primer",
+      "aliases": []
+    },
+    {
+      "id": "lich",
+      "name": "巫妖",
+      "en": "Lich",
+      "body": "以不死存在延续自身力量的强大施法者类型；维克那是著名例子。巫妖是生物身份，神格是另一层状态，两者不可简单等同。",
+      "details": [],
+      "src": [
+        "vecna"
+      ],
+      "section": "primer",
+      "aliases": []
+    },
+    {
+      "id": "portal",
+      "name": "传送门",
+      "en": "Portal",
+      "body": "固定或特殊的跨位面连接，有些需要钥匙或条件。印记城的门与空间航行构成不同的旅行体验。",
+      "details": [],
+      "src": [
+        "sigil",
+        "planes"
+      ],
+      "section": "primer",
+      "aliases": []
+    }
+  ]
+}

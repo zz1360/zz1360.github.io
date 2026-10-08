@@ -1,0 +1,12 @@
+[
+  {
+    "id": "yinhun",
+    "title": "阴魂",
+    "category": "小说剧情图谱",
+    "source": "works/yinhun/source.html",
+    "description": "以费伦为舞台的魔幻小说，围绕阴魂城巫师琼恩的成长与选择展开。可按阅读进度探索卷纲、事件和人物。",
+    "reading_note": "默认无剧透介绍，可按已读进度查看或主动开启完整剧透；设定与人物关系按小说文本理解。",
+    "tagline": "从棋子，到棋手。",
+    "imported_source_sha256": "cb026be64c056c8e13c3ddccd95e42a18c4f4cbdae19d51f4e773dfada2b7f82"
+  }
+]

@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light">
+    <meta name="description" content="守一 App 技术支持：获取使用帮助、反馈问题并了解数据与 iCloud 同步。">
+    <link rel="canonical" href="https://blog.luckydogs.top/support/">
+    <meta property="og:title" content="技术支持｜守一">
+    <meta property="og:description" content="守一 App 的使用帮助、问题反馈与数据支持。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://blog.luckydogs.top/support/">
+    <title>技术支持｜守一</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #17312a;
+        --ink-muted: #52645e;
+        --jade: #2f7564;
+        --jade-deep: #1f5a4b;
+        --jade-light: #dcece4;
+        --paper: #fbfaf5;
+        --paper-deep: #f0eee4;
+        --hairline: #d9ddd1;
+        --cinnabar: #a8493d;
+        --gold: #b38b43;
+      }
+
+      * { box-sizing: border-box; }
+
+      html { background: var(--paper-deep); }
+
+      body {
+        margin: 0;
+        min-width: 320px;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at 8% 4%, rgba(123, 166, 148, .14), transparent 28rem),
+          radial-gradient(circle at 92% 12%, rgba(195, 163, 105, .11), transparent 25rem),
+          var(--paper);
+        font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", system-ui, sans-serif;
+        font-size: 16px;
+        line-height: 1.82;
+      }
+
+      .page {
+        width: min(100% - 32px, 860px);
+        margin: 0 auto;
+        padding: 56px 0 72px;
+      }
+
+      .hero {
+        padding: 30px 32px;
+        border: 1px solid rgba(47, 117, 100, .2);
+        border-radius: 24px;
+        background: rgba(255, 255, 252, .72);
+        box-shadow: 0 18px 44px rgba(36, 64, 53, .07);
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin: 0 0 12px;
+        color: var(--jade);
+        font-size: .84rem;
+        font-weight: 700;
+        letter-spacing: .12em;
+      }
+
+      .eyebrow::before {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: var(--jade);
+        content: "";
+      }
+
+      h1, h2, h3 {
+        color: var(--ink);
+        font-family: "Songti SC", "STSong", "Noto Serif CJK SC", serif;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(2rem, 5vw, 2.8rem);
+        line-height: 1.24;
+        letter-spacing: .03em;
+      }
+
+      .lead {
+        max-width: 43rem;
+        margin: 14px 0 0;
+        color: var(--ink-muted);
+      }
+
+      .meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px 24px;
+        margin: 22px 0 0;
+        color: var(--ink-muted);
+        font-size: .9rem;
+      }
+
+      .content {
+        margin-top: 28px;
+        padding: 8px 32px 28px;
+        border: 1px solid var(--hairline);
+        border-radius: 24px;
+        background: rgba(255, 255, 252, .88);
+        box-shadow: 0 18px 44px rgba(36, 64, 53, .05);
+      }
+
+      section {
+        padding: 27px 0;
+        border-bottom: 1px solid var(--hairline);
+      }
+
+      section:last-child { border-bottom: 0; }
+
+      h2 {
+        margin: 0 0 12px;
+        font-size: 1.34rem;
+        line-height: 1.45;
+      }
+
+      h3 {
+        margin: 18px 0 8px;
+        font-size: 1.04rem;
+        line-height: 1.6;
+      }
+
+      p { margin: 0 0 12px; }
+      p:last-child { margin-bottom: 0; }
+
+      ul, ol {
+        margin: 10px 0 0;
+        padding-left: 1.35em;
+      }
+
+      li { margin: 7px 0; }
+
+      a {
+        color: var(--jade);
+        font-weight: 650;
+        text-decoration-color: rgba(47, 117, 100, .35);
+        text-underline-offset: .18em;
+      }
+
+      a:hover { color: var(--jade-deep); }
+
+      .contact {
+        padding: 19px;
+        border: 1px solid rgba(47, 117, 100, .24);
+        border-radius: 16px;
+        background: linear-gradient(135deg, #f2f8f4, #fffdf8);
+      }
+
+      .contact strong { color: var(--jade-deep); }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 44px;
+        margin-top: 6px;
+        padding: 9px 18px;
+        border-radius: 999px;
+        background: var(--jade);
+        color: #fff;
+        font-weight: 700;
+        text-decoration: none;
+        box-shadow: 0 7px 16px rgba(31, 90, 75, .18);
+      }
+
+      .button:hover { color: #fff; background: var(--jade-deep); }
+
+      .note {
+        margin-top: 14px;
+        padding: 14px 16px;
+        border-left: 3px solid var(--gold);
+        border-radius: 0 12px 12px 0;
+        background: #fbf6eb;
+        color: #64563c;
+      }
+
+      .faq {
+        display: grid;
+        gap: 12px;
+        margin-top: 14px;
+      }
+
+      details {
+        overflow: hidden;
+        border: 1px solid var(--hairline);
+        border-radius: 14px;
+        background: #fffef9;
+      }
+
+      summary {
+        position: relative;
+        padding: 15px 46px 15px 16px;
+        color: var(--ink);
+        cursor: pointer;
+        font-weight: 700;
+        list-style: none;
+      }
+
+      summary::-webkit-details-marker { display: none; }
+
+      summary::after {
+        position: absolute;
+        top: 50%;
+        right: 18px;
+        width: 8px;
+        height: 8px;
+        border-right: 2px solid var(--jade);
+        border-bottom: 2px solid var(--jade);
+        transform: translateY(-70%) rotate(45deg);
+        content: "";
+      }
+
+      details[open] summary::after { transform: translateY(-25%) rotate(225deg); }
+
+      .answer {
+        padding: 0 16px 16px;
+        color: var(--ink-muted);
+      }
+
+      footer {
+        padding: 24px 0 0;
+        color: #718079;
+        font-size: .84rem;
+        text-align: center;
+      }
+
+      @media (max-width: 640px) {
+        .page { width: min(100% - 24px, 860px); padding: 24px 0 42px; }
+        .hero, .content { border-radius: 18px; }
+        .hero { padding: 25px 22px; }
+        .content { margin-top: 18px; padding: 4px 22px 18px; }
+        section { padding: 22px 0; }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <header class="hero">
+        <p class="eyebrow">守一 APP</p>
+        <h1>技术支持</h1>
+        <p class="lead">遇到使用问题、同步异常或数据管理疑问时，可在此查看常见处理方式，或通过邮箱联系守一。</p>
+        <div class="meta">
+          <span>适用：iPhone 与 Mac 版守一</span>
+          <span>更新日期：2026 年 8 月 26 日</span>
+        </div>
+      </header>
+
+      <article class="content">
+        <section>
+          <h2>联系技术支持</h2>
+          <div class="contact">
+            <p><strong>支持邮箱：</strong><a href="mailto:792874081@qq.com">792874081@qq.com</a></p>
+            <p>请简要说明遇到的情况。为便于定位问题，建议一并提供设备型号、系统版本、守一版本、操作步骤和必要的截图。</p>
+            <p>截图中请避免包含密码、Apple Account 信息或其他不必要的个人信息。</p>
+            <a class="button" href="mailto:792874081@qq.com?subject=%E5%AE%88%E4%B8%80%20App%20%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81">发送支持邮件</a>
+          </div>
+        </section>
+
+        <section>
+          <h2>常见问题</h2>
+          <div class="faq">
+            <details>
+              <summary>如何选择仅在本机使用或 iCloud 同步？</summary>
+              <div class="answer">首次启动时可选择数据存储方式；之后可在“设置 → 数据存储与隐私”中更改。启用或关闭 iCloud 同步后，请完全关闭并重新打开 App，使新的存储方式生效。</div>
+            </details>
+            <details>
+              <summary>iCloud 同步没有生效，应该检查什么？</summary>
+              <div class="answer">请确认各设备登录的是同一 Apple Account，已开启 iCloud，并已在守一中选择 iCloud 同步。随后在“设置 → 数据存储与隐私”中检查同步状态；网络恢复后同步可能需要一点时间。</div>
+            </details>
+            <details>
+              <summary>如何清空修行数据？</summary>
+              <div class="answer">iPhone 可前往“设置 → 修行数据 → 清空全部修行数据”；Mac 可前往“设置 → 修行数据 → 清空全部”。若已启用 iCloud，同步可用时删除会同步到使用同一 Apple Account 的其他设备，且无法恢复。</div>
+            </details>
+            <details>
+              <summary>卸载 App 后，iCloud 中的数据会自动删除吗？</summary>
+              <div class="answer">不会。若需删除已同步的数据，请先在 App 内执行“清空全部修行数据”，并保持网络连接直至同步完成，再卸载 App。</div>
+            </details>
+          </div>
+        </section>
+
+        <section>
+          <h2>数据与隐私</h2>
+          <p>守一可仅在本机保存数据；只有在您主动选择 iCloud 同步后，修行记录才会通过 Apple 的 CloudKit 私有数据库在您自己的设备间同步。</p>
+          <p>有关处理的数据、保存期限、删除方式和隐私请求，请阅读<a href="/privacy/">《守一隐私政策》</a>，或直接通过支持邮箱联系我们。</p>
+          <div class="note">如您正在反馈同步问题，请不要在邮件中发送 Apple Account 密码、验证码、身份证件或银行卡信息。</div>
+        </section>
+      </article>
+
+      <footer>© 2026 守一 · 技术支持</footer>
+    </main>
+  </body>
+</html>
