@@ -1,4 +1,5 @@
 (() => {
+ DndReadingBackup.currentCore=()=>readingState;
  const read=()=>DndReadingBackup.work(DndReadingBackup.read(DndReadingBackup.workKey));
  function refresh(){const s=read(),on=s.book;
   document.querySelectorAll('[data-save-work]').forEach(b=>{b.setAttribute('aria-pressed',on);b.textContent=on?'★ 已收藏作品':'☆ 收藏作品'});

@@ -1,6 +1,7 @@
 const LORE=JSON.parse(document.getElementById('novel-lore-data').textContent);
 let readerState=DndReadingBackup.work(DndReadingBackup.read(DndReadingBackup.workKey)),readerBooting=true,readerStorage=true;
 try{const key=DndReadingBackup.workKey+'-probe';localStorage.setItem(key,'1');localStorage.removeItem(key)}catch{readerStorage=false}
+DndReadingBackup.currentWork=()=>readerState;
 const readerOriginal={volumes:$$('.volume-panel').map(n=>n.innerHTML),cards:$$('.cast-card').map(n=>n.innerHTML),events:$$('.event-card').map(n=>n.innerHTML)};
 const safeName=c=>c.id==='mei-fei-si'?'梅菲斯':c.name;
 function readerFull(){return readerState.mode==='full'}

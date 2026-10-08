@@ -11,7 +11,7 @@
  const read=key=>{try{const x=JSON.parse(localStorage.getItem(key)||'{}');return x&&typeof x==='object'&&!Array.isArray(x)?x:{}}catch{return {}}};
  window.DndReadingBackup={work,core,read,workKey,coreKey};
  document.querySelectorAll('[data-reader-export]').forEach(b=>b.onclick=()=>{
-  try{const payload={format:'dnd-reading-backup',version:1,codex:core(read(coreKey)),yinhun:work(read(workKey))};const url=URL.createObjectURL(new Blob([JSON.stringify(payload,null,2)],{type:'application/json'})),a=document.createElement('a');a.href=url;a.download='DND阅读记录.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);status('已导出阅读进度与收藏。')}catch{status('无法读取本地保存的数据。')}
+  try{const payload={format:'dnd-reading-backup',version:1,codex:core(window.DndReadingBackup.currentCore?.()||read(coreKey)),yinhun:work(window.DndReadingBackup.currentWork?.()||read(workKey))};const url=URL.createObjectURL(new Blob([JSON.stringify(payload,null,2)],{type:'application/json'})),a=document.createElement('a');a.href=url;a.download='DND阅读记录.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);status('已导出当前可读取的阅读进度与收藏。')}catch{status('无法读取本地保存的数据。')}
  });
  document.querySelectorAll('[data-reader-import]').forEach(b=>b.onclick=()=>document.getElementById('reader-import-file').click());
  document.getElementById('reader-import-file').onchange=async e=>{
