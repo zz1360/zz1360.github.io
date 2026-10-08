@@ -2,21 +2,21 @@
 
 [线上百科](https://blog.luckydogs.top/dnd/) · 非官方知识导览。
 
-本目录包含可独立构建的源码、知识数据和全部 57 幅 WebP 原图。GitHub 仓库的 `dnd-source` 分支维护源码，`main` 分支用于 GitHub Pages 发布静态网页。源码也保存在博客的 `.vuepress/dnd-source/`，以它作为日常编辑入口。
+本目录包含可独立构建的源码、知识数据和全部 57 幅 WebP 原图。主站已迁移到 Astro；GitHub 仓库的 `site-source` 分支保存当前主站及本目录源码，`main` 分支用于 GitHub Pages 发布静态网页。当前日常维护入口是主站项目的 `dnd-source/`，原 `dnd-source` 分支及 VuePress 工作目录仅作历史保留。
 
 ## 构建
 
 需要 Python 3。生成在线图片尺寸还需要 `cwebp`（macOS 可使用 `brew install webp`）。无需 npm 安装即可单独构建百科：
 
 ```sh
-python3 .vuepress/dnd-source/build.py \
+python3 dnd-source/build.py \
   --offline '/绝对路径/DND世界百科（插图版）.html' \
   --online '/绝对路径/dnd'
 ```
 
 在线文件默认以 `/dnd/` 为网址前缀；部署到其他路径时需修改 `export_online.py` 中的资源前缀和 canonical。离线 HTML 内嵌全部文字、插图与脚本，可独立打开。外部资料链接需要联网。
 
-在本机博客目录执行 `npm run update:dnd` 可生成 `.vuepress/public/dnd/`。`npm run build` 的 prebuild 会自动更新百科，再由 VuePress 复制到输出目录。
+在当前 Astro 主站项目目录执行 `npm run update:dnd` 可生成 `public/dnd/`，再由 `npm run build` 复制到输出目录。普通构建仅在该目录缺失时自动生成百科；修改本目录源码后请显式运行 `npm run update:dnd`。主站发布、文章写作和字体说明见项目根目录的 `维护说明.md`。
 
 ## 编辑位置
 
