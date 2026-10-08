@@ -2,6 +2,7 @@
 from pathlib import Path
 from html.parser import HTMLParser
 import base64,hashlib,html,json,re,shutil,subprocess
+import reader
 
 PUBLIC_ROOT='https://blog.luckydogs.top/dnd/'
 
@@ -117,6 +118,7 @@ def prepare_online_works(codex,output,root):
         page=page.replace('</head>','<link rel="canonical" href="'+work['url']+'"><style>'+extra_css+'</style></head>',1)
         # Explain provenance on the public copy without exposing local file paths.
         page=page.replace('依据本机 EPUB','依据所提供的 EPUB').replace('依据本机EPUB','依据所提供的EPUB').replace('本机《阴魂》EPUB','所提供的《阴魂》EPUB').replace('本机文本','所提供的文本').replace('本机《阴魂.epub》','所提供的《阴魂.epub》')
+        page=reader.adapt(page,root,data)
         assert '/Users/' not in page
         (directory/'index.html').write_text(page)
         manifest=dict(id=work['id'],title=work['title'],url=work['url'],imported_source_sha256=work['imported_source_sha256'],maintained_source_sha256=hashlib.sha256(original.encode()).hexdigest(),html_sha256=hashlib.sha256(page.encode()).hexdigest(),stats=work['stats'],gallery_count=len(gallery),images=[{k:v for k,v in x.items() if k not in ['thumb','card','srcset']} for x in images.values()])
