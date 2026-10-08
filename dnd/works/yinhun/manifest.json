@@ -1,0 +1,835 @@
+{
+  "id": "yinhun",
+  "title": "阴魂",
+  "url": "https://blog.luckydogs.top/dnd/works/yinhun/",
+  "imported_source_sha256": "cb026be64c056c8e13c3ddccd95e42a18c4f4cbdae19d51f4e773dfada2b7f82",
+  "maintained_source_sha256": "db1080ecb60e6bf4117647eed3ffac4acdf1f72012267b225604216edd46b034",
+  "html_sha256": "eb50284f40437325298196dfe4384b3834c7aae30dbc3ae32ae56ab3aa91e530",
+  "stats": {
+    "volumes": 14,
+    "events": 66,
+    "characters": 12
+  },
+  "gallery_count": 9,
+  "images": [
+    {
+      "url": "/dnd/works/yinhun/assets/art-70d58461c86bbe2f12c2.webp",
+      "sha256": "70d58461c86bbe2f12c2931920abfc9983cf703701248fcb90fcf700e953541e",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 401930,
+      "variants": [
+        {
+          "url": "/dnd/works/yinhun/assets/art-70d58461c86bbe2f12c2-w320-q82-v1.webp",
+          "width": 320,
+          "sha256": "7c7310d622d4d4d9c1554e443c9c4ffcc14d1a6940818a04f1afcc93d1c13094",
+          "bytes": 47330
+        },
+        {
+          "url": "/dnd/works/yinhun/assets/art-70d58461c86bbe2f12c2-w640-q82-v1.webp",
+          "width": 640,
+          "sha256": "e1307245431678841deb6790d4c6d019cabf95afa3b6443361cef7b0610109f0",
+          "bytes": 132858
+        }
+      ]
+    },
+    {
+      "url": "/dnd/works/yinhun/assets/art-5c8adae8cef26092de43.webp",
+      "sha256": "5c8adae8cef26092de43136d96a741ce7a37b336a57fe59ab3808a8f906e02c0",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 353300,
+      "variants": [
+        {
+          "url": "/dnd/works/yinhun/assets/art-5c8adae8cef26092de43-w320-q82-v1.webp",
+          "width": 320,
+          "sha256": "2f92c0a4375bbb022772e5d940b4a5741988254bb07b256a695bfc9e6ac4f80f",
+          "bytes": 43708
+        },
+        {
+          "url": "/dnd/works/yinhun/assets/art-5c8adae8cef26092de43-w640-q82-v1.webp",
+          "width": 640,
+          "sha256": "e4a10805c11a1dabb710cf6994862175aac2c7b6b7434428b3e7d5b98a7547c0",
+          "bytes": 121106
+        }
+      ]
+    },
+    {
+      "url": "/dnd/works/yinhun/assets/art-4fbd6403f88b47400610.webp",
+      "sha256": "4fbd6403f88b474006109cc12872b54faa23fc009c08eb35acb98d95d922e0a9",
+      "width": 800,
+      "height": 1200,
+      "bytes": 229660,
+      "variants": [
+        {
+          "url": "/dnd/works/yinhun/assets/art-4fbd6403f88b47400610-w320-q82-v1.webp",
+          "width": 320,
+          "sha256": "57db5581de8dde55bc8f594da22413c216e5f67e78b69a1b399dc02d314e5b21",
+          "bytes": 43512
+        },
+        {
+          "url": "/dnd/works/yinhun/assets/art-4fbd6403f88b47400610-w640-q82-v1.webp",
+          "width": 640,
+          "sha256": "4e5999a9b408826206c00d3dd9f75981814debb1a37ee5620142c25eb2ae97f2",
+          "bytes": 115596
+        }
+      ]
+    },
+    {
+      "url": "/dnd/works/yinhun/assets/art-397629d24c1589c2a263.webp",
+      "sha256": "397629d24c1589c2a263485079af4d06a134d113f5e267e1b1deb21312d2b6f4",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 470304,
+      "variants": [
+        {
+          "url": "/dnd/works/yinhun/assets/art-397629d24c1589c2a263-w320-q82-v1.webp",
+          "width": 320,
+          "sha256": "f4ebf1f4c067eae32e2e49822a0a6032adca2755ee7bb26365012aa107ec2342",
+          "bytes": 51784
+        },
+        {
+          "url": "/dnd/works/yinhun/assets/art-397629d24c1589c2a263-w640-q82-v1.webp",
+          "width": 640,
+          "sha256": "eaa3b0981c1c0e1bcdc9c34c6f741f09e77d9d10315e55fa40272e1c3ba3c179",
+          "bytes": 154984
+        }
+      ]
+    },
+    {
+      "url": "/dnd/works/yinhun/assets/art-b7efc64ca58f84055759.webp",
+      "sha256": "b7efc64ca58f84055759711686d8297f18c46389fca2c135f13e9237d9bdaade",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 416822,
+      "variants": [
+        {
+          "url": "/dnd/works/yinhun/assets/art-b7efc64ca58f84055759-w320-q82-v1.webp",
+          "width": 320,
+          "sha256": "5e217220fab7776b320fa9a29cf22a774b480b331ec03902aa4cfbc2e8690c5a",
+          "bytes": 47316
+        },
+        {
+          "url": "/dnd/works/yinhun/assets/art-b7efc64ca58f84055759-w640-q82-v1.webp",
+          "width": 640,
+          "sha256": "0a9e22b722da9376f7a48107e7dc4ac0ce5e787658a9c964cfcde7f5d07ac982",
+          "bytes": 135204
+        }
+      ]
+    },
+    {
+      "url": "/dnd/works/yinhun/assets/art-f5d8931d7e41d2fff113.webp",
+      "sha256": "f5d8931d7e41d2fff113466574d31b2173c92952526c7c0cfb7685ac3142ca5b",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 431670,
+      "variants": [
+        {
+          "url": "/dnd/works/yinhun/assets/art-f5d8931d7e41d2fff113-w320-q82-v1.webp",
+          "width": 320,
+          "sha256": "76cc807f82a31fd4698ebbc115d2babbc24e4240ee00cf8dcf6d2e7eb3831ff5",
+          "bytes": 46120
+        },
+        {
+          "url": "/dnd/works/yinhun/assets/art-f5d8931d7e41d2fff113-w640-q82-v1.webp",
+          "width": 640,
+          "sha256": "f31762dafcf41bf710154e6022c3a63279cf3dd2aa2b385919bcc7aabdf6eff7",
+          "bytes": 138782
+        }
+      ]
+    },
+    {
+      "url": "/dnd/works/yinhun/assets/art-0a1724b9040f363d7af8.webp",
+      "sha256": "0a1724b9040f363d7af8e65a192277b8e2c63a0f084848dc34813f7a2b8536fe",
+      "width": 800,
+      "height": 1200,
+      "bytes": 232488,
+      "variants": [
+        {
+          "url": "/dnd/works/yinhun/assets/art-0a1724b9040f363d7af8-w320-q82-v1.webp",
+          "width": 320,
+          "sha256": "631ed4d19d2af6318234624d0da042616762d3689b90650ceb0f36d54c0ffc69",
+          "bytes": 43758
+        },
+        {
+          "url": "/dnd/works/yinhun/assets/art-0a1724b9040f363d7af8-w640-q82-v1.webp",
+          "width": 640,
+          "sha256": "96499a1eab4c85a0cec9e8b1018bd7f9f9d80cd87ce9515dc6725ab29ad02a64",
+          "bytes": 119840
+        }
+      ]
+    },
+    {
+      "url": "/dnd/works/yinhun/assets/art-6dafd91994827ea3e768.webp",
+      "sha256": "6dafd91994827ea3e768cffce8611aea0d9d8f73259b995dad75c46d1ffd93ed",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 505140,
+      "variants": [
+        {
+          "url": "/dnd/works/yinhun/assets/art-6dafd91994827ea3e768-w320-q82-v1.webp",
+          "width": 320,
+          "sha256": "c82d5819cf4d33de1401aa15502874c928e0a65c5d1f6a47da603ed2b79fc2e0",
+          "bytes": 54874
+        },
+        {
+          "url": "/dnd/works/yinhun/assets/art-6dafd91994827ea3e768-w640-q82-v1.webp",
+          "width": 640,
+          "sha256": "c7d500c376d6ae9a6cb64e066fe539c3fb499d750f381ec3f33dea28141e52cc",
+          "bytes": 169050
+        }
+      ]
+    },
+    {
+      "url": "/dnd/works/yinhun/assets/art-a13683efc99e1f2bad20.webp",
+      "sha256": "a13683efc99e1f2bad208b15929a0755f87e5675b421f75cf8c5235421172da5",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 361542,
+      "variants": [
+        {
+          "url": "/dnd/works/yinhun/assets/art-a13683efc99e1f2bad20-w320-q82-v1.webp",
+          "width": 320,
+          "sha256": "53aac2363af9fd7bc686234d3b407dbae9529186ffc75fd8bc8c53a80c9507d1",
+          "bytes": 42182
+        },
+        {
+          "url": "/dnd/works/yinhun/assets/art-a13683efc99e1f2bad20-w640-q82-v1.webp",
+          "width": 640,
+          "sha256": "cf19422338e858ca9133743b306bec124e427101997618423f8dc76b8fe9d903",
+          "bytes": 120824
+        }
+      ]
+    },
+    {
+      "url": "/dnd/works/yinhun/assets/art-024baadcd9e72d441032.webp",
+      "sha256": "024baadcd9e72d4410327285577ca9f5116eac6ce4631c869ace5a29bde05fee",
+      "width": 800,
+      "height": 1200,
+      "bytes": 299064,
+      "variants": [
+        {
+          "url": "/dnd/works/yinhun/assets/art-024baadcd9e72d441032-w320-q82-v1.webp",
+          "width": 320,
+          "sha256": "97ba70042a1385555a6decc88917cc6acbb0ea27e57d88874902678e81b34a08",
+          "bytes": 54890
+        },
+        {
+          "url": "/dnd/works/yinhun/assets/art-024baadcd9e72d441032-w640-q82-v1.webp",
+          "width": 640,
+          "sha256": "e30bacd6c88b2cee62b77130ef4a6c40c0cd4d4c51db2ea9b1b2ec5f06b7820f",
+          "bytes": 154654
+        }
+      ]
+    },
+    {
+      "url": "/dnd/works/yinhun/assets/art-aab5bbf469639e2e1fdb.webp",
+      "sha256": "aab5bbf469639e2e1fdb915d997b15fafa678496a09060498ccfb7d4378a4bc9",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 471614,
+      "variants": [
+        {
+          "url": "/dnd/works/yinhun/assets/art-aab5bbf469639e2e1fdb-w320-q82-v1.webp",
+          "width": 320,
+          "sha256": "673955ee2f075d011ccb15819d152567f9e8cb1cd052ffa747d56cb07998b18f",
+          "bytes": 51096
+        },
+        {
+          "url": "/dnd/works/yinhun/assets/art-aab5bbf469639e2e1fdb-w640-q82-v1.webp",
+          "width": 640,
+          "sha256": "2d97149ee13cd68f97c7f8c84f78ea099bb0eb6afa2d66e2c2dc6ce430c952b7",
+          "bytes": 154826
+        }
+      ]
+    },
+    {
+      "url": "/dnd/works/yinhun/assets/art-f40d6a6772c4835a4203.webp",
+      "sha256": "f40d6a6772c4835a42031694796a350038e53dece8e7bcb437e5839dacf5dbea",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 417110,
+      "variants": [
+        {
+          "url": "/dnd/works/yinhun/assets/art-f40d6a6772c4835a4203-w320-q82-v1.webp",
+          "width": 320,
+          "sha256": "1ddc0a58957eac78792c9789cbaefd64a2e3018e4dcd88c06d69a0f71aabe28f",
+          "bytes": 47854
+        },
+        {
+          "url": "/dnd/works/yinhun/assets/art-f40d6a6772c4835a4203-w640-q82-v1.webp",
+          "width": 640,
+          "sha256": "cbe09396437d60bd14f9cb718f2287d72d3b942dcb23b5671e2985d78be4a096",
+          "bytes": 140222
+        }
+      ]
+    },
+    {
+      "url": "/dnd/works/yinhun/assets/art-587d7bf406174343931b.webp",
+      "sha256": "587d7bf406174343931bb8ac37c70c4a425ee6cfd22860a6a3ade4edbbcf6666",
+      "width": 800,
+      "height": 1200,
+      "bytes": 235336,
+      "variants": [
+        {
+          "url": "/dnd/works/yinhun/assets/art-587d7bf406174343931b-w320-q82-v1.webp",
+          "width": 320,
+          "sha256": "d362fbd275bb1c48ac45d17a61f286ba5393097c683c32483dcd72a77a6f58bb",
+          "bytes": 44254
+        },
+        {
+          "url": "/dnd/works/yinhun/assets/art-587d7bf406174343931b-w640-q82-v1.webp",
+          "width": 640,
+          "sha256": "526770e39f19f4546a197692c5d0e9938431d1be493a5a08224a0a539d0ced62",
+          "bytes": 119094
+        }
+      ]
+    },
+    {
+      "url": "/dnd/works/yinhun/assets/art-bc4438525b78af29341f.webp",
+      "sha256": "bc4438525b78af29341fa76913cb4a8311cefe18caadcfe8c93ce2fd2e2072cf",
+      "width": 800,
+      "height": 1200,
+      "bytes": 225612,
+      "variants": [
+        {
+          "url": "/dnd/works/yinhun/assets/art-bc4438525b78af29341f-w320-q82-v1.webp",
+          "width": 320,
+          "sha256": "3adf82890cf188200c3f6071754a664b7c9b78f3713a4a71d3565bca5afd4135",
+          "bytes": 44750
+        },
+        {
+          "url": "/dnd/works/yinhun/assets/art-bc4438525b78af29341f-w640-q82-v1.webp",
+          "width": 640,
+          "sha256": "6463a1f36369b234973e7ea079bbc1b797a0fd51a693e208057fd28d213c6b2e",
+          "bytes": 117792
+        }
+      ]
+    },
+    {
+      "url": "/dnd/works/yinhun/assets/art-b82f0a14fc5800fe6f99.webp",
+      "sha256": "b82f0a14fc5800fe6f995c1ab0b6ec7d24c501ba857e3ee47fb5b502f863fb03",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 477010,
+      "variants": [
+        {
+          "url": "/dnd/works/yinhun/assets/art-b82f0a14fc5800fe6f99-w320-q82-v1.webp",
+          "width": 320,
+          "sha256": "fb1a2a66b38893d86e6ed082ac7d234ef9590e3f415d448d111879439cd9047c",
+          "bytes": 51472
+        },
+        {
+          "url": "/dnd/works/yinhun/assets/art-b82f0a14fc5800fe6f99-w640-q82-v1.webp",
+          "width": 640,
+          "sha256": "a93caddd55037188fd198f472731919e74ac1db9cfd17b3c42d8362b73b40795",
+          "bytes": 156100
+        }
+      ]
+    },
+    {
+      "url": "/dnd/works/yinhun/assets/art-b9c9fcc3a24b4f24a0dd.webp",
+      "sha256": "b9c9fcc3a24b4f24a0dd618af67db6fa6ced9614cfdebd7fc725007d2bdb13fc",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 407898,
+      "variants": [
+        {
+          "url": "/dnd/works/yinhun/assets/art-b9c9fcc3a24b4f24a0dd-w320-q82-v1.webp",
+          "width": 320,
+          "sha256": "acb220445acbb56960298b19a69a541bd63b8a17e06ee605ff978ac69e5f9ed8",
+          "bytes": 48880
+        },
+        {
+          "url": "/dnd/works/yinhun/assets/art-b9c9fcc3a24b4f24a0dd-w640-q82-v1.webp",
+          "width": 640,
+          "sha256": "cfdb6a359422e793443bab978b2947ad241fb19fa2d05a10f9934f04845927e2",
+          "bytes": 137184
+        }
+      ]
+    },
+    {
+      "url": "/dnd/works/yinhun/assets/art-2b3386f37120dc85c2c5.webp",
+      "sha256": "2b3386f37120dc85c2c5dd5a06991d241ce73a3013b9f397f9d68681038906e5",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 388442,
+      "variants": [
+        {
+          "url": "/dnd/works/yinhun/assets/art-2b3386f37120dc85c2c5-w320-q82-v1.webp",
+          "width": 320,
+          "sha256": "6a829771b97ef55140188576ec87f58c10d3538bb4c087811323dcd785d39550",
+          "bytes": 43570
+        },
+        {
+          "url": "/dnd/works/yinhun/assets/art-2b3386f37120dc85c2c5-w640-q82-v1.webp",
+          "width": 640,
+          "sha256": "a0bd31af175040caa0af7a5749601095a39432a30a36f9c3d5505bec909da952",
+          "bytes": 126244
+        }
+      ]
+    },
+    {
+      "url": "/dnd/works/yinhun/assets/art-f92165d62c07e783092d.webp",
+      "sha256": "f92165d62c07e783092d470b7790f13ecff158f6cb56a3e739f2a36110a14925",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 381048,
+      "variants": [
+        {
+          "url": "/dnd/works/yinhun/assets/art-f92165d62c07e783092d-w320-q82-v1.webp",
+          "width": 320,
+          "sha256": "55ba97a83d5fe9a3f3182f4ec23b267078073efaba9862709531484b3816c097",
+          "bytes": 43318
+        },
+        {
+          "url": "/dnd/works/yinhun/assets/art-f92165d62c07e783092d-w640-q82-v1.webp",
+          "width": 640,
+          "sha256": "20c8a67675e590f6409db577afd6d49c3de5d04ea25da846ad5ffb62b5ad483f",
+          "bytes": 126822
+        }
+      ]
+    },
+    {
+      "url": "/dnd/works/yinhun/assets/art-54da303e5d0779b31a45.webp",
+      "sha256": "54da303e5d0779b31a459ef1d7d4e05cdcd4bf6435f12b14be03d6acf39f5e74",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 555136,
+      "variants": [
+        {
+          "url": "/dnd/works/yinhun/assets/art-54da303e5d0779b31a45-w320-q82-v1.webp",
+          "width": 320,
+          "sha256": "d37960581ec034ccfaf1a3cf53cad102c3ff9d8d2e2b7a114f0bda0c3d00d753",
+          "bytes": 61228
+        },
+        {
+          "url": "/dnd/works/yinhun/assets/art-54da303e5d0779b31a45-w640-q82-v1.webp",
+          "width": 640,
+          "sha256": "04b0e6e02dae151e2ee5a47fc7b76006c227df5fb6c8b5b1e0e0e5f104880fe4",
+          "bytes": 184916
+        }
+      ]
+    },
+    {
+      "url": "/dnd/works/yinhun/assets/art-f9407fc4f5a0ec0f5839.webp",
+      "sha256": "f9407fc4f5a0ec0f58399e13a671f7bb3ede7c152a7cc5dc5675ae523a1f14b2",
+      "width": 800,
+      "height": 1200,
+      "bytes": 213378,
+      "variants": [
+        {
+          "url": "/dnd/works/yinhun/assets/art-f9407fc4f5a0ec0f5839-w320-q82-v1.webp",
+          "width": 320,
+          "sha256": "8704b7d10a5cb4efa79c152872ecc0cd7b1f6eac4f01900c053149bbda98d98e",
+          "bytes": 44192
+        },
+        {
+          "url": "/dnd/works/yinhun/assets/art-f9407fc4f5a0ec0f5839-w640-q82-v1.webp",
+          "width": 640,
+          "sha256": "2db482185c936b0a5fb185df9b5110da4bfd950a023f25349d1d274ba49efdb4",
+          "bytes": 113852
+        }
+      ]
+    },
+    {
+      "url": "/dnd/works/yinhun/assets/art-68fc9c82312f7ac5febe.webp",
+      "sha256": "68fc9c82312f7ac5febe0f8efb394760f686722131d10e5c9c722f5d046217f9",
+      "width": 800,
+      "height": 1200,
+      "bytes": 212618,
+      "variants": [
+        {
+          "url": "/dnd/works/yinhun/assets/art-68fc9c82312f7ac5febe-w320-q82-v1.webp",
+          "width": 320,
+          "sha256": "6b0f22e8ba562a526a5d58667c17675e3396a644a2ec733b8527b2f3f98123ed",
+          "bytes": 43862
+        },
+        {
+          "url": "/dnd/works/yinhun/assets/art-68fc9c82312f7ac5febe-w640-q82-v1.webp",
+          "width": 640,
+          "sha256": "5bac316664e275ea5b5b3b67366a4da02ff49d8c7f5f08c03f8d3cafcdd451bc",
+          "bytes": 111944
+        }
+      ]
+    },
+    {
+      "url": "/dnd/works/yinhun/assets/art-a789f80bf27f1e7f32f5.webp",
+      "sha256": "a789f80bf27f1e7f32f59ff0ee8db12ec5d56fc3c4b53c4fc3f4a0272917cbe8",
+      "width": 800,
+      "height": 1200,
+      "bytes": 199050,
+      "variants": [
+        {
+          "url": "/dnd/works/yinhun/assets/art-a789f80bf27f1e7f32f5-w320-q82-v1.webp",
+          "width": 320,
+          "sha256": "0786605509a9aeb4babfb8628ffc2a87d2f7c85c1f89f21fb85cc478d5e29d23",
+          "bytes": 41316
+        },
+        {
+          "url": "/dnd/works/yinhun/assets/art-a789f80bf27f1e7f32f5-w640-q82-v1.webp",
+          "width": 640,
+          "sha256": "dde81e7566aac2aa80c90fc96a9d4927a4de04a1d08798b7d3d6f6052cf224f0",
+          "bytes": 104254
+        }
+      ]
+    },
+    {
+      "url": "/dnd/works/yinhun/assets/art-7ae78cfbefe76025b432.webp",
+      "sha256": "7ae78cfbefe76025b4329b9ccafb135e145dc6de73c119ec5c557d4e33fca41e",
+      "width": 800,
+      "height": 1200,
+      "bytes": 173194,
+      "variants": [
+        {
+          "url": "/dnd/works/yinhun/assets/art-7ae78cfbefe76025b432-w320-q82-v1.webp",
+          "width": 320,
+          "sha256": "b9b47d8fb7f71e3b29de0724bc0bd4888c15eaa3c936d6ea335d3b8cc5499764",
+          "bytes": 34942
+        },
+        {
+          "url": "/dnd/works/yinhun/assets/art-7ae78cfbefe76025b432-w640-q82-v1.webp",
+          "width": 640,
+          "sha256": "8527b7edfaeba502dec4cc5b910731305a0f53ca515686781d0271f2527ad845",
+          "bytes": 93302
+        }
+      ]
+    },
+    {
+      "url": "/dnd/works/yinhun/assets/art-10b66ba0dd7289056289.webp",
+      "sha256": "10b66ba0dd7289056289828c66951e236fe09e23785b43225432e170671e1e33",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 494758,
+      "variants": [
+        {
+          "url": "/dnd/works/yinhun/assets/art-10b66ba0dd7289056289-w320-q82-v1.webp",
+          "width": 320,
+          "sha256": "94bc0c319d82de6b138c8a9d71fbb401643a31f32df53ec3f29d2ddbab167ae9",
+          "bytes": 53082
+        },
+        {
+          "url": "/dnd/works/yinhun/assets/art-10b66ba0dd7289056289-w640-q82-v1.webp",
+          "width": 640,
+          "sha256": "28adf356147b59580f10b100fed92cf8a8338a856a3fa0ef389f538db2329b88",
+          "bytes": 158478
+        }
+      ]
+    },
+    {
+      "url": "/dnd/works/yinhun/assets/art-b3eacb817da133876d91.webp",
+      "sha256": "b3eacb817da133876d9182b554c4db58b5be60a3f559e21ab763690c64a3cc5e",
+      "width": 800,
+      "height": 1200,
+      "bytes": 301734,
+      "variants": [
+        {
+          "url": "/dnd/works/yinhun/assets/art-b3eacb817da133876d91-w320-q82-v1.webp",
+          "width": 320,
+          "sha256": "ec9c014b20cb4da6a86a94e09192e2e7046f52e95c80ac9ea65e2622503e7ebb",
+          "bytes": 56326
+        },
+        {
+          "url": "/dnd/works/yinhun/assets/art-b3eacb817da133876d91-w640-q82-v1.webp",
+          "width": 640,
+          "sha256": "1d8a53e47b827a8c082ef6dd9bafd34d2246204ff7fe174d7c377e328a442859",
+          "bytes": 155326
+        }
+      ]
+    },
+    {
+      "url": "/dnd/works/yinhun/assets/art-42ab2a554c83a212ebe2.webp",
+      "sha256": "42ab2a554c83a212ebe2be5a9a7e02502cb2065885b2d17b5db92a24ce6c8536",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 386464,
+      "variants": [
+        {
+          "url": "/dnd/works/yinhun/assets/art-42ab2a554c83a212ebe2-w320-q82-v1.webp",
+          "width": 320,
+          "sha256": "262a05cfeedd46b3857068fb2eb034f9b5a5f62459233d51975cd2f8487876a4",
+          "bytes": 43426
+        },
+        {
+          "url": "/dnd/works/yinhun/assets/art-42ab2a554c83a212ebe2-w640-q82-v1.webp",
+          "width": 640,
+          "sha256": "1cc80df4f2c2eabc1d36af167ab1b6141f5a089395670eb7c2ea4f913654db47",
+          "bytes": 123602
+        }
+      ]
+    },
+    {
+      "url": "/dnd/works/yinhun/assets/art-f1ad4a90cb38d45878ca.webp",
+      "sha256": "f1ad4a90cb38d45878cac4eff657c5b07384acc986653c54814d3bce4561f980",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 465066,
+      "variants": [
+        {
+          "url": "/dnd/works/yinhun/assets/art-f1ad4a90cb38d45878ca-w320-q82-v1.webp",
+          "width": 320,
+          "sha256": "baa80da6963de1a95af07833f6e1cf8227f6082becd44b806bd57e52df0e2e54",
+          "bytes": 50202
+        },
+        {
+          "url": "/dnd/works/yinhun/assets/art-f1ad4a90cb38d45878ca-w640-q82-v1.webp",
+          "width": 640,
+          "sha256": "57951755c170a71328f94df12a822b2adbc4a82042d340f417d31a8c69d34a72",
+          "bytes": 154288
+        }
+      ]
+    },
+    {
+      "url": "/dnd/works/yinhun/assets/art-8dcb3d580f1aa1e65c7a.webp",
+      "sha256": "8dcb3d580f1aa1e65c7a30807cb775625e1d5bc06075e1ac21a0d5f06c030ddf",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 365740,
+      "variants": [
+        {
+          "url": "/dnd/works/yinhun/assets/art-8dcb3d580f1aa1e65c7a-w320-q82-v1.webp",
+          "width": 320,
+          "sha256": "b33029f83fdebf386ce13178d8f111fb7b3bc9cc20978ae7c2d5e10a4a9b259c",
+          "bytes": 43886
+        },
+        {
+          "url": "/dnd/works/yinhun/assets/art-8dcb3d580f1aa1e65c7a-w640-q82-v1.webp",
+          "width": 640,
+          "sha256": "5a104f298d2e51c322fbce1566b226f29c2781dadead994ba68caf53e8af526a",
+          "bytes": 121582
+        }
+      ]
+    },
+    {
+      "url": "/dnd/works/yinhun/assets/art-6fa5c656020c3e0308bd.webp",
+      "sha256": "6fa5c656020c3e0308bde6eb48539c4be44f17f35a158669e4de015debd4b8a6",
+      "width": 800,
+      "height": 1200,
+      "bytes": 237752,
+      "variants": [
+        {
+          "url": "/dnd/works/yinhun/assets/art-6fa5c656020c3e0308bd-w320-q82-v1.webp",
+          "width": 320,
+          "sha256": "6236d42edf9f27173c36b9dc5a29c7c4887167c5c5978abaa09bb4208f6071a6",
+          "bytes": 45882
+        },
+        {
+          "url": "/dnd/works/yinhun/assets/art-6fa5c656020c3e0308bd-w640-q82-v1.webp",
+          "width": 640,
+          "sha256": "b359b2095fd4738ceca845ea1ebbc312d4646062455326c36e18d36cefb2c164",
+          "bytes": 125148
+        }
+      ]
+    },
+    {
+      "url": "/dnd/works/yinhun/assets/art-70ab4e09944e88bb3e37.webp",
+      "sha256": "70ab4e09944e88bb3e37aa609dfbfdea4adbd1c2022d13b415c306ed1102dac4",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 420540,
+      "variants": [
+        {
+          "url": "/dnd/works/yinhun/assets/art-70ab4e09944e88bb3e37-w320-q82-v1.webp",
+          "width": 320,
+          "sha256": "bfc936e945be1118f233686fc9ffc6c0aff87351fc4a5f66fb31ec60b489f80a",
+          "bytes": 45424
+        },
+        {
+          "url": "/dnd/works/yinhun/assets/art-70ab4e09944e88bb3e37-w640-q82-v1.webp",
+          "width": 640,
+          "sha256": "fb2b31bf0bbeee1c4b0af23ad057d76ccaf328faabce2806f841208cc9e0f0f6",
+          "bytes": 133374
+        }
+      ]
+    },
+    {
+      "url": "/dnd/works/yinhun/assets/art-e4670963fde996b62492.webp",
+      "sha256": "e4670963fde996b6249276ae80edbca5ae77159b118a2dc5a63352c215ba89e5",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 364482,
+      "variants": [
+        {
+          "url": "/dnd/works/yinhun/assets/art-e4670963fde996b62492-w320-q82-v1.webp",
+          "width": 320,
+          "sha256": "f5d5cd861564cf98a7265bd7d9cac36ade8e12cb6b7b407eb21df32584e2fcb3",
+          "bytes": 44550
+        },
+        {
+          "url": "/dnd/works/yinhun/assets/art-e4670963fde996b62492-w640-q82-v1.webp",
+          "width": 640,
+          "sha256": "79aa591bf94b6fb3d653eb828177b52862b7afeb861e38ed6c3ebd9965095083",
+          "bytes": 124008
+        }
+      ]
+    },
+    {
+      "url": "/dnd/works/yinhun/assets/art-18c9a1ff2238f6511ee1.webp",
+      "sha256": "18c9a1ff2238f6511ee198a46ffa185307ebc862f8f6f90efa2fde3c0efa8a2c",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 585930,
+      "variants": [
+        {
+          "url": "/dnd/works/yinhun/assets/art-18c9a1ff2238f6511ee1-w320-q82-v1.webp",
+          "width": 320,
+          "sha256": "b22a56f2e187367d9e6447c49a14a897ccea9bbf3f71a092217b508318a2564b",
+          "bytes": 60338
+        },
+        {
+          "url": "/dnd/works/yinhun/assets/art-18c9a1ff2238f6511ee1-w640-q82-v1.webp",
+          "width": 640,
+          "sha256": "67fe145f305f3a65bfdf9a7ae75bd35173381869d4f9c621c1240bc806acb5bb",
+          "bytes": 185028
+        }
+      ]
+    },
+    {
+      "url": "/dnd/works/yinhun/assets/art-0c0d6ecfe58e6496cf9d.webp",
+      "sha256": "0c0d6ecfe58e6496cf9df0b9b07fd87166143b2b5d490f69e4b6e2e1786a31c2",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 378076,
+      "variants": [
+        {
+          "url": "/dnd/works/yinhun/assets/art-0c0d6ecfe58e6496cf9d-w320-q82-v1.webp",
+          "width": 320,
+          "sha256": "386f2c1530fc28c87276118d7fccf919b4f69813a78e2fb245ea2b53a4e0f1e8",
+          "bytes": 44666
+        },
+        {
+          "url": "/dnd/works/yinhun/assets/art-0c0d6ecfe58e6496cf9d-w640-q82-v1.webp",
+          "width": 640,
+          "sha256": "4ba72cc78fa77f19ae5fda8850bbafb17b8524f5a29c2c0ecc80baa30559bd30",
+          "bytes": 127768
+        }
+      ]
+    },
+    {
+      "url": "/dnd/works/yinhun/assets/art-32075f29e2261c7bd61f.webp",
+      "sha256": "32075f29e2261c7bd61f75172affd64d0ab6581c79a7003069dd156d863899b3",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 444662,
+      "variants": [
+        {
+          "url": "/dnd/works/yinhun/assets/art-32075f29e2261c7bd61f-w320-q82-v1.webp",
+          "width": 320,
+          "sha256": "bc7099012d57957c2cb299435ffd7aeb572a769616c5acfdaf6561bf7b2af0cf",
+          "bytes": 52168
+        },
+        {
+          "url": "/dnd/works/yinhun/assets/art-32075f29e2261c7bd61f-w640-q82-v1.webp",
+          "width": 640,
+          "sha256": "24624b3836bcc7b28485952818f5f992a8544a53b7264223c126da570624def7",
+          "bytes": 150664
+        }
+      ]
+    },
+    {
+      "url": "/dnd/works/yinhun/assets/art-a9e5f072f7502f897cf3.webp",
+      "sha256": "a9e5f072f7502f897cf349534c2493eac2dc49750514d371bebb8dddb30d577c",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 362222,
+      "variants": [
+        {
+          "url": "/dnd/works/yinhun/assets/art-a9e5f072f7502f897cf3-w320-q82-v1.webp",
+          "width": 320,
+          "sha256": "6c45d83914c2f88279493d4aa63ba07a023d97f9ca86e0297e22a09cd2e5d30f",
+          "bytes": 42516
+        },
+        {
+          "url": "/dnd/works/yinhun/assets/art-a9e5f072f7502f897cf3-w640-q82-v1.webp",
+          "width": 640,
+          "sha256": "fb7fc47bda9350d071b952d435a9c72e90f1f3343fbe57ce6e6613cc423f2400",
+          "bytes": 122064
+        }
+      ]
+    },
+    {
+      "url": "/dnd/works/yinhun/assets/art-31d858b93bcb6de4f0bb.webp",
+      "sha256": "31d858b93bcb6de4f0bbbdcf7d945febaebb96f2b577780b1b1edf0371b597ee",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 411376,
+      "variants": [
+        {
+          "url": "/dnd/works/yinhun/assets/art-31d858b93bcb6de4f0bb-w320-q82-v1.webp",
+          "width": 320,
+          "sha256": "104f5bad21dd534410f831deed29037b13db37bfec2d70446e0b3f21b97c6995",
+          "bytes": 47806
+        },
+        {
+          "url": "/dnd/works/yinhun/assets/art-31d858b93bcb6de4f0bb-w640-q82-v1.webp",
+          "width": 640,
+          "sha256": "d96079d8224e7607397c8ef3cae75ef7c79daa05ac9ebc0eaf9cc2376ae8b54a",
+          "bytes": 139158
+        }
+      ]
+    },
+    {
+      "url": "/dnd/works/yinhun/assets/art-1987b043bf1f5c9a7b29.webp",
+      "sha256": "1987b043bf1f5c9a7b29fb1ff4dd2099ff3328ad4747c637c3d66c3063229539",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 388596,
+      "variants": [
+        {
+          "url": "/dnd/works/yinhun/assets/art-1987b043bf1f5c9a7b29-w320-q82-v1.webp",
+          "width": 320,
+          "sha256": "b3b88312eee97356a1a9b57bc8df85be7fdffb1ba909557523421354462ac103",
+          "bytes": 45840
+        },
+        {
+          "url": "/dnd/works/yinhun/assets/art-1987b043bf1f5c9a7b29-w640-q82-v1.webp",
+          "width": 640,
+          "sha256": "77e91dd434ff5eab21d3177c139ec8772e2a917909a0869877a3b22b0b757b54",
+          "bytes": 128386
+        }
+      ]
+    },
+    {
+      "url": "/dnd/works/yinhun/assets/art-d935425256e4862aba8f.webp",
+      "sha256": "d935425256e4862aba8f7a6995e1de5284b2714843d37005ed08f7524263ff60",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 460294,
+      "variants": [
+        {
+          "url": "/dnd/works/yinhun/assets/art-d935425256e4862aba8f-w320-q82-v1.webp",
+          "width": 320,
+          "sha256": "a01fe8977d37b7c3d8c99998932bde385a73e38a516df9215bbd41c146e487c3",
+          "bytes": 50576
+        },
+        {
+          "url": "/dnd/works/yinhun/assets/art-d935425256e4862aba8f-w640-q82-v1.webp",
+          "width": 640,
+          "sha256": "96be0e186a3ce1a0f7134cae8863c861670ec356adc9541da265ec17302d5ad0",
+          "bytes": 150972
+        }
+      ]
+    },
+    {
+      "url": "/dnd/works/yinhun/assets/art-4aa6cce74c34a6b2361c.webp",
+      "sha256": "4aa6cce74c34a6b2361cde5149b7ffe106fea8dea01227e5727caaa0ce23786a",
+      "width": 800,
+      "height": 1200,
+      "bytes": 235260,
+      "variants": [
+        {
+          "url": "/dnd/works/yinhun/assets/art-4aa6cce74c34a6b2361c-w320-q82-v1.webp",
+          "width": 320,
+          "sha256": "316399b00d8e1251fcde20c18dfeb7667653dbf345b4ecaef2c01365a1de9c2f",
+          "bytes": 44128
+        },
+        {
+          "url": "/dnd/works/yinhun/assets/art-4aa6cce74c34a6b2361c-w640-q82-v1.webp",
+          "width": 640,
+          "sha256": "52233f57306225ee48c24c5cc3ca4c6317f5df068e2dfd0ed55cb98e43085d3a",
+          "bytes": 121034
+        }
+      ]
+    }
+  ]
+}
