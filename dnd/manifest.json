@@ -9,7 +9,7 @@
       "image_count": 39
     }
   ],
-  "source_sha256": "a41880faf3cad33eaf7339399aa4dcbda89cd62135a94e0666c30be2833a919f",
+  "source_sha256": "732ff77e04f0c3725f689bb878781617b4377c990c077bf3a8f3b2fa60883f62",
   "originals": [
     {
       "id": "elminster",
@@ -1779,5 +1779,43 @@
     "art-fef2fbae94e586e5f4b7-w640-q82-v1.webp",
     "art-fef2fbae94e586e5f4b7-w960-q82-v1.webp",
     "art-fef2fbae94e586e5f4b7.webp"
-  ]
+  ],
+  "layout": {
+    "logo": "/dnd/assets/world-emblem-64c4de86f53a5f46.svg",
+    "portraits": [
+      {
+        "id": "mystra",
+        "sha256": "5a9267183fb45bc87c6bb7fef0ee02d71aa5bcf107dc992ff07f92340023b6bd",
+        "variants": [
+          {
+            "width": 360,
+            "url": "/dnd/assets/companion-mystra-5a9267183fb45bc8-w360.webp",
+            "bytes": 210250
+          },
+          {
+            "width": 724,
+            "url": "/dnd/assets/companion-mystra-5a9267183fb45bc8-w724.webp",
+            "bytes": 766404
+          }
+        ]
+      },
+      {
+        "id": "shar",
+        "sha256": "59547f4e9f8725222e9d88d8ecc5912f65727f93b9de9450a3f1a58fab0c8a25",
+        "variants": [
+          {
+            "width": 360,
+            "url": "/dnd/assets/companion-shar-59547f4e9f872522-w360.webp",
+            "bytes": 179656
+          },
+          {
+            "width": 724,
+            "url": "/dnd/assets/companion-shar-59547f4e9f872522-w724.webp",
+            "bytes": 672274
+          }
+        ]
+      }
+    ],
+    "appearanceKey": "dnd-world-appearance-v1"
+  }
 }
