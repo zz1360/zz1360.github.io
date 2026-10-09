@@ -1,0 +1,86 @@
+{
+  "origin": "https://blog.luckydogs.top",
+  "passed": true,
+  "files": [
+    {
+      "path": "index.html",
+      "same": true,
+      "sha256": "679d1dd6aa7d5183289d841c30666941c1d6a2250988e5f5b400478082d86a8f"
+    },
+    {
+      "path": "blog/index.html",
+      "same": true,
+      "sha256": "1132d6dccd3cc28e8155b3daa57bcb8a72beb64362c7c1bce5bd09070ca7d84a"
+    },
+    {
+      "path": "explore/dnd/index.html",
+      "same": true,
+      "sha256": "44bcb580dfd10304b5c13c29230e57edd168c365d05fa890a9e414c8a182335b"
+    },
+    {
+      "path": "dnd/index.html",
+      "same": true,
+      "sha256": "488b9855e2d6c0deb642efc14414f7036911ae8be6bcd9cf4607f690cb421950"
+    },
+    {
+      "path": "dnd/works/yinhun/index.html",
+      "same": true,
+      "sha256": "84346d0df6659d098e031b5c2c95fde840340b281f6916eb99069505df6fbaef"
+    },
+    {
+      "path": "privacy/index.html",
+      "same": true,
+      "sha256": "186757e7d9bcf56308c6ad0746343ca2c4096af4806a854d3a356de39a9c7434"
+    },
+    {
+      "path": "support/index.html",
+      "same": true,
+      "sha256": "a0d021cd050b69b3ad5d2d050990c4e1a0a006a3d6843e32e8477848169aadc0"
+    },
+    {
+      "path": "rss.xml",
+      "same": true,
+      "sha256": "96f05ffa93c3449c5b090d73cc43a6cb5c5e4d9c81e4fe472045d1c64c518ff0"
+    },
+    {
+      "path": "sitemap.xml",
+      "same": true,
+      "sha256": "104df4f57c03e5de07613703dc02e67cde81ee32d0a70eff212dcabc58073960"
+    },
+    {
+      "path": "release.json",
+      "same": true,
+      "sha256": "7bec8b7a3ed15b6cda9f86a8894d4e24f091c20b48c6cee36fdeaab87eead601"
+    },
+    {
+      "path": "dnd/assets/world-emblem-64c4de86f53a5f46.svg",
+      "same": true,
+      "sha256": "64c4de86f53a5f46d6236c016e108246680963aea7570c252e67e0fc902c976a"
+    },
+    {
+      "path": "dnd/assets/companion-mystra-5a9267183fb45bc8-w360.webp",
+      "same": true,
+      "sha256": "4d23b24e203f2c91ff3ea11272111f0a2c79327c2a11c63c255b8759ad1cef7a"
+    },
+    {
+      "path": "dnd/assets/companion-mystra-5a9267183fb45bc8-w724.webp",
+      "same": true,
+      "sha256": "5a9267183fb45bc87c6bb7fef0ee02d71aa5bcf107dc992ff07f92340023b6bd"
+    },
+    {
+      "path": "dnd/assets/companion-shar-59547f4e9f872522-w360.webp",
+      "same": true,
+      "sha256": "7152db9f6a6fffc9227927b192e26d43f9be7ec91699f38b4fe59fb93abd96b3"
+    },
+    {
+      "path": "dnd/assets/companion-shar-59547f4e9f872522-w724.webp",
+      "same": true,
+      "sha256": "59547f4e9f8725222e9d88d8ecc5912f65727f93b9de9450a3f1a58fab0c8a25"
+    },
+    {
+      "path": "fonts/Cinzel.ttf",
+      "same": true,
+      "sha256": "4fec1a24871ee5016dbb3045bee264e7149dc2b8c47f2d0db89a8daa922bd2be"
+    }
+  ]
+}
