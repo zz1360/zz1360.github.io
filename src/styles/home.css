@@ -1,0 +1,138 @@
+/* The landing page follows the width of the artwork; reading pages keep .wrap. */
+@media (min-width: 1000px) {
+  html[data-view='home'] {
+    --home-gutter: clamp(48px, 5vw, 160px);
+  }
+
+  html[data-view='home'] .wrap {
+    width: calc(100% - var(--home-gutter) * 2);
+    max-width: none;
+  }
+
+  html[data-view='home'] .hero {
+    height: clamp(640px, 36vw, 880px);
+    min-height: 640px;
+    max-height: none;
+  }
+
+  html[data-view='home'] .hero-copy {
+    width: min(42vw, 700px);
+    max-width: none;
+    padding-top: 0;
+  }
+
+  html[data-view='home'] .hero-shade {
+    background:
+      linear-gradient(90deg, #0d101a80, #0d101a38 32%, transparent 60%),
+      linear-gradient(0deg, var(--bg), #10111824 18%, transparent 42%);
+  }
+
+  html[data-view='home'][data-season='halloween'] .hero-shade {
+    background:
+      linear-gradient(90deg, #130f1d85, #23112633 32%, transparent 60%),
+      linear-gradient(0deg, var(--bg), transparent 42%);
+  }
+
+  html[data-view='home'] .hero-wordmark {
+    width: clamp(310px, 20vw, 450px);
+    height: auto;
+    aspect-ratio: 2.87;
+    margin-top: clamp(25px, 1.8vw, 42px);
+  }
+
+  html[data-view='home'] .hero h1 {
+    font-size: clamp(56px, 3.3vw, 84px);
+  }
+
+  html[data-view='home'] .hero-line {
+    font-size: clamp(21px, 1.35vw, 32px);
+  }
+
+  html[data-view='home'] .hero-description {
+    font-size: clamp(13px, .75vw, 18px);
+    margin-block: clamp(20px, 1.2vw, 28px) clamp(28px, 1.6vw, 38px);
+  }
+
+  html[data-view='home'] .hero-copy .eyebrow {
+    font-size: clamp(9px, .52vw, 13px);
+  }
+
+  html[data-view='home'] .hero-actions {
+    gap: clamp(26px, 1.8vw, 44px);
+  }
+
+  html[data-view='home'] .hero-actions .button,
+  html[data-view='home'] .hero-actions .quiet-link {
+    font-size: clamp(13px, .7vw, 17px);
+    min-height: clamp(46px, 2.6vw, 60px);
+  }
+
+  html[data-view='home'] .hero-foot {
+    font-size: clamp(10px, .58vw, 14px);
+  }
+
+  html[data-view='home'] .hero-bottom {
+    left: var(--home-gutter);
+    right: var(--home-gutter);
+  }
+
+  html[data-view='home'] .portals {
+    padding-top: clamp(56px, 3.5vw, 88px);
+  }
+
+  html[data-view='home'] .section-heading h2 {
+    font-size: clamp(25px, 1.6vw, 38px);
+  }
+
+  html[data-view='home'] .section-heading > p {
+    font-size: clamp(12px, .7vw, 16px);
+  }
+
+  html[data-view='home'] .portal-grid {
+    gap: clamp(24px, 2vw, 48px);
+  }
+
+  html[data-view='home'] .portal-card {
+    min-height: clamp(286px, 17vw, 420px);
+  }
+
+  html[data-view='home'] .portal-copy {
+    padding: clamp(31px, 2.2vw, 64px);
+    padding-bottom: 66px;
+  }
+
+  html[data-view='home'] .portal-copy h3 {
+    font-size: clamp(34px, 2.3vw, 54px);
+  }
+
+  html[data-view='home'] .portal-copy > p:not(.eyebrow) {
+    font-size: clamp(12px, .8vw, 18px);
+  }
+
+  html[data-view='home'] .card-link {
+    font-size: clamp(12px, .7vw, 16px);
+  }
+
+  html[data-view='home'] .portal-status {
+    left: clamp(31px, 2.2vw, 64px);
+    font-size: clamp(9px, .55vw, 13px);
+  }
+
+  html[data-view='home'] .book-art {
+    width: clamp(230px, 18vw, 430px);
+    right: 2%;
+    top: 12%;
+  }
+
+  html[data-view='home'] .discover-grid {
+    gap: clamp(32px, 2vw, 48px);
+  }
+
+  html[data-view='home'] .discover-item h3 {
+    font-size: clamp(17px, 1.1vw, 25px);
+  }
+
+  html[data-view='home'] .discover-item p {
+    font-size: clamp(11px, .7vw, 16px);
+  }
+}
