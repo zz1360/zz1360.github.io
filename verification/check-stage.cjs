@@ -9,6 +9,7 @@ const sizes=[[2048,1280],[1440,900],[1280,800],[1024,768],[390,844],[320,760],[8
  try{
   await p.setViewportSize({width:2048,height:1280});await p.goto(base+'/dnd/#atlas');await p.evaluate(()=>document.fonts.ready);
   assert.equal(await p.locator('.rail').count(),0);assert.equal(await p.locator('.goddess figcaption').count(),0);assert.equal(await p.locator('.nav a[data-section]').count(),9);
+  await p.waitForFunction(()=>[...document.querySelectorAll('.goddess-art')].every(img=>img.complete&&img.naturalWidth>1&&img.currentSrc.includes('/companion-')));
   await p.locator('.goddess-art').evaluateAll(ns=>Promise.all(ns.map(n=>n.decode())));await p.locator('#map-preview img').evaluate(n=>n.decode());
   await p.screenshot({path:__dirname+'/stage-desktop.png'});
   const figures=await p.locator('.goddess').evaluateAll(ns=>ns.map(n=>({y:n.getBoundingClientRect().y,h:n.getBoundingClientRect().height})));

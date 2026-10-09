@@ -1,0 +1,65 @@
+[
+  {
+    "id": "mystra",
+    "name": "密斯特拉",
+    "label": "星光与魔网",
+    "facing": "right",
+    "glow": "#3979b133"
+  },
+  {
+    "id": "shar",
+    "name": "莎尔",
+    "label": "暗影与失落",
+    "facing": "left",
+    "glow": "#703d943c"
+  },
+  {
+    "id": "selune",
+    "name": "塞伦涅",
+    "label": "月光与星辰",
+    "facing": "right",
+    "glow": "#b3bec940"
+  },
+  {
+    "id": "laeral",
+    "name": "莱拉尔 · 银手",
+    "label": "深水与银火",
+    "facing": "right",
+    "glow": "#30678336"
+  },
+  {
+    "id": "alustriel",
+    "name": "艾拉斯卓 · 银手",
+    "label": "银月与花叶",
+    "facing": "right",
+    "glow": "#66895d38"
+  },
+  {
+    "id": "tasha",
+    "name": "塔莎",
+    "label": "秘术与魔药",
+    "facing": "right",
+    "glow": "#65569338"
+  },
+  {
+    "id": "lady",
+    "name": "痛苦女士",
+    "label": "刀刃与迷宫",
+    "facing": "right",
+    "glow": "#8b764836"
+  },
+  {
+    "id": "lolth",
+    "name": "罗丝",
+    "label": "蛛网与幽影",
+    "facing": "right",
+    "glow": "#853ba33a"
+  },
+  {
+    "id": "zariel",
+    "name": "扎瑞尔",
+    "label": "战翼与余烬",
+    "facing": "right",
+    "glow": "#a4623238"
+  }
+]

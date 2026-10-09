@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "origin": "http://127.0.0.1:8897",
+  "characters": [
+    "mystra",
+    "shar",
+    "selune",
+    "laeral",
+    "alustriel",
+    "tasha",
+    "lady",
+    "lolth",
+    "zariel"
+  ],
+  "independentSides": true,
+  "arrows": true,
+  "fullBody": true,
+  "scrollPreserved": true,
+  "appearancePersistence": true,
+  "readingStatePreserved": true,
+  "onDemandImages": true,
+  "noMobilePortraitDownload": true,
+  "invalidChoicesFallback": true,
+  "failedImageRetry": true,
+  "latestChoiceWins": true,
+  "blockedStorage": true,
+  "errors": [],
+  "failures": []
+}

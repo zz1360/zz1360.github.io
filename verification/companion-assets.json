@@ -1,0 +1,65 @@
+[
+  {
+    "id": "selune",
+    "dimensions": [
+      724,
+      2172
+    ],
+    "transparent": true,
+    "bytes": 752718
+  },
+  {
+    "id": "laeral",
+    "dimensions": [
+      724,
+      2172
+    ],
+    "transparent": true,
+    "bytes": 673394
+  },
+  {
+    "id": "alustriel",
+    "dimensions": [
+      728,
+      2160
+    ],
+    "transparent": true,
+    "bytes": 546538
+  },
+  {
+    "id": "tasha",
+    "dimensions": [
+      724,
+      2172
+    ],
+    "transparent": true,
+    "bytes": 690342
+  },
+  {
+    "id": "lady",
+    "dimensions": [
+      724,
+      2172
+    ],
+    "transparent": true,
+    "bytes": 595542
+  },
+  {
+    "id": "lolth",
+    "dimensions": [
+      724,
+      2172
+    ],
+    "transparent": true,
+    "bytes": 706466
+  },
+  {
+    "id": "zariel",
+    "dimensions": [
+      724,
+      2172
+    ],
+    "transparent": true,
+    "bytes": 687762
+  }
+]

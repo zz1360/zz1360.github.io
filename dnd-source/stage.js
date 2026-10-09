@@ -2,7 +2,7 @@
  'use strict';
  const reader=document.getElementById('main'),track=document.querySelector('.reader-scrollbar'),thumb=track.firstElementChild,cap=document.querySelector('.chamber-cap'),selector=document.getElementById('layout-select'),theme=document.getElementById('theme-button');
  const key='dnd-world-appearance-v1';let drag=null,pending=false;
- function persist(){try{localStorage.setItem(key,JSON.stringify({layout:document.body.classList.contains('stage-mode')?'companions':'original',light:document.body.classList.contains('light')}))}catch{}}
+ function persist(){window.dndWorldAppearance={...window.dndWorldAppearance,layout:document.body.classList.contains('stage-mode')?'companions':'original',light:document.body.classList.contains('light')};try{localStorage.setItem(key,JSON.stringify(window.dndWorldAppearance))}catch{}}
  function update(){
   pending=false;const range=reader.scrollHeight-reader.clientHeight;
   if(!document.body.classList.contains('stage-mode')||range<=0){track.hidden=true;return}
