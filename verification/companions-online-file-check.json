@@ -1,0 +1,201 @@
+{
+  "origin": "https://blog.luckydogs.top",
+  "passed": true,
+  "files": [
+    {
+      "path": "index.html",
+      "same": true,
+      "sha256": "fcb225473591f0d620e8f18dd077dca9cbf5f354f86da5cd6dcd1a0063e234ec"
+    },
+    {
+      "path": "blog/index.html",
+      "same": true,
+      "sha256": "29050732ada28a3440ffbb5c72ed6d7cdd91299214a03ec5138503774f503cbb"
+    },
+    {
+      "path": "explore/dnd/index.html",
+      "same": true,
+      "sha256": "3c724bcf0bc7b8ec933f8d79bb7e5aff4e8ffc6729a65ad97032f6f5212a6980"
+    },
+    {
+      "path": "dnd/index.html",
+      "same": true,
+      "sha256": "b0060b316b5ab71ebf4bce7c2baab14600948181f3fb49844c403b196a70d1bb"
+    },
+    {
+      "path": "dnd/works/yinhun/index.html",
+      "same": true,
+      "sha256": "84346d0df6659d098e031b5c2c95fde840340b281f6916eb99069505df6fbaef"
+    },
+    {
+      "path": "privacy/index.html",
+      "same": true,
+      "sha256": "186757e7d9bcf56308c6ad0746343ca2c4096af4806a854d3a356de39a9c7434"
+    },
+    {
+      "path": "support/index.html",
+      "same": true,
+      "sha256": "a0d021cd050b69b3ad5d2d050990c4e1a0a006a3d6843e32e8477848169aadc0"
+    },
+    {
+      "path": "rss.xml",
+      "same": true,
+      "sha256": "96f05ffa93c3449c5b090d73cc43a6cb5c5e4d9c81e4fe472045d1c64c518ff0"
+    },
+    {
+      "path": "sitemap.xml",
+      "same": true,
+      "sha256": "104df4f57c03e5de07613703dc02e67cde81ee32d0a70eff212dcabc58073960"
+    },
+    {
+      "path": "release.json",
+      "same": true,
+      "sha256": "f090d7514d7dacd57b4b27033880969b2ab6c8a80aa3e3146231bbfa859f061a"
+    },
+    {
+      "path": "dnd/assets/world-emblem-64c4de86f53a5f46.svg",
+      "same": true,
+      "sha256": "64c4de86f53a5f46d6236c016e108246680963aea7570c252e67e0fc902c976a"
+    },
+    {
+      "path": "dnd/assets/companion-mystra-5a9267183fb45bc8-w120.webp",
+      "same": true,
+      "sha256": "e81fb84a5ab6fe2d046273869112d283c44567310bae6f02c78afc70ffbea162"
+    },
+    {
+      "path": "dnd/assets/companion-mystra-5a9267183fb45bc8-w360.webp",
+      "same": true,
+      "sha256": "4d23b24e203f2c91ff3ea11272111f0a2c79327c2a11c63c255b8759ad1cef7a"
+    },
+    {
+      "path": "dnd/assets/companion-mystra-5a9267183fb45bc8-w724.webp",
+      "same": true,
+      "sha256": "5a9267183fb45bc87c6bb7fef0ee02d71aa5bcf107dc992ff07f92340023b6bd"
+    },
+    {
+      "path": "dnd/assets/companion-shar-59547f4e9f872522-w120.webp",
+      "same": true,
+      "sha256": "8a6a562d4f94dd08896a7af1f950fb7ee160c239e138744fbbf328e5e81ee0bb"
+    },
+    {
+      "path": "dnd/assets/companion-shar-59547f4e9f872522-w360.webp",
+      "same": true,
+      "sha256": "7152db9f6a6fffc9227927b192e26d43f9be7ec91699f38b4fe59fb93abd96b3"
+    },
+    {
+      "path": "dnd/assets/companion-shar-59547f4e9f872522-w724.webp",
+      "same": true,
+      "sha256": "59547f4e9f8725222e9d88d8ecc5912f65727f93b9de9450a3f1a58fab0c8a25"
+    },
+    {
+      "path": "dnd/assets/companion-selune-94a10e17ce8e1155-w120.webp",
+      "same": true,
+      "sha256": "cdaedeb37b5076e6aee55286e1064993d9c554d9c60b61c1df9c59d8bad345f6"
+    },
+    {
+      "path": "dnd/assets/companion-selune-94a10e17ce8e1155-w360.webp",
+      "same": true,
+      "sha256": "4e3a59f63056db159a21d2054aea011e7be3e9134f057f3e90f2a60c8bba6185"
+    },
+    {
+      "path": "dnd/assets/companion-selune-94a10e17ce8e1155-w724.webp",
+      "same": true,
+      "sha256": "94a10e17ce8e11556e486f6b727877fb644ed2c84b6da95943dddc3666eec3e8"
+    },
+    {
+      "path": "dnd/assets/companion-laeral-2338994e41c989d4-w120.webp",
+      "same": true,
+      "sha256": "82fc6b56e81ccfc502f89c44e6b55bb9d7b57ec3970e7f222785680d4909ad2f"
+    },
+    {
+      "path": "dnd/assets/companion-laeral-2338994e41c989d4-w360.webp",
+      "same": true,
+      "sha256": "624a3df325a1010c8f964511ad5f3a677095971d62b6c9325f4c33bf7069e3ef"
+    },
+    {
+      "path": "dnd/assets/companion-laeral-2338994e41c989d4-w724.webp",
+      "same": true,
+      "sha256": "2338994e41c989d477e4bc1c67f1e5b4778872e3fd84968a1d0270386f61f05b"
+    },
+    {
+      "path": "dnd/assets/companion-alustriel-97927099becc8e7e-w120.webp",
+      "same": true,
+      "sha256": "0ae8b6229be3a8ce3b6d75379e8f63c46b9d011b504bf2453b22643e5e02ea6e"
+    },
+    {
+      "path": "dnd/assets/companion-alustriel-97927099becc8e7e-w360.webp",
+      "same": true,
+      "sha256": "b8c8aaae12c52fc45341001a5a8c0542c1b359c060fd06802b762352a3914c7b"
+    },
+    {
+      "path": "dnd/assets/companion-alustriel-97927099becc8e7e-w724.webp",
+      "same": true,
+      "sha256": "97927099becc8e7e99e1ca1ffa17bb2bab68e195bcd51a0dbd69af473b805869"
+    },
+    {
+      "path": "dnd/assets/companion-tasha-5e142756875e36cc-w120.webp",
+      "same": true,
+      "sha256": "02c676773196ad841a23c4576aaafa644bddc0cecaed8dccdf05c8b5f522f3c6"
+    },
+    {
+      "path": "dnd/assets/companion-tasha-5e142756875e36cc-w360.webp",
+      "same": true,
+      "sha256": "5150353f347320446cbc8fd9b43b934063a06ec50a4a63ac67adf7738d795d04"
+    },
+    {
+      "path": "dnd/assets/companion-tasha-5e142756875e36cc-w724.webp",
+      "same": true,
+      "sha256": "5e142756875e36cc04415cec69d9281010d3ff8f7e3257fc39d76a352777e2e1"
+    },
+    {
+      "path": "dnd/assets/companion-lady-5456279c743d3a14-w120.webp",
+      "same": true,
+      "sha256": "e46ac27a7fbd01e4ceb4398b69d851874ee095d8058596915306702532f17798"
+    },
+    {
+      "path": "dnd/assets/companion-lady-5456279c743d3a14-w360.webp",
+      "same": true,
+      "sha256": "9db3a1f8773f73ec717fbb29926d730582f985871b96cd8e1f8b2e8f763f4fa5"
+    },
+    {
+      "path": "dnd/assets/companion-lady-5456279c743d3a14-w724.webp",
+      "same": true,
+      "sha256": "5456279c743d3a14935f0337431b3889eca938666c65b22c8f6e347ff1fdd7fc"
+    },
+    {
+      "path": "dnd/assets/companion-lolth-09796fcf27690d67-w120.webp",
+      "same": true,
+      "sha256": "45c9628a3b8fc53bd0ce69ca91c148285648e44e1eca1340eb87b7538a232f31"
+    },
+    {
+      "path": "dnd/assets/companion-lolth-09796fcf27690d67-w360.webp",
+      "same": true,
+      "sha256": "627bec852714172c8b475a07b8d73708ad2f0fe27f0a2dc995b9279455e09bea"
+    },
+    {
+      "path": "dnd/assets/companion-lolth-09796fcf27690d67-w724.webp",
+      "same": true,
+      "sha256": "09796fcf27690d67b5cd7a604f73fc36abb13b9196838ac207f9217b303dac72"
+    },
+    {
+      "path": "dnd/assets/companion-zariel-bbdf3d0da42cfc95-w120.webp",
+      "same": true,
+      "sha256": "cd44071eb99f8874ad1711d4ecb5223c325b9d8e9b7344858ff9177fbde1db1e"
+    },
+    {
+      "path": "dnd/assets/companion-zariel-bbdf3d0da42cfc95-w360.webp",
+      "same": true,
+      "sha256": "172173c2ed6810c39028e03e2e856ff8be842acd6680c3d5607d6bfd87526f9d"
+    },
+    {
+      "path": "dnd/assets/companion-zariel-bbdf3d0da42cfc95-w724.webp",
+      "same": true,
+      "sha256": "bbdf3d0da42cfc95401ca52c5b87211827130a74c8d3cddde198dc72612aefa0"
+    },
+    {
+      "path": "fonts/Cinzel.ttf",
+      "same": true,
+      "sha256": "4fec1a24871ee5016dbb3045bee264e7149dc2b8c47f2d0db89a8daa922bd2be"
+    }
+  ]
+}
