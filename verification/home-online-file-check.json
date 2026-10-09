@@ -1,0 +1,62 @@
+{
+  "origin": "https://blog.luckydogs.top/",
+  "sourceCommit": "d0a977df82f54a1f3b4dac2d733cf6217b9e3616",
+  "files": [
+    {
+      "path": "index.html",
+      "status": 200,
+      "matchesBuild": true
+    },
+    {
+      "path": "blog/index.html",
+      "status": 200,
+      "matchesBuild": true
+    },
+    {
+      "path": "explore/dnd/index.html",
+      "status": 200,
+      "matchesBuild": true
+    },
+    {
+      "path": "dnd/index.html",
+      "status": 200,
+      "matchesBuild": true
+    },
+    {
+      "path": "dnd/works/yinhun/index.html",
+      "status": 200,
+      "matchesBuild": true
+    },
+    {
+      "path": "privacy/index.html",
+      "matchesBuild": true,
+      "status": 200
+    },
+    {
+      "path": "support/index.html",
+      "status": 200,
+      "matchesBuild": true
+    },
+    {
+      "path": "rss.xml",
+      "status": 200,
+      "matchesBuild": true
+    },
+    {
+      "path": "sitemap.xml",
+      "status": 200,
+      "matchesBuild": true
+    },
+    {
+      "path": "release.json",
+      "status": 200,
+      "matchesBuild": true
+    },
+    {
+      "path": "_astro/Layout.qc3Ks_I1.css",
+      "status": 200,
+      "matchesBuild": true
+    }
+  ],
+  "passed": true
+}
