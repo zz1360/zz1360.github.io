@@ -56,13 +56,13 @@ function applyRoute(){
   else{history.replaceState(null,'','#entry/'+id);artDialog.close();openEntry(id,false)}
  }else{
   artDialog.close();entryDialog.close();searchDialog.close();document.getElementById('share-dialog').close();
-  const section=sectionNames[hash]?hash:'overview';showSection(section,false);document.title='D&D 世界百科 · 多元宇宙知识图谱';
+  const section=sectionNames[hash]?hash:'overview';showSection(section,false);document.title='DND world · D&D 世界百科';
   if(hash&&!sectionNames[hash]&&hash!=='main'){history.replaceState(null,'','#overview');announce('没有找到这个入口，已回到阅览目录。')}
  }
 }
 window.addEventListener('hashchange',applyRoute);window.addEventListener('popstate',applyRoute);
-entryDialog.addEventListener('close',()=>{if(location.hash.startsWith('#entry/')&&!artDialog.open){history.replaceState(null,'','#'+activeSection);document.title='D&D 世界百科 · 多元宇宙知识图谱'}});
-artDialog.addEventListener('close',()=>{if(location.hash.startsWith('#art/')){const id=entryDialog.dataset.entry;history.replaceState(null,'',entryDialog.open&&BYID[id]?'#entry/'+id:'#'+activeSection);document.title=entryDialog.open?BYID[id].name+' · D&D 世界百科':'D&D 世界百科 · 多元宇宙知识图谱'}});
+entryDialog.addEventListener('close',()=>{if(location.hash.startsWith('#entry/')&&!artDialog.open){history.replaceState(null,'','#'+activeSection);document.title='DND world · D&D 世界百科'}});
+artDialog.addEventListener('close',()=>{if(location.hash.startsWith('#art/')){const id=entryDialog.dataset.entry;history.replaceState(null,'',entryDialog.open&&BYID[id]?'#entry/'+id:'#'+activeSection);document.title=entryDialog.open?BYID[id].name+' · D&D 世界百科':'DND world · D&D 世界百科'}});
 async function shareEntry(id){
  const hash=artDialog.open&&currentArt===id?'#art/'+id+'/'+currentArtVariant:'#entry/'+id;
  const url=new URL(location.href);url.hash=hash;

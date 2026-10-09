@@ -13,7 +13,7 @@ function showSection(id,scroll=true){
  document.querySelectorAll('.chapter').forEach(s=>s.hidden=s.id!==id);
  document.querySelectorAll('[data-section]').forEach(a=>{if(a.dataset.section===id)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')});
  document.getElementById('crumb').textContent=sectionNames[id];
- if(scroll)window.scrollTo({top:0,behavior:'instant'});
+ if(scroll)(document.body.classList.contains('stage-mode')?document.getElementById('main'):window).scrollTo({top:0,behavior:'instant'});
  window.dispatchEvent(new CustomEvent('chapterchange',{detail:id}));
 }
 

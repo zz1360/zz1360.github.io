@@ -61,6 +61,8 @@ def export(source,output):
         previous=json.loads(old.read_text()).get('generated_files',[])
         for name in set(previous)-all_files:
             if re.fullmatch(r'art-[a-f0-9]{20}(?:-w\d+-q82-v1)?\.webp',name):(assets/name).unlink(missing_ok=True)
+    from stage import adapt
+    page,manifest['layout']=adapt(page,Path(__file__).resolve().parent,output)
     (output/'index.html').write_text(page)
     old.write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
     print(json.dumps(dict(output=str(output),html_bytes=len(page.encode()),images=len(images),responsive_files=len(all_files)-len(images)),ensure_ascii=False))

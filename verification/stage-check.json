@@ -1,0 +1,44 @@
+{
+  "passed": true,
+  "origin": "http://127.0.0.1:8897",
+  "sizes": [
+    {
+      "width": 2048,
+      "height": 1280
+    },
+    {
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "width": 1280,
+      "height": 800
+    },
+    {
+      "width": 1024,
+      "height": 768
+    },
+    {
+      "width": 390,
+      "height": 844
+    },
+    {
+      "width": 320,
+      "height": 760
+    },
+    {
+      "width": 844,
+      "height": 390
+    }
+  ],
+  "navigation": true,
+  "fixedFigures": true,
+  "scrollbarDrag": true,
+  "originalPalettes": true,
+  "appearancePersistence": true,
+  "readingStatePreserved": true,
+  "noMobilePortraitDownload": true,
+  "print": true,
+  "errors": [],
+  "failed": []
+}
