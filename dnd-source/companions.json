@@ -61,5 +61,12 @@
     "label": "战翼与余烬",
     "facing": "right",
     "glow": "#a4623238"
+  },
+  {
+    "id": "waukeen",
+    "name": "沃金",
+    "label": "金币与财富",
+    "facing": "right",
+    "glow": "#d8a74c38"
   }
 ]

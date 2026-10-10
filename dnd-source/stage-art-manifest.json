@@ -65,6 +65,27 @@
         "existing character identity",
         "approved Mystra style and full-body composition"
       ]
+    },
+    {
+      "name": "waukeen",
+      "prompt": "Use case: stylized-concept.\nAsset type: ONE NEW full-body transparent character illustration, preview for the DND world website's selectable female companion reader.\nInput image: the provided Mystra full-body illustration is a STYLE, FINISH and NARROW FULL-BODY COMPOSITION reference ONLY. Do not copy her face, dark hair, blue costume, star halo or blue magical ribbons. Create a distinctly different Waukeen design.\nSubject: Waukeen, beautiful ADULT goddess of trade and wealth in Forgotten Realms, appearing about 25 years old. Long luxuriant luminous spun-gold hair, flowing delicate waves, refined anime face with warm confident expression, both eyes glowing like molten gold, clearly golden irises with beautiful readable pupils rather than blank eyes.\nStyle: sophisticated fantasy anime artbook illustration, visibly drawn elegant anime features, exquisite fine linework and luminous layered fabrics, meticulous jewelry, magical, graceful and NONPHOTOREALISTIC. Match the reference's delicate luxurious finish and slender vertically flowing proportions.\nCostume: a regal champagne-gold and ivory full-length goddess gown, narrow layered strips of precious gold fabric, finely engraved gold filigree, gem settings containing small ruby, emerald, sapphire accents. Linked golden coins form a flowing ceremonial cloak over the shoulders; cloth-of-gold sash with a small coin medallion. Tasteful pearl-and-gold heeled footwear, feet fully visible. Slender gold circlet inset with gems, not a huge crown. Rich warm gold is the dominant visual signature; distinguish her silhouette from Mystra.\nPose: elegant natural contrapposto, body slightly three-quarter turned, face near viewer. One hand held gently palm-up near upper waist, a small upright glowing gold coin hovering just above it; other hand lightly holds a fold of the linked-coin cloak beside hip. Both arms remain close to body and fit inside the slender canvas. Exactly two coherent hands, natural finger anatomy.\nMagic: a restrained thin curved stream of several gold coins and tiny amber sparks rises vertically close to her body, rather than a large background effect. Delicate warm contour highlights visible on both dark indigo and pale parchment backgrounds. No scenery or background halo panel.\nComposition: tall narrow portrait approximately 1:3 width-to-height, suitable beside a reading panel. ONE adult standing figure. Entire headdress, hair, hands, cloak, hem, footwear and every magical accent fully INSIDE the canvas, with clear 5 percent safety margin on all four sides. Entire full body from crown to toes, figure fills most height, no cropped limbs.\nBackground: genuinely TRANSPARENT alpha outside the figure and attached tiny accents. No buildings, floor, horizon, smoke backdrop, rectangular painted background, ground shadow or environment.\nConstraints: no lettering, no name below figure, no labels, watermark, UI, border, collage or split panels. No photorealism, CGI, chibi, modern fashion, childlike face or excessive sexualization. Clothing and pose are an original artistic interpretation, not an official depiction. Preserve the established companion-reader aesthetic.",
+      "referenceRoles": [
+        "approved Mystra style and full-body composition; different character identity"
+      ],
+      "referenceImages": [
+        "assets/stage/mystra.webp"
+      ],
+      "approvedOn": "2026-10-10",
+      "approvedPreview": "exec-97d47564-0b2d-4a0b-a8fc-872c578d3407.png",
+      "approvedPreviewSha256": "f01c6d03642844689fb4bf8cbb6bc126e4bdf72c2e77138ef3797c02dbf16d09",
+      "output": "assets/stage/waukeen.webp",
+      "encoding": {
+        "tool": "cwebp",
+        "quality": 95,
+        "alpha_quality": 100,
+        "width": 724,
+        "height": "preserve aspect ratio"
+      }
     }
   ],
   "usage": "DND world companion layout",
@@ -77,6 +98,7 @@
     "assets/stage/tasha.webp",
     "assets/stage/lady.webp",
     "assets/stage/lolth.webp",
-    "assets/stage/zariel.webp"
+    "assets/stage/zariel.webp",
+    "assets/stage/waukeen.webp"
   ]
 }

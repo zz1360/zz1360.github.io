@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "origin": "https://blog.luckydogs.top",
+  "origin": "http://127.0.0.1:8912",
   "characters": [
     "mystra",
     "shar",
@@ -10,7 +10,8 @@
     "tasha",
     "lady",
     "lolth",
-    "zariel"
+    "zariel",
+    "waukeen"
   ],
   "independentSides": true,
   "arrows": true,

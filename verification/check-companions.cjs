@@ -14,9 +14,9 @@ const appearance='dnd-world-appearance-v1',reading='dnd-codex-reading-v1',novel=
   await page.goto(base+'/dnd/#atlas');await chosen('left','mystra');await chosen('right','shar');
   const originals=await page.evaluate(({reading,novel})=>[localStorage.getItem(reading),localStorage.getItem(novel)],{reading,novel});
   assert.ok(requests.every(url=>/companion-(mystra|shar)-/.test(url)),'unselected characters load only when requested');
-  const ids=await page.evaluate(()=>JSON.parse(document.getElementById('companion-data').textContent).map(x=>x.id));assert.equal(ids.length,9);
+  const ids=await page.evaluate(()=>JSON.parse(document.getElementById('companion-data').textContent).map(x=>x.id));assert.equal(ids.length,10);assert.ok(ids.includes('waukeen'));
   await page.locator('#main').evaluate(n=>n.scrollTop=380);const offset=await page.locator('#main').evaluate(n=>n.scrollTop),route=await page.evaluate(()=>location.hash);
-  await page.locator('#companion-picker').click();assert.equal(await page.locator('.companion-option').count(),9);
+  await page.locator('#companion-picker').click();assert.equal(await page.locator('.companion-option').count(),10);
   for(const side of ['left','right']){
    await page.locator(`[data-pick-side="${side}"]`).click();
    for(const id of ids){
@@ -32,7 +32,7 @@ const appearance='dnd-world-appearance-v1',reading='dnd-codex-reading-v1',novel=
   assert.equal(await page.locator('.goddess figcaption').count(),0);
   await page.screenshot({path:__dirname+'/companions-desktop.png'});
   await figure('left').hover();await figure('left').locator('.next').click();await chosen('left','laeral');assert.equal(await figure('right').getAttribute('data-character'),'lolth');
-  await figure('right').hover();await figure('right').locator('.next').click();await chosen('right','zariel');await figure('right').locator('.next').click();await chosen('right','mystra');
+  await figure('right').hover();await figure('right').locator('.next').click();await chosen('right','zariel');await figure('right').locator('.next').click();await chosen('right','waukeen');await figure('right').locator('.next').click();await chosen('right','mystra');
   assert.equal(await figure('right').getAttribute('data-mirror'),'true');
   await page.locator('#theme-button').click();await page.locator('#layout-select').selectOption('original');await page.reload();
   assert.equal(await page.locator('#layout-select').inputValue(),'original');assert.ok(await page.locator('body').evaluate(n=>n.classList.contains('light')));
@@ -48,9 +48,9 @@ const appearance='dnd-world-appearance-v1',reading='dnd-codex-reading-v1',novel=
    if(width<=1100)assert.equal(await page.locator('#companion-picker:visible').count(),0);
   }
   const fresh=await browser.newPage({viewport:{width:1440,height:900}}),onlySelected=[];
-  await fresh.addInitScript(key=>localStorage.setItem(key,JSON.stringify({layout:'companions',light:false,left:'tasha',right:'alustriel'})),appearance);
+  await fresh.addInitScript(key=>localStorage.setItem(key,JSON.stringify({layout:'companions',light:false,left:'waukeen',right:'alustriel'})),appearance);
   fresh.on('request',r=>{if(r.url().includes('/companion-'))onlySelected.push(r.url())});await fresh.goto(base+'/dnd/');await fresh.waitForFunction(()=>[...document.querySelectorAll('.goddess img')].every(img=>img.complete&&img.naturalWidth>1&&img.currentSrc.includes('/companion-')));await fresh.locator('.goddess img').evaluateAll(images=>Promise.all(images.map(img=>img.decode())));
-  assert.ok(onlySelected.length>0&&onlySelected.every(url=>/companion-(tasha|alustriel)-/.test(url)),'reload does not first download default pair');await fresh.close();
+  assert.ok(onlySelected.length>0&&onlySelected.every(url=>/companion-(waukeen|alustriel)-/.test(url)),'reload does not first download default pair');await fresh.close();
   const pure=await browser.newPage({viewport:{width:1440,height:900}}),pureRequests=[];await pure.addInitScript(key=>localStorage.setItem(key,JSON.stringify({layout:'original',left:'tasha',right:'lolth'})),appearance);pure.on('request',r=>{if(r.url().includes('/companion-'))pureRequests.push(r.url())});await pure.goto(base+'/dnd/');assert.deepEqual(pureRequests,[]);await pure.close();
   const narrow=await browser.newPage({viewport:{width:390,height:844}}),mobileRequests=[];
   narrow.on('request',r=>{if(r.url().includes('/companion-'))mobileRequests.push(r.url())});await narrow.goto(base+'/dnd/');assert.deepEqual(mobileRequests,[]);await narrow.close();
