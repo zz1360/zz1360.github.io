@@ -1,0 +1,134 @@
+{
+  "passed": true,
+  "base": "https://blog.luckydogs.top",
+  "screens": [
+    {
+      "width": 3440,
+      "height": 1440,
+      "labels": [
+        {
+          "inside": true,
+          "clickable": true
+        },
+        {
+          "inside": true,
+          "clickable": true
+        }
+      ],
+      "source": "https://blog.luckydogs.top/assets/tavern-room.webp"
+    },
+    {
+      "width": 2320,
+      "height": 1257,
+      "labels": [
+        {
+          "inside": true,
+          "clickable": true
+        },
+        {
+          "inside": true,
+          "clickable": true
+        }
+      ],
+      "source": "https://blog.luckydogs.top/assets/tavern-room.webp"
+    },
+    {
+      "width": 1920,
+      "height": 600,
+      "labels": [
+        {
+          "inside": true,
+          "clickable": true
+        },
+        {
+          "inside": true,
+          "clickable": true
+        }
+      ],
+      "source": "https://blog.luckydogs.top/assets/tavern-room.webp"
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "labels": [
+        {
+          "inside": true,
+          "clickable": true
+        },
+        {
+          "inside": true,
+          "clickable": true
+        }
+      ],
+      "source": "https://blog.luckydogs.top/assets/tavern-room.webp"
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "labels": [
+        {
+          "inside": true,
+          "clickable": true
+        },
+        {
+          "inside": true,
+          "clickable": true
+        }
+      ],
+      "source": "https://blog.luckydogs.top/assets/tavern-room.webp"
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "labels": [
+        {
+          "inside": true,
+          "clickable": true
+        },
+        {
+          "inside": true,
+          "clickable": true
+        }
+      ],
+      "source": "https://blog.luckydogs.top/assets/tavern-room-mobile.webp"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "labels": [
+        {
+          "inside": true,
+          "clickable": true
+        },
+        {
+          "inside": true,
+          "clickable": true
+        }
+      ],
+      "source": "https://blog.luckydogs.top/assets/tavern-room-mobile.webp"
+    },
+    {
+      "width": 320,
+      "height": 740,
+      "labels": [
+        {
+          "inside": true,
+          "clickable": true
+        },
+        {
+          "inside": true,
+          "clickable": true
+        }
+      ],
+      "source": "https://blog.luckydogs.top/assets/tavern-room-mobile.webp"
+    }
+  ],
+  "motionPersistence": true,
+  "reducedMotion": true,
+  "readingStoragePreserved": true,
+  "realNavigation": true,
+  "touchHint": true,
+  "serverRenderedLinks": true,
+  "errors": [],
+  "failed": []
+}

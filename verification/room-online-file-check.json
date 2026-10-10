@@ -1,0 +1,77 @@
+{
+  "origin": "https://blog.luckydogs.top/",
+  "sourceCommit": "5ac27dfc7868d162143e1496307d23f7227e9fc5",
+  "files": [
+    {
+      "path": "index.html",
+      "status": 200,
+      "matchesBuild": true
+    },
+    {
+      "path": "blog/index.html",
+      "status": 200,
+      "matchesBuild": true
+    },
+    {
+      "path": "explore/dnd/index.html",
+      "status": 200,
+      "matchesBuild": true
+    },
+    {
+      "path": "dnd/index.html",
+      "status": 200,
+      "matchesBuild": true
+    },
+    {
+      "path": "dnd/works/yinhun/index.html",
+      "status": 200,
+      "matchesBuild": true
+    },
+    {
+      "path": "privacy/index.html",
+      "status": 200,
+      "matchesBuild": true
+    },
+    {
+      "path": "support/index.html",
+      "status": 200,
+      "matchesBuild": true
+    },
+    {
+      "path": "rss.xml",
+      "status": 200,
+      "matchesBuild": true
+    },
+    {
+      "path": "sitemap.xml",
+      "status": 200,
+      "matchesBuild": true
+    },
+    {
+      "path": "release.json",
+      "status": 200,
+      "matchesBuild": true
+    },
+    {
+      "path": "assets/tavern-room.webp",
+      "status": 200,
+      "matchesBuild": true
+    },
+    {
+      "path": "assets/tavern-room-mobile.webp",
+      "status": 200,
+      "matchesBuild": true
+    },
+    {
+      "path": "_astro/Layout.qc3Ks_I1.css",
+      "status": 200,
+      "matchesBuild": true
+    },
+    {
+      "path": "_astro/index.ByEqLZyB.css",
+      "status": 200,
+      "matchesBuild": true
+    }
+  ],
+  "passed": true
+}
