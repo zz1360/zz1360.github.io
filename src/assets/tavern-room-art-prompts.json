@@ -1,0 +1,14 @@
+{
+  "mode": "built-in imagegen",
+  "purpose": "本地酒馆交互构图预览",
+  "assets": [
+    {
+      "file": "assets/tavern-room.webp",
+      "prompt": "Use case: precise-object-edit. Edit the supplied fantasy tavern image into a 16:9 LANDSCAPE artwork for a full-viewport website. Preserve the beautiful existing silver braided ADULT half-elf bartender's identity and elegant emerald dress, detailed anime style, amber/indigo lighting, study on LEFT, moonlit castle window CENTER, magic book and bartender RIGHT. Recompose into a taller 16:9 canvas by adding visible timber ceiling and foreground floor; move the study doorway inward to center x=20%, bartender face inward to x=80%. Do NOT create dark letterboxing or blurred borders. Fill every pixel with fully painted tavern architecture. LEFT large study door and visible writing desk center x=20%, y=43%, blank plaque above; RIGHT bartender waist-up with face around x=80%, y=40%, magic castle/dragon book around x=73%,y=62%. CENTRAL quiet small hearth and moonlit window. Both destination regions remain fully visible with comfortable edge margins. The composition should look as rich and polished as the reference, like premium anime fantasy game key art. No text, no UI, no watermark. Output aspect ratio 16:9, not 21:9."
+    },
+    {
+      "file": "assets/tavern-room-mobile.webp",
+      "prompt": "Use case: precise-object-edit. Edit the supplied portrait fantasy tavern into a taller 9:16 VERTICAL mobile artwork. Preserve EXACT bartender face, silver braid, emerald-ivory long-sleeve gold-embroidered outfit and adult identity, the same beautiful painterly anime detail and room lighting. Recompose both destinations to fit fully inside narrow portrait. LEFT study doorway center x=24%,y=36%, complete open arch and cozy desk with green lamp visible, blank plaque. RIGHT bartender face around x=73%, y=55%, body behind the bar; book with violet magic castle and little translucent dragon centered x=67%, y=72%. Tall moonlit castle window above at center. Cozy small hearth between destinations. Add painted wooden ceiling and floor for new tall framing, not blank bars, not blurred borders. Woman, door and book all inside canvas, hands natural. Cozy luminous magical tavern. No UI, text, letters or watermark. Output aspect ratio 9:16 with fully illustrated edge-to-edge scene."
+    }
+  ]
+}

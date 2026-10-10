@@ -11,9 +11,21 @@ const options = { executablePath: '/Users/zhangzhuang/Library/Caches/ms-playwrig
     const p = await b.newPage({ viewport: { width: 1440, height: 1060 }, reducedMotion: 'reduce' });
     p.on('pageerror', e => errors.push(e.message));
     p.on('response', r => { if (r.url().startsWith(base) && r.status() >= 400) failed.push(r.url()); });
-    await p.goto(base + '/'); await p.evaluate(() => document.fonts.ready); await p.locator('.hero-image').evaluate(n => n.decode());
+    await p.goto(base + '/'); await p.evaluate(() => document.fonts.ready); await p.locator('.room-art').evaluate(n => n.decode());
     assert.equal(await p.locator('.header-motto').count(), 0);
     assert.equal(await p.locator('.site-header nav a').count(), 2);
+    assert.equal(await p.locator('.room-destination.study').getAttribute('href'), '/blog/');
+    assert.equal(await p.locator('.room-destination.storyteller').getAttribute('href'), '/dnd/');
+    assert.equal(await p.locator('.portals,.discover,.hero-copy,.site-footer').count(), 0);
+    await p.emulateMedia({ reducedMotion: 'no-preference' });
+    await p.waitForFunction(() => !document.querySelector('#motion-toggle').disabled);
+    await p.locator('#motion-toggle').click();
+    assert.equal(await p.locator('#motion-toggle').getAttribute('aria-pressed'), 'true');
+    await p.reload();
+    assert.equal(await p.locator('#motion-toggle').getAttribute('aria-pressed'), 'true');
+    await p.locator('#motion-toggle').click();
+    assert.equal(await p.locator('#motion-toggle').getAttribute('aria-pressed'), 'false');
+    await p.emulateMedia({ reducedMotion: 'reduce' });
     assert.ok(!(await p.locator('body').innerText()).includes('视觉预览'));
     assert.equal(await p.locator('html').getAttribute('data-season'), 'regular');
     await p.screenshot({ path: __dirname + '/home-desktop.png', fullPage: true });
@@ -43,9 +55,9 @@ const options = { executablePath: '/Users/zhangzhuang/Library/Caches/ms-playwrig
       for (const route of ['/', '/blog/', '/explore/dnd/']) { await m.goto(base + route); await m.evaluate(() => document.fonts.ready); assert.ok(await m.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1), route + width); }
       await m.locator('#appearance-trigger').click(); assert.ok(await m.locator('#appearance-panel').evaluate(n => n.getBoundingClientRect().right <= innerWidth)); await m.keyboard.press('Escape');
     }
-    await m.setViewportSize({ width: 390, height: 844 }); await m.goto(base + '/'); await m.locator('.hero-image').evaluate(n => n.decode()); await m.evaluate(() => document.fonts.ready);
+    await m.setViewportSize({ width: 390, height: 844 }); await m.goto(base + '/'); await m.locator('.room-art').evaluate(n => n.decode()); await m.evaluate(() => document.fonts.ready);
     await m.screenshot({ path: __dirname + '/home-mobile.png', fullPage: true });
-    const html = await (await p.request.get(base + '/')).text(); assert.ok(html.includes('比特酒馆')); assert.ok(html.includes('从这里，走向你感兴趣的地方。'));
+    const html = await (await p.request.get(base + '/')).text(); assert.ok(html.includes('比特酒馆')); assert.ok(html.includes('进入老板的书房')); assert.ok(html.includes('探索 DND 世界百科'));
     for (const [date, season] of [['2026-10-30T16:00:00Z','halloween'], ['2026-10-31T16:00:00Z','regular']]) {
       const clockPage = await b.newPage();
       await clockPage.clock.install({ time: new Date(date) }); await clockPage.goto(base + '/');

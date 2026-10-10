@@ -20,7 +20,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
-    <meta property="og:image" content={new URL('/assets/tavern-hero.webp', Astro.site)} />
+    <meta property="og:image" content={new URL(view === 'home' ? '/assets/tavern-room.webp' : '/assets/tavern-hero.webp', Astro.site)} />
     {noindex && <meta name="robots" content="noindex" />}
     <script is:inline>
       (() => {
@@ -42,7 +42,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
         <button class="preview-trigger icon-button" id="appearance-trigger" aria-label="打开外观设置" aria-expanded="false" aria-controls="appearance-panel" title="外观设置"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><g stroke="currentColor" stroke-width="1.5"><path d="M4 7h16M4 17h16"/><circle cx="9" cy="7" r="3" fill="var(--bg)"/><circle cx="15" cy="17" r="3" fill="var(--bg)"/></g></svg></button>
       </header>
       <main id="main" tabindex="-1"><slot /></main>
-      <footer class="site-footer wrap"><div><span class="footer-star">✦</span> 0101 比特酒馆 <span class="footer-divider">/</span><span class="footer-note">记录与探索，都有一处落脚。</span></div><div><span>WRITE · WANDER · WONDER</span><button class="footer-license" id="license-button">字体与素材</button></div></footer>
+      {view !== 'home' && <footer class="site-footer wrap"><div><span class="footer-star">✦</span> 0101 比特酒馆 <span class="footer-divider">/</span><span class="footer-note">记录与探索，都有一处落脚。</span></div><div><span>WRITE · WANDER · WONDER</span><button class="footer-license" id="license-button">字体与素材</button></div></footer>}
     </div>
     <section id="appearance-panel" class="preview-panel" hidden aria-labelledby="appearance-title">
       <div class="preview-panel-head"><h2 id="appearance-title">外观设置</h2><button class="icon-button" id="preview-close" aria-label="关闭外观设置">×</button></div>
@@ -50,7 +50,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
       <div class="preview-mini"><Logo /></div><p>自动模式按北京时间在 10 月 31 日使用万圣节版，其余日期使用常规版。</p>
       <label for="reading-select">文章阅读配色</label><select id="reading-select"><option value="dark">夜读</option><option value="light">日读</option></select><p>阅读配色用于 Blog 文章，设置仅保存在当前浏览器。</p>
     </section>
-    <dialog id="license-dialog" aria-labelledby="license-title"><div class="license-top"><h2 id="license-title">字体与素材</h2><button class="icon-button" id="license-close" aria-label="关闭字体与素材说明">×</button></div><div class="license-copy"><p>英文标题使用 Cinzel，中文展示标题使用 Noto Serif SC，正文使用系统字体。两款展示字体采用 SIL Open Font License 1.1，可免费使用。</p><p><a href="/licenses/Cinzel-OFL.txt" target="_blank" rel="noopener">Cinzel 完整字体许可 ↗</a><br/><a href="/licenses/NotoSerifSC-OFL.txt" target="_blank" rel="noopener">Noto Serif SC 完整字体许可 ↗</a></p><p>0101 两版标志为原创 SVG。酒馆主视觉由内置 imagegen 生成；DND 城市图复用百科的 AI 概念插画，属于艺术演绎，不作为官方地图。</p></div></dialog>
+    <dialog id="license-dialog" aria-labelledby="license-title"><div class="license-top"><h2 id="license-title">字体与素材</h2><button class="icon-button" id="license-close" aria-label="关闭字体与素材说明">×</button></div><div class="license-copy"><p>英文标题使用 Cinzel，中文展示标题使用 Noto Serif SC，正文使用系统字体。两款展示字体采用 SIL Open Font License 1.1，可免费使用。</p><p><a href="/licenses/Cinzel-OFL.txt" target="_blank" rel="noopener">Cinzel 完整字体许可 ↗</a><br/><a href="/licenses/NotoSerifSC-OFL.txt" target="_blank" rel="noopener">Noto Serif SC 完整字体许可 ↗</a></p><p>0101 两版标志为原创 SVG。酒馆横版与竖版主视觉由内置 imagegen 生成，酒保为原创角色；DND 城市图复用百科的 AI 概念插画，属于艺术演绎，不作为官方地图。</p></div></dialog>
     <script>
       import '../scripts/site';
     </script>
