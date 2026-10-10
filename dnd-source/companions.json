@@ -68,5 +68,12 @@
     "label": "金币与财富",
     "facing": "right",
     "glow": "#d8a74c38"
+  },
+  {
+    "id": "tymora",
+    "name": "泰摩拉",
+    "label": "银币与幸运",
+    "facing": "left",
+    "glow": "#7baf9538"
   }
 ]

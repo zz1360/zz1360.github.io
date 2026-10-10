@@ -31,7 +31,7 @@ python3 dnd-source/build.py \
 | `stage.py`、`stage.css`、`stage.js` | 在线版 DND world 标志、顶部导航、双女神与中央滚动阅读区 |
 | `assets/stage/`、`stage-art-manifest.json` | 已批准的女神伴读插图、矢量徽章及生成记录 |
 | `assets/stage/world-icon.svg`、`world-icon-32.png`、`world-icon.ico` | 深色浏览器小图标及兼容导出；页面大徽章仍使用 `world-emblem.svg` |
-| `companions.json`、`companions.js`、`companions.css` | 十位伴读人物目录、左右独立切换与选择面板 |
+| `companions.json`、`companions.js`、`companions.css` | 十一位伴读人物目录、左右独立切换与选择面板 |
 | `art-manifest.json`、`gallery-manifest.json` | 原画、女性系列画廊及艺术演绎说明 |
 | `assets/` | 30 幅原画与 27 幅画廊图；不覆盖原图 |
 | `build.py`、`export_online.py` | 离线构建、在线导出与响应式图片 |
@@ -93,6 +93,8 @@ python3 dnd-source/build.py \
 同日扩充为九位可切换人物：密斯特拉、莎尔、塞伦涅、莱拉尔、艾拉斯卓、塔莎、痛苦女士、罗丝和扎瑞尔。后七位全身透明插图使用内置 imagegen 生成，以现有角色图作身份参考、已批准密斯特拉图作风格参考，保存在 `assets/stage/`；完整提示词在 `stage-art-manifest.json`。冠饰、服装与姿态均属艺术演绎，不将全部人物称为女神。
 
 2026-10-10 新增经预览确认的沃金全身立绘，目录共十位。沃金使用亮金长发、金瞳、香槟金与象牙白衣裙、金币与珠宝饰链；衣饰及姿势为艺术演绎。图片保存在 `assets/stage/waukeen.webp`，完整生图提示词、预览来源和编码参数在 `stage-art-manifest.json`。她可选择到任意一侧，并加入箭头循环；默认组合仍为密斯特拉和莎尔。
+
+同日新增经预览确认的泰摩拉，目录共十一位。她采用白金色长发、蓝黑色眼睛、翠绿与象牙白冒险行装、皮靴与抛起的银币；服装与姿态为艺术演绎。图像保存在 `assets/stage/tymora.webp`，完整提示词、预览来源、参考资料与编码参数在 `stage-art-manifest.json`。沿用左右独立选择、按需加载、箭头循环及外观偏好保存。同步将伴读网格行约束为 `minmax(0,1fr)`，避免内容固有高度撑大网格，导致立绘顶部进入导航栏下方。
 
 顶部“人物”打开选择面板，先选择左侧或右侧，再选择人物；人物旁的箭头可逐位切换，菱形按钮可直接打开该侧选择。左右独立、可选择同一角色；右侧会按构图方向镜像呈现，确保朝向中央。选择保存在原外观键的 `left`、`right` 字段，未知 ID 回退到默认组合，不覆盖既有主题、布局或阅读数据。恢复按钮可回到密斯特拉／莎尔。
 

@@ -37,7 +37,7 @@ const sizes=[[2048,1280],[1440,900],[1280,800],[1024,768],[390,844],[320,760],[8
      await p.evaluate(()=>showSection('atlas'));
      const rect=await p.locator('.topbar').boundingBox(),nav=await p.locator('.topbar .nav').boundingBox();assert.ok(nav.y+nav.height<=rect.y+rect.height+1,`${width} nav stays in header`);
      if(layout==='companions'){
-      if(width>1100){for(const n of await p.locator('.goddess-art').all())assert.ok(await n.evaluate(n=>{const r=n.getBoundingClientRect();return r.top>=0&&r.bottom<=innerHeight+1&&getComputedStyle(n).objectFit==='contain'}))}
+      if(width>1100){for(const n of await p.locator('.goddess-art').all())assert.ok(await n.evaluate(n=>{const r=n.getBoundingClientRect();return r.top>=document.querySelector('.topbar').getBoundingClientRect().bottom-1&&r.bottom<=innerHeight+1&&getComputedStyle(n).objectFit==='contain'}))}
       else assert.equal(await p.locator('.goddess:visible').count(),0);
      }
      if(width===390&&layout==='companions'&&!light)await p.screenshot({path:__dirname+'/stage-mobile.png'});
