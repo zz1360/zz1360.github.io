@@ -9,3 +9,4 @@ verification/import.json
 verification/invalid.json
 verification/*backup.json
 verification/last-release.json
+verification/favicon-*-check.json
