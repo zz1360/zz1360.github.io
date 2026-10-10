@@ -2008,6 +2008,31 @@
             "bytes": 687762
           }
         ]
+      },
+      {
+        "id": "waukeen",
+        "name": "沃金",
+        "label": "金币与财富",
+        "facing": "right",
+        "glow": "#d8a74c38",
+        "sha256": "27252974942c76eb8a2f7cc0709490422f7be7d084781d31a244591674e18914",
+        "variants": [
+          {
+            "width": 120,
+            "url": "/dnd/assets/companion-waukeen-27252974942c76eb-w120.webp",
+            "bytes": 32782
+          },
+          {
+            "width": 360,
+            "url": "/dnd/assets/companion-waukeen-27252974942c76eb-w360.webp",
+            "bytes": 206164
+          },
+          {
+            "width": 724,
+            "url": "/dnd/assets/companion-waukeen-27252974942c76eb-w724.webp",
+            "bytes": 815736
+          }
+        ]
       }
     ],
     "appearanceKey": "dnd-world-appearance-v1"
