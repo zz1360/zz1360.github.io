@@ -1,1 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 370 126" fill="none" aria-hidden="true"><defs><linearGradient id="gold-regular-mark" x1="0" y1="0" x2="350" y2="120" gradientUnits="userSpaceOnUse"><stop stop-color="#f2ddb0"/><stop offset=".48" stop-color="#c49b59"/><stop offset="1" stop-color="#e5c88e"/></linearGradient></defs><g stroke="url(#gold-regular-mark)" stroke-width="3"><ellipse cx="54" cy="64" rx="31" ry="47"/><ellipse cx="54" cy="64" rx="24" ry="39" stroke-width="1" opacity=".5"/><path d="m118 34 23-17v92m-18 0h36m-39-69 15-11v74"/><ellipse cx="231" cy="64" rx="31" ry="47"/><ellipse cx="231" cy="64" rx="24" ry="39" stroke-width="1" opacity=".5"/><path d="m295 34 23-17v92m-18 0h36m-39-69 15-11v74"/></g><g stroke="#baa4d3" stroke-width="1" opacity=".75"><path d="m54 4 4 7-4 7-4-7zm0 107 4 7-4 7-4-7m177-110 4 7-4 7-4-7zm0 107 4 7-4 7-4-7M7 64h10m74 0h12m91 0h9m75 0h12m-82-34 46 67"/><path d="M99 90h14v-9h10m45-43h14v-8h12M280 86h10v-8h10"/></g><g fill="#d8b578"><circle cx="7" cy="64" r="2"/><circle cx="184" cy="29" r="2"/><circle cx="111" cy="91" r="1.5"/></g><g fill="#b29acf"><circle cx="361" cy="64" r="2"/><path d="m359 32 2 4 4 2-4 2-2 4-2-4-4-2 4-2z"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <title>0101 比特酒馆</title>
+  <rect x="1" y="1" width="62" height="62" rx="13" fill="#172335" stroke="#738198" stroke-width="2"/>
+  <g fill="none" stroke="#f4d7a2" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="13" y="11" width="16" height="18" rx="8"/>
+    <path d="m40 15 7-4v18m-6 0h12"/>
+    <rect x="13" y="36" width="16" height="18" rx="8"/>
+    <path d="m40 40 7-4v18m-6 0h12"/>
+  </g>
+</svg>

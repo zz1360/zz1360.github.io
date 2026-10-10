@@ -1782,6 +1782,7 @@
   ],
   "layout": {
     "logo": "/dnd/assets/world-emblem-64c4de86f53a5f46.svg",
+    "icon": "/dnd/assets/world-icon-688e414c3ee0a94d.svg",
     "portraits": [
       {
         "id": "mystra",
