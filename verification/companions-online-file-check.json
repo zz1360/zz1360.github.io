@@ -1,49 +1,49 @@
 {
   "release": {
     "site": "0101 比特酒馆",
-    "sourceCommit": "3b28b6bac1130200ce7bfd0a6a84c86c24b1a8ea",
-    "builtAt": "2026-10-10T18:27:05.071287+08:00",
+    "sourceCommit": "5a94b9e0c6e4c0dc89c173a9f4a900b49976f026",
+    "builtAt": "2026-10-10T21:12:10.244440+08:00",
     "framework": "Astro"
   },
   "character": {
-    "id": "waukeen",
-    "name": "沃金",
-    "label": "金币与财富",
-    "facing": "right",
-    "glow": "#d8a74c38",
-    "sha256": "27252974942c76eb8a2f7cc0709490422f7be7d084781d31a244591674e18914",
+    "id": "tymora",
+    "name": "泰摩拉",
+    "label": "银币与幸运",
+    "facing": "left",
+    "glow": "#7baf9538",
+    "sha256": "ee7460a98bc3b17444dc547ec71f6041bdd54a0caf6dd5b948665e69de27836a",
     "variants": [
       {
         "width": 120,
-        "url": "/dnd/assets/companion-waukeen-27252974942c76eb-w120.webp",
-        "bytes": 32782
+        "url": "/dnd/assets/companion-tymora-ee7460a98bc3b174-w120.webp",
+        "bytes": 28288
       },
       {
         "width": 360,
-        "url": "/dnd/assets/companion-waukeen-27252974942c76eb-w360.webp",
-        "bytes": 206164
+        "url": "/dnd/assets/companion-tymora-ee7460a98bc3b174-w360.webp",
+        "bytes": 176210
       },
       {
         "width": 724,
-        "url": "/dnd/assets/companion-waukeen-27252974942c76eb-w724.webp",
-        "bytes": 815736
+        "url": "/dnd/assets/companion-tymora-ee7460a98bc3b174-w724.webp",
+        "bytes": 732256
       }
     ]
   },
   "files": [
     {
       "path": "index.html",
-      "sha256": "36bc526b889441104f1918288f8c08b3d029247456303d0e46630be992121b93",
+      "sha256": "2cc6d6c0a6123ffb6ea7c1ca8acc9817e60be6d2f47734b40120519a33126e42",
       "passed": true
     },
     {
       "path": "dnd/index.html",
-      "sha256": "776935a32bb26f1f6bd23c8c05183531aed823f0f97215fcf2ce6242d0a6af92",
+      "sha256": "9c0d9aee22da84f8c4178e852cdad37930e810a069ff8df1aa5a6975194f61df",
       "passed": true
     },
     {
       "path": "dnd/manifest.json",
-      "sha256": "a3fe31683b5120b2e6a9748424a28caff6a9d6c1ff281388330675341d6e2df8",
+      "sha256": "949fd9a6ce00c9c6fb62c11a4afd3d6103ba84cedd32bc8d8d9df29f6b01a196",
       "passed": true
     },
     {
@@ -63,22 +63,22 @@
     },
     {
       "path": "release.json",
-      "sha256": "0ad6df10d9a7db741cec4c8273f1f1857d4994019a50f8aa58a4205eea2f2d81",
+      "sha256": "4ff76572d86f999242682402d60ad160c8d773f7a94453e9ff92c5d73877411c",
       "passed": true
     },
     {
-      "path": "dnd/assets/companion-waukeen-27252974942c76eb-w120.webp",
-      "sha256": "a665df65985ae43c63df5ace591b1a1e47f0bf2106448cc76d578cdf8ac28bc7",
+      "path": "dnd/assets/companion-tymora-ee7460a98bc3b174-w120.webp",
+      "sha256": "6603e9ea5d6283ac3cbf766e30fc475ebc0bfefb6a51d372ae993ddd41c10e85",
       "passed": true
     },
     {
-      "path": "dnd/assets/companion-waukeen-27252974942c76eb-w360.webp",
-      "sha256": "84c8f9bf306272f2c63f57525512dff405b1b017682e3a0f5916e61014940f06",
+      "path": "dnd/assets/companion-tymora-ee7460a98bc3b174-w360.webp",
+      "sha256": "4e021cffe56c06e14e32b53530feac4606158576bd9c222dac93cdc1a911227a",
       "passed": true
     },
     {
-      "path": "dnd/assets/companion-waukeen-27252974942c76eb-w724.webp",
-      "sha256": "27252974942c76eb8a2f7cc0709490422f7be7d084781d31a244591674e18914",
+      "path": "dnd/assets/companion-tymora-ee7460a98bc3b174-w724.webp",
+      "sha256": "ee7460a98bc3b17444dc547ec71f6041bdd54a0caf6dd5b948665e69de27836a",
       "passed": true
     }
   ],
