@@ -30,6 +30,7 @@ python3 dnd-source/build.py \
 | `style.css`、`explore.css` | 阅读排版与探索工具样式 |
 | `stage.py`、`stage.css`、`stage.js` | 在线版 DND world 标志、顶部导航、双女神与中央滚动阅读区 |
 | `assets/stage/`、`stage-art-manifest.json` | 已批准的女神伴读插图、矢量徽章及生成记录 |
+| `assets/stage/world-icon.svg`、`world-icon-32.png`、`world-icon.ico` | 深色浏览器小图标及兼容导出；页面大徽章仍使用 `world-emblem.svg` |
 | `companions.json`、`companions.js`、`companions.css` | 九位伴读人物目录、左右独立切换与选择面板 |
 | `art-manifest.json`、`gallery-manifest.json` | 原画、女性系列画廊及艺术演绎说明 |
 | `assets/` | 30 幅原画与 27 幅画廊图；不覆盖原图 |

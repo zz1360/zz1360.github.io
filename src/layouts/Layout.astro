@@ -14,7 +14,9 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
     <meta name="theme-color" content="#101118" />
     <title>{title === '0101 比特酒馆' ? title : `${title} · 0101 比特酒馆`}</title>
     <link rel="canonical" href={canonical} />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico?v=2" sizes="16x16 32x32 48x48" />
+    <link rel="icon" type="image/png" href="/favicon-32.png?v=2" sizes="32x32" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=2" sizes="any" />
     <link rel="alternate" type="application/rss+xml" title="0101 比特酒馆 · Blog" href="/rss.xml" />
     <meta property="og:type" content={view === 'article' ? 'article' : 'website'} />
     <meta property="og:title" content={title} />

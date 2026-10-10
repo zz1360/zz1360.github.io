@@ -13,6 +13,9 @@ def adapt(page, root, output):
         if not target.exists(): shutil.copy2(path, target)
         return '/dnd/assets/'+target.name
     logo = publish(root/'assets/stage/world-emblem.svg', 'world-emblem')
+    icon = publish(root/'assets/stage/world-icon.svg', 'world-icon')
+    icon_png = publish(root/'assets/stage/world-icon-32.png', 'world-icon-32')
+    icon_ico = publish(root/'assets/stage/world-icon.ico', 'world-icon')
     catalog = json.loads((root/'companions.json').read_text())
     encoder = shutil.which('cwebp') or '/opt/homebrew/bin/cwebp'
     for character in catalog:
@@ -58,6 +61,7 @@ def adapt(page, root, output):
     data = '<script type="application/json" id="companion-data">'+json.dumps(records,ensure_ascii=False).replace('<','\\u003c')+'</script>'
     page = page.replace('</body>',dialog+data+'<script>'+(root/'stage.js').read_text()+'</script><script>'+(root/'companions.js').read_text()+'</script></body>',1)
     page = page.replace('<title>D&D 世界百科 · 多元宇宙知识图谱</title>','<title>DND world · D&D 世界百科</title>',1)
-    page = re.sub(r'<link rel="icon"[^>]*>',f'<link rel="icon" href="{logo}">',page,count=1)
+    icons = f'<link rel="icon" type="image/x-icon" sizes="16x16 32x32 48x48" href="{icon_ico}"><link rel="icon" type="image/png" sizes="32x32" href="{icon_png}"><link rel="icon" type="image/svg+xml" sizes="any" href="{icon}">'
+    page = re.sub(r'<link rel="icon"[^>]*>',icons,page,count=1)
     page = page.replace('搜索万界典藏','搜索 DND world').replace('万界典藏 / D&D WORLD CODEX · 非官方知识导览','DND world · 非官方知识导览')
-    return page, {'logo':logo,'portraits':records,'appearanceKey':'dnd-world-appearance-v1'}
+    return page, {'logo':logo,'icon':icon,'portraits':records,'appearanceKey':'dnd-world-appearance-v1'}
