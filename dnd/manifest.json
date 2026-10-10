@@ -2033,6 +2033,31 @@
             "bytes": 815736
           }
         ]
+      },
+      {
+        "id": "tymora",
+        "name": "泰摩拉",
+        "label": "银币与幸运",
+        "facing": "left",
+        "glow": "#7baf9538",
+        "sha256": "ee7460a98bc3b17444dc547ec71f6041bdd54a0caf6dd5b948665e69de27836a",
+        "variants": [
+          {
+            "width": 120,
+            "url": "/dnd/assets/companion-tymora-ee7460a98bc3b174-w120.webp",
+            "bytes": 28288
+          },
+          {
+            "width": 360,
+            "url": "/dnd/assets/companion-tymora-ee7460a98bc3b174-w360.webp",
+            "bytes": 176210
+          },
+          {
+            "width": 724,
+            "url": "/dnd/assets/companion-tymora-ee7460a98bc3b174-w724.webp",
+            "bytes": 732256
+          }
+        ]
       }
     ],
     "appearanceKey": "dnd-world-appearance-v1"
