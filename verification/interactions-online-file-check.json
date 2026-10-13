@@ -1,0 +1,71 @@
+{
+  "release": {
+    "site": "0101 比特酒馆",
+    "sourceCommit": "3d02a3f879bd22589597a0861b2b454584337db8",
+    "builtAt": "2026-10-13T14:15:21.988145+08:00",
+    "framework": "Astro"
+  },
+  "files": [
+    {
+      "path": "_astro/HomeContent.astro_astro_type_script_index_0_lang.BORc6u67.js",
+      "sha256": "4e5651d0c51674a6456ae9a55ce17a5fc5d26140036be696e2dcbd8246bcc322",
+      "passed": true
+    },
+    {
+      "path": "_astro/Layout.DcHLuV_6.css",
+      "sha256": "bcccfc673ee4ba00ef7b8f560ffe7e28d8ce3f993dac3e97d9856a52490b6fed",
+      "passed": true
+    },
+    {
+      "path": "_astro/index.Dko19zig.css",
+      "sha256": "f8a942debf6bebba58095c56ebd1ac43a1c7133cf3c17a7c23323bf43f4a9eff",
+      "passed": true
+    },
+    {
+      "path": "blog/index.html",
+      "sha256": "d305ba270888b89587c654e53b53f27dfab465f2470c83b9bd079b399a4a8fb4",
+      "passed": true
+    },
+    {
+      "path": "dnd/index.html",
+      "sha256": "c813f916dc7a611b1a06555cb31d3177396086f92393b450067e2532fa15b080",
+      "passed": true
+    },
+    {
+      "path": "dnd/manifest.json",
+      "sha256": "52c66d831d3ce46aaa3e4a492dacd71eddb3ef9353f843bd62bb40d31bdde1a3",
+      "passed": true
+    },
+    {
+      "path": "dnd/works/yinhun/index.html",
+      "sha256": "84346d0df6659d098e031b5c2c95fde840340b281f6916eb99069505df6fbaef",
+      "passed": true
+    },
+    {
+      "path": "explore/dnd/index.html",
+      "sha256": "84a56d0e384358ef20749c6bfe9d62596a0944bfd74b39cfe6f84fe46f6813fd",
+      "passed": true
+    },
+    {
+      "path": "index.html",
+      "sha256": "f41e6774bcc524048bb7a766c422598711e41dc57a94dfc3e9a8e86788f93f08",
+      "passed": true
+    },
+    {
+      "path": "privacy/index.html",
+      "sha256": "186757e7d9bcf56308c6ad0746343ca2c4096af4806a854d3a356de39a9c7434",
+      "passed": true
+    },
+    {
+      "path": "release.json",
+      "sha256": "658171b92a2f3adebe86201c759861342e6bf0187dcdeaded146bdc5ec8e12de",
+      "passed": true
+    },
+    {
+      "path": "support/index.html",
+      "sha256": "a0d021cd050b69b3ad5d2d050990c4e1a0a006a3d6843e32e8477848169aadc0",
+      "passed": true
+    }
+  ],
+  "passed": true
+}
