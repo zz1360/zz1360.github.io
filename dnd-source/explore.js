@@ -43,26 +43,27 @@ function knowledgeLinks(id){
 }
 function setEntryRoute(id,mode='entry',variant=0){
  const hash='#'+(mode==='art'?'art/'+id+'/'+variant:'entry/'+id);
- if(location.hash!==hash)history.pushState(null,'',hash);
+ if(window.codexNavigation)window.codexNavigation.navigate(hash);else if(location.hash!==hash)history.pushState(null,'',hash);
  document.title=BYID[id].name+' · D&D 世界百科';
 }
 function applyRoute(){
  const hash=location.hash.slice(1),parts=hash.split('/');
  if((parts[0]==='entry'||parts[0]==='art')&&BYID[parts[1]]){
   const id=parts[1];document.title=BYID[id].name+' · D&D 世界百科';showSection(BYID[id].section,false);
-  searchDialog.close();document.getElementById('share-dialog').close();
-  if(parts[0]==='entry'){artDialog.close();openEntry(id,false)}
-  else if(document.getElementById('art-'+id)){entryDialog.close();openArt(id,Number(parts[2])||0,false);history.replaceState(null,'','#art/'+id+'/'+currentArtVariant)}
-  else{history.replaceState(null,'','#entry/'+id);artDialog.close();openEntry(id,false)}
+  closeCodexDialog(searchDialog);closeCodexDialog(document.getElementById('share-dialog'));
+  if(parts[0]==='entry'){closeCodexDialog(artDialog);openEntry(id,false)}
+  else if(document.getElementById('art-'+id)){closeCodexDialog(entryDialog);openArt(id,Number(parts[2])||0,false);history.replaceState(history.state,'','#art/'+id+'/'+currentArtVariant)}
+  else{history.replaceState(null,'','#entry/'+id);closeCodexDialog(artDialog);openEntry(id,false)}
  }else{
-  artDialog.close();entryDialog.close();searchDialog.close();document.getElementById('share-dialog').close();
+  closeCodexDialog(artDialog);closeCodexDialog(entryDialog);closeCodexDialog(searchDialog);closeCodexDialog(document.getElementById('share-dialog'));
   const section=sectionNames[hash]?hash:'overview';showSection(section,false);document.title='DND world · D&D 世界百科';
   if(hash&&!sectionNames[hash]&&hash!=='main'){history.replaceState(null,'','#overview');announce('没有找到这个入口，已回到阅览目录。')}
  }
+ window.codexNavigation?.restoreRoute();
 }
 window.addEventListener('hashchange',applyRoute);window.addEventListener('popstate',applyRoute);
-entryDialog.addEventListener('close',()=>{if(location.hash.startsWith('#entry/')&&!artDialog.open){history.replaceState(null,'','#'+activeSection);document.title='DND world · D&D 世界百科'}});
-artDialog.addEventListener('close',()=>{if(location.hash.startsWith('#art/')){const id=entryDialog.dataset.entry;history.replaceState(null,'',entryDialog.open&&BYID[id]?'#entry/'+id:'#'+activeSection);document.title=entryDialog.open?BYID[id].name+' · D&D 世界百科':'DND world · D&D 世界百科'}});
+entryDialog.addEventListener('close',()=>{if(window.codexNavigation?.consumeClose(entryDialog))return;if(location.hash.startsWith('#entry/')&&!artDialog.open)window.codexNavigation?.closedToSection()});
+artDialog.addEventListener('close',()=>{if(window.codexNavigation?.consumeClose(artDialog))return;if(location.hash.startsWith('#art/'))window.codexNavigation?.closedArt()});
 async function shareEntry(id){
  const hash=artDialog.open&&currentArt===id?'#art/'+id+'/'+currentArtVariant:'#entry/'+id;
  const url=new URL(location.href);url.hash=hash;
@@ -72,7 +73,7 @@ async function shareEntry(id){
 document.addEventListener('click',e=>{
  const save=e.target.closest('[data-save]');if(save)toggleSaved(save.dataset.save);
  const share=e.target.closest('[data-share]');if(share)shareEntry(share.dataset.share);
- const resume=e.target.closest('[data-resume]');if(resume){if(location.hash!==resume.dataset.resume)history.pushState(null,'',resume.dataset.resume);applyRoute()}
+ const resume=e.target.closest('[data-resume]');if(resume){if(window.codexNavigation)window.codexNavigation.navigate(resume.dataset.resume);else if(location.hash!==resume.dataset.resume)history.pushState(null,'',resume.dataset.resume);applyRoute()}
  const map=e.target.closest('[data-map]');if(map)selectMapLocation(map.dataset.map);
 });
 document.getElementById('clear-reading').addEventListener('click',()=>{readingState.recent=[];persistReading();announce('阅读记录已清空，收藏已保留')});
@@ -82,4 +83,4 @@ function selectMapLocation(id){
  const linked=linksFor(id).filter(r=>['people','atlas'].includes(BYID[r.id].section));
  document.getElementById('map-preview').innerHTML=`<figure><button class="art-open" data-art="${id}" aria-label="查看${esc(x.name)}概念插画"><img src="${img.src}" ${img.dataset.srcset?`srcset="${esc(img.dataset.srcset)}" sizes="(max-width:620px) 90vw, 480px"`:''} width="1536" height="1024" alt="${esc(img.alt)}" decoding="async"></button><figcaption class="small-copy">AI 概念插画 · 艺术演绎</figcaption></figure><h4>${esc(x.name)}</h4><div class="en">${esc(x.en)}</div><p>${esc(x.body)}</p><span class="eyebrow">人物与势力 · 阅读关联</span><div class="map-related">${linked.length?linked.map(r=>`<button class="plain" data-open="${r.id}">${esc(BYID[r.id].name)} ↗</button>`).join(''):'<span class="small-copy">暂未收录独立人物或势力关联；可在档案中阅读地点背景。</span>'}</div><button class="primary" data-open="${id}">打开地点档案 ↗</button>${refHtml(x)}`;
 }
-renderReading();selectMapLocation('waterdeep');applyRoute();
+renderReading();selectMapLocation('waterdeep');applyRoute();window.codexNavigation?.initialize();

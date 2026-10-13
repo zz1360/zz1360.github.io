@@ -5,6 +5,17 @@ const closeButton = document.querySelector<HTMLButtonElement>('#preview-close')!
 const season = document.querySelector<HTMLSelectElement>('#season-select')!;
 const reading = document.querySelector<HTMLSelectElement>('#reading-select')!;
 let focusBefore: Element | null = null;
+const reducedMotion = matchMedia('(prefers-reduced-motion:reduce)');
+const uiAnimations = new WeakMap<HTMLElement, Animation>();
+root.dataset.inputMode = 'pointer';
+document.addEventListener('pointerdown', () => { root.dataset.inputMode = 'pointer'; }, true);
+document.addEventListener('keydown', () => { root.dataset.inputMode = 'keyboard'; }, true);
+function animateSurface(node: HTMLElement, anchored = false) {
+  uiAnimations.get(node)?.cancel();
+  if (reducedMotion.matches || root.dataset.inputMode === 'keyboard') return;
+  node.style.transformOrigin = anchored ? 'top right' : 'center';
+  uiAnimations.set(node, node.animate([{ opacity: 0, transform: 'scale(.97)' }, { opacity: 1, transform: 'scale(1)' }], { duration: 200, easing: 'cubic-bezier(.23,1,.32,1)' }));
+}
 
 function stored(key: string, fallback: string) {
   try { return localStorage.getItem(key) || fallback; } catch { return fallback; }
@@ -29,7 +40,7 @@ function applyReading(value: string) {
 function openPanel(open: boolean) {
   panel.hidden = !open;
   trigger.setAttribute('aria-expanded', String(open));
-  if (open) { focusBefore = document.activeElement; closeButton.focus(); }
+  if (open) { focusBefore = document.activeElement; closeButton.focus(); animateSurface(panel, true); }
   else if (focusBefore instanceof HTMLElement) focusBefore.focus();
 }
 trigger.onclick = () => openPanel(panel.hidden);
@@ -49,6 +60,7 @@ addEventListener('pageshow', applySeason);
 document.addEventListener('visibilitychange', () => { if (!document.hidden) applySeason(); });
 
 const license = document.querySelector<HTMLDialogElement>('#license-dialog')!;
+new MutationObserver(() => { if (license.open) animateSurface(license); }).observe(license, { attributes: true, attributeFilter: ['open'] });
 document.querySelector<HTMLButtonElement>('#license-button')!.onclick = () => license.showModal();
 document.querySelector<HTMLButtonElement>('#license-close')!.onclick = () => license.close();
 license.addEventListener('click', e => {

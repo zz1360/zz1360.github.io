@@ -44,7 +44,7 @@ const appearance='dnd-world-appearance-v1',reading='dnd-codex-reading-v1',novel=
   for(const width of [2048,1850,1751,1440,1280,1024,390,320]){
    await page.setViewportSize({width,height:900});
    assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
-   const header=await page.locator('.topbar').boundingBox(),nav=await page.locator('.nav').boundingBox();assert.ok(nav.y+nav.height<=header.y+header.height+1);
+   const header=await page.locator('.topbar').boundingBox();if(width>1100){const nav=await page.locator('.nav').boundingBox();assert.ok(nav.y+nav.height<=header.y+header.height+1)}else{assert.equal(await page.locator('#mobile-menu:visible').count(),1);assert.equal(await page.locator('body').evaluate(n=>n.classList.contains('stage-mode')),false)}
    if(width<=1100)assert.equal(await page.locator('#companion-picker:visible').count(),0);
   }
   const fresh=await browser.newPage({viewport:{width:1440,height:900}}),onlySelected=[];

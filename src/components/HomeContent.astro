@@ -1,4 +1,4 @@
-  <section class="tavern-room" data-page="home" aria-label="探索比特酒馆">
+  <section class="tavern-room" data-page="home" data-home-enhanced="false" data-motion="native" data-guidance="pending" data-navigation="idle" data-active-destination="none" data-input="pointer" aria-label="探索比特酒馆">
     <h1 class="sr-only">0101 比特酒馆 · 记录与探索的奇幻酒馆</h1>
     <div class="room-canvas">
       <picture>
@@ -9,16 +9,19 @@
       <div class="study-light ambient" aria-hidden="true"></div>
       <div class="hearth-light ambient" aria-hidden="true"></div>
       <div class="book-light ambient" aria-hidden="true"></div>
+      <div class="room-response study-response" data-response="study" aria-hidden="true"><span class="response-core"></span></div>
+      <div class="room-response book-response" data-response="storyteller" aria-hidden="true"><span class="response-core"></span><span class="book-sheen"></span></div>
       <div class="constellation ambient" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
-      <a class="room-destination study" href="/blog/" aria-label="进入老板的书房，阅读 Blog">
+      <a class="room-destination study" data-destination="study" data-near="false" data-proximity="0.00" data-guiding="false" data-pressed="false" href="/blog/" aria-label="进入老板的书房，阅读 Blog">
         <span class="destination-glow" aria-hidden="true"></span>
         <span class="destination-label"><span class="destination-symbol" aria-hidden="true">✧</span><span>书房<small>Blog</small></span><b aria-hidden="true">↗</b></span>
       </a>
-      <a class="room-destination storyteller" href="/dnd/" aria-label="听酒保讲故事，探索 DND 世界百科">
+      <a class="room-destination storyteller" data-destination="storyteller" data-near="false" data-proximity="0.00" data-guiding="false" data-pressed="false" href="/dnd/" aria-label="听酒保讲故事，探索 DND 世界百科">
         <span class="destination-glow" aria-hidden="true"></span>
         <span class="destination-label"><span class="destination-symbol" aria-hidden="true">✦</span><span>听故事<small>DND</small></span><b aria-hidden="true">↗</b></span>
       </a>
     </div>
+    <div class="room-departure" aria-hidden="true"></div>
     <div class="room-controls">
       <span class="room-hint">轻触书房或酒保，开始探索</span>
       <div><button id="motion-toggle" type="button" aria-pressed="false" aria-label="暂停环境动画" title="暂停环境动画"><span aria-hidden="true">Ⅱ</span></button><button id="license-button" type="button">字体与素材</button></div>

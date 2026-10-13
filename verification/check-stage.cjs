@@ -18,14 +18,14 @@ const sizes=[[2048,1280],[1440,900],[1280,800],[1024,768],[390,844],[320,760],[8
   assert.deepEqual(figures,await p.locator('.goddess').evaluateAll(ns=>ns.map(n=>({y:n.getBoundingClientRect().y,h:n.getBoundingClientRect().height}))));
   await p.locator('.reader-scrollbar').focus();await p.keyboard.press('Home');assert.equal(await p.locator('#main').evaluate(n=>n.scrollTop),0);
   const thumb=await p.locator('.scroll-thumb').boundingBox();await p.mouse.move(thumb.x+thumb.width/2,thumb.y+15);await p.mouse.down();await p.mouse.move(thumb.x+thumb.width/2,thumb.y+95);await p.mouse.up();assert.ok(await p.locator('#main').evaluate(n=>n.scrollTop>0));
-  await p.locator('.nav a[data-section="people"]').click();assert.equal(await p.locator('#main').evaluate(n=>n.scrollTop),0);
+  await p.locator('.nav a[data-section="people"]').click();await p.waitForFunction(()=>document.getElementById('main').scrollTop===0);
   await p.goto(base+'/dnd/#art/mystra/2');assert.equal(await p.locator('#art-counter').innerText(),'3 / 4');await p.keyboard.press('ArrowRight');assert.equal(await p.locator('#art-counter').innerText(),'4 / 4');await p.keyboard.press('Escape');
   await p.goto(base+'/dnd/#entry/shar');await p.locator('#entry-dialog [data-save]').click();await p.keyboard.press('Escape');
   const saved=await p.evaluate(()=>localStorage.getItem('dnd-codex-reading-v1'));
   for(const [width,height] of sizes){
    await p.setViewportSize({width,height});await p.goto(base+'/dnd/#atlas');
-   for(const layout of ['companions','original']){
-    await p.locator('#layout-select').selectOption(layout);
+   for(const layout of width>1100?['companions','original']:['original']){
+    if(width>1100)await p.locator('#layout-select').selectOption(layout);else assert.equal(await p.locator('#layout-select').inputValue(),'original');
     for(const light of [false,true]){
      if(await p.locator('body').evaluate(n=>n.classList.contains('light'))!==light)await p.locator('#theme-button').click();
      for(const section of ['overview','worlds','cosmos','history','people','atlas','primer','sources','works']){
@@ -35,7 +35,7 @@ const sizes=[[2048,1280],[1440,900],[1280,800],[1024,768],[390,844],[320,760],[8
      }
      if(layout==='original')assert.equal(await p.locator('body').evaluate(n=>getComputedStyle(n).getPropertyValue('--bg').trim()),light?'#eee9dc':'#101717');
      await p.evaluate(()=>showSection('atlas'));
-     const rect=await p.locator('.topbar').boundingBox(),nav=await p.locator('.topbar .nav').boundingBox();assert.ok(nav.y+nav.height<=rect.y+rect.height+1,`${width} nav stays in header`);
+     const rect=await p.locator('.topbar').boundingBox();if(width>1100){const nav=await p.locator('.topbar .nav').boundingBox();assert.ok(nav.y+nav.height<=rect.y+rect.height+1,`${width} nav stays in header`)}else assert.equal(await p.locator('#mobile-menu:visible').count(),1);
      if(layout==='companions'){
       if(width>1100){for(const n of await p.locator('.goddess-art').all())assert.ok(await n.evaluate(n=>{const r=n.getBoundingClientRect();return r.top>=document.querySelector('.topbar').getBoundingClientRect().bottom-1&&r.bottom<=innerHeight+1&&getComputedStyle(n).objectFit==='contain'}))}
       else assert.equal(await p.locator('.goddess:visible').count(),0);

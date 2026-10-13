@@ -1,0 +1,12 @@
+:root{--ease-out:cubic-bezier(.23,1,.32,1);--press-duration:160ms;--state-duration:180ms}
+button,a,select{touch-action:manipulation}
+button:focus-visible,a:focus-visible,select:focus-visible,input:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.reading-trail{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:18px;padding-bottom:14px;border-bottom:1px solid var(--line)}
+.reading-trail button{min-height:40px;font-size:13px;color:var(--gold)}.reading-trail>span{color:var(--muted);font-size:11px}
+:is(button,.primary,.jump,.desk-item):not(:disabled){transition:opacity var(--state-duration) var(--ease-out),transform var(--press-duration) var(--ease-out)}
+:is(button,.primary,.jump,.desk-item):not(:disabled):active{transform:scale(.98)}
+button:disabled{cursor:default;opacity:.6}
+html[data-input-mode=keyboard] :is(button,.primary,.jump,.desk-item){transition:none!important;transform:none!important}
+@media(prefers-reduced-motion:reduce){:is(button,.primary,.jump,.desk-item){transition:none!important;transform:none!important}}
+@media(max-width:1100px){.reading-trail button{min-height:44px}.reading-trail>span{display:none}}
+@media print{.reading-trail{display:none}}

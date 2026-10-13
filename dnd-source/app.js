@@ -9,11 +9,11 @@ const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'
 const refHtml=x=>`<div class="sources-inline"><span>来源</span>${[...new Set(x.src)].map(k=>`<a href="${esc(DATA.sources[k].url)}" target="_blank" rel="noopener noreferrer">[${sourceNums[k]}] ${esc(DATA.sources[k].title)}</a>`).join('')}</div>`;
 let activeSection='overview';
 function showSection(id,scroll=true){
- if(!sectionNames[id])id='overview'; activeSection=id;
+ if(!sectionNames[id])id='overview'; if(activeSection!==id)window.codexNavigation?.rememberSection(activeSection); activeSection=id;
  document.querySelectorAll('.chapter').forEach(s=>s.hidden=s.id!==id);
  document.querySelectorAll('[data-section]').forEach(a=>{if(a.dataset.section===id)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')});
  document.getElementById('crumb').textContent=sectionNames[id];
- if(scroll)(document.body.classList.contains('stage-mode')?document.getElementById('main'):window).scrollTo({top:0,behavior:'instant'});
+ if(scroll){if(window.codexNavigation)window.codexNavigation.restoreSection(id);else (document.body.classList.contains('stage-mode')?document.getElementById('main'):window).scrollTo({top:0,behavior:'instant'})}
  window.dispatchEvent(new CustomEvent('chapterchange',{detail:id}));
 }
 
@@ -28,27 +28,18 @@ showSection(location.hash.slice(1),false);
 const entryDialog=document.getElementById('entry-dialog');
 function openEntry(id,updateRoute=true){
  const x=BYID[id];if(!x)return;
- if(updateRoute)setEntryRoute(id);artDialog.close();entryDialog.dataset.entry=id;showSection(x.section,false);
+ if(updateRoute)setEntryRoute(id);closeCodexDialog(artDialog);entryDialog.dataset.entry=id;showSection(x.section,false);
  document.getElementById('entry-title').textContent=sectionNames[x.section]+' / 知识档案';
- document.getElementById('entry-content').innerHTML=`${entryTools(id)}${entryIllustration(id)}<span class="eyebrow">${esc(x.date||x.setting||x.tag||x.cat||x.kind||'D&D CODEX')}</span><h3 style="margin-top:14px">${esc(x.name)}</h3><div class="en">${esc(x.en)}</div><p>${esc(x.body)}</p>${x.details.map(([a,b])=>`<h4>${esc(a)}</h4><p>${esc(b)}</p>`).join('')}${refHtml(x)}${historyFlow(id)}${knowledgeLinks(id)}`;
+ document.getElementById('entry-content').innerHTML=`${window.codexNavigation?.markup(id)||''}${entryTools(id)}${entryIllustration(id)}<span class="eyebrow">${esc(x.date||x.setting||x.tag||x.cat||x.kind||'D&D CODEX')}</span><h3 style="margin-top:14px">${esc(x.name)}</h3><div class="en">${esc(x.en)}</div><p>${esc(x.body)}</p>${x.details.map(([a,b])=>`<h4>${esc(a)}</h4><p>${esc(b)}</p>`).join('')}${refHtml(x)}${historyFlow(id)}${knowledgeLinks(id)}`;
  rememberEntry(id);renderReading();
- if(!entryDialog.open)entryDialog.showModal();entryDialog.scrollTop=0;
+ if(!entryDialog.open)entryDialog.showModal();if(window.codexNavigation)window.codexNavigation.surfaceOpened('entry',id);else entryDialog.scrollTop=0;
 }
 [entryDialog,document.getElementById('search-dialog')].forEach(d=>d.addEventListener('click',e=>{const r=d.getBoundingClientRect();if(e.target===d&&(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom))d.close()}));
 const searchDialog=document.getElementById('search-dialog'),searchInput=document.getElementById('search-input');
-function launchSearch(){searchDialog.showModal();searchInput.focus()}
+function launchSearch(){codexSearch.render();if(!searchDialog.open)searchDialog.showModal();searchInput.focus({preventScroll:true})}
 document.getElementById('launch-search').addEventListener('click',launchSearch);
 document.addEventListener('keydown',e=>{if(document.getElementById('share-dialog')?.open)return;if(e.key==='Escape'&&!document.getElementById('art-dialog')?.open&&(entryDialog.open||searchDialog.open)){e.preventDefault();(entryDialog.open?entryDialog:searchDialog).close();return}if((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==='k'){e.preventDefault();if(!searchDialog.open&&!entryDialog.open&&!document.getElementById('art-dialog')?.open)launchSearch()}});
-searchInput.addEventListener('input',()=>{
- const q=searchInput.value.trim().toLocaleLowerCase();const results=document.getElementById('search-results');
- if(!q){results.innerHTML='';document.getElementById('search-status').textContent='输入关键词，检索全部知识条目。';return}
- const found=ALL.filter(x=>[x.name,x.en,x.id,...(x.aliases||[]),x.body,x.date||'',x.setting||'',...x.details.flat()].join(' ').toLocaleLowerCase().includes(q));
- const foundWorks=WORKS.filter(x=>[x.title,x.author,x.category,x.description,x.scope].join(' ').toLocaleLowerCase().includes(q));
- document.getElementById('search-status').textContent=`找到 ${found.length+foundWorks.length} 个相关条目${foundWorks.length?'（含 '+foundWorks.length+' 部衍生作品）':''}`;
- const workResults=foundWorks.map(x=>`<a class="search-result work-result" href="${esc(x.url)}"><small>衍生作品 · ${esc(x.category)}</small><strong>《${esc(x.title)}》</strong><small>${esc(x.author)}</small><p>${esc(x.description)}</p></a>`).join('');
- results.innerHTML=found.length+foundWorks.length?found.map(x=>`<button class="search-result" data-result="${x.id}"><small>${esc(sectionNames[x.section])}${x.date?' · '+esc(x.date):''}</small><strong>${esc(x.name)}</strong><small>${esc(x.en)}</small><p>${esc(x.body)}</p></button>`).join('')+workResults:'<p class="empty">没有找到相关条目。试试英文原名，或缩短关键词。</p>';
-});
-document.getElementById('search-results').addEventListener('click',e=>{const b=e.target.closest('[data-result]');if(b){searchDialog.close();openEntry(b.dataset.result)}});
+const codexSearch=window.initCodexSearch({items:ALL,works:WORKS,sectionNames,esc,openEntry,beforeOpen:()=>window.codexNavigation?.fromSearch()});
 function groupFilter(group,attr,list,container,count,noun){
  document.getElementById(group).addEventListener('click',e=>{
   const b=e.target.closest(`[data-${attr}]`);if(!b)return;const value=b.dataset[attr];
@@ -110,10 +101,12 @@ function artSiblings(id){const x=BYID[id];return ALL.filter(y=>y.section===x.sec
 function openArt(id,variant=0,updateRoute=true){
  const img=document.getElementById('art-'+id),x=BYID[id];if(!artDialog||!img||!x)return;
  const gallery=hasGallery(id),items=artVariants(id);
- currentArtVariant=Math.max(0,Math.min(Number.isFinite(variant)?Math.trunc(variant):0,items.length-1));
+ const targetVariant=Math.max(0,Math.min(Number.isFinite(variant)?Math.trunc(variant):0,items.length-1));
+ if(updateRoute)setEntryRoute(id,'art',targetVariant);
+ currentArt=id;currentArtVariant=targetVariant;
  const selected=items[currentArtVariant];
- currentArt=id;if(updateRoute)setEntryRoute(id,'art',currentArtVariant);showSection(x.section,false);rememberEntry(id,'art',currentArtVariant);
- document.getElementById('art-tools').innerHTML=entryTools(id);renderReading();document.getElementById('art-title').textContent=x.name+' · '+x.en;
+ showSection(x.section,false);rememberEntry(id,'art',currentArtVariant);
+ document.getElementById('art-tools').innerHTML=(window.codexNavigation?.markup(id)||'')+entryTools(id);renderReading();document.getElementById('art-title').textContent=x.name+' · '+x.en;
  artDialog.classList.toggle('has-gallery',gallery);
  document.getElementById('art-full').srcset=selected.srcset||'';document.getElementById('art-full').sizes='(max-width:620px) 100vw, 1100px';document.getElementById('art-full').src=selected.src;document.getElementById('art-full').alt=selected.alt;
  document.getElementById('art-caption').textContent=gallery?selected.note+' 不作为官方外貌或故事事件的证据。':x.body+' '+selected.note+' 不作为官方外貌或准确地理证据。';
@@ -130,7 +123,7 @@ function openArt(id,variant=0,updateRoute=true){
  document.getElementById('art-counter').textContent=(index+1)+' / '+siblings.length;
  document.getElementById('art-prev').disabled=!gallery&&index===0;
  document.getElementById('art-next').disabled=!gallery&&index===siblings.length-1;
- if(!artDialog.open)artDialog.showModal();artDialog.scrollTop=0;
+ if(!artDialog.open)artDialog.showModal();if(window.codexNavigation)window.codexNavigation.surfaceOpened('art',id,currentArtVariant);else artDialog.scrollTop=0;
 }
 function advanceArt(direction){
  if(!currentArt)return;
@@ -141,7 +134,7 @@ if(artDialog){
  document.getElementById('art-gallery-list').addEventListener('click',e=>{const button=e.target.closest('[data-variant]');if(button)openArt(currentArt,Number(button.dataset.variant))});
  document.getElementById('art-prev').addEventListener('click',()=>advanceArt(-1));
  document.getElementById('art-next').addEventListener('click',()=>advanceArt(1));
- document.getElementById('art-read').addEventListener('click',()=>{const id=currentArt;artDialog.close();openEntry(id)});
+ document.getElementById('art-read').addEventListener('click',()=>{const id=currentArt;window.codexNavigation?.fromSurface();closeCodexDialog(artDialog);openEntry(id)});
  artDialog.addEventListener('click',e=>{const r=artDialog.getBoundingClientRect();if(e.target===artDialog&&(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom))artDialog.close()});
  document.addEventListener('keydown',e=>{if(document.getElementById('share-dialog')?.open||!artDialog.open)return;if(e.key==='Escape'){e.preventDefault();artDialog.close()}else if(e.key==='ArrowLeft'){e.preventDefault();advanceArt(-1)}else if(e.key==='ArrowRight'){e.preventDefault();advanceArt(1)}});
  const stage=artDialog.querySelector('.art-stage');let swipeStart=null;
@@ -154,3 +147,6 @@ document.querySelectorAll('[data-preview]').forEach(slot=>{
  const source=document.getElementById('art-'+slot.dataset.preview);if(!source)return;
  const image=document.createElement('img');image.src=source.src;image.srcset=source.dataset.srcset||'';image.sizes='(max-width:620px) 90vw, 400px';image.alt=source.alt;image.decoding='async';image.loading='lazy';image.width=1536;image.height=1024;slot.append(image);
 });
+
+function closeCodexDialog(dialog){if(window.codexNavigation)window.codexNavigation.close(dialog);else dialog.close()}
+window.codexNavigation=window.createCodexNavigation({reader:document.getElementById('main'),entryDialog,artDialog,searchDialog,searchInput,sectionNames,byId:BYID,esc,getSection:()=>activeSection,getArt:()=>currentArt,getVariant:()=>currentArtVariant,search:()=>codexSearch,apply:()=>applyRoute()});

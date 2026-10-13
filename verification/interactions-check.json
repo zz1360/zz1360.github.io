@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "origin": "http://127.0.0.1:8912",
+  "features": [
+    "ranked-search",
+    "match-snippets",
+    "keyboard-search",
+    "search-return",
+    "section-position",
+    "archive-back-forward",
+    "gallery-return",
+    "sticky-character-slots",
+    "selected-character-location",
+    "mobile-directory",
+    "desktop-preferences",
+    "home-proximity",
+    "keyboard-immediate",
+    "reduced-motion"
+  ],
+  "errors": [],
+  "failed": []
+}
