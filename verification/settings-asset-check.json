@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "comparedTo": "production manifest before update",
+  "originals": 30,
+  "galleryCharacters": 9,
+  "companions": 11,
+  "originalGalleryLayoutManifestsIdentical": true,
+  "originalAndVariantHashesVerified": true,
+  "unchangedPagesComparedToPreviousRelease": [
+    "dnd/works/yinhun/index.html",
+    "privacy/index.html",
+    "support/index.html"
+  ]
+}

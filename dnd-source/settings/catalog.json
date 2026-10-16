@@ -1,0 +1,29 @@
+[
+  {
+    "id": "realms",
+    "name": "被遗忘的国度",
+    "en": "Forgotten Realms",
+    "path": "/dnd/",
+    "center": "material",
+    "scope": "以费伦为历史主线，兼收跨设定对照。",
+    "checked": "2026-10-02"
+  },
+  {
+    "id": "eberron",
+    "name": "艾伯伦",
+    "en": "Eberron",
+    "path": "/dnd/settings/eberron/",
+    "center": "eb-material",
+    "scope": "以《Eberron: Rising from the Last War》（2019）的战后舞台为参照。",
+    "checked": "2026-10-16"
+  },
+  {
+    "id": "planescape",
+    "name": "异度风景",
+    "en": "Planescape",
+    "path": "/dnd/settings/planescape/",
+    "center": "ps-outlands",
+    "scope": "以《Planescape: Adventures in the Multiverse》（2023）的印记城与外域为舞台。",
+    "checked": "2026-10-16"
+  }
+]

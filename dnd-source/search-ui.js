@@ -161,7 +161,7 @@
    results.replaceChildren();buttons=[];
    if(!query){
     status.textContent='输入名称、英文原名或正文关键词。';
-    const guide=node('div','search-guide');guide.append(node('strong','','从一个关键词开始'),node('p','','也可以搜索别名、年代或设定名称，例如“魔网”、“Netheril”。'));results.append(guide);
+    const guide=node('div','search-guide');guide.append(node('strong','','从一个关键词开始'),node('p','','也可以搜索别名、年代或设定名称，例如 '+(options.examples||'魔网、Netheril')+'。'));results.append(guide);
    }else if(!visible.length){
     const label=FILTERS.find(([key])=>key===currentFilter)[1];
     status.textContent=found.length?'共 '+found.length+' 个匹配；“'+label+'”类别没有结果。':'没有找到匹配“'+clean(input.value)+'”的条目。';

@@ -3,7 +3,7 @@
  'use strict';
  window.createCodexNavigation=function(o){
   const sections=new Map(),entries=new Map(),art=new Map(),ignored=new WeakSet();
-  const key='dnd-codex-navigation-v1',stateKey='codexReader',trailKey='codexTrail';
+  const key='dnd-codex-navigation-v1'+(DATA.setting?.id&&DATA.setting.id!=='realms'?'-'+DATA.setting.id:''),stateKey='codexReader',trailKey='codexTrail';
   let pendingSource=null,restoring=false,restoreToken=0;
   const position=n=>Number.isFinite(n)?Math.max(0,Math.min(1000000,n)):0;
   try{const saved=JSON.parse(sessionStorage.getItem(key)||'{}');for(const [name,map,valid] of [['sections',sections,id=>o.sectionNames[id]],['entries',entries,id=>o.byId[id]],['art',art,id=>o.byId[id.split('/')[0]]]])for(const [id,top] of Object.entries(saved[name]||{}))if(valid(id)&&Number.isFinite(top))map.set(id,position(top))}catch{}
@@ -60,13 +60,13 @@
    const section=o.getSection();close(o.entryDialog);close(o.artDialog);history.replaceState({},'','#'+section);o.apply();restoreSection(section);
   }
   function closedToSection(){
-   const section=o.getSection();history.replaceState({},'','#'+section);document.title='DND world · D&D 世界百科';restoreSection(section);
+   const section=o.getSection();history.replaceState({},'','#'+section);document.title=siteTitle;restoreSection(section);
   }
   function closedArt(){
    const id=o.entryDialog.dataset.entry;
    if(o.entryDialog.open&&o.byId[id]){
     const path=trail();if(path.at(-1)?.mode==='entry'&&path.at(-1)?.id===id){history.back();return}
-    history.replaceState({[trailKey]:path},'','#entry/'+id);document.title=o.byId[id].name+' · D&D 世界百科';
+    history.replaceState({[trailKey]:path},'','#entry/'+id);document.title=o.byId[id].name+' · '+siteTitle;
    }else closedToSection();
   }
   document.addEventListener('click',e=>{

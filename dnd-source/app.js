@@ -3,7 +3,8 @@ const DATA=JSON.parse(document.getElementById('codex-data').textContent);
 const WORKS=JSON.parse(document.getElementById('works-data')?.textContent||'[]');
 const ALL=[...DATA.worlds,...DATA.planes,...DATA.history,...DATA.people,...DATA.locations,...DATA.factions,...DATA.terms];
 const BYID=Object.assign(Object.create(null),Object.fromEntries(ALL.map(x=>[x.id,x])));
-const sectionNames={overview:'阅览入口',worlds:'世界图谱',cosmos:'位面宇宙',history:'历史年表',people:'人物与神祇',atlas:'地理与势力',primer:'术语与入门',sources:'资料与边界',works:'衍生作品'};
+const sectionNames={overview:'阅览入口',worlds:'世界图谱',cosmos:'位面宇宙',history:DATA.setting?.id==='planescape'?'历史与事件':'历史年表',people:'人物与神祇',atlas:'地理与势力',primer:'术语与入门',sources:'资料与边界',works:DATA.setting?.id&&DATA.setting.id!=='realms'?'关联作品':'衍生作品'};
+const siteTitle=DATA.setting?.id&&DATA.setting.id!=='realms'?DATA.setting.name+' · 5E · DND world':'DND world · D&D 世界百科';
 const sourceNums=Object.fromEntries(Object.keys(DATA.sources).map((k,i)=>[k,String(i+1).padStart(2,'0')]));
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const refHtml=x=>`<div class="sources-inline"><span>来源</span>${[...new Set(x.src)].map(k=>`<a href="${esc(DATA.sources[k].url)}" target="_blank" rel="noopener noreferrer">[${sourceNums[k]}] ${esc(DATA.sources[k].title)}</a>`).join('')}</div>`;
@@ -39,7 +40,7 @@ const searchDialog=document.getElementById('search-dialog'),searchInput=document
 function launchSearch(){codexSearch.render();if(!searchDialog.open)searchDialog.showModal();searchInput.focus({preventScroll:true})}
 document.getElementById('launch-search').addEventListener('click',launchSearch);
 document.addEventListener('keydown',e=>{if(document.getElementById('share-dialog')?.open)return;if(e.key==='Escape'&&!document.getElementById('art-dialog')?.open&&(entryDialog.open||searchDialog.open)){e.preventDefault();(entryDialog.open?entryDialog:searchDialog).close();return}if((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==='k'){e.preventDefault();if(!searchDialog.open&&!entryDialog.open&&!document.getElementById('art-dialog')?.open)launchSearch()}});
-const codexSearch=window.initCodexSearch({items:ALL,works:WORKS,sectionNames,esc,openEntry,beforeOpen:()=>window.codexNavigation?.fromSearch()});
+const codexSearch=window.initCodexSearch({items:ALL,works:WORKS,sectionNames,esc,openEntry,examples:DATA.setting?.id==='eberron'?'沙恩、龙纹、Dal Quor':DATA.setting?.id==='planescape'?'印记城、门钥、Sigil':'魔网、Netheril',beforeOpen:()=>window.codexNavigation?.fromSearch()});
 function groupFilter(group,attr,list,container,count,noun){
  document.getElementById(group).addEventListener('click',e=>{
   const b=e.target.closest(`[data-${attr}]`);if(!b)return;const value=b.dataset[attr];
@@ -58,14 +59,14 @@ function filterPeople(){
 document.getElementById('person-world').addEventListener('change',filterPeople);
 document.getElementById('person-role').addEventListener('change',filterPeople);
 document.getElementById('reset-people').addEventListener('click',()=>{document.getElementById('person-world').value='all';document.getElementById('person-role').value='all';filterPeople()});
-let selectedPlane='material';
+let selectedPlane=DATA.setting?.center||'material';
 function selectPlane(id){
  const x=DATA.planes.find(x=>x.id===id);if(!x)return;selectedPlane=id;
- document.getElementById('plane-panel').innerHTML=`<span class="tag gold">${esc(x.cat)}</span><h3>${esc(x.name)}</h3><div class="en">${esc(x.en)}</div><p>${esc(x.body)}</p><p>${esc(x.details[0][1])}</p>${refHtml(x)}`;
+ document.getElementById('plane-panel').innerHTML=`<span class="tag gold">${esc(x.cat)}</span><h3>${esc(x.name)}</h3><div class="en">${esc(x.en)}</div><p>${esc(x.body)}</p>${x.details[0]?`<p>${esc(x.details[0][1])}</p>`:''}${refHtml(x)}`;
  document.querySelectorAll('.plane-selector [data-plane]').forEach(b=>{const on=b.dataset.plane===id;b.classList.toggle('active',on);b.setAttribute('aria-pressed',on)});
  window.dispatchEvent(new CustomEvent('planeselect',{detail:id}));
 }
-selectPlane('material');
+selectPlane(selectedPlane);
 document.getElementById('theme-button').addEventListener('click',e=>{const light=document.body.classList.toggle('light');e.target.textContent=light?'深色':'浅色';e.target.setAttribute('aria-label',light?'切换到深色阅读模式':'切换到浅色阅读模式')});
 let printDetails=[],printHidden=[];
 window.addEventListener('beforeprint',()=>{printHidden=[...document.querySelectorAll('[data-entry]')].map(x=>[x,x.hidden]);printHidden.forEach(([x])=>x.hidden=false);printDetails=[...document.querySelectorAll('details')].map(x=>[x,x.open]);document.querySelectorAll('details').forEach(x=>x.open=true)});

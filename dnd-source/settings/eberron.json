@@ -1,0 +1,1040 @@
+{
+  "setting": {
+    "id": "eberron",
+    "name": "艾伯伦",
+    "en": "Eberron",
+    "path": "/dnd/settings/eberron/",
+    "center": "eb-material",
+    "scope": "以《Eberron: Rising from the Last War》（2019）的战后舞台为参照。",
+    "checked": "2026-10-16",
+    "edition": "5E"
+  },
+  "worlds": [
+    {
+      "id": "eb-world",
+      "name": "艾伯伦",
+      "en": "Eberron",
+      "section": "worlds",
+      "body": "魔法融入产业与交通，战争留下裂痕；世界的冒险气质兼有动作与黑色悬疑。",
+      "src": [
+        "product",
+        "start"
+      ],
+      "details": [],
+      "aliases": [],
+      "color": "#c5ad80",
+      "kind": "设定总览",
+      "tag": "艾伯伦"
+    },
+    {
+      "id": "eb-khorvaire-world",
+      "name": "科瓦雷",
+      "en": "Khorvaire",
+      "section": "worlds",
+      "body": "五国战争与战后政治的重要大陆；城邦、国家和龙纹家族在此交织。",
+      "src": [
+        "product",
+        "start"
+      ],
+      "details": [],
+      "aliases": [],
+      "color": "#c5ad80",
+      "kind": "大陆",
+      "tag": "艾伯伦"
+    },
+    {
+      "id": "eb-siberys",
+      "name": "西伯瑞斯",
+      "en": "Siberys",
+      "section": "worlds",
+      "body": "创世神话中的天上之龙，其遗骸被解释为环绕世界的龙晶带。",
+      "src": [
+        "faith"
+      ],
+      "details": [],
+      "aliases": [],
+      "color": "#c5ad80",
+      "kind": "创世神话",
+      "tag": "艾伯伦"
+    },
+    {
+      "id": "eb-khyber",
+      "name": "吉波尔",
+      "en": "Khyber",
+      "section": "worlds",
+      "body": "神话中的地下之龙与深处的黑暗相联系；不要把神话直接读成已证实的地质学。",
+      "src": [
+        "faith"
+      ],
+      "details": [],
+      "aliases": [],
+      "color": "#c5ad80",
+      "kind": "创世神话",
+      "tag": "艾伯伦"
+    }
+  ],
+  "planes": [
+    {
+      "id": "eb-material",
+      "name": "艾伯伦凡世",
+      "en": "Material Plane of Eberron",
+      "section": "cosmos",
+      "body": "凡人的世界是图中的参照中心；周围展示艾伯伦自己的十三位面。",
+      "src": [
+        "thirteen",
+        "faith"
+      ],
+      "details": [],
+      "aliases": [],
+      "color": "#d9bd83",
+      "cat": "凡世"
+    },
+    {
+      "id": "eb-daanvi",
+      "name": "达安维",
+      "en": "Daanvi, the Perfect Order",
+      "section": "cosmos",
+      "body": "秩序与稳定的位面。",
+      "src": [
+        "planes",
+        "fey"
+      ],
+      "details": [],
+      "aliases": [
+        "Daanvi"
+      ],
+      "color": "#c4b880",
+      "cat": "十三位面"
+    },
+    {
+      "id": "eb-dal-quor",
+      "name": "达尔·奎尔",
+      "en": "Dal Quor, the Region of Dreams",
+      "section": "cosmos",
+      "body": "梦境的领域，与奎里和梦的影响有关。",
+      "src": [
+        "planes",
+        "fey"
+      ],
+      "details": [],
+      "aliases": [
+        "Dal Quor"
+      ],
+      "color": "#9c8bcc",
+      "cat": "十三位面"
+    },
+    {
+      "id": "eb-dolurrh",
+      "name": "多尔鲁",
+      "en": "Dolurrh, the Realm of the Dead",
+      "section": "cosmos",
+      "body": "亡者的领域；死亡与信仰在这里仍留下不同解释。",
+      "src": [
+        "planes",
+        "fey"
+      ],
+      "details": [],
+      "aliases": [
+        "Dolurrh"
+      ],
+      "color": "#91a4b4",
+      "cat": "十三位面"
+    },
+    {
+      "id": "eb-fernia",
+      "name": "费尔尼亚",
+      "en": "Fernia, the Sea of Fire",
+      "section": "cosmos",
+      "body": "以火焰为鲜明主题的位面。",
+      "src": [
+        "planes",
+        "fey"
+      ],
+      "details": [],
+      "aliases": [
+        "Fernia"
+      ],
+      "color": "#e5a171",
+      "cat": "十三位面"
+    },
+    {
+      "id": "eb-irian",
+      "name": "伊瑞安",
+      "en": "Irian, the Eternal Day",
+      "section": "cosmos",
+      "body": "与光明相联系的位面。",
+      "src": [
+        "planes"
+      ],
+      "details": [],
+      "aliases": [
+        "Irian"
+      ],
+      "color": "#e2d39d",
+      "cat": "十三位面"
+    },
+    {
+      "id": "eb-kythri",
+      "name": "基斯里",
+      "en": "Kythri, the Churning Chaos",
+      "section": "cosmos",
+      "body": "混沌与变化的位面。",
+      "src": [
+        "planes",
+        "fey"
+      ],
+      "details": [],
+      "aliases": [
+        "Kythri"
+      ],
+      "color": "#af83b5",
+      "cat": "十三位面"
+    },
+    {
+      "id": "eb-lamannia",
+      "name": "拉曼尼亚",
+      "en": "Lamannia, the Twilight Forest",
+      "section": "cosmos",
+      "body": "以原始自然为主题的位面。",
+      "src": [
+        "planes",
+        "fey"
+      ],
+      "details": [],
+      "aliases": [
+        "Lamannia"
+      ],
+      "color": "#83b29a",
+      "cat": "十三位面"
+    },
+    {
+      "id": "eb-mabar",
+      "name": "玛巴尔",
+      "en": "Mabar, the Endless Night",
+      "section": "cosmos",
+      "body": "以无尽黑夜为主题的位面。",
+      "src": [
+        "planes"
+      ],
+      "details": [],
+      "aliases": [
+        "Mabar"
+      ],
+      "color": "#897da5",
+      "cat": "十三位面"
+    },
+    {
+      "id": "eb-risia",
+      "name": "瑞西亚",
+      "en": "Risia, the Plain of Ice",
+      "section": "cosmos",
+      "body": "以寒冰为主题的位面。",
+      "src": [
+        "planes",
+        "fey"
+      ],
+      "details": [],
+      "aliases": [
+        "Risia"
+      ],
+      "color": "#93c8d7",
+      "cat": "十三位面"
+    },
+    {
+      "id": "eb-shavarath",
+      "name": "沙瓦拉斯",
+      "en": "Shavarath, the Battleground",
+      "section": "cosmos",
+      "body": "永恒战斗的舞台，战争是其核心主题。",
+      "src": [
+        "planes",
+        "fey"
+      ],
+      "details": [],
+      "aliases": [
+        "Shavarath"
+      ],
+      "color": "#cf8f83",
+      "cat": "十三位面"
+    },
+    {
+      "id": "eb-syrania",
+      "name": "西拉尼亚",
+      "en": "Syrania, the Azure Sky",
+      "section": "cosmos",
+      "body": "以蔚蓝天空为象征的位面。",
+      "src": [
+        "planes"
+      ],
+      "details": [],
+      "aliases": [
+        "Syrania"
+      ],
+      "color": "#86b4d5",
+      "cat": "十三位面"
+    },
+    {
+      "id": "eb-thelanis",
+      "name": "瑟拉尼斯",
+      "en": "Thelanis, the Faerie Court",
+      "section": "cosmos",
+      "body": "妖精的领域；设计者常借故事与童话来解释它。",
+      "src": [
+        "planes",
+        "fey"
+      ],
+      "details": [],
+      "aliases": [
+        "Thelanis"
+      ],
+      "color": "#9fbd8a",
+      "cat": "十三位面"
+    },
+    {
+      "id": "eb-xoriat",
+      "name": "索利亚特",
+      "en": "Xoriat, the Realm of Madness",
+      "section": "cosmos",
+      "body": "与疯狂和异质存在相联系的位面。",
+      "src": [
+        "planes"
+      ],
+      "details": [],
+      "aliases": [
+        "Xoriat"
+      ],
+      "color": "#b181b7",
+      "cat": "十三位面"
+    }
+  ],
+  "history": [
+    {
+      "id": "eb-last-war",
+      "name": "末次战争爆发",
+      "en": "The Last War",
+      "section": "history",
+      "body": "王位继承争端在 894 YK 引发战争，冲突随后扩展。",
+      "src": [
+        "war"
+      ],
+      "details": [
+        [
+          "后续",
+          "战争并未随着一个王位主张得到解决，而成为战后矛盾的来源。"
+        ]
+      ],
+      "aliases": [],
+      "color": "#c5ad80",
+      "date": "894 YK",
+      "era": "战争"
+    },
+    {
+      "id": "eb-mourning",
+      "name": "哀伤之日",
+      "en": "The Day of Mourning",
+      "section": "history",
+      "body": "994 YK，塞尔遭遇毁灭性灾难，留下哀伤之地；成因仍是谜团。",
+      "src": [
+        "war",
+        "start"
+      ],
+      "details": [
+        [
+          "尚未确定",
+          "不把某个幕后势力或某种武器写成已经证实的灾难元凶。"
+        ]
+      ],
+      "aliases": [],
+      "color": "#c5ad80",
+      "date": "994 YK",
+      "era": "灾变"
+    },
+    {
+      "id": "eb-thronehold",
+      "name": "王座堡条约",
+      "en": "Treaty of Thronehold",
+      "section": "history",
+      "body": "996 YK 的条约正式结束末次战争，确立战后的政治格局。",
+      "src": [
+        "treaty"
+      ],
+      "details": [
+        [
+          "阅读重点",
+          "条约结束了正式战争，不意味着社会冲突和国家猜疑已经消失。"
+        ]
+      ],
+      "aliases": [],
+      "color": "#c5ad80",
+      "date": "996 YK",
+      "era": "战后"
+    },
+    {
+      "id": "eb-postwar",
+      "name": "战后的冒险窗口",
+      "en": "The Postwar World",
+      "section": "history",
+      "body": "在战争之后的舞台中，退伍者、流亡者、家族代理人与探险者寻找各自的道路。",
+      "src": [
+        "start"
+      ],
+      "details": [
+        [
+          "时间边界",
+          "此处展示设定的战后起点，不随现实年份推进，也不替主持人确定未来。"
+        ]
+      ],
+      "aliases": [],
+      "color": "#c5ad80",
+      "date": "条约之后",
+      "era": "战后"
+    }
+  ],
+  "people": [
+    {
+      "id": "eb-lord-blades",
+      "name": "刀锋领主",
+      "en": "The Lord of Blades",
+      "section": "people",
+      "body": "哀伤之地探险中可能遇到其战俑追随者；他是战后冲突的一条重要线索。",
+      "src": [
+        "start",
+        "book"
+      ],
+      "details": [],
+      "aliases": [],
+      "color": "#c5ad80",
+      "setting": "艾伯伦",
+      "role": "权力与反派"
+    },
+    {
+      "id": "eb-oargev",
+      "name": "奥阿尔杰夫王子",
+      "en": "Prince Oargev",
+      "section": "people",
+      "body": "塞尔幸存者的领袖线索，重建家园的愿景可以成为冒险的出发点。",
+      "src": [
+        "start"
+      ],
+      "details": [],
+      "aliases": [],
+      "color": "#c5ad80",
+      "setting": "艾伯伦",
+      "role": "领袖与信仰"
+    },
+    {
+      "id": "eb-host",
+      "name": "至高王庭",
+      "en": "The Sovereign Host",
+      "section": "people",
+      "body": "艾伯伦的重要信仰传统；不能套用费伦神祇经常具现干预的叙事方式。",
+      "src": [
+        "faith"
+      ],
+      "details": [],
+      "aliases": [],
+      "color": "#c5ad80",
+      "setting": "艾伯伦",
+      "role": "领袖与信仰"
+    },
+    {
+      "id": "eb-overlords",
+      "name": "远古霸主",
+      "en": "The Overlords",
+      "section": "people",
+      "body": "远古的强大邪魔，是理解艾伯伦本土超自然威胁的入口。",
+      "src": [
+        "faith"
+      ],
+      "details": [],
+      "aliases": [],
+      "color": "#c5ad80",
+      "setting": "艾伯伦",
+      "role": "权力与反派"
+    }
+  ],
+  "locations": [
+    {
+      "id": "eb-sharn",
+      "name": "沙恩",
+      "en": "Sharn",
+      "section": "atlas",
+      "body": "高塔之城，也是都市调查、行业竞争与冒险者公会的重要舞台。",
+      "src": [
+        "start"
+      ],
+      "details": [],
+      "aliases": [],
+      "color": "#c5ad80",
+      "tag": "艾伯伦地点",
+      "kind": "地点"
+    },
+    {
+      "id": "eb-mournland",
+      "name": "哀伤之地",
+      "en": "The Mournland",
+      "section": "atlas",
+      "body": "塞尔遗留的危险荒地，探险者面对异常环境和未知的战争遗产。",
+      "src": [
+        "start"
+      ],
+      "details": [],
+      "aliases": [],
+      "color": "#c5ad80",
+      "tag": "艾伯伦地点",
+      "kind": "地点"
+    },
+    {
+      "id": "eb-callestan",
+      "name": "卡勒斯坦",
+      "en": "Callestan",
+      "section": "atlas",
+      "body": "沙恩的危险街区，社区生存、犯罪势力和调查故事彼此相接。",
+      "src": [
+        "start"
+      ],
+      "details": [],
+      "aliases": [],
+      "color": "#c5ad80",
+      "tag": "艾伯伦地点",
+      "kind": "地点"
+    },
+    {
+      "id": "eb-clifftop",
+      "name": "峭壁区",
+      "en": "Clifftop",
+      "section": "atlas",
+      "body": "沙恩的职业冒险者聚集地，公会任务可以把故事带向大陆远处。",
+      "src": [
+        "start"
+      ],
+      "details": [],
+      "aliases": [],
+      "color": "#c5ad80",
+      "tag": "艾伯伦地点",
+      "kind": "地点"
+    },
+    {
+      "id": "eb-qbarra",
+      "name": "奎巴拉",
+      "en": "Q’barra",
+      "section": "atlas",
+      "body": "龙晶吸引移民与矿工的边境，开拓社区与丛林遗迹相邻。",
+      "src": [
+        "start"
+      ],
+      "details": [],
+      "aliases": [],
+      "color": "#c5ad80",
+      "tag": "艾伯伦地点",
+      "kind": "地点"
+    },
+    {
+      "id": "eb-xendrik",
+      "name": "泽恩德瑞克",
+      "en": "Xen’drik",
+      "section": "atlas",
+      "body": "丛林与失落遗迹构成远征舞台；和沙恩的日常调查有不同尺度。",
+      "src": [
+        "start"
+      ],
+      "details": [],
+      "aliases": [],
+      "color": "#c5ad80",
+      "tag": "艾伯伦地点",
+      "kind": "地点"
+    }
+  ],
+  "factions": [
+    {
+      "id": "eb-houses",
+      "name": "龙纹家族",
+      "en": "Dragonmarked Houses",
+      "section": "atlas",
+      "body": "拥有龙纹传统的强大家族，将魔法能力与行业、服务和权力联系起来。",
+      "src": [
+        "product"
+      ],
+      "details": [],
+      "aliases": [],
+      "color": "#c5ad80",
+      "tag": "艾伯伦势力",
+      "kind": "势力"
+    },
+    {
+      "id": "eb-cannith",
+      "name": "坎尼斯家族",
+      "en": "House Cannith",
+      "section": "atlas",
+      "body": "以魔法制造为重要线索；哀伤之地的旧设施也吸引寻宝者。",
+      "src": [
+        "start"
+      ],
+      "details": [],
+      "aliases": [],
+      "color": "#c5ad80",
+      "tag": "艾伯伦势力",
+      "kind": "势力"
+    },
+    {
+      "id": "eb-boromar",
+      "name": "博罗玛氏族",
+      "en": "Boromar Clan",
+      "section": "atlas",
+      "body": "沙恩地下社会的重要势力，卡勒斯坦的社区关系并不只由官方法律维持。",
+      "src": [
+        "start"
+      ],
+      "details": [],
+      "aliases": [],
+      "color": "#c5ad80",
+      "tag": "艾伯伦势力",
+      "kind": "势力"
+    },
+    {
+      "id": "eb-claw",
+      "name": "翡翠利爪教团",
+      "en": "Order of the Emerald Claw",
+      "section": "atlas",
+      "body": "在战后故事中制造威胁的组织，可与调查和亡灵线索相接。",
+      "src": [
+        "start"
+      ],
+      "details": [],
+      "aliases": [],
+      "color": "#c5ad80",
+      "tag": "艾伯伦势力",
+      "kind": "势力"
+    }
+  ],
+  "terms": [
+    {
+      "id": "eb-term-dragonmark",
+      "name": "龙纹",
+      "en": "Dragonmark",
+      "section": "primer",
+      "body": "赋予特定能力的魔法印记，和家族身份及行业影响力有关。",
+      "src": [
+        "product"
+      ],
+      "details": [],
+      "aliases": [],
+      "color": "#c5ad80",
+      "kind": "术语"
+    },
+    {
+      "id": "eb-term-dragonshard",
+      "name": "龙晶",
+      "en": "Dragonshard",
+      "section": "primer",
+      "body": "魔法资源与边境开采的重要线索；奎巴拉的矿业社区是阅读入口。",
+      "src": [
+        "start"
+      ],
+      "details": [],
+      "aliases": [],
+      "color": "#c5ad80",
+      "kind": "术语"
+    },
+    {
+      "id": "eb-term-warforged",
+      "name": "战俑",
+      "en": "Warforged",
+      "section": "primer",
+      "body": "与战争制造和战后处境相联系的有自我意识者；不能仅按普通工具理解。",
+      "src": [
+        "product"
+      ],
+      "details": [],
+      "aliases": [],
+      "color": "#c5ad80",
+      "kind": "术语"
+    },
+    {
+      "id": "eb-term-patron",
+      "name": "团体赞助者",
+      "en": "Group Patron",
+      "section": "primer",
+      "body": "公会、军队或机构可为队伍提供共同目标与冒险动机。",
+      "src": [
+        "start"
+      ],
+      "details": [],
+      "aliases": [],
+      "color": "#c5ad80",
+      "kind": "术语"
+    },
+    {
+      "id": "eb-term-yk",
+      "name": "YK 纪年",
+      "en": "Year of the Kingdom",
+      "section": "primer",
+      "body": "艾伯伦的年代体系；不与费伦的 DR 纪年直接换算。",
+      "src": [
+        "treaty"
+      ],
+      "details": [],
+      "aliases": [],
+      "color": "#c5ad80",
+      "kind": "术语"
+    }
+  ],
+  "sources": {
+    "start": {
+      "title": "Keith Baker · Eberron: Where To Begin?",
+      "url": "https://www.dndbeyond.com/posts/667-eberron-where-to-begin",
+      "kind": "官方公开文章",
+      "note": ""
+    },
+    "book": {
+      "title": "Eberron: Rising from the Last War · 公开目录",
+      "url": "https://www.dndbeyond.com/sources/dnd/erftlw",
+      "kind": "官方 5E 书籍目录",
+      "note": "这里只核对公开目录；正文需另行取得，不声称已通读。"
+    },
+    "faith": {
+      "title": "Gods & Faith in Eberron · 设计者访谈",
+      "url": "https://www.dndbeyond.com/posts/288-gods-faith-in-eberron-for-dungeons-dragons",
+      "kind": "官方公开文章",
+      "note": ""
+    },
+    "planes": {
+      "title": "Exploring Eberron · 位面名称目录",
+      "url": "https://www.dndbeyond.com/sources/dnd/exeb",
+      "kind": "设计者作品目录",
+      "note": "合作方扩展资料，用于核对位面名称；不是威世智官方规则正文。"
+    },
+    "fey": {
+      "title": "Keith Baker · Thelanis and the Fey",
+      "url": "https://keith-baker.com/dragonmarks-thelanis-and-the-fey/",
+      "kind": "设计者个人文章",
+      "note": "区分设计者解释与官方规则，不采用此文的额外游戏机制。"
+    },
+    "thirteen": {
+      "title": "Keith Baker · Eberron turns Thirteen",
+      "url": "https://keith-baker.com/eberron-turns-thirteen/",
+      "kind": "设计者个人文章",
+      "note": ""
+    },
+    "war": {
+      "title": "Last War · 年代与书目汇编",
+      "url": "https://eberron.fandom.com/wiki/Last_War",
+      "kind": "社区资料汇编",
+      "note": "用于核对 894—996 YK 年代；文末列有原书依据。"
+    },
+    "treaty": {
+      "title": "Treaty of Thronehold · 年代与书目汇编",
+      "url": "https://eberron.fandom.com/wiki/Treaty_of_Thronehold",
+      "kind": "社区资料汇编",
+      "note": "用于交叉核对条约年代，不将社区推测当成官方结论。"
+    },
+    "product": {
+      "title": "Eberron: Rising from the Last War · 官方介绍",
+      "url": "https://marketplace.dndbeyond.com/settings/eberron-rising-from-the-last-war",
+      "kind": "官方产品介绍",
+      "note": ""
+    }
+  },
+  "relations": [
+    {
+      "a": "eb-mourning",
+      "b": "eb-mournland",
+      "label": "灾变与遗迹",
+      "note": "作为主题阅读关联；具体叙述和范围见双方条目的来源。",
+      "src": [
+        "war",
+        "start"
+      ]
+    },
+    {
+      "a": "eb-sharn",
+      "b": "eb-callestan",
+      "label": "城市与街区",
+      "note": "作为主题阅读关联；具体叙述和范围见双方条目的来源。",
+      "src": [
+        "start"
+      ]
+    },
+    {
+      "a": "eb-sharn",
+      "b": "eb-clifftop",
+      "label": "城市与公会",
+      "note": "作为主题阅读关联；具体叙述和范围见双方条目的来源。",
+      "src": [
+        "start"
+      ]
+    },
+    {
+      "a": "eb-oargev",
+      "b": "eb-mourning",
+      "label": "战后人物",
+      "note": "作为主题阅读关联；具体叙述和范围见双方条目的来源。",
+      "src": [
+        "start",
+        "war"
+      ]
+    },
+    {
+      "a": "eb-lord-blades",
+      "b": "eb-mournland",
+      "label": "废土线索",
+      "note": "作为主题阅读关联；具体叙述和范围见双方条目的来源。",
+      "src": [
+        "start",
+        "book"
+      ]
+    },
+    {
+      "a": "eb-thronehold",
+      "b": "eb-last-war",
+      "label": "战争与条约",
+      "note": "作为主题阅读关联；具体叙述和范围见双方条目的来源。",
+      "src": [
+        "treaty",
+        "war"
+      ]
+    }
+  ],
+  "flows": {},
+  "works": [
+    {
+      "id": "eb-relics",
+      "title": "Forgotten Relics",
+      "category": "官方 5E 冒险",
+      "author": "Wizards of the Coast",
+      "description": "《末次战争之后》收录的沙恩入门冒险；此处提供官方目录入口，不预设结局。",
+      "url": "https://www.dndbeyond.com/sources/dnd/erftlw",
+      "src": [
+        "book"
+      ]
+    }
+  ],
+  "intro": {
+    "worlds": "从凡世与大陆进入魔法工业和战后生活。",
+    "cosmos": "凡世与十三位面构成艾伯伦自己的关系模型；不以费伦的大轮节点代替。",
+    "history": "使用 YK 纪年，串联战争、灾变与战后局势。",
+    "people": "领袖、信仰与远古力量共同塑造战后的选择。",
+    "atlas": "高塔都市、边境矿镇与战争废土，连接着不同的冒险。",
+    "primer": "先理解龙纹、魔法产业和战后身份，再读阴谋与遗迹。"
+  },
+  "model_note": "十三个外展节点是艾伯伦自己的位面；图中位置只用于辨认关系，不模拟真实轨道、接近周期或当日天象。",
+  "cosmology": {
+    "kind": "eberron",
+    "center": "eb-material",
+    "config": [
+      [
+        "eb-material",
+        0,
+        0,
+        0.4,
+        0.52
+      ],
+      [
+        "eb-daanvi",
+        0.0,
+        3.35,
+        -0.3,
+        0.23
+      ],
+      [
+        "eb-dal-quor",
+        1.6265,
+        2.9663,
+        -0.3,
+        0.23
+      ],
+      [
+        "eb-dolurrh",
+        2.8804,
+        1.903,
+        -0.3,
+        0.23
+      ],
+      [
+        "eb-fernia",
+        3.4745,
+        0.4038,
+        -0.3,
+        0.23
+      ],
+      [
+        "eb-irian",
+        3.2726,
+        -1.1879,
+        -0.3,
+        0.23
+      ],
+      [
+        "eb-kythri",
+        2.3209,
+        -2.5075,
+        -0.3,
+        0.23
+      ],
+      [
+        "eb-lamannia",
+        0.8376,
+        -3.2527,
+        -0.3,
+        0.23
+      ],
+      [
+        "eb-mabar",
+        -0.8376,
+        -3.2527,
+        -0.3,
+        0.23
+      ],
+      [
+        "eb-risia",
+        -2.3209,
+        -2.5075,
+        -0.3,
+        0.23
+      ],
+      [
+        "eb-shavarath",
+        -3.2726,
+        -1.1879,
+        -0.3,
+        0.23
+      ],
+      [
+        "eb-syrania",
+        -3.4745,
+        0.4038,
+        -0.3,
+        0.23
+      ],
+      [
+        "eb-thelanis",
+        -2.8804,
+        1.903,
+        -0.3,
+        0.23
+      ],
+      [
+        "eb-xoriat",
+        -1.6265,
+        2.9663,
+        -0.3,
+        0.23
+      ]
+    ],
+    "connections": [
+      [
+        "eb-material",
+        "eb-daanvi"
+      ],
+      [
+        "eb-material",
+        "eb-dal-quor"
+      ],
+      [
+        "eb-material",
+        "eb-dolurrh"
+      ],
+      [
+        "eb-material",
+        "eb-fernia"
+      ],
+      [
+        "eb-material",
+        "eb-irian"
+      ],
+      [
+        "eb-material",
+        "eb-kythri"
+      ],
+      [
+        "eb-material",
+        "eb-lamannia"
+      ],
+      [
+        "eb-material",
+        "eb-mabar"
+      ],
+      [
+        "eb-material",
+        "eb-risia"
+      ],
+      [
+        "eb-material",
+        "eb-shavarath"
+      ],
+      [
+        "eb-material",
+        "eb-syrania"
+      ],
+      [
+        "eb-material",
+        "eb-thelanis"
+      ],
+      [
+        "eb-material",
+        "eb-xoriat"
+      ]
+    ],
+    "mobileRows": {
+      "eb-material": [
+        0,
+        0
+      ],
+      "eb-daanvi": [
+        -1,
+        1
+      ],
+      "eb-dal-quor": [
+        1,
+        1
+      ],
+      "eb-dolurrh": [
+        -1,
+        2
+      ],
+      "eb-fernia": [
+        1,
+        2
+      ],
+      "eb-irian": [
+        -1,
+        3
+      ],
+      "eb-kythri": [
+        1,
+        3
+      ],
+      "eb-lamannia": [
+        -1,
+        4
+      ],
+      "eb-mabar": [
+        1,
+        4
+      ],
+      "eb-risia": [
+        -1,
+        5
+      ],
+      "eb-shavarath": [
+        1,
+        5
+      ],
+      "eb-syrania": [
+        -1,
+        6
+      ],
+      "eb-thelanis": [
+        1,
+        6
+      ],
+      "eb-xoriat": [
+        -1,
+        7
+      ]
+    },
+    "rowCount": 8,
+    "portalIds": [],
+    "eyebrow": "EBERRON · THIRTEEN PLANES"
+  }
+}

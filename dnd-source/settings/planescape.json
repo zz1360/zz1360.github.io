@@ -1,0 +1,1266 @@
+{
+  "setting": {
+    "id": "planescape",
+    "name": "异度风景",
+    "en": "Planescape",
+    "path": "/dnd/settings/planescape/",
+    "center": "ps-outlands",
+    "scope": "以《Planescape: Adventures in the Multiverse》（2023）的印记城与外域为舞台。",
+    "checked": "2026-10-16",
+    "edition": "5E"
+  },
+  "worlds": [
+    {
+      "id": "ps-setting",
+      "name": "异度风景",
+      "en": "Planescape",
+      "section": "worlds",
+      "body": "以跨位面生活、传送门与信念为舞台，不是一颗独立星球。",
+      "src": [
+        "overview"
+      ],
+      "details": [],
+      "aliases": [],
+      "color": "#c5ad80",
+      "kind": "设定总览",
+      "tag": "异度风景"
+    },
+    {
+      "id": "ps-city-world",
+      "name": "印记城",
+      "en": "Sigil",
+      "section": "worlds",
+      "body": "环形的诸门之城，连接旅行、贸易和哲学派系。",
+      "src": [
+        "overview"
+      ],
+      "details": [],
+      "aliases": [],
+      "color": "#c5ad80",
+      "kind": "位面枢纽",
+      "tag": "异度风景"
+    },
+    {
+      "id": "ps-outlands-world",
+      "name": "外域",
+      "en": "The Outlands",
+      "section": "worlds",
+      "body": "居于外层位面之间的中立领域，拥有十六座门镇。",
+      "src": [
+        "overview"
+      ],
+      "details": [],
+      "aliases": [],
+      "color": "#c5ad80",
+      "kind": "位面舞台",
+      "tag": "异度风景"
+    },
+    {
+      "id": "ps-wheel",
+      "name": "大轮模型",
+      "en": "The Great Wheel",
+      "section": "worlds",
+      "body": "用于理解位面关系的概念排列，不是可按比例测量的星图。",
+      "src": [
+        "city"
+      ],
+      "details": [],
+      "aliases": [],
+      "color": "#c5ad80",
+      "kind": "宇宙模型",
+      "tag": "异度风景"
+    }
+  ],
+  "planes": [
+    {
+      "id": "ps-outlands",
+      "name": "外域",
+      "en": "The Outlands",
+      "section": "cosmos",
+      "body": "连接外层诸境的中立领域，是本图的概念中心。",
+      "src": [
+        "city"
+      ],
+      "details": [],
+      "aliases": [],
+      "color": "#b8b68d",
+      "cat": "中立枢纽"
+    },
+    {
+      "id": "ps-sigil",
+      "name": "印记城",
+      "en": "Sigil, the City of Doors",
+      "section": "cosmos",
+      "body": "外域尖塔之上的环形城市，以传送门连接诸境；城市不是第十七个外环位面。",
+      "src": [
+        "overview"
+      ],
+      "details": [],
+      "aliases": [],
+      "color": "#bd99c9",
+      "cat": "城市与诸门"
+    },
+    {
+      "id": "ps-celestia",
+      "name": "天堂山",
+      "en": "Mount Celestia",
+      "section": "cosmos",
+      "body": "守序善良倾向的外层位面。",
+      "src": [
+        "planes"
+      ],
+      "details": [],
+      "aliases": [
+        "Mount Celestia"
+      ],
+      "color": "#d9cd9b",
+      "cat": "外层位面"
+    },
+    {
+      "id": "ps-bytopia",
+      "name": "双生天堂",
+      "en": "Bytopia",
+      "section": "cosmos",
+      "body": "善良与守序倾向的外层位面。",
+      "src": [
+        "planes"
+      ],
+      "details": [],
+      "aliases": [
+        "Bytopia"
+      ],
+      "color": "#d2c891",
+      "cat": "外层位面"
+    },
+    {
+      "id": "ps-elysium",
+      "name": "极乐境",
+      "en": "Elysium",
+      "section": "cosmos",
+      "body": "中立善良倾向的外层位面。",
+      "src": [
+        "planes"
+      ],
+      "details": [],
+      "aliases": [
+        "Elysium"
+      ],
+      "color": "#9bc8ae",
+      "cat": "外层位面"
+    },
+    {
+      "id": "ps-beastlands",
+      "name": "万兽园",
+      "en": "The Beastlands",
+      "section": "cosmos",
+      "body": "善良与混乱倾向的外层位面。",
+      "src": [
+        "planes"
+      ],
+      "details": [],
+      "aliases": [
+        "The Beastlands"
+      ],
+      "color": "#82ba98",
+      "cat": "外层位面"
+    },
+    {
+      "id": "ps-arborea",
+      "name": "奔放之野",
+      "en": "Arborea",
+      "section": "cosmos",
+      "body": "混乱善良倾向的外层位面。",
+      "src": [
+        "planes"
+      ],
+      "details": [],
+      "aliases": [
+        "Arborea"
+      ],
+      "color": "#82b7ad",
+      "cat": "外层位面"
+    },
+    {
+      "id": "ps-ysgard",
+      "name": "约瑟园",
+      "en": "Ysgard",
+      "section": "cosmos",
+      "body": "混乱与善良倾向的外层位面。",
+      "src": [
+        "planes"
+      ],
+      "details": [],
+      "aliases": [
+        "Ysgard"
+      ],
+      "color": "#b9ba88",
+      "cat": "外层位面"
+    },
+    {
+      "id": "ps-limbo",
+      "name": "混沌海",
+      "en": "Limbo",
+      "section": "cosmos",
+      "body": "混乱中立倾向的外层位面。",
+      "src": [
+        "planes"
+      ],
+      "details": [],
+      "aliases": [
+        "Limbo"
+      ],
+      "color": "#9b9cc5",
+      "cat": "外层位面"
+    },
+    {
+      "id": "ps-pandemonium",
+      "name": "喧癫空隧",
+      "en": "Pandemonium",
+      "section": "cosmos",
+      "body": "混乱与邪恶倾向的外层位面。",
+      "src": [
+        "planes"
+      ],
+      "details": [],
+      "aliases": [
+        "Pandemonium"
+      ],
+      "color": "#a591b6",
+      "cat": "外层位面"
+    },
+    {
+      "id": "ps-abyss",
+      "name": "无底深渊",
+      "en": "The Abyss",
+      "section": "cosmos",
+      "body": "混乱邪恶倾向的外层位面。",
+      "src": [
+        "planes"
+      ],
+      "details": [],
+      "aliases": [
+        "The Abyss"
+      ],
+      "color": "#b27e98",
+      "cat": "外层位面"
+    },
+    {
+      "id": "ps-carceri",
+      "name": "卡瑟利",
+      "en": "Carceri",
+      "section": "cosmos",
+      "body": "邪恶与混乱倾向的外层位面。",
+      "src": [
+        "planes"
+      ],
+      "details": [],
+      "aliases": [
+        "Carceri"
+      ],
+      "color": "#ab7e94",
+      "cat": "外层位面"
+    },
+    {
+      "id": "ps-hades",
+      "name": "灰色荒野",
+      "en": "Hades",
+      "section": "cosmos",
+      "body": "中立邪恶倾向的外层位面。",
+      "src": [
+        "planes"
+      ],
+      "details": [],
+      "aliases": [
+        "Hades"
+      ],
+      "color": "#8e94a9",
+      "cat": "外层位面"
+    },
+    {
+      "id": "ps-gehenna",
+      "name": "焦炎地狱",
+      "en": "Gehenna",
+      "section": "cosmos",
+      "body": "邪恶与守序倾向的外层位面。",
+      "src": [
+        "planes"
+      ],
+      "details": [],
+      "aliases": [
+        "Gehenna"
+      ],
+      "color": "#b48a77",
+      "cat": "外层位面"
+    },
+    {
+      "id": "ps-hells",
+      "name": "九层地狱",
+      "en": "The Nine Hells",
+      "section": "cosmos",
+      "body": "守序邪恶倾向的外层位面。",
+      "src": [
+        "planes"
+      ],
+      "details": [],
+      "aliases": [
+        "The Nine Hells"
+      ],
+      "color": "#c08d7b",
+      "cat": "外层位面"
+    },
+    {
+      "id": "ps-acheron",
+      "name": "修罗战场",
+      "en": "Acheron",
+      "section": "cosmos",
+      "body": "守序与邪恶倾向的外层位面。",
+      "src": [
+        "planes"
+      ],
+      "details": [],
+      "aliases": [
+        "Acheron"
+      ],
+      "color": "#a2a0af",
+      "cat": "外层位面"
+    },
+    {
+      "id": "ps-mechanus",
+      "name": "机械境",
+      "en": "Mechanus",
+      "section": "cosmos",
+      "body": "守序中立倾向的外层位面。",
+      "src": [
+        "planes"
+      ],
+      "details": [],
+      "aliases": [
+        "Mechanus"
+      ],
+      "color": "#b9ad85",
+      "cat": "外层位面"
+    },
+    {
+      "id": "ps-arcadia",
+      "name": "世外桃源",
+      "en": "Arcadia",
+      "section": "cosmos",
+      "body": "守序与善良倾向的外层位面。",
+      "src": [
+        "planes"
+      ],
+      "details": [],
+      "aliases": [
+        "Arcadia"
+      ],
+      "color": "#b9c39b",
+      "cat": "外层位面"
+    }
+  ],
+  "history": [
+    {
+      "id": "ps-unknown-origin",
+      "name": "诸门之城的起源",
+      "en": "Origins of the City of Doors",
+      "section": "history",
+      "body": "印记城与痛苦女士的起源保留神秘，不在这里编排一个确定的创立年份。",
+      "src": [
+        "city"
+      ],
+      "details": [],
+      "aliases": [],
+      "color": "#c5ad80",
+      "date": "起源未定年",
+      "era": "设定背景"
+    },
+    {
+      "id": "ps-gatetown-shift",
+      "name": "门镇滑落的风险",
+      "en": "Gate-Town Planar Shifts",
+      "section": "history",
+      "body": "当门镇过于接近相连位面的本质，它可能脱离外域并被吸收。",
+      "src": [
+        "character"
+      ],
+      "details": [],
+      "aliases": [],
+      "color": "#c5ad80",
+      "date": "持续变化",
+      "era": "持续变化"
+    },
+    {
+      "id": "ps-faction-conflict",
+      "name": "派系争鸣与城市秩序",
+      "en": "The Ascendant Factions",
+      "section": "history",
+      "body": "十二个主要派系以不同理念争取影响力；公开战争可能招致痛苦女士干预。",
+      "src": [
+        "factions"
+      ],
+      "details": [],
+      "aliases": [],
+      "color": "#c5ad80",
+      "date": "当代舞台",
+      "era": "设定背景"
+    },
+    {
+      "id": "ps-fortunes-wheel",
+      "name": "命运之轮的冒险开场",
+      "en": "Turn of Fortune’s Wheel",
+      "section": "history",
+      "body": "一场从印记城开始、与身份及现实异常有关的冒险。这里不预设玩家的结局。",
+      "src": [
+        "overview"
+      ],
+      "details": [],
+      "aliases": [],
+      "color": "#c5ad80",
+      "date": "冒险窗口",
+      "era": "冒险窗口"
+    }
+  ],
+  "people": [
+    {
+      "id": "ps-lady",
+      "name": "痛苦女士",
+      "en": "The Lady of Pain",
+      "section": "people",
+      "body": "维持印记城秩序的神秘存在；不把她的本质写成已证实的神格。",
+      "src": [
+        "city"
+      ],
+      "details": [],
+      "aliases": [],
+      "color": "#c5ad80",
+      "setting": "异度风景",
+      "role": "神秘存在",
+      "art": "lady"
+    },
+    {
+      "id": "ps-morte",
+      "name": "摩特",
+      "en": "Morte",
+      "section": "people",
+      "body": "与异度风景相关的漂浮骷髅形象，也是第五版位面生物册标题中的名字。",
+      "src": [
+        "overview",
+        "mpp"
+      ],
+      "details": [],
+      "aliases": [],
+      "color": "#c5ad80",
+      "setting": "异度风景",
+      "role": "位面居民"
+    },
+    {
+      "id": "ps-shemeshka",
+      "name": "莎米什卡",
+      "en": "Shemeshka",
+      "section": "people",
+      "body": "第五版位面生物册收录的人物；这里只保留识别入口，不揭示冒险中的秘密。",
+      "src": [
+        "mpp"
+      ],
+      "details": [],
+      "aliases": [],
+      "color": "#c5ad80",
+      "setting": "异度风景",
+      "role": "位面居民"
+    },
+    {
+      "id": "ps-terrance",
+      "name": "特伦斯",
+      "en": "Terrance",
+      "section": "people",
+      "body": "无神论者派系 Athar 的领袖，派系据点为破碎神殿。",
+      "src": [
+        "factions"
+      ],
+      "details": [],
+      "aliases": [],
+      "color": "#c5ad80",
+      "setting": "异度风景",
+      "role": "派系领袖"
+    },
+    {
+      "id": "ps-rhys",
+      "name": "瑞斯",
+      "en": "Rhys",
+      "section": "people",
+      "body": "超然之会的领袖；该派系强调不受思虑束缚的行动。",
+      "src": [
+        "factions"
+      ],
+      "details": [],
+      "aliases": [],
+      "color": "#c5ad80",
+      "setting": "异度风景",
+      "role": "派系领袖"
+    }
+  ],
+  "locations": [
+    {
+      "id": "ps-sigil-place",
+      "name": "印记城",
+      "en": "Sigil",
+      "section": "atlas",
+      "body": "诸门之城是外域旅行与城市生活的重要据点。",
+      "src": [
+        "overview"
+      ],
+      "details": [],
+      "aliases": [],
+      "color": "#c5ad80",
+      "tag": "异度风景地点",
+      "kind": "地点"
+    },
+    {
+      "id": "ps-outlands-place",
+      "name": "外域",
+      "en": "The Outlands",
+      "section": "atlas",
+      "body": "围绕尖塔延展的中立领域，门镇为外层位面之旅提供入口。",
+      "src": [
+        "overview"
+      ],
+      "details": [],
+      "aliases": [],
+      "color": "#c5ad80",
+      "tag": "异度风景地点",
+      "kind": "地点"
+    },
+    {
+      "id": "ps-gatetowns",
+      "name": "十六门镇",
+      "en": "The Sixteen Gate-Towns",
+      "section": "atlas",
+      "body": "每座门镇与一个外环位面相连，环境也受到对面位面影响。",
+      "src": [
+        "contents"
+      ],
+      "details": [],
+      "aliases": [],
+      "color": "#c5ad80",
+      "tag": "异度风景地点",
+      "kind": "地点"
+    },
+    {
+      "id": "ps-hive",
+      "name": "蜂巢区",
+      "en": "Hive Ward",
+      "section": "atlas",
+      "body": "印记城中贫困、危险与地下社会交织的城区。",
+      "src": [
+        "city"
+      ],
+      "details": [],
+      "aliases": [],
+      "color": "#c5ad80",
+      "tag": "异度风景地点",
+      "kind": "地点"
+    },
+    {
+      "id": "ps-lower-ward",
+      "name": "下城区",
+      "en": "Lower Ward",
+      "section": "atlas",
+      "body": "锻造与工业集中之处，通往下层位面的门户也是其特色。",
+      "src": [
+        "city"
+      ],
+      "details": [],
+      "aliases": [],
+      "color": "#c5ad80",
+      "tag": "异度风景地点",
+      "kind": "地点"
+    },
+    {
+      "id": "ps-market",
+      "name": "市场区",
+      "en": "Market Ward",
+      "section": "atlas",
+      "body": "来自不同位面的交易在此汇合，价格并不总以金币结算。",
+      "src": [
+        "city"
+      ],
+      "details": [],
+      "aliases": [],
+      "color": "#c5ad80",
+      "tag": "异度风景地点",
+      "kind": "地点"
+    }
+  ],
+  "factions": [
+    {
+      "id": "ps-faction-athar",
+      "name": "无神论者",
+      "en": "Athar",
+      "section": "atlas",
+      "body": "质疑被称为神祇的存在是否真是终极真理。",
+      "src": [
+        "factions"
+      ],
+      "details": [],
+      "aliases": [],
+      "color": "#c5ad80",
+      "tag": "印记城派系",
+      "kind": "势力"
+    },
+    {
+      "id": "ps-faction-bleak",
+      "name": "黯然会",
+      "en": "Bleak Cabal",
+      "section": "atlas",
+      "body": "不相信多元宇宙具有可以发现的统一意义。",
+      "src": [
+        "factions"
+      ],
+      "details": [],
+      "aliases": [],
+      "color": "#c5ad80",
+      "tag": "印记城派系",
+      "kind": "势力"
+    },
+    {
+      "id": "ps-faction-doomguard",
+      "name": "毁灭守卫",
+      "en": "Doomguard",
+      "section": "atlas",
+      "body": "把毁灭与衰败视为世界不可回避的一面。",
+      "src": [
+        "factions"
+      ],
+      "details": [],
+      "aliases": [],
+      "color": "#c5ad80",
+      "tag": "印记城派系",
+      "kind": "势力"
+    },
+    {
+      "id": "ps-faction-fated",
+      "name": "命定者",
+      "en": "Fated",
+      "section": "atlas",
+      "body": "主张争取并掌握自身能够取得的东西。",
+      "src": [
+        "factions"
+      ],
+      "details": [],
+      "aliases": [],
+      "color": "#c5ad80",
+      "tag": "印记城派系",
+      "kind": "势力"
+    },
+    {
+      "id": "ps-faction-order",
+      "name": "秩序兄弟会",
+      "en": "Fraternity of Order",
+      "section": "atlas",
+      "body": "从规律与法则中寻找世界的真相。",
+      "src": [
+        "factions"
+      ],
+      "details": [],
+      "aliases": [],
+      "color": "#c5ad80",
+      "tag": "印记城派系",
+      "kind": "势力"
+    },
+    {
+      "id": "ps-faction-havoc",
+      "name": "浩劫之手",
+      "en": "Hands of Havoc",
+      "section": "atlas",
+      "body": "以混乱和打破约束争取社会改变。",
+      "src": [
+        "factions"
+      ],
+      "details": [],
+      "aliases": [],
+      "color": "#c5ad80",
+      "tag": "印记城派系",
+      "kind": "势力"
+    },
+    {
+      "id": "ps-faction-harmonium",
+      "name": "和谐会",
+      "en": "Harmonium",
+      "section": "atlas",
+      "body": "认为和平需要强制的秩序来维护。",
+      "src": [
+        "factions"
+      ],
+      "details": [],
+      "aliases": [],
+      "color": "#c5ad80",
+      "tag": "印记城派系",
+      "kind": "势力"
+    },
+    {
+      "id": "ps-faction-dust",
+      "name": "尘埃先驱",
+      "en": "Heralds of Dust",
+      "section": "atlas",
+      "body": "以死亡观念解释存在，驻于停尸房。",
+      "src": [
+        "factions"
+      ],
+      "details": [],
+      "aliases": [],
+      "color": "#c5ad80",
+      "tag": "印记城派系",
+      "kind": "势力"
+    },
+    {
+      "id": "ps-faction-mercykillers",
+      "name": "慈悲杀手",
+      "en": "Mercykillers",
+      "section": "atlas",
+      "body": "强调对罪责施以他们认定应得的正义。",
+      "src": [
+        "factions"
+      ],
+      "details": [],
+      "aliases": [],
+      "color": "#c5ad80",
+      "tag": "印记城派系",
+      "kind": "势力"
+    },
+    {
+      "id": "ps-faction-eye",
+      "name": "心眼会",
+      "en": "Mind’s Eye",
+      "section": "atlas",
+      "body": "相信存在能够成长、改变并走向更高层次。",
+      "src": [
+        "factions"
+      ],
+      "details": [],
+      "aliases": [],
+      "color": "#c5ad80",
+      "tag": "印记城派系",
+      "kind": "势力"
+    },
+    {
+      "id": "ps-faction-sensates",
+      "name": "感官会",
+      "en": "Society of Sensation",
+      "section": "atlas",
+      "body": "把体验作为追寻真理的重要路径。",
+      "src": [
+        "factions"
+      ],
+      "details": [],
+      "aliases": [],
+      "color": "#c5ad80",
+      "tag": "印记城派系",
+      "kind": "势力"
+    },
+    {
+      "id": "ps-faction-transcendent",
+      "name": "超然之会",
+      "en": "Transcendent Order",
+      "section": "atlas",
+      "body": "重视不经反复思索的行动与身心合一。",
+      "src": [
+        "factions"
+      ],
+      "details": [],
+      "aliases": [],
+      "color": "#c5ad80",
+      "tag": "印记城派系",
+      "kind": "势力"
+    }
+  ],
+  "terms": [
+    {
+      "id": "ps-term-portal",
+      "name": "传送门",
+      "en": "Portal",
+      "section": "primer",
+      "body": "固定连接不同地点或位面的通路；外观不一定是一扇门。",
+      "src": [
+        "city"
+      ],
+      "details": [],
+      "aliases": [],
+      "color": "#c5ad80",
+      "kind": "术语"
+    },
+    {
+      "id": "ps-term-key",
+      "name": "门钥",
+      "en": "Gate Key",
+      "section": "primer",
+      "body": "可能是物品，也可能是开启门户所需的特殊条件。",
+      "src": [
+        "city"
+      ],
+      "details": [],
+      "aliases": [],
+      "color": "#c5ad80",
+      "kind": "术语"
+    },
+    {
+      "id": "ps-term-dabus",
+      "name": "达布斯",
+      "en": "Dabus",
+      "section": "primer",
+      "body": "印记城的神秘维护者，与痛苦女士的城市秩序相联系。",
+      "src": [
+        "city"
+      ],
+      "details": [],
+      "aliases": [],
+      "color": "#c5ad80",
+      "kind": "术语"
+    },
+    {
+      "id": "ps-term-alignment",
+      "name": "阵营与位面",
+      "en": "Alignment and Planes",
+      "section": "primer",
+      "body": "位面可体现善恶或秩序倾向，居民仍有自己的选择。",
+      "src": [
+        "planes"
+      ],
+      "details": [],
+      "aliases": [],
+      "color": "#c5ad80",
+      "kind": "术语"
+    },
+    {
+      "id": "ps-term-faction",
+      "name": "哲学派系",
+      "en": "Faction",
+      "section": "primer",
+      "body": "理念同时也是组织力量，会介入城市服务与日常政治。",
+      "src": [
+        "factions"
+      ],
+      "details": [],
+      "aliases": [],
+      "color": "#c5ad80",
+      "kind": "术语"
+    }
+  ],
+  "sources": {
+    "overview": {
+      "title": "What Is Planescape?",
+      "url": "https://www.dndbeyond.com/posts/1529-what-is-planescape-adventures-in-the-multiverse-a",
+      "kind": "官方公开文章",
+      "note": ""
+    },
+    "city": {
+      "title": "What to Know Before You Visit Sigil",
+      "url": "https://www.dndbeyond.com/posts/1576-what-to-know-before-you-visit-sigil-the-city-at",
+      "kind": "官方公开文章",
+      "note": ""
+    },
+    "factions": {
+      "title": "12 Sigil Faction Recruitment Posters",
+      "url": "https://www.dndbeyond.com/posts/1577-download-now-12-sigil-faction-recruitment-posters",
+      "kind": "官方公开文章",
+      "note": ""
+    },
+    "contents": {
+      "title": "Inside Planescape: Adventures in the Multiverse",
+      "url": "https://www.dndbeyond.com/posts/1589-take-a-look-at-whats-inside-planescape-adventures",
+      "kind": "官方公开文章",
+      "note": ""
+    },
+    "character": {
+      "title": "Planescape Character Options",
+      "url": "https://www.dndbeyond.com/posts/1580-preview-planescape-character-options-for-your",
+      "kind": "官方公开文章",
+      "note": ""
+    },
+    "planes": {
+      "title": "Basic Rules · 位面基础分类",
+      "url": "https://www.dndbeyond.com/sources/dnd/basic-rules-2014/appendix-d-the-planes-of-existence",
+      "kind": "官方 5E 基础规则",
+      "note": ""
+    },
+    "mpp": {
+      "title": "Morte’s Planar Parade · 公开目录",
+      "url": "https://www.dndbeyond.com/sources/dnd/paitm/mpp",
+      "kind": "官方 5E 书籍目录",
+      "note": "怪物条目只作认识入口，不转录属性或冒险秘密。"
+    }
+  },
+  "relations": [
+    {
+      "a": "ps-lady",
+      "b": "ps-sigil",
+      "label": "城市秩序",
+      "note": "作为主题阅读关联；具体叙述和范围见双方条目的来源。",
+      "src": [
+        "city",
+        "overview"
+      ]
+    },
+    {
+      "a": "ps-sigil",
+      "b": "ps-outlands",
+      "label": "位面枢纽",
+      "note": "作为主题阅读关联；具体叙述和范围见双方条目的来源。",
+      "src": [
+        "overview",
+        "city"
+      ]
+    },
+    {
+      "a": "ps-outlands",
+      "b": "ps-gatetowns",
+      "label": "门户旅行",
+      "note": "作为主题阅读关联；具体叙述和范围见双方条目的来源。",
+      "src": [
+        "city",
+        "contents"
+      ]
+    },
+    {
+      "a": "ps-terrance",
+      "b": "ps-faction-athar",
+      "label": "派系领袖",
+      "note": "作为主题阅读关联；具体叙述和范围见双方条目的来源。",
+      "src": [
+        "factions"
+      ]
+    },
+    {
+      "a": "ps-rhys",
+      "b": "ps-faction-transcendent",
+      "label": "派系领袖",
+      "note": "作为主题阅读关联；具体叙述和范围见双方条目的来源。",
+      "src": [
+        "factions"
+      ]
+    },
+    {
+      "a": "ps-gatetown-shift",
+      "b": "ps-gatetowns",
+      "label": "位面变化",
+      "note": "作为主题阅读关联；具体叙述和范围见双方条目的来源。",
+      "src": [
+        "character",
+        "contents"
+      ]
+    }
+  ],
+  "flows": {},
+  "works": [
+    {
+      "id": "ps-wheel-adventure",
+      "title": "Turn of Fortune’s Wheel",
+      "category": "官方 5E 冒险",
+      "author": "Wizards of the Coast",
+      "description": "从印记城走向外域的现实异常冒险。仅提供官方介绍，不展开剧情反转。",
+      "url": "https://www.dndbeyond.com/posts/1529-what-is-planescape-adventures-in-the-multiverse-a",
+      "src": [
+        "overview"
+      ]
+    },
+    {
+      "id": "ps-menagerie",
+      "title": "Morte’s Planar Parade",
+      "category": "官方 5E 位面生物册",
+      "author": "Wizards of the Coast",
+      "description": "认识外域居民、位面影响与奇异生物的资料入口。",
+      "url": "https://www.dndbeyond.com/sources/dnd/paitm/mpp",
+      "src": [
+        "mpp"
+      ]
+    }
+  ],
+  "intro": {
+    "worlds": "从诸门之城、外域与大轮模型理解跨位面生活。",
+    "cosmos": "以外域与印记城为枢纽，认识十六个外环位面。",
+    "history": "不套用 DR 或 YK；依次整理起源谜团、持续变化与冒险窗口。",
+    "people": "城市统治者、位面居民与派系领袖，各有不同的身份边界。",
+    "atlas": "从城区走向门镇，再沿哲学派系理解城市如何运转。",
+    "primer": "在走过第一扇门之前，先理解门户、门钥与信念。"
+  },
+  "model_note": "大轮是概念排列；外域与印记城是枢纽，不把十六个外环位面画成围绕托瑞尔运行的天体。",
+  "cosmology": {
+    "kind": "planescape",
+    "center": "ps-outlands",
+    "config": [
+      [
+        "ps-outlands",
+        0,
+        0,
+        0.4,
+        0.52
+      ],
+      [
+        "ps-sigil",
+        0,
+        1.4,
+        0.1,
+        0.28
+      ],
+      [
+        "ps-celestia",
+        0.0,
+        3.35,
+        -0.3,
+        0.23
+      ],
+      [
+        "ps-bytopia",
+        1.3394,
+        3.095,
+        -0.3,
+        0.23
+      ],
+      [
+        "ps-elysium",
+        2.4749,
+        2.3688,
+        -0.3,
+        0.23
+      ],
+      [
+        "ps-beastlands",
+        3.2336,
+        1.282,
+        -0.3,
+        0.23
+      ],
+      [
+        "ps-arborea",
+        3.5,
+        0.0,
+        -0.3,
+        0.23
+      ],
+      [
+        "ps-ysgard",
+        3.2336,
+        -1.282,
+        -0.3,
+        0.23
+      ],
+      [
+        "ps-limbo",
+        2.4749,
+        -2.3688,
+        -0.3,
+        0.23
+      ],
+      [
+        "ps-pandemonium",
+        1.3394,
+        -3.095,
+        -0.3,
+        0.23
+      ],
+      [
+        "ps-abyss",
+        0.0,
+        -3.35,
+        -0.3,
+        0.23
+      ],
+      [
+        "ps-carceri",
+        -1.3394,
+        -3.095,
+        -0.3,
+        0.23
+      ],
+      [
+        "ps-hades",
+        -2.4749,
+        -2.3688,
+        -0.3,
+        0.23
+      ],
+      [
+        "ps-gehenna",
+        -3.2336,
+        -1.282,
+        -0.3,
+        0.23
+      ],
+      [
+        "ps-hells",
+        -3.5,
+        -0.0,
+        -0.3,
+        0.23
+      ],
+      [
+        "ps-acheron",
+        -3.2336,
+        1.282,
+        -0.3,
+        0.23
+      ],
+      [
+        "ps-mechanus",
+        -2.4749,
+        2.3688,
+        -0.3,
+        0.23
+      ],
+      [
+        "ps-arcadia",
+        -1.3394,
+        3.095,
+        -0.3,
+        0.23
+      ]
+    ],
+    "connections": [
+      [
+        "ps-outlands",
+        "ps-sigil"
+      ],
+      [
+        "ps-outlands",
+        "ps-celestia"
+      ],
+      [
+        "ps-outlands",
+        "ps-bytopia"
+      ],
+      [
+        "ps-outlands",
+        "ps-elysium"
+      ],
+      [
+        "ps-outlands",
+        "ps-beastlands"
+      ],
+      [
+        "ps-outlands",
+        "ps-arborea"
+      ],
+      [
+        "ps-outlands",
+        "ps-ysgard"
+      ],
+      [
+        "ps-outlands",
+        "ps-limbo"
+      ],
+      [
+        "ps-outlands",
+        "ps-pandemonium"
+      ],
+      [
+        "ps-outlands",
+        "ps-abyss"
+      ],
+      [
+        "ps-outlands",
+        "ps-carceri"
+      ],
+      [
+        "ps-outlands",
+        "ps-hades"
+      ],
+      [
+        "ps-outlands",
+        "ps-gehenna"
+      ],
+      [
+        "ps-outlands",
+        "ps-hells"
+      ],
+      [
+        "ps-outlands",
+        "ps-acheron"
+      ],
+      [
+        "ps-outlands",
+        "ps-mechanus"
+      ],
+      [
+        "ps-outlands",
+        "ps-arcadia"
+      ]
+    ],
+    "mobileRows": {
+      "ps-outlands": [
+        0,
+        0
+      ],
+      "ps-sigil": [
+        -1,
+        1
+      ],
+      "ps-celestia": [
+        1,
+        1
+      ],
+      "ps-bytopia": [
+        -1,
+        2
+      ],
+      "ps-elysium": [
+        1,
+        2
+      ],
+      "ps-beastlands": [
+        -1,
+        3
+      ],
+      "ps-arborea": [
+        1,
+        3
+      ],
+      "ps-ysgard": [
+        -1,
+        4
+      ],
+      "ps-limbo": [
+        1,
+        4
+      ],
+      "ps-pandemonium": [
+        -1,
+        5
+      ],
+      "ps-abyss": [
+        1,
+        5
+      ],
+      "ps-carceri": [
+        -1,
+        6
+      ],
+      "ps-hades": [
+        1,
+        6
+      ],
+      "ps-gehenna": [
+        -1,
+        7
+      ],
+      "ps-hells": [
+        1,
+        7
+      ],
+      "ps-acheron": [
+        -1,
+        8
+      ],
+      "ps-mechanus": [
+        1,
+        8
+      ],
+      "ps-arcadia": [
+        -1,
+        9
+      ]
+    },
+    "rowCount": 10,
+    "portalIds": [
+      "ps-sigil"
+    ],
+    "eyebrow": "PLANESCAPE · THE GREAT WHEEL"
+  }
+}

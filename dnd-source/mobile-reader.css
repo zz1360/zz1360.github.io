@@ -35,7 +35,7 @@ body.light .mobile-toc-list a{background:var(--panel)}
  body.mobile-reader .reading-chamber{display:contents}
  body.mobile-reader .reading-chamber>main{padding:24px 20px 40px;width:100%;max-width:850px;overflow:visible;height:auto;min-height:0}
  body.mobile-reader .reading-chamber .grid,body.mobile-reader .reading-chamber .grid.two,body.mobile-reader .cosmos-layout,body.mobile-reader .map-layout,body.mobile-reader .atlas-layout{grid-template-columns:minmax(0,1fr)}
- body.mobile-reader .controls :is(button,select),body.mobile-reader .plane-selector button-links :is(a,button),body.mobile-reader .entry-tools button,body.mobile-reader .art-dialog-bottom button,body.mobile-reader .dialog-top .close{min-height:44px}
+ body.mobile-reader .controls :is(button,select),body.mobile-reader .plane-selector button,body.mobile-reader .entry-tools button,body.mobile-reader .art-dialog-bottom button,body.mobile-reader .dialog-top .close{min-height:44px}
  body.mobile-reader :is(.entry-open,.art-open,.jump){min-height:44px}
  body.mobile-reader .art-open{min-height:0}
  body.mobile-reader :is(.dialog-top,.dialog-body){scroll-margin-top:90px}

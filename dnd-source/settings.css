@@ -1,0 +1,27 @@
+.setting-controls{display:inline-flex;align-items:center;justify-content:center;gap:12px;max-width:100%;white-space:nowrap}
+.setting-controls .edition-label{font:12px var(--sans);color:var(--muted);letter-spacing:.04em}
+.setting-controls .edition-label b{font:500 13px var(--serif);color:var(--ink)}
+.setting-controls i{font-size:9px;font-style:normal;color:var(--gold)}
+.setting-label{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.setting-controls select{min-height:36px;max-width:205px;padding:7px 30px 7px 12px;font:500 13px var(--serif);letter-spacing:.04em;color:var(--gold);background:var(--panel);border:1px solid var(--line);border-radius:5px;cursor:pointer}
+.setting-controls select:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.setting-controls select option{color:var(--ink);background:var(--panel)}
+.setting-toolbar{display:flex;justify-content:center;align-items:center;padding:18px 24px 0}
+body.stage-mode .setting-toolbar{display:none}
+body:not(.stage-mode) #overview .viz{height:min(78vh,900px)}
+.setting-art-note{font-size:11px;color:var(--muted);line-height:1.7;margin:5px 0 0}
+.setting-sigil{height:48px;display:flex;gap:12px;align-items:center;justify-content:space-between;color:var(--accent,var(--gold));margin-bottom:14px;font-size:21px;border-bottom:1px solid var(--line)}
+.setting-sigil span{font:13px var(--serif);letter-spacing:.12em;color:var(--muted)}
+.setting-work-link{display:inline-block;text-decoration:none;margin-top:18px}
+[data-setting=eberron] .viz{--atlas-glow:#3d98ad2a;--atlas-mist:#c08b5521;--atlas-line:#c9a171}
+[data-setting=planescape] .viz{--atlas-glow:#9c6daf2a;--atlas-mist:#6377c32b;--atlas-line:#c6acd0}
+body.light[data-setting=eberron] .viz{--atlas-glow:#9bc6cc48;--atlas-mist:#d8b98c33;--atlas-line:#87653b}
+body.light[data-setting=planescape] .viz{--atlas-glow:#cab4db55;--atlas-mist:#a8b4d335;--atlas-line:#82688e}
+[data-setting]:not([data-setting=realms]) .setting-cosmos{grid-template-columns:minmax(0,1fr);gap:20px}
+[data-setting]:not([data-setting=realms]) .setting-cosmos .viz{height:660px}
+[data-setting]:not([data-setting=realms]) .plane-panel{min-height:0}
+[data-setting]:not([data-setting=realms]) #plane-panel h3{margin:12px 0}
+@media(max-width:1250px){.chamber-cap .setting-controls{gap:8px}.setting-controls select{max-width:175px;font-size:12px}}
+@media(max-width:1100px){.setting-controls select{min-height:44px}.setting-toolbar{padding:18px 20px 0}.setting-controls{gap:12px}}
+@media(max-width:620px){.setting-controls select{max-width:180px;font-size:13px}.setting-toolbar{padding-top:12px}.setting-controls .edition-label{font-size:11px}}
+@media print{.setting-toolbar,.setting-controls,.setting-art-note{display:none!important}}

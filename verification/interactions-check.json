@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "origin": "https://blog.luckydogs.top",
+  "origin": "http://127.0.0.1:8916",
   "features": [
     "ranked-search",
     "match-snippets",

@@ -26,7 +26,7 @@ source_commit = git('rev-parse', 'HEAD', capture=True)
 run('npm', 'run', 'check')
 run('npm', 'run', 'build')
 dist = root/'dist'
-for file in ['index.html', 'blog/index.html', 'explore/dnd/index.html', 'dnd/index.html', 'dnd/works/yinhun/index.html', 'privacy/index.html', 'support/index.html', 'CNAME', '.nojekyll']:
+for file in ['index.html', 'blog/index.html', 'explore/dnd/index.html', 'dnd/index.html', 'dnd/settings/eberron/index.html', 'dnd/settings/planescape/index.html', 'dnd/works/yinhun/index.html', 'privacy/index.html', 'support/index.html', 'CNAME', '.nojekyll']:
     if not (dist/file).is_file(): raise SystemExit('Missing release file: '+file)
 if '视觉预览' in (dist/'index.html').read_text() or '排版样例' in (dist/'blog/index.html').read_text():
     raise SystemExit('Preview-only content must not enter the public site.')
