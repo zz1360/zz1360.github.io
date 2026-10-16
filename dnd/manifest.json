@@ -9,7 +9,7 @@
       "image_count": 39
     }
   ],
-  "source_sha256": "253054b724ffc55562fbd74a42def11f001eb19175aca0da2d47609dcf632621",
+  "source_sha256": "297ecb255f5e83bf4e19811a7c01cc09a7c17189364516578cbf0fdf23f1cc98",
   "originals": [
     {
       "id": "elminster",
@@ -2061,5 +2061,19 @@
       }
     ],
     "appearanceKey": "dnd-world-appearance-v1"
-  }
+  },
+  "settings": [
+    {
+      "id": "eberron",
+      "url": "/dnd/settings/eberron/",
+      "entries": 41,
+      "graphNodes": 14
+    },
+    {
+      "id": "planescape",
+      "url": "/dnd/settings/planescape/",
+      "entries": 54,
+      "graphNodes": 18
+    }
+  ]
 }
