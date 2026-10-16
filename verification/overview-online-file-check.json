@@ -1,0 +1,46 @@
+{
+  "release": {
+    "site": "0101 比特酒馆",
+    "sourceCommit": "840b3386b4a6c15f5735c9f582fac03dfbff478d",
+    "builtAt": "2026-10-16T13:21:22.222404+08:00",
+    "framework": "Astro"
+  },
+  "files": [
+    {
+      "path": "index.html",
+      "sha256": "856bf59d5d2053da601d3f5dcfb6bafaf9e4c6d8f44a83693b8f27594c865c2e",
+      "passed": true
+    },
+    {
+      "path": "dnd/index.html",
+      "sha256": "e9215c8392e465ec28495f590bf6168645e529114b0a509bb212f07cce9cf7f8",
+      "passed": true
+    },
+    {
+      "path": "dnd/manifest.json",
+      "sha256": "cee4d95a2a944e7865e09ab0980e22dcce74537a15e2968d52550f42e92864ef",
+      "passed": true
+    },
+    {
+      "path": "dnd/works/yinhun/index.html",
+      "sha256": "4b2bac3bce49709256003466c552981638cb50536196520eb2d3d6b52886c3ee",
+      "passed": true
+    },
+    {
+      "path": "privacy/index.html",
+      "sha256": "186757e7d9bcf56308c6ad0746343ca2c4096af4806a854d3a356de39a9c7434",
+      "passed": true
+    },
+    {
+      "path": "support/index.html",
+      "sha256": "a0d021cd050b69b3ad5d2d050990c4e1a0a006a3d6843e32e8477848169aadc0",
+      "passed": true
+    },
+    {
+      "path": "release.json",
+      "sha256": "ca8bd580015975d0effd017eb731b49226252616ad2b9858d46a3e2a0728f83f",
+      "passed": true
+    }
+  ],
+  "passed": true
+}
