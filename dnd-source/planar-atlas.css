@@ -1,0 +1,46 @@
+/* A single, legible atlas takes the place of the introductory dashboard. */
+.chamber-cap .chamber-edition{display:flex;align-items:center;justify-content:center;gap:13px;letter-spacing:.08em;white-space:nowrap;color:var(--muted);font-size:.75rem}
+.chamber-edition strong,.overview-edition strong{font-family:var(--serif);font-weight:500;color:var(--gold)}
+.chamber-edition i,.overview-edition i{font-style:normal;color:var(--gold);font-size:.625rem}
+body.stage-mode .reading-chamber .chamber-cap{display:grid;grid-template-columns:1fr auto 1fr;gap:12px}
+body.stage-mode .chamber-cap>small{display:block}
+.overview-edition{display:flex;gap:16px;align-items:center;justify-content:center;padding:0 0 22px;font-size:.8125rem;color:var(--muted);letter-spacing:.08em}
+body.stage-mode .overview-edition{display:none}
+body.stage-mode.overview-active #main{padding:16px;overflow-x:hidden}
+body.stage-mode #overview{height:100%;min-height:440px}
+.overview-active .footer{display:none}
+#overview .viz{height:100%;min-height:440px}
+body:not(.stage-mode) #overview .viz{height:min(78vh,900px);min-height:620px}
+.viz{--atlas-line:#c2a268;--atlas-copy:#cdd9ec;--atlas-muted:#899ab6;--atlas-label:#111d30eb;--atlas-field:#101827;--atlas-glow:#5379c324;--atlas-mist:#8961b521;--atlas-edge:#b5a0d35c;isolation:isolate;border-radius:12px!important;border:1px solid var(--atlas-edge);background:radial-gradient(ellipse at 48% 50%,var(--atlas-glow),transparent 52%),radial-gradient(ellipse at 74% 66%,var(--atlas-mist),transparent 48%),var(--atlas-field)!important;box-shadow:inset 0 0 80px #00000024;overflow:hidden}
+.viz:before{content:'';position:absolute;inset:66px 24px 55px;border:1px solid color-mix(in srgb,var(--atlas-line) 25%,transparent);border-radius:50%;box-shadow:0 0 0 8px color-mix(in srgb,var(--atlas-line) 3%,transparent),0 0 0 9px color-mix(in srgb,var(--atlas-line) 12%,transparent);pointer-events:none;z-index:-1}
+.viz:after{content:'';position:absolute;inset:9px;border:1px solid color-mix(in srgb,var(--atlas-line) 16%,transparent);border-radius:7px;pointer-events:none}
+.atlas-ornament{position:absolute;inset:22px;display:flex;justify-content:space-between;pointer-events:none;color:var(--atlas-line);font-size:15px;opacity:.7}
+.atlas-ornament span:nth-child(3),.atlas-ornament span:nth-child(4){position:absolute;bottom:0}
+.atlas-ornament span:nth-child(4){right:0}
+.viz .viz-top{top:24px;max-width:calc(100% - 80px)}
+.viz .viz-top .eyebrow{font-size:.625rem;letter-spacing:.3em;color:var(--atlas-line)}
+.viz .viz-top :is(h1,h3){font-family:var(--serif);font-size:clamp(1.25rem,2vw,1.75rem);font-weight:500;letter-spacing:.16em;margin:5px 0;color:var(--atlas-copy);line-height:1.6}
+.viz canvas{touch-action:pan-y;outline:none}
+.viz canvas:focus-visible{outline:2px solid var(--gold);outline-offset:-12px}
+.viz .node-label,body.light .viz .node-label{display:flex;align-items:center;gap:6px;padding:6px 11px;min-height:32px;border-radius:20px;font-family:var(--serif);font-size:12px;font-weight:500;line-height:1.3;letter-spacing:.03em;border:1px solid color-mix(in srgb,var(--node-color) 48%,transparent);color:var(--atlas-copy);background:var(--atlas-label);box-shadow:0 2px 12px #0002;transition:background-color 160ms ease,border-color 160ms ease;z-index:1;transform:none}
+.node-label:before{content:'';width:4px;height:4px;background:var(--node-color);border-radius:50%;flex-shrink:0}
+.viz .node-label.active,body.light .viz .node-label.active{border-color:var(--atlas-line);color:var(--atlas-copy);background:color-mix(in srgb,var(--atlas-label) 88%,var(--atlas-line));box-shadow:0 0 20px color-mix(in srgb,var(--atlas-line) 18%,transparent)}
+.viz .node-label:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.viz .viz-bottom{bottom:20px;left:30px;right:30px;color:var(--atlas-copy);font-size:11px;gap:12px}
+.viz-bottom small{font-size:10px;color:var(--atlas-muted)}
+.viz-bottom>div{display:flex;gap:8px}
+.viz .viz-bottom .plain,body.light .viz .viz-bottom .plain{min-height:36px;padding:7px 12px;font-size:11px;color:var(--atlas-copy);background:var(--atlas-label);border:1px solid var(--atlas-edge);border-radius:4px}
+.viz .fallback{padding:105px 28px 90px;gap:20px;color:var(--atlas-copy)}
+.viz .fallback-grid button{border:1px solid var(--atlas-edge);background:var(--atlas-label);color:var(--atlas-copy);min-height:44px;padding:7px 12px;border-radius:5px}
+.viz .fallback p{color:var(--atlas-muted)}
+body.light .viz{--atlas-line:#896632;--atlas-copy:#354560;--atlas-muted:#626f85;--atlas-label:#fffaf0f2;--atlas-field:#f6f0e4;--atlas-glow:#b4ccdc55;--atlas-mist:#c7acd638;--atlas-edge:#a68b574f;box-shadow:inset 0 0 65px #b5aa9020}
+@media(hover:hover) and (pointer:fine){.viz .node-label:hover{border-color:var(--atlas-line);background:color-mix(in srgb,var(--atlas-label) 85%,var(--atlas-line))}}
+@media(max-width:1250px){.chamber-cap .chamber-edition{gap:8px;font-size:.6875rem}body.stage-mode .reading-chamber .chamber-cap{grid-template-columns:auto 1fr}body.stage-mode .chamber-cap>small{display:none}}
+@media(max-width:1100px){body.mobile-reader #overview .viz{height:680px;min-height:0}.overview-edition{padding:8px 0 20px}body.mobile-reader .viz .node-label{min-height:44px}body.mobile-reader #overview .viz-bottom .plain{min-height:44px}}
+@media(max-width:620px){.overview-edition{gap:12px;font-size:.75rem;letter-spacing:.04em}body.mobile-reader #overview .viz{height:650px}.viz{border-radius:8px!important}.viz .viz-top{top:22px;max-width:calc(100% - 50px)}.viz .viz-top .eyebrow{font-size:9px}.viz .viz-top :is(h1,h3){font-size:1.25rem;letter-spacing:.08em}.viz .node-label,body.light .viz .node-label{padding:6px 8px;font-size:11px;gap:4px}.viz:before{inset:88px 15px 94px}.atlas-ornament{inset:16px;font-size:12px}.viz .viz-bottom{left:20px;right:20px;bottom:20px;align-items:flex-end}.viz-bottom>span{font-size:10px;max-width:125px}.viz-bottom small{font-size:9px}.viz .viz-bottom .plain{padding:7px 9px;font-size:10px}.viz-bottom>div{gap:5px}.cosmos-layout .viz{height:650px}}
+@media(prefers-reduced-motion:reduce){.viz .node-label{transition:none}}
+@media print{body.stage-mode #overview{height:auto;min-height:0}.overview-edition{display:flex!important}.chapter#overview{display:none!important}}
+
+body.light .viz .viz-bottom{color:var(--atlas-copy)}body.light .viz .viz-bottom small{color:var(--atlas-muted)}
+
+body.stage-mode .reading-chamber .chamber-cap .chamber-edition{font-size:12px;letter-spacing:.08em}

@@ -20,7 +20,7 @@ const sizes=[[2048,1280],[1440,900],[1280,800],[1024,768],[390,844],[320,760],[8
   const thumb=await p.locator('.scroll-thumb').boundingBox();await p.mouse.move(thumb.x+thumb.width/2,thumb.y+15);await p.mouse.down();await p.mouse.move(thumb.x+thumb.width/2,thumb.y+95);await p.mouse.up();assert.ok(await p.locator('#main').evaluate(n=>n.scrollTop>0));
   await p.locator('.nav a[data-section="people"]').click();await p.waitForFunction(()=>document.getElementById('main').scrollTop===0);
   await p.goto(base+'/dnd/#art/mystra/2');assert.equal(await p.locator('#art-counter').innerText(),'3 / 4');await p.keyboard.press('ArrowRight');assert.equal(await p.locator('#art-counter').innerText(),'4 / 4');await p.keyboard.press('Escape');
-  await p.goto(base+'/dnd/#entry/shar');await p.locator('#entry-dialog [data-save]').click();await p.keyboard.press('Escape');
+  await p.goto(base+'/dnd/#entry/shar');assert.equal(await p.locator('#entry-dialog [data-save]').count(),0);await p.keyboard.press('Escape');
   const saved=await p.evaluate(()=>localStorage.getItem('dnd-codex-reading-v1'));
   for(const [width,height] of sizes){
    await p.setViewportSize({width,height});await p.goto(base+'/dnd/#atlas');
@@ -51,7 +51,7 @@ const sizes=[[2048,1280],[1440,900],[1280,800],[1024,768],[390,844],[320,760],[8
   await p.locator('#theme-button').click();await p.goto(base+'/dnd/#entry/mystra');
   await p.locator('#entry-dialog .dialog-plate img').evaluate(n=>n.decode());await p.keyboard.press('Escape');
   await p.locator('#launch-search').click();await p.locator('#search-input').fill('魔网');assert.ok(await p.locator('.search-result').count());await p.keyboard.press('Escape');
-  await p.emulateMedia({media:'print'});assert.equal(await p.locator('.goddess:visible').count(),0);assert.equal(await p.locator('.reader-scrollbar:visible').count(),0);assert.equal(await p.locator('.chapter:visible').count(),9);await p.emulateMedia({media:'screen'});
+  await p.emulateMedia({media:'print'});assert.equal(await p.locator('.goddess:visible').count(),0);assert.equal(await p.locator('.reader-scrollbar:visible').count(),0);assert.equal(await p.locator('.chapter:visible').count(),8);await p.emulateMedia({media:'screen'});
   const narrow=await b.newPage({viewport:{width:390,height:844}}),portraitRequests=[];narrow.on('request',r=>{if(r.url().includes('/companion-'))portraitRequests.push(r.url())});await narrow.goto(base+'/dnd/');assert.deepEqual(portraitRequests,[]);await narrow.close();
   const blocked=await b.newPage();blocked.on('pageerror',e=>errors.push(e.message));await blocked.addInitScript(()=>{Storage.prototype.getItem=()=>{throw new DOMException('blocked','SecurityError')};Storage.prototype.setItem=()=>{throw new DOMException('blocked','SecurityError')}});await blocked.goto(base+'/dnd/#atlas');await blocked.locator('#layout-select').selectOption('original');await blocked.locator('#theme-button').click();await blocked.close();
   assert.deepEqual(errors,[]);assert.deepEqual(failed,[]);

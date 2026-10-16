@@ -51,7 +51,7 @@ def adapt(page, root, output):
     brand = f'<a class="world-logo" href="#overview" aria-label="DND world · 阅览入口"><img class="world-emblem" src="{logo}" alt="" width="72" height="80"><span class="world-wordmark"><strong>DND</strong><small>world</small></span></a>'
     mobile_meta = '<div class="mobile-reading-meta"><span>原始阅读 · 单栏</span><span id="mobile-current-chapter">阅览入口</span></div>'
     page = page.replace(old,'<header class="topbar">'+brand+nav+tools+mobile_meta+'</header>',1)
-    cap = '<div class="chamber-cap"><span><b>DND WORLD</b> / <span id="crumb">阅览入口</span></span><small>在此阅读</small></div>'
+    cap = '<div class="chamber-cap"><span><b>DND WORLD</b> / <span id="crumb">阅览入口</span></span><span class="chamber-edition"><span>D&amp;D 第五版</span><i aria-hidden="true">✦</i><strong>被遗忘的国度</strong></span><small aria-hidden="true"></small></div>'
     page = page.replace('<main id="main">','<div class="stage">'+figures[0]+'<div class="reading-chamber">'+cap+'<main id="main" tabindex="0" aria-label="百科阅读区">',1)
     scrollbar = '<div class="reader-scrollbar" role="scrollbar" aria-label="中央阅读区滚动条" aria-controls="main" aria-orientation="vertical" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" tabindex="0"><div class="scroll-thumb"></div></div>'
     page = page.replace('</main>','</main>'+scrollbar+'</div>'+figures[1]+'</div>',1)

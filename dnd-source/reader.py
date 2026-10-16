@@ -2,14 +2,13 @@
 import html,json,re
 
 def index(root,data):
-    codex=json.loads((root/'data.json').read_text())
-    return {'core':[e['id'] for k,v in codex.items() if isinstance(v,list) for e in v], 'characters':[c['id'] for c in data['characters']], 'events':[e['id'] for e in data['events']]}
+    return {'characters':[c['id'] for c in data['characters']], 'events':[e['id'] for e in data['events']]}
 
 def script(id,value):
     return '<script id="'+id+'" type="application/json">'+json.dumps(value,ensure_ascii=False,separators=(',',':')).replace('</','<\\/')+'</script>'
 
 def backup_controls():
-    return '<div class="reader-backup"><button class="btn" data-reader-export>导出阅读备份</button><button class="btn" data-reader-import>导入并合并</button><input id="reader-import-file" type="file" accept="application/json,.json" hidden></div><p class="reader-note">备份包含百科收藏、最近阅读，以及作品收藏和阅读位置。导入会合并收藏，保持当前剧透设置。</p><p class="reader-status" role="status" data-reader-backup-status></p>'
+    return '<div class="reader-backup"><button class="btn" data-reader-export>导出阅读备份</button><button class="btn" data-reader-import>导入并合并</button><input id="reader-import-file" type="file" accept="application/json,.json" hidden></div><p class="reader-note">备份包含本作品的收藏和阅读位置。导入会合并收藏，保持当前剧透设置。</p><p class="reader-status" role="status" data-reader-backup-status></p>'
 
 def adapt(page,root,data):
     work=root/'works/yinhun';lore=json.loads((work/'lore.json').read_text())
@@ -59,15 +58,10 @@ def adapt(page,root,data):
     return page
 
 def codex(page,root):
-    source=(root/'works/yinhun/source.html').read_text()
-    data=json.loads(re.search(r'<script[^>]*id="atlas-data"[^>]*>(.*?)</script>',source,re.S)[1])
     lore=json.loads((root/'works/yinhun/lore.json').read_text())
-    page=page.replace('<div class="work-actions">','<p class="small-copy" data-work-reading></p><div class="work-actions"><button class="plain" data-save-work="yinhun" aria-pressed="false">☆ 收藏作品</button>',1)
-    page=page.replace('<div id="resume-reading"></div>','<div id="resume-reading"></div><div id="work-reading-desk"></div>'+backup_controls(),1)
     # Add reciprocal context in the knowledge dossier, without claiming novel events are canon.
     marker="const links=linksFor(id);if(!links.length)return '';"
     assert marker in page
     page=page.replace(marker,"const novel=({"+','.join(json.dumps(x['id'])+':'+json.dumps(x['name'],ensure_ascii=False) for x in lore)+"})[id];const workLink=novel?`<div class=\"note\"><strong>衍生作品 · 《阴魂》</strong><p>基础概念与小说用法分别呈现；小说情节不归入官方设定。</p><a href=\"https://blog.luckydogs.top/dnd/works/yinhun/#lore/${esc(id)}\">查看小说概念对照 ↗</a></div>`:'';const links=linksFor(id);if(!links.length)return workLink;",1)
     page=page.replace('return `<section class="knowledge-links"','return workLink+`<section class="knowledge-links"',1)
-    page=page.replace('</body>',script('reader-index-data',index(root,data))+'<script>'+(root/'reader-backup.js').read_text()+'</script><script>'+(root/'works-desk.js').read_text()+'</script></body>',1)
     return page

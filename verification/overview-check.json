@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "origin": "http://127.0.0.1:8916",
+  "edition": true,
+  "cleanOverview": true,
+  "removedDesk": true,
+  "noDeskStorage": true,
+  "nodeLayoutSizes": [
+    2048,
+    1440,
+    1280,
+    390,
+    320
+  ],
+  "themes": [
+    "dark",
+    "light"
+  ],
+  "stableNodes": true,
+  "pause": true,
+  "keyboard": true,
+  "reducedMotion": true,
+  "webglFallback": true,
+  "contextLoss": true,
+  "screenshots": [
+    "overview-2048-dark.png",
+    "overview-2048-light.png",
+    "overview-390-dark.png",
+    "overview-390-light.png"
+  ],
+  "errors": [],
+  "failed": []
+}
