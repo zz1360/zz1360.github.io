@@ -1,0 +1,91 @@
+{
+  "release": {
+    "publishedCommit": "c5d12928529b6927c1af03d292ec51b26a33e2cb",
+    "previousCommit": "ff3e433154eb928300906acde81c68df275554d3",
+    "recoveryTag": "before-tavern-20261017-014228",
+    "sourceCommit": "c91cb3a5f1a235c7bc6fec28c1ee7ff83b710b20"
+  },
+  "files": [
+    {
+      "path": "index.html",
+      "sha256": "8e51991bd6d9371dbcf40f6773ccf23d32dbd61b9999b5459d083a2a04118177",
+      "passed": true
+    },
+    {
+      "path": "dnd/index.html",
+      "sha256": "ff4c2b4bd968ffa600d52d73efcd4c538434691183472e57d79373978ce4d6f1",
+      "passed": true
+    },
+    {
+      "path": "dnd/settings/eberron/index.html",
+      "sha256": "719abf0533bbd6712e43d7f90009e34c6fbf2710144c75caba7edee9e8845092",
+      "passed": true
+    },
+    {
+      "path": "dnd/settings/planescape/index.html",
+      "sha256": "a79dd3272c32ea2e31417e35579dfd236e893e1cbbca5a670d8b96153d646bb1",
+      "passed": true
+    },
+    {
+      "path": "dnd/manifest.json",
+      "sha256": "872deb6a6e4a7c58a94e713ea47bfdbce8a2375281563de3773ae5bb35185eb0",
+      "passed": true
+    },
+    {
+      "path": "dnd/works/yinhun/index.html",
+      "sha256": "4b2bac3bce49709256003466c552981638cb50536196520eb2d3d6b52886c3ee",
+      "passed": true
+    },
+    {
+      "path": "sitemap.xml",
+      "sha256": "9c784296a48402334c275878f54a77ac590fe69e035513916adccc0b47eae2b2",
+      "passed": true
+    },
+    {
+      "path": "privacy/index.html",
+      "sha256": "186757e7d9bcf56308c6ad0746343ca2c4096af4806a854d3a356de39a9c7434",
+      "passed": true
+    },
+    {
+      "path": "support/index.html",
+      "sha256": "a0d021cd050b69b3ad5d2d050990c4e1a0a006a3d6843e32e8477848169aadc0",
+      "passed": true
+    },
+    {
+      "path": "release.json",
+      "sha256": "378781274c46cc0134eedd4f07f6d8ba4e8ec96d95e26f847d34d095022c8527",
+      "passed": true
+    },
+    {
+      "path": "dnd/assets/overview-eberron-5f9544ee7d30bfc7-w640-q84-v1.webp",
+      "sha256": "64c5147c566ebf3024f15247b7691a9a2f4ca073cf2ba474e2d9a8f906afe76d",
+      "passed": true
+    },
+    {
+      "path": "dnd/assets/overview-eberron-5f9544ee7d30bfc7-w960-q84-v1.webp",
+      "sha256": "821c02a5189da80d4cfb701e76660b12fd756713f0ed854a926bccc1582bd0a8",
+      "passed": true
+    },
+    {
+      "path": "dnd/assets/overview-eberron-5f9544ee7d30bfc7-w1536-q84-v1.webp",
+      "sha256": "5f9544ee7d30bfc764a2f106506d5502f1f99744747b1b5bd93af63994580839",
+      "passed": true
+    },
+    {
+      "path": "dnd/assets/overview-planescape-c83df8a4ea3acf65-w640-q84-v1.webp",
+      "sha256": "2f81076f9d8e9272cd935aa0d645b87c0effb8ee24fa21ae6594b4f893e3d2fd",
+      "passed": true
+    },
+    {
+      "path": "dnd/assets/overview-planescape-c83df8a4ea3acf65-w960-q84-v1.webp",
+      "sha256": "43728640eace2558ddd94350e0f61c1dbb9dd837eb4674d19bba6fa8a29ee175",
+      "passed": true
+    },
+    {
+      "path": "dnd/assets/overview-planescape-c83df8a4ea3acf65-w1536-q84-v1.webp",
+      "sha256": "c83df8a4ea3acf653507e7d972f9c98ab6c5140ff91a7579da7d9fcbd4a86c7d",
+      "passed": true
+    }
+  ],
+  "passed": true
+}
