@@ -2,7 +2,7 @@
 import json,re,html
 
 def enhance(page,data,root):
-    entries={x['id']:x for k in ['worlds','planes','history','people','locations','factions','terms'] for x in data[k]}
+    entries={x['id']:x for k in ['worlds','planes','history','people','locations','factions','terms','reference_worlds'] for x in data.get(k,[])}
     relations=json.loads((root/'relations.json').read_text())
     flows=json.loads((root/'history-flow.json').read_text())
     for r in relations:
@@ -23,7 +23,7 @@ def enhance(page,data,root):
     page=page.replace('</head>','<style>'+(root/'explore.css').read_text()+(root/'search-ui.css').read_text()+(root/'ui-feedback.css').read_text()+'</style></head>',1)
     page=page.replace('</body>','<script>'+(root/'explore.js').read_text()+'</script><script>'+(root/'ui-feedback.js').read_text()+'</script></body>',1)
     page=page.replace('<figure class="art-stage">','<div id="art-tools" class="entry-tools"></div><figure class="art-stage">',1)
-    page=page.replace('单文件离线插图版</span>','界面更新 2026.10.16 · 离线插图版</span>')
+    page=page.replace('单文件离线插图版</span>','界面更新 2026.10.17 · 离线插图版</span>')
     from works import catalogue,reader
     page=catalogue(page,root)
     page=reader.codex(page,root)

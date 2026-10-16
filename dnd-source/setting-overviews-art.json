@@ -1,0 +1,21 @@
+{
+  "created": "2026-10-17",
+  "tool": "built-in image_gen",
+  "purpose": "设定概览的场景插画；艺术演绎，不是地理地图。",
+  "assets": [
+    {
+      "id": "sharn",
+      "file": "assets/settings/sharn.webp",
+      "prompt": "Use case: stylized-concept. Asset type: original scene illustration for the interactive setting overview of a Chinese Dungeons & Dragons encyclopedia. Primary request: Sharn, Eberron's city of towers, an atmospheric fantasy anime painted environment, refined hand-painted JRPG background, magical urban industry. Scene: towering vertically layered stone skyscrapers, narrow skybridges, glowing blue dragonshard lamps, a distant small magical skycoach silhouette, clouds drifting through lower city levels. Composition: wide landscape 3:2, expansive city seen from a balcony, architectural silhouette clear and readable, a spacious misty sky in the upper half for a separate HTML diagram overlay. Lighting: warm brass lights against blue-teal twilight, elegant luminous atmosphere, copper and teal accents. Materials: intricate stonework and brass, detailed but restrained. Constraints: no text, no letters, no UI, no map, no labels, no watermark, no prominent people, no photorealism, no modern glass skyscrapers, no science fiction. This is interpretive concept art, not an accurate geographical map.",
+      "source": "exec-cdff2670-f89f-4237-95e8-29db1d6a2344.png",
+      "encoding": "cwebp -q 88; 1536x1024; no crop"
+    },
+    {
+      "id": "sigil",
+      "file": "assets/settings/sigil.webp",
+      "prompt": "Use case: stylized-concept. Asset type: original scene illustration for the interactive setting overview of a Chinese Dungeons & Dragons encyclopedia. Primary request: Sigil, the City of Doors in Planescape, refined fantasy anime painted environment, gorgeous hand-painted JRPG background. Scene: strange dense Gothic and fantastical city streets, sculpted stone archways suggesting portals with restrained violet light, a great inhabited curved cityscape sweeping overhead into the hazy sky, impossible ring-city atmosphere, floating motes and blue-lilac mist. Composition: wide landscape 3:2, an inviting archway in the lower right, readable architectural silhouettes, spacious misty middle and upper half for a separate HTML relationship diagram. Lighting: soft otherworldly dawn in lavender, slate blue and antique gold. Materials: intricate aged masonry, bronze door frames. Constraints: no text, no lettering, no UI, no map, no labels, no watermark, no prominent people, no photorealism, no generic giant planet, no space ships. Interpretive concept art, not a precise diagram or literal city map.",
+      "source": "exec-d4278037-569d-4ca0-8a47-b3fc228fd89d.png",
+      "encoding": "cwebp -q 88; 1536x1024; no crop"
+    }
+  ]
+}

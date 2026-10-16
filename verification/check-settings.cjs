@@ -2,7 +2,7 @@ const {chromium}=require('/Users/zhangzhuang/.cache/codex-runtimes/codex-primary
 const assert=require('node:assert/strict'),fs=require('node:fs');
 const origin=process.env.SITE_ORIGIN||'http://127.0.0.1:8916';
 const profiles=[
- {id:'realms',name:'被遗忘的国度',path:'/dnd/',nodes:11,entries:78,center:'material',query:'密斯特拉'},
+ {id:'realms',name:'被遗忘的国度',path:'/dnd/',nodes:11,entries:71,center:'material',query:'密斯特拉'},
  {id:'eberron',name:'艾伯伦',path:'/dnd/settings/eberron/',nodes:14,entries:41,center:'eb-material',query:'沙恩'},
  {id:'planescape',name:'异度风景',path:'/dnd/settings/planescape/',nodes:18,entries:54,center:'ps-outlands',query:'印记城'}
 ];

@@ -1,0 +1,309 @@
+{
+  "realms": {
+    "title": "被遗忘的国度",
+    "en": "Forgotten Realms",
+    "summary": "从托瑞尔到剑湾，沿着尺度走进费伦。",
+    "layout": "hierarchy",
+    "sceneEntry": "waterdeep",
+    "sceneLabel": "剑湾城市 · 艺术演绎",
+    "topics": [
+      [
+        "sun",
+        "诸神"
+      ],
+      [
+        "spark",
+        "魔法"
+      ],
+      [
+        "castle",
+        "城邦"
+      ]
+    ],
+    "nodes": [
+      {
+        "id": "toril",
+        "name": "托瑞尔",
+        "en": "Toril",
+        "kind": "世界",
+        "icon": "globe",
+        "x": 19,
+        "y": 32,
+        "entry": "fr",
+        "summary": "被遗忘的国度是设定名称，托瑞尔是其中的星球。费伦与剑湾属于更小的尺度。",
+        "src": [
+          "fr",
+          "places"
+        ],
+        "action": {
+          "entry": "fr",
+          "label": "阅读设定档案"
+        }
+      },
+      {
+        "id": "faerun",
+        "name": "费伦",
+        "en": "Faerûn",
+        "kind": "大陆",
+        "icon": "land",
+        "x": 50,
+        "y": 48,
+        "entry": "fr",
+        "summary": "费伦是托瑞尔上的大陆；城市、古代文明与诸神故事在这里交织。剑湾只是其中一部分。",
+        "src": [
+          "fr",
+          "places"
+        ],
+        "action": {
+          "section": "history",
+          "label": "走进费伦历史"
+        }
+      },
+      {
+        "id": "sword-coast",
+        "name": "剑湾",
+        "en": "Sword Coast",
+        "kind": "区域",
+        "icon": "compass",
+        "x": 81,
+        "y": 63,
+        "entry": "fr",
+        "summary": "从剑湾认识港口与边境，再到深水城、无冬城和博德之门的地点档案中继续探索。",
+        "src": [
+          "places"
+        ],
+        "action": {
+          "section": "atlas",
+          "label": "探索剑湾地点"
+        }
+      }
+    ],
+    "links": [
+      [
+        "toril",
+        "faerun",
+        "contains"
+      ],
+      [
+        "faerun",
+        "sword-coast",
+        "contains"
+      ]
+    ]
+  },
+  "eberron": {
+    "title": "艾伯伦",
+    "en": "Eberron",
+    "summary": "穿过魔法都市与战后世界，再探寻创世传说。",
+    "layout": "hierarchy",
+    "sceneFile": "assets/settings/sharn.webp",
+    "sceneLabel": "沙恩 · 艺术演绎",
+    "topics": [
+      [
+        "spark",
+        "魔法工业"
+      ],
+      [
+        "seal",
+        "龙纹"
+      ],
+      [
+        "moon",
+        "战后阴影"
+      ]
+    ],
+    "nodes": [
+      {
+        "id": "eberron-world",
+        "name": "艾伯伦",
+        "en": "Eberron",
+        "kind": "世界",
+        "icon": "globe",
+        "x": 19,
+        "y": 31,
+        "entry": "eb-world",
+        "action": {
+          "entry": "eb-world",
+          "label": "阅读世界档案"
+        }
+      },
+      {
+        "id": "khorvaire",
+        "name": "科瓦雷",
+        "en": "Khorvaire",
+        "kind": "大陆",
+        "icon": "land",
+        "x": 50,
+        "y": 45,
+        "entry": "eb-khorvaire-world",
+        "action": {
+          "section": "history",
+          "label": "查看战后年表"
+        }
+      },
+      {
+        "id": "sharn",
+        "name": "沙恩",
+        "en": "Sharn",
+        "kind": "都市",
+        "icon": "castle",
+        "x": 81,
+        "y": 32,
+        "entry": "eb-sharn",
+        "action": {
+          "entry": "eb-sharn",
+          "label": "探索沙恩"
+        }
+      },
+      {
+        "id": "siberys",
+        "name": "西伯瑞斯",
+        "en": "Siberys",
+        "kind": "创世神话",
+        "icon": "sun",
+        "x": 35,
+        "y": 82,
+        "branch": true,
+        "entry": "eb-siberys",
+        "action": {
+          "entry": "eb-siberys",
+          "label": "阅读神话档案"
+        }
+      },
+      {
+        "id": "khyber",
+        "name": "吉波尔",
+        "en": "Khyber",
+        "kind": "创世神话",
+        "icon": "moon",
+        "x": 67,
+        "y": 82,
+        "branch": true,
+        "entry": "eb-khyber",
+        "action": {
+          "entry": "eb-khyber",
+          "label": "阅读神话档案"
+        }
+      }
+    ],
+    "links": [
+      [
+        "eberron-world",
+        "khorvaire",
+        "contains"
+      ],
+      [
+        "khorvaire",
+        "sharn",
+        "contains"
+      ],
+      [
+        "eberron-world",
+        "siberys",
+        "myth"
+      ],
+      [
+        "eberron-world",
+        "khyber",
+        "myth"
+      ]
+    ]
+  },
+  "planescape": {
+    "title": "异度风景",
+    "en": "Planescape",
+    "summary": "以城为枢纽，循门镇与信念走向诸位面。",
+    "layout": "network",
+    "sceneFile": "assets/settings/sigil.webp",
+    "sceneLabel": "印记城 · 艺术演绎",
+    "topics": [
+      [
+        "portal",
+        "传送门"
+      ],
+      [
+        "seal",
+        "信念"
+      ],
+      [
+        "compass",
+        "位面旅行"
+      ]
+    ],
+    "nodes": [
+      {
+        "id": "sigil-city",
+        "name": "印记城",
+        "en": "Sigil",
+        "kind": "城市枢纽",
+        "icon": "portal",
+        "x": 27,
+        "y": 27,
+        "entry": "ps-city-world",
+        "action": {
+          "entry": "ps-sigil-place",
+          "label": "走进印记城"
+        }
+      },
+      {
+        "id": "outlands",
+        "name": "外域",
+        "en": "The Outlands",
+        "kind": "位面舞台",
+        "icon": "compass",
+        "x": 58,
+        "y": 44,
+        "entry": "ps-outlands-world",
+        "action": {
+          "entry": "ps-outlands-place",
+          "label": "探索外域"
+        }
+      },
+      {
+        "id": "gate-towns",
+        "name": "十六门镇",
+        "en": "Gate-Towns",
+        "kind": "位面门户",
+        "icon": "gates",
+        "x": 26,
+        "y": 76,
+        "entry": "ps-gatetowns",
+        "action": {
+          "entry": "ps-gatetowns",
+          "label": "了解门镇"
+        }
+      },
+      {
+        "id": "great-wheel",
+        "name": "大轮模型",
+        "en": "The Great Wheel",
+        "kind": "概念模型",
+        "icon": "wheel",
+        "x": 81,
+        "y": 73,
+        "entry": "ps-wheel",
+        "action": {
+          "section": "cosmos",
+          "label": "展开位面关系"
+        }
+      }
+    ],
+    "links": [
+      [
+        "sigil-city",
+        "outlands",
+        "portal"
+      ],
+      [
+        "outlands",
+        "gate-towns",
+        "portal"
+      ],
+      [
+        "outlands",
+        "great-wheel",
+        "concept"
+      ]
+    ]
+  }
+}

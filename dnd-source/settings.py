@@ -42,7 +42,7 @@ def json_script(page,id,data):
     assert count==1,id
     return page
 
-def guide_chapters(data,base):
+def guide_chapters(data,base,root,scenes):
     sources=data['sources'];nums={k:i+1 for i,k in enumerate(sources)}
     def refs(ids):
         return '<div class="sources-inline"><span>来源</span>'+''.join(f'<a href="{e(sources[k]["url"])}" target="_blank" rel="noopener noreferrer">[{nums[k]:02d}] {e(sources[k]["kind"])}</a>' for k in dict.fromkeys(ids))+'</div>'
@@ -88,7 +88,8 @@ def guide_chapters(data,base):
         text=re.sub(r'<div class="fallback-grid">.*?</div>', '<div class="fallback-grid">'+''.join(f'<button data-plane="{e(x["id"])}">{e(x["name"])}</button>' for x in data['planes'])+'</div>',text,flags=re.S)
         return text.replace('THE PLANAR ATLAS',e(data['cosmology']['eyebrow']))
     result={'overview':section('overview','<header class="overview-edition"></header>'+viz('home-viz'))}
-    result['worlds']=section('worlds',title('worlds','世界图谱')+choices('world-filters','world',[x['kind'] for x in data['worlds']],'world',len(data['worlds']))+cards('worlds','world-grid','grid two'))
+    from setting_overviews import render as render_overview
+    result['worlds']=render_overview(root,data['setting']['id'],data,scenes[data['setting']['id']])
     result['cosmos']=section('cosmos',title('cosmos','位面宇宙')+'<div class="cosmos-layout setting-cosmos">'+viz('cosmos-viz')+'<article class="plane-panel" id="plane-panel" aria-live="polite"></article></div><div class="plane-selector" aria-label="选择位面条目">'+''.join(f'<button data-plane="{e(x["id"])}" aria-pressed="false">{e(x["name"])}</button>' for x in data['planes'])+'</div><div class="note">'+e(data['model_note'])+'</div>'+cards('planes','plane-grid'))
     history=choices('history-filters','era',[x['era'] for x in data['history']],'history',len(data['history']))+'<div class="timeline" id="timeline">'
     for x in data['history']:
@@ -134,12 +135,16 @@ def publish(base,root,output):
     original=json.loads(re.search(r'<script id="codex-data"[^>]*>(.*?)</script>',base,re.S)[1])
     original['setting']=current
     base=json_script(base,'codex-data',original)
-    base=base.replace('同一套冒险语言，不同的世界逻辑。物质世界、位面设定与航行框架，承担不同的叙事角色。','以被遗忘的国度为主线，同时保留经典设定作对照。切换顶部设定，可进入对应的完整导览。',1)
+    from setting_overviews import render as render_overview,published_scenes
+    scenes=published_scenes(root,output,base)
+    parsed=Chapters(base)
+    start,end=next((start,end) for id,start,end in parsed.spans if id=='worlds')
+    base=base[:start]+render_overview(root,'realms',original,scenes['realms'])+base[end:]
     records=[]
     gallery=json.loads(re.search(r'<script id="art-gallery-data"[^>]*>(.*?)</script>',base,re.S)[1])
     for meta in registry(root)[1:]:
         data=json.loads((root/'settings'/(meta['id']+'.json')).read_text());validate(data)
-        page=base;chapters=guide_chapters(data,base)
+        page=base;chapters=guide_chapters(data,base,root,scenes)
         parsed=Chapters(page);assert len(parsed.spans)==9
         for id,start,end in reversed(parsed.spans):page=page[:start]+chapters[id]+page[end:]
         ui_data={k:v for k,v in data.items() if k not in ['relations','flows','works']}
@@ -157,4 +162,4 @@ def publish(base,root,output):
         page=theme(page,root,data)
         dest=Path(output)/'settings'/meta['id'];dest.mkdir(parents=True,exist_ok=True);(dest/'index.html').write_text(page)
         records.append({'id':meta['id'],'url':meta['path'],'entries':sum(len(data[k]) for k in GROUPS),'graphNodes':len(data['planes'])})
-    return theme(base,root,original),records
+    return theme(base,root,original),records,scenes

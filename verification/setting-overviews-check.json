@@ -1,0 +1,82 @@
+{
+  "passed": true,
+  "origin": "http://127.0.0.1:8916",
+  "settings": [
+    {
+      "id": "realms",
+      "nodes": 3
+    },
+    {
+      "id": "eberron",
+      "nodes": 5
+    },
+    {
+      "id": "planescape",
+      "nodes": 4
+    }
+  ],
+  "sizes": [
+    [
+      2048,
+      1280
+    ],
+    [
+      1440,
+      900
+    ],
+    [
+      1280,
+      800
+    ],
+    [
+      1024,
+      768
+    ],
+    [
+      390,
+      844
+    ],
+    [
+      320,
+      760
+    ],
+    [
+      844,
+      390
+    ]
+  ],
+  "themes": [
+    "dark",
+    "light"
+  ],
+  "settingOnly": true,
+  "noSettingDirectory": true,
+  "allNodeActions": true,
+  "sourceLinks": true,
+  "keyboardAndEscape": true,
+  "stableCoordinates": true,
+  "uncroppedOriginals": true,
+  "settingSwitchKeepsChapter": true,
+  "legacyReferencesExcludedFromSearch": true,
+  "sevenLegacyDirectLinks": true,
+  "originalLayout": true,
+  "print": true,
+  "noJavaScriptReading": true,
+  "blockedStorage": true,
+  "screenshots": [
+    "setting-overview-realms-2048-dark.png",
+    "setting-overview-realms-2048-light.png",
+    "setting-overview-realms-390-dark.png",
+    "setting-overview-realms-390-light.png",
+    "setting-overview-eberron-2048-dark.png",
+    "setting-overview-eberron-2048-light.png",
+    "setting-overview-eberron-390-dark.png",
+    "setting-overview-eberron-390-light.png",
+    "setting-overview-planescape-2048-dark.png",
+    "setting-overview-planescape-2048-light.png",
+    "setting-overview-planescape-390-dark.png",
+    "setting-overview-planescape-390-light.png"
+  ],
+  "errors": [],
+  "failed": []
+}

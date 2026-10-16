@@ -1,0 +1,50 @@
+{
+  "passed": true,
+  "comparedTo": "production before setting overview update",
+  "originalsGalleriesCompanionsManifestsIdentical": true,
+  "newSceneVariants": [
+    {
+      "width": 640,
+      "url": "/dnd/assets/overview-eberron-5f9544ee7d30bfc7-w640-q84-v1.webp",
+      "sha256": "64c5147c566ebf3024f15247b7691a9a2f4ca073cf2ba474e2d9a8f906afe76d",
+      "bytes": 72412
+    },
+    {
+      "width": 960,
+      "url": "/dnd/assets/overview-eberron-5f9544ee7d30bfc7-w960-q84-v1.webp",
+      "sha256": "821c02a5189da80d4cfb701e76660b12fd756713f0ed854a926bccc1582bd0a8",
+      "bytes": 139000
+    },
+    {
+      "width": 1536,
+      "url": "/dnd/assets/overview-eberron-5f9544ee7d30bfc7-w1536-q84-v1.webp",
+      "sha256": "5f9544ee7d30bfc764a2f106506d5502f1f99744747b1b5bd93af63994580839",
+      "bytes": 404310
+    },
+    {
+      "width": 640,
+      "url": "/dnd/assets/overview-planescape-c83df8a4ea3acf65-w640-q84-v1.webp",
+      "sha256": "2f81076f9d8e9272cd935aa0d645b87c0effb8ee24fa21ae6594b4f893e3d2fd",
+      "bytes": 74670
+    },
+    {
+      "width": 960,
+      "url": "/dnd/assets/overview-planescape-c83df8a4ea3acf65-w960-q84-v1.webp",
+      "sha256": "43728640eace2558ddd94350e0f61c1dbb9dd837eb4674d19bba6fa8a29ee175",
+      "bytes": 146146
+    },
+    {
+      "width": 1536,
+      "url": "/dnd/assets/overview-planescape-c83df8a4ea3acf65-w1536-q84-v1.webp",
+      "sha256": "c83df8a4ea3acf653507e7d972f9c98ab6c5140ff91a7579da7d9fcbd4a86c7d",
+      "bytes": 449050
+    }
+  ],
+  "unchangedPages": [
+    "dnd/works/yinhun/index.html",
+    "privacy/index.html",
+    "support/index.html"
+  ],
+  "imageGeneration": "built-in image_gen",
+  "prompts": "dnd-source/setting-overviews-art.json"
+}

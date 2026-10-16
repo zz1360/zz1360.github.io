@@ -2,12 +2,13 @@
 const DATA=JSON.parse(document.getElementById('codex-data').textContent);
 const WORKS=JSON.parse(document.getElementById('works-data')?.textContent||'[]');
 const ALL=[...DATA.worlds,...DATA.planes,...DATA.history,...DATA.people,...DATA.locations,...DATA.factions,...DATA.terms];
-const BYID=Object.assign(Object.create(null),Object.fromEntries(ALL.map(x=>[x.id,x])));
-const sectionNames={overview:'阅览入口',worlds:'世界图谱',cosmos:'位面宇宙',history:DATA.setting?.id==='planescape'?'历史与事件':'历史年表',people:'人物与神祇',atlas:'地理与势力',primer:'术语与入门',sources:'资料与边界',works:DATA.setting?.id&&DATA.setting.id!=='realms'?'关联作品':'衍生作品'};
+const BYID=Object.assign(Object.create(null),Object.fromEntries([...ALL,...(DATA.reference_worlds||[])].map(x=>[x.id,x])));
+const sectionNames={overview:'阅览入口',worlds:'设定概览',cosmos:'位面宇宙',history:DATA.setting?.id==='planescape'?'历史与事件':'历史年表',people:'人物与神祇',atlas:'地理与势力',primer:'术语与入门',sources:'资料与边界',works:DATA.setting?.id&&DATA.setting.id!=='realms'?'关联作品':'衍生作品'};
 const siteTitle=DATA.setting?.id&&DATA.setting.id!=='realms'?DATA.setting.name+' · 5E · DND world':'DND world · D&D 世界百科';
 const sourceNums=Object.fromEntries(Object.keys(DATA.sources).map((k,i)=>[k,String(i+1).padStart(2,'0')]));
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const refHtml=x=>`<div class="sources-inline"><span>来源</span>${[...new Set(x.src)].map(k=>`<a href="${esc(DATA.sources[k].url)}" target="_blank" rel="noopener noreferrer">[${sourceNums[k]}] ${esc(DATA.sources[k].title)}</a>`).join('')}</div>`;
+const referenceNotice=x=>x.reference?`<div class="reference-notice"><strong>跨设定参考</strong> · 此档案不属于当前设定概览。${x.guidePath?`<a href="${location.protocol==='file:'?'https://blog.luckydogs.top':''}${esc(x.guidePath)}#worlds">进入${esc(x.name)} →</a>`:''}</div>`:'';
 let activeSection='overview';
 function showSection(id,scroll=true){
  if(!sectionNames[id])id='overview'; if(activeSection!==id)window.codexNavigation?.rememberSection(activeSection); activeSection=id;
@@ -32,7 +33,7 @@ function openEntry(id,updateRoute=true){
  const x=BYID[id];if(!x)return;
  if(updateRoute)setEntryRoute(id);closeCodexDialog(artDialog);entryDialog.dataset.entry=id;showSection(x.section,false);
  document.getElementById('entry-title').textContent=sectionNames[x.section]+' / 知识档案';
- document.getElementById('entry-content').innerHTML=`${window.codexNavigation?.markup(id)||''}${entryTools(id)}${entryIllustration(id)}<span class="eyebrow">${esc(x.date||x.setting||x.tag||x.cat||x.kind||'D&D CODEX')}</span><h3 style="margin-top:14px">${esc(x.name)}</h3><div class="en">${esc(x.en)}</div><p>${esc(x.body)}</p>${x.details.map(([a,b])=>`<h4>${esc(a)}</h4><p>${esc(b)}</p>`).join('')}${refHtml(x)}${historyFlow(id)}${knowledgeLinks(id)}`;
+ document.getElementById('entry-content').innerHTML=`${window.codexNavigation?.markup(id)||''}${entryTools(id)}${referenceNotice(x)}${entryIllustration(id)}<span class="eyebrow">${esc(x.date||x.setting||x.tag||x.cat||x.kind||'D&D CODEX')}</span><h3 style="margin-top:14px">${esc(x.name)}</h3><div class="en">${esc(x.en)}</div><p>${esc(x.body)}</p>${x.details.map(([a,b])=>`<h4>${esc(a)}</h4><p>${esc(b)}</p>`).join('')}${refHtml(x)}${historyFlow(id)}${knowledgeLinks(id)}`;
  if(!entryDialog.open)entryDialog.showModal();if(window.codexNavigation)window.codexNavigation.surfaceOpened('entry',id);else entryDialog.scrollTop=0;
 }
 [entryDialog,document.getElementById('search-dialog')].forEach(d=>d.addEventListener('click',e=>{const r=d.getBoundingClientRect();if(e.target===d&&(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom))d.close()}));
@@ -49,7 +50,6 @@ function groupFilter(group,attr,list,container,count,noun){
   document.getElementById(count).textContent=`${n} ${noun}`;
  });
 }
-groupFilter('world-filters','world',DATA.worlds,'world-grid','world-count','个入口');
 groupFilter('history-filters','era',DATA.history,'timeline','history-count','个节点');
 function filterPeople(){
  const w=document.getElementById('person-world').value,r=document.getElementById('person-role').value;let n=0;

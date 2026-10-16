@@ -2,7 +2,7 @@
 
 [线上百科](https://blog.luckydogs.top/dnd/) · 非官方知识导览。
 
-本目录包含可独立构建的源码、知识数据和全部 57 幅 WebP 原图。主站已迁移到 Astro；GitHub 仓库的 `site-source` 分支保存当前主站及本目录源码，`main` 分支用于 GitHub Pages 发布静态网页。当前日常维护入口是主站项目的 `dnd-source/`，原 `dnd-source` 分支及 VuePress 工作目录仅作历史保留。
+本目录包含可独立构建的源码、知识数据、原百科的 57 幅 WebP 原图及新增场景素材。主站已迁移到 Astro；GitHub 仓库的 `site-source` 分支保存当前主站及本目录源码，`main` 分支用于 GitHub Pages 发布静态网页。当前日常维护入口是主站项目的 `dnd-source/`，原 `dnd-source` 分支及 VuePress 工作目录仅作历史保留。
 
 ## 构建
 
@@ -26,6 +26,9 @@ python3 dnd-source/build.py \
 | `settings/catalog.json` | 三套 5E 设定的名称、稳定网址和概念中心 |
 | `settings/eberron.json`、`settings/planescape.json` | 独立设定的条目、资料、关联、作品与星盘节点布局 |
 | `settings.py`、`settings.js`、`settings.css` | 在线多设定导出、下拉切换与显示适配 |
+| `setting-overviews.json`、`setting_overviews.py` | 三套设定的舞台节点、简述、关联入口及静态图形模板 |
+| `setting-overviews.css`、`setting-overviews.js` | 设定概览的自适应排布、节点说明及完整原画弹窗 |
+| `assets/settings/`、`setting-overviews-art.json` | 新增沙恩、印记城场景及内置 imagegen 完整提示词 |
 | `relations.json` | 双向阅读关联：两端 ID、关系标签、适用范围和来源键 |
 | `history-flow.json` | 13 个历史节点的前因、事件、后果及来源 |
 | `render.py`、`enhancements.py` | 页面模板、地图示意与功能面板 |
@@ -133,16 +136,36 @@ python3 dnd-source/build.py \
 
 | 设定 | 网址 | 条目与位面图 |
 | --- | --- | --- |
-| 被遗忘的国度 | `/dnd/` | 保留 78 个原条目及跨设定对照，11 个概念节点 |
+| 被遗忘的国度 | `/dnd/` | 71 个可检索条目及 7 份保留直达的设定参考，11 个位面概念节点 |
 | 艾伯伦 | `/dnd/settings/eberron/` | 41 个条目，凡世及十三位面共 14 个节点 |
 | 异度风景 | `/dnd/settings/planescape/` | 54 个条目，外域、印记城及十六外层位面共 18 个节点 |
 
-设定切换使用原生下拉框和普通网址导航，保留当前栏目，例如从费伦年表切到艾伯伦年表。网址决定设定，不保存“最后选择的设定”覆盖分享链接。世界图谱、位面宇宙、历史、人物、地理势力、术语、资料与作品均生成相应内容，搜索仅检索本页的知识与作品。艾伯伦历史使用 YK；异度风景的栏目为“历史与事件”，不捏造统一纪年。原费伦页中的跨设定对照仍保留，新增两页不混入费伦年表与人物。
+设定切换使用原生下拉框和普通网址导航，保留当前栏目，例如从费伦年表切到艾伯伦年表。网址决定设定，不保存“最后选择的设定”覆盖分享链接。设定概览、位面宇宙、历史、人物、地理势力、术语、资料与作品均生成相应内容，搜索检索本页当前索引中的知识与作品。艾伯伦历史使用 YK；异度风景的栏目为“历史与事件”，不捏造统一纪年。原费伦页中七份其他设定的介绍现为参考档案，不进入概览与搜索索引，旧直达链接及已有阅读关联仍可打开；新增两页不混入费伦年表与人物。
 
 新增设定文件包含 `setting`、七组知识条目 `worlds/planes/history/people/locations/factions/terms`、`sources`、`relations`、`flows`、`works`、`intro`、`model_note` 和 `cosmology`。`id` 在整套设定内唯一；艾伯伦用 `eb-` 前缀，异度风景用 `ps-`，关联与来源必须指向本文件已有记录。星盘配置提供节点 ID、位置、半径、概念连线和手机排列；节点集合必须与 `planes` 一致。没有核实的因果不填入 `flows`。更改后必须运行 `npm run update:dnd`，不要手改生成 HTML。
 
 来源逐条区分官方公开文章、官方目录、设计者个人解释、合作方目录与社区汇编。2019 年《Eberron: Rising from the Last War》和 2023 年《Planescape: Adventures in the Multiverse》分别作为两页参考舞台；没有取得的正文不声称已通读。资料核对日期独立于原费伦页。中文译名保留英文对照。
 
-两页复用原有字体、脚本、伴读和插画资源，没有复制大图或引入新前端依赖。异度风景的痛苦女士复用同一人物原画与四幅画廊。伴读选择器说明人物立绘独立于所选设定；两侧出现密斯特拉不代表她属于艾伯伦神系。阅读外观仍使用共同偏好；返回定位的会话存储按设定分隔，原页保留旧键，新页为 `dnd-codex-navigation-v1-eberron`、`dnd-codex-navigation-v1-planescape`。
+两页复用原有字体、脚本、伴读与人物插画，没有引入新前端依赖。异度风景的痛苦女士复用同一人物原画与四幅画廊；2026-10-17 为设定概览新增两幅场景，详见下节。伴读选择器说明人物立绘独立于所选设定；两侧出现密斯特拉不代表她属于艾伯伦神系。阅读外观仍使用共同偏好；返回定位的会话存储按设定分隔，原页保留旧键，新页为 `dnd-codex-navigation-v1-eberron`、`dnd-codex-navigation-v1-planescape`。
 
 `scripts/ensure-dnd.py` 和发布脚本均检查新增页面存在。站点地图包含两个稳定网址。多设定验收使用 `SITE_ORIGIN=http://127.0.0.1:端口 node verification/check-settings.cjs`，结果写入 `verification/settings-check.json`。
+
+## 设定概览
+
+2026-10-17 将“世界图谱”更名为“设定概览”，继续使用 `#worlds`，原链接无需改动。顶部下拉框决定当前设定；正文不再渲染“全部设定”筛选、数量统计或跨设定大卡片。
+
+| 设定 | 图形结构 | 节点介绍 |
+| --- | --- | --- |
+| 被遗忘的国度 | 托瑞尔 → 费伦 → 剑湾 | 三个尺度节点 |
+| 艾伯伦 | 世界 → 科瓦雷 → 沙恩；另列创世神话支线 | 三个舞台节点及西伯瑞斯、吉波尔两条神话线索 |
+| 异度风景 | 印记城、外域、十六门镇、大轮模型 | 四个关系节点，连线不表示距离或物理道路 |
+
+节点、主题标签、原有条目入口及来源键维护于 `setting-overviews.json`。`setting_overviews.py` 生成静态 HTML、原生按钮、SVG 连线、来源模板及无脚本阅读说明；不会把绘图坐标当成地理坐标。点击节点后展开一段简介，继续阅读可进入既有档案或对应栏目。收起与 Escape 返回节点；节点说明不另外创建本地存储。原画使用独立原生弹窗、按原比例完整展示，只有主动打开才请求完整尺寸。
+
+概览以容器宽度决定排列。窄阅读框中的层级节点改为纵向，创世神话保留独立支线，异度风景使用双列关系节点。定位使用 CSS `translate`，把固定坐标与按压反馈的 `transform` 分开，避免全站键盘和减少动态效果规则移除位移后造成节点跳动。来源收在节点说明中的原生 `details`，打印保留图形与标签；无 JavaScript 时保留可展开的正文说明。
+
+原始 `data.json` 仍保存 78 个条目；构建时将七份其他设定介绍移入 `reference_worlds`，当前可检索集合为 71 个条目。`BYID` 仍能解析参考 ID，因此旧 `#entry/greyhawk` 等链接和条目关联继续工作，并显示“跨设定参考”标识。艾伯伦与异度风景的参考档案额外提供进入对应独立导览的链接。没有删除旧知识原文或改变原人物画廊。
+
+费伦场景复用原深水城插画；沙恩、印记城使用内置 imagegen 新生成的二次元奇幻场景，文件为 `assets/settings/sharn.webp`、`sigil.webp`。完整提示词、生成日期和编码参数在 `setting-overviews-art.json`。两图都是艺术演绎，不能作为官方建筑形象或准确地图的依据。在线导出为内容哈希文件名，生成 640/960px 尺寸并保留 1536px 原画；校验清单位于 `manifest.json` 的 `settingScenes`。
+
+专项验证为 `verification/check-setting-overviews.cjs`，覆盖三种结构、全部节点及来源、栏目／档案返回、原画、键盘、七档布局、深浅色、旧链接、无脚本说明、存储禁用及打印。结果保存为 `setting-overviews-check.json`，线上复核另存 `setting-overviews-online-check.json`。

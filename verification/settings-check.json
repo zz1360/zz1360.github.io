@@ -4,9 +4,9 @@
   "settings": [
     {
       "setting": "realms",
-      "entries": 78,
+      "entries": 71,
       "groups": {
-        "worlds": 8,
+        "worlds": 1,
         "planes": 11,
         "history": 13,
         "people": 22,
