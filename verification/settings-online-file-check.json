@@ -1,0 +1,61 @@
+{
+  "release": {
+    "publishedCommit": "ff3e433154eb928300906acde81c68df275554d3",
+    "previousCommit": "df34c8221577327411db8beaf1521b422b898e8b",
+    "recoveryTag": "before-tavern-20261016-184725",
+    "sourceCommit": "c32508b2c627d27c3a349b566d3ea715eafece2d"
+  },
+  "files": [
+    {
+      "path": "index.html",
+      "sha256": "92119201e9ba408d52ea794d1ca44fa8a0bef3ea742aa42532037b1bf5417f4d",
+      "passed": true
+    },
+    {
+      "path": "dnd/index.html",
+      "sha256": "6344605505cc62bc2197be51fa2e06df87c9489cd7085fc003271c1b3b56ba8a",
+      "passed": true
+    },
+    {
+      "path": "dnd/settings/eberron/index.html",
+      "sha256": "87d57e8d6510cad018fda1173131f5fa9775758b4cdd2146dd6fcda8eb5ae7c5",
+      "passed": true
+    },
+    {
+      "path": "dnd/settings/planescape/index.html",
+      "sha256": "5d22cf2e4987612ecec183746cc772c714b5dc0bea5c47a270e6bb6781518888",
+      "passed": true
+    },
+    {
+      "path": "dnd/manifest.json",
+      "sha256": "3201751c21aa6aee13624e5cd613c6bfe09b53f486d3c70f41059cde855a7f9e",
+      "passed": true
+    },
+    {
+      "path": "dnd/works/yinhun/index.html",
+      "sha256": "4b2bac3bce49709256003466c552981638cb50536196520eb2d3d6b52886c3ee",
+      "passed": true
+    },
+    {
+      "path": "sitemap.xml",
+      "sha256": "9c784296a48402334c275878f54a77ac590fe69e035513916adccc0b47eae2b2",
+      "passed": true
+    },
+    {
+      "path": "privacy/index.html",
+      "sha256": "186757e7d9bcf56308c6ad0746343ca2c4096af4806a854d3a356de39a9c7434",
+      "passed": true
+    },
+    {
+      "path": "support/index.html",
+      "sha256": "a0d021cd050b69b3ad5d2d050990c4e1a0a006a3d6843e32e8477848169aadc0",
+      "passed": true
+    },
+    {
+      "path": "release.json",
+      "sha256": "2b7081eb21e09dc77c8b7c626ac4c32f4f1a5986f5cb9f02a87afd08e217c3e7",
+      "passed": true
+    }
+  ],
+  "passed": true
+}

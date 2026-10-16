@@ -1,0 +1,105 @@
+{
+  "passed": true,
+  "origin": "https://blog.luckydogs.top",
+  "settings": [
+    {
+      "setting": "realms",
+      "entries": 78,
+      "groups": {
+        "worlds": 8,
+        "planes": 11,
+        "history": 13,
+        "people": 22,
+        "locations": 8,
+        "factions": 6,
+        "terms": 10
+      },
+      "graphNodes": 11
+    },
+    {
+      "setting": "eberron",
+      "entries": 41,
+      "groups": {
+        "worlds": 4,
+        "planes": 14,
+        "history": 4,
+        "people": 4,
+        "locations": 6,
+        "factions": 4,
+        "terms": 5
+      },
+      "graphNodes": 14
+    },
+    {
+      "setting": "planescape",
+      "entries": 54,
+      "groups": {
+        "worlds": 4,
+        "planes": 18,
+        "history": 4,
+        "people": 5,
+        "locations": 6,
+        "factions": 12,
+        "terms": 5
+      },
+      "graphNodes": 18
+    }
+  ],
+  "sizes": [
+    [
+      2048,
+      1280
+    ],
+    [
+      1440,
+      900
+    ],
+    [
+      1280,
+      800
+    ],
+    [
+      390,
+      844
+    ],
+    [
+      320,
+      760
+    ]
+  ],
+  "themes": [
+    "dark",
+    "light"
+  ],
+  "edition": "5E",
+  "nativeSelector": true,
+  "scopedChapters": true,
+  "scopedSearch": true,
+  "categoryPreserved": true,
+  "settingLocalSessionPositions": true,
+  "directLinks": true,
+  "backForward": true,
+  "galleryPreserved": true,
+  "originalLayout": true,
+  "mobileDirectory": true,
+  "print": true,
+  "reducedMotion": true,
+  "webglFallback": true,
+  "storageBlocked": true,
+  "screenshots": [
+    "settings-realms-2048-dark.png",
+    "settings-realms-2048-light.png",
+    "settings-realms-390-dark.png",
+    "settings-realms-390-light.png",
+    "settings-eberron-2048-dark.png",
+    "settings-eberron-2048-light.png",
+    "settings-eberron-390-dark.png",
+    "settings-eberron-390-light.png",
+    "settings-planescape-2048-dark.png",
+    "settings-planescape-2048-light.png",
+    "settings-planescape-390-dark.png",
+    "settings-planescape-390-light.png"
+  ],
+  "errors": [],
+  "failed": []
+}
