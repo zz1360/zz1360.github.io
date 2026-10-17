@@ -1,0 +1,69 @@
+{
+  "passed": true,
+  "origin": "https://blog.luckydogs.top",
+  "sourceCommit": "7dc0b16415006731b5bbbe00c11b903380659799",
+  "publishedCommit": "cefce29150d7d412ce60db91dc34b336358bf23b",
+  "newIllustrations": 39,
+  "entityArchives": 73,
+  "coverage": {
+    "realms": {
+      "people": 22,
+      "locations": 8,
+      "factions": 6
+    },
+    "eberron": {
+      "people": 4,
+      "locations": 6,
+      "factions": 4
+    },
+    "planescape": {
+      "people": 5,
+      "locations": 6,
+      "factions": 12
+    }
+  },
+  "pages": [
+    {
+      "path": "/",
+      "sha256": "4e3fdb9823526301066836a1282e75e3d352f38f2cea0c55dcd1b283b3e55cf0"
+    },
+    {
+      "path": "/blog/",
+      "sha256": "5d0b5ac0a3fde5a682d68f49329dcb0e31d7611c348254d155e3e2c521a30e5c"
+    },
+    {
+      "path": "/explore/dnd/",
+      "sha256": "9c8fdf844200950f3a73690b42540011d74ebe5f455396cd606e65cc0635f335"
+    },
+    {
+      "path": "/dnd/",
+      "sha256": "11ee9b0ec6e8da576aa6ba3857ff05d6b29aef54bf3c28336ee603ad70ed1083"
+    },
+    {
+      "path": "/dnd/settings/eberron/",
+      "sha256": "6a0ab209aca8547169e6b0c89a67e0f2c69267f686c46943c4375e57a71af11a"
+    },
+    {
+      "path": "/dnd/settings/planescape/",
+      "sha256": "7306c84de929430e7724fe09cd2242ffd7f782337feb8ec1210594ee24816a17"
+    },
+    {
+      "path": "/dnd/works/yinhun/",
+      "sha256": "4b2bac3bce49709256003466c552981638cb50536196520eb2d3d6b52886c3ee"
+    },
+    {
+      "path": "/privacy/",
+      "sha256": "186757e7d9bcf56308c6ad0746343ca2c4096af4806a854d3a356de39a9c7434"
+    },
+    {
+      "path": "/support/",
+      "sha256": "a0d021cd050b69b3ad5d2d050990c4e1a0a006a3d6843e32e8477848169aadc0"
+    },
+    {
+      "path": "/dnd/manifest.json",
+      "sha256": "35637ca02c205b63b5c4a252a3a2b1c3ffc8c11521229edeab6d9f3e0fed6251"
+    }
+  ],
+  "uniqueIllustrationFiles": 282,
+  "verifiedBytes": 45328710
+}
