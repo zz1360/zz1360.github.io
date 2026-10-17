@@ -29,6 +29,7 @@ python3 dnd-source/build.py \
 | `setting-overviews.json`、`setting_overviews.py` | 三套设定的舞台节点、简述、关联入口及静态图形模板 |
 | `setting-overviews.css`、`setting-overviews.js` | 设定概览的自适应排布、节点说明及完整原画弹窗 |
 | `assets/settings/`、`setting-overviews-art.json` | 新增沙恩、印记城场景及内置 imagegen 完整提示词 |
+| `archive-art.json`、`archive_art.py`、`assets/archives/` | 档案补图的完整提示词、来源边界、39 幅原图、复用映射及独立设定导出 |
 | `relations.json` | 双向阅读关联：两端 ID、关系标签、适用范围和来源键 |
 | `history-flow.json` | 13 个历史节点的前因、事件、后果及来源 |
 | `render.py`、`enhancements.py` | 页面模板、地图示意与功能面板 |
@@ -50,7 +51,7 @@ python3 dnd-source/build.py \
 
 当前源码在 `site-source` 分支维护；`main` 仅保存发布产物。博客发布脚本从当前远程 main 获取发布基线后覆盖构建内容，保留独立的隐私与支持页面。不要直接修改生成的 `public/dnd/` 或 `dist/dnd/` 文件。
 
-最近界面更新：2026-10-16。既有知识资料核对时间仍为 2026-10-02，不代表已重新核对全部最新出版物；官方地图入口单独标注核对时间。
+最近界面更新：2026-10-17。既有知识资料核对时间仍为 2026-10-02，不代表已重新核对全部最新出版物；官方地图入口单独标注核对时间。
 
 ## 衍生作品
 
@@ -169,3 +170,21 @@ python3 dnd-source/build.py \
 费伦场景复用原深水城插画；沙恩、印记城使用内置 imagegen 新生成的二次元奇幻场景，文件为 `assets/settings/sharn.webp`、`sigil.webp`。完整提示词、生成日期和编码参数在 `setting-overviews-art.json`。两图都是艺术演绎，不能作为官方建筑形象或准确地图的依据。在线导出为内容哈希文件名，生成 640/960px 尺寸并保留 1536px 原画；校验清单位于 `manifest.json` 的 `settingScenes`。
 
 专项验证为 `verification/check-setting-overviews.cjs`，覆盖三种结构、全部节点及来源、栏目／档案返回、原画、键盘、七档布局、深浅色、旧链接、无脚本说明、存储禁用及打印。结果保存为 `setting-overviews-check.json`，线上复核另存 `setting-overviews-online-check.json`。
+
+## 人物、地点与组织档案插画
+
+2026-10-17 使用内置 imagegen 补充 39 幅二次元奇幻插画，覆盖当前三页的人物与神祇、地点及组织档案。七幅为新增人物／信仰／力量图，十幅为地点图，二十二幅为组织活动意象。位面模型、历史事件与术语继续使用原有图文结构。
+
+| 导览 | 人物与神祇 | 地点 | 组织 | 配图档案合计 |
+| --- | --- | --- | --- | --- |
+| 被遗忘的国度 | 22 | 8 | 6 | 36 |
+| 艾伯伦 | 4 | 6 | 4 | 14 |
+| 异度风景 | 5 | 6 | 12 | 23 |
+
+保留已有 30 幅原画和全部系列画廊。刀锋领主在艾伯伦复用同一人物原画，痛苦女士在异度风景保留原画与四幅画廊；沙恩、印记城的地点卡复用已制作的概览场景。新增组织图中的成员、制服和场景均为艺术演绎。至高王庭使用信仰场景，远古霸主使用受束缚力量的意象，避免将群体概念画成单一神祇显圣。摩特保持漂浮骷髅，莎米什卡保留非人类的奥术罗斯特征。面貌、服装和未核实的细节不写入知识原文。
+
+原图保存在 `assets/archives/`，全部为 1536×1024 WebP；`archive-art.json` 保存每幅完整提示词、生成文件名、尺寸、SHA-256、艺术说明、资料类型和复用理由。不得覆盖已批准的原始插画。增加人物、地点或组织时，必须在此清单补图，或显式复用同一主体的既有插画。
+
+`render.py` 为原页的六个组织嵌入新图；`archive_art.py` 为独立设定导出不可变哈希文件名及 320/640/960px 尺寸，卡片、档案和大图共用同一主体。复用的场景保留既有 640/960/1536px 尺寸。构建校验所有实体档案均有插图，并检查源图 SHA-256；`manifest.json` 的 `archiveArt` 保存 73 个档案的主体映射、原图地址及各尺寸校验值。无需增加前端库、账户或外部图片服务。
+
+专项验证：`SITE_ORIGIN=http://127.0.0.1:8916 node verification/check-archive-art.cjs`，覆盖全部 73 个卡片／档案／大图、六档屏幕、深浅色、完整比例、直达链接、左右浏览和旧画廊。结果在 `verification/archive-art-check.json`；正式域名复核另存 `archive-art-online-check.json`。

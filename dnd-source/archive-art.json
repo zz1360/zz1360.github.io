@@ -1,0 +1,535 @@
+{
+  "created": "2026-10-17",
+  "tool": "built-in image_gen",
+  "encoding": "cwebp -q 88; 1536x1024; no crop",
+  "scope": "补齐三套设定的人物、神祇、地理和组织档案；位面模型、历史和术语维持原有信息结构。",
+  "sources": [
+    {
+      "url": "https://www.dndbeyond.com/posts/667-eberron-where-to-begin",
+      "kind": "官方公开文章 / 设计者",
+      "checked": "沙恩街区、塞尔流亡者、哀伤之地、丛林远征和组织活动背景；没有取得王子外貌的官方文字描述，面貌服饰标为创作。"
+    },
+    {
+      "url": "https://www.dndbeyond.com/posts/288-gods-faith-in-eberron-for-dungeons-dragons",
+      "kind": "官方设计者访谈",
+      "checked": "至高王庭为信仰传统，远古霸主为本土邪魔力量，避免把二者画成费伦式显圣单一神祇。"
+    },
+    {
+      "url": "https://keith-baker.com/age-of-demons/",
+      "kind": "设计者个人文章",
+      "checked": "霸主并非一个合作政府，构图不暗示结盟。"
+    },
+    {
+      "url": "https://www.dndbeyond.com/posts/1529-what-is-planescape-adventures-in-the-multiverse-a",
+      "kind": "官方公开文章",
+      "checked": "摩特是漂浮的会说话骷髅；印记城、外域和门户的基本意象。"
+    },
+    {
+      "url": "https://www.dndbeyond.com/posts/1577-download-now-12-sigil-faction-recruitment-posters",
+      "kind": "官方公开文章",
+      "checked": "十二派系的理念、据点和两位领袖身份。未声称核读付费书籍的人物外貌段落。"
+    },
+    {
+      "url": "https://www.dndbeyond.com/sources/dnd/paitm/mpp",
+      "kind": "官方 5E 公开目录",
+      "checked": "莎米什卡的收录身份，不转录剧情或怪物属性。"
+    },
+    {
+      "url": "https://forgottenrealms.fandom.com/wiki/Arcanaloth",
+      "kind": "社区资料汇编",
+      "checked": "莎米什卡的狐形奥术罗斯辨识特征；服饰与姿态为创作。"
+    },
+    {
+      "url": "https://www.planescape.it/rhys",
+      "kind": "社区资料汇编 / 旧版插图线索",
+      "checked": "瑞斯的提夫林及非人形下肢等辨识线索；不把旧版画面当成 5E 的统一定稿。"
+    }
+  ],
+  "reused": [
+    {
+      "id": "eb-lord-blades",
+      "original": "blades",
+      "reason": "同一人物，保留原有刀锋领主插画。"
+    },
+    {
+      "id": "eb-sharn",
+      "scene": "eberron",
+      "reason": "复用已制作的沙恩原画。"
+    },
+    {
+      "id": "ps-sigil-place",
+      "scene": "planescape",
+      "reason": "复用已制作的印记城原画。"
+    }
+  ],
+  "assets": [
+    {
+      "id": "eb-oargev",
+      "name": "奥阿尔杰夫王子",
+      "file": "assets/archives/eb-oargev.webp",
+      "kind": "portrait",
+      "prompt": "Use case: stylized-concept. Asset type: a finished illustration for a Chinese Dungeons & Dragons knowledge archive. Style: exquisite fantasy anime illustration, hand-painted JRPG art direction, confident fine linework, painterly environments, luminous magic, intricate materials, coherent anatomy. Composition: landscape 3:2, a complete self-contained scene, main subject fully readable with comfortable margins, cinematic depth; vary the camera and pose to suit the subject. Constraints: no text, no letters, no labels, no interface, no watermark; not photorealistic, not a photograph, not a 3D render. Interpretive concept art, not a reproduction of official art or evidence of a canonical appearance. Subject and scene: An adult human prince, Oargev of fallen Cyre in Eberron, a dignified displaced leader. Three-quarter view, leaning over a table with a map and a small sealed letter, looking outward with quiet resolve. Refined dark green and antique gold travel courtwear, understated jewelry, a weathered cloak; refugee settlement and soft rain beyond the tent entrance. Warm lamplight against grey-blue distance. Portray a leader trying to rebuild a home, not an emperor on an opulent throne. Hair, face, clothes and this meeting are artistic interpretation.",
+      "note": "面貌、服饰与场景为艺术演绎，不代表官方定稿形象。",
+      "generated_source": "exec-cf32e729-f85a-4fe8-9196-75bc36d24a6e.png",
+      "sha256": "1b0b8f46cbf89cc4ed1edd7c5bd3359f418d553f0215afbd6b3327222ceb5e8e",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "id": "eb-host",
+      "name": "至高王庭",
+      "file": "assets/archives/eb-host.webp",
+      "kind": "faith",
+      "prompt": "Use case: stylized-concept. Asset type: a finished illustration for a Chinese Dungeons & Dragons knowledge archive. Style: exquisite fantasy anime illustration, hand-painted JRPG art direction, confident fine linework, painterly environments, luminous magic, intricate materials, coherent anatomy. Composition: landscape 3:2, a complete self-contained scene, main subject fully readable with comfortable margins, cinematic depth; vary the camera and pose to suit the subject. Constraints: no text, no letters, no labels, no interface, no watermark; not photorealistic, not a photograph, not a 3D render. Interpretive concept art, not a reproduction of official art or evidence of a canonical appearance. Subject and scene: Eberron Sovereign Host faith, shown through an inhabited sanctuary rather than embodied gods. An elegant circular shrine with symbolic carved panels of agriculture, learning, craft, sunlight, protection and community; ordinary craftspeople and travelers leave offerings around a small hearth. Sunlight through high windows, honey gold and ivory stone with restrained teal details. No living god, no divine avatars, no crowned goddess as the subject; this is a faith and community scene, not a portrait of the pantheon.",
+      "note": "信仰场景意象，不表示诸神以实体出现。",
+      "generated_source": "exec-140759d6-1676-48b0-a9b2-a4f849401b72.png",
+      "sha256": "e9a418e5b41c7a7dabfa798c4762cf606e225101c787893a2f4226c2e60e71f9",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "id": "eb-overlords",
+      "name": "远古霸主",
+      "file": "assets/archives/eb-overlords.webp",
+      "kind": "power",
+      "prompt": "Use case: stylized-concept. Asset type: a finished illustration for a Chinese Dungeons & Dragons knowledge archive. Style: exquisite fantasy anime illustration, hand-painted JRPG art direction, confident fine linework, painterly environments, luminous magic, intricate materials, coherent anatomy. Composition: landscape 3:2, a complete self-contained scene, main subject fully readable with comfortable margins, cinematic depth; vary the camera and pose to suit the subject. Constraints: no text, no letters, no labels, no interface, no watermark; not photorealistic, not a photograph, not a 3D render. Interpretive concept art, not a reproduction of official art or evidence of a canonical appearance. Subject and scene: Eberron ancient Overlords as a thematic vision of bound primordial fiendish powers: deep below the earth, enormous indistinct horned shadows loom behind dark red-violet crystal masses, restrained by threads of silver light. One tiny explorer silhouette on a foreground ledge establishes scale. Different distant shapes suggest more than one power without implying an alliance or a single official appearance. Sublime, ominous, elegant supernatural atmosphere; no gore and no claim to depict an actual escape or revelation of a mystery.",
+      "note": "受束缚的远古力量意象，不表示霸主已经脱困或彼此结盟。",
+      "generated_source": "exec-03a5084a-5cc3-4d23-a761-2e565eca3520.png",
+      "sha256": "aeaf5182a4b0e126e8c6b123cd1b929aaeecf76e6f0092c0e785d539b565ea2c",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "id": "ps-morte",
+      "name": "摩特",
+      "file": "assets/archives/ps-morte.webp",
+      "kind": "portrait",
+      "prompt": "Use case: stylized-concept. Asset type: a finished illustration for a Chinese Dungeons & Dragons knowledge archive. Style: exquisite fantasy anime illustration, hand-painted JRPG art direction, confident fine linework, painterly environments, luminous magic, intricate materials, coherent anatomy. Composition: landscape 3:2, a complete self-contained scene, main subject fully readable with comfortable margins, cinematic depth; vary the camera and pose to suit the subject. Constraints: no text, no letters, no labels, no interface, no watermark; not photorealistic, not a photograph, not a 3D render. Interpretive concept art, not a reproduction of official art or evidence of a canonical appearance. Subject and scene: Morte from Planescape: exactly one talkative floating human skull, ivory aged bone, intact separate lower jaw, lively mischievous expression conveyed by a tilted head and open grin. Absolutely no torso, skeleton body, arms, neck or flames. He hovers at eye height above an open book in a strange Sigil alley, bronze doorframes, impossible curved city architecture and violet-blue lantern haze behind him. Slight low angle, warm reflected lamplight, humorous and charming rather than horrific.",
+      "note": "面貌、服饰与场景为艺术演绎，不代表官方定稿形象。",
+      "generated_source": "exec-6276bef1-fab4-42bd-a4bf-9bcf8ea9348a.png",
+      "sha256": "03e6813b8c81f67f2b807f10ad709eeb725df96e50e3d31140d9d019df1329d8",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "id": "ps-shemeshka",
+      "name": "莎米什卡",
+      "file": "assets/archives/ps-shemeshka.webp",
+      "kind": "portrait",
+      "prompt": "Use case: stylized-concept. Asset type: a finished illustration for a Chinese Dungeons & Dragons knowledge archive. Style: exquisite fantasy anime illustration, hand-painted JRPG art direction, confident fine linework, painterly environments, luminous magic, intricate materials, coherent anatomy. Composition: landscape 3:2, a complete self-contained scene, main subject fully readable with comfortable margins, cinematic depth; vary the camera and pose to suit the subject. Constraints: no text, no letters, no labels, no interface, no watermark; not photorealistic, not a photograph, not a 3D render. Interpretive concept art, not a reproduction of official art or evidence of a canonical appearance. Subject and scene: Shemeshka from Planescape, a sophisticated adult female arcanaloth information broker. Her head is distinctly vulpine/canine with a long foxlike muzzle, red-brown fur, pointed animal ears and intelligent amber eyes: NOT a human face with fox ears. An intricate dark metal razorvine-inspired headdress, sumptuous layered plum and jade robes, gold chains and rings. She sits sideways at a shadowy negotiation table with one clawed hand resting on sealed papers and another holding a small crystal glass. Violet and amber Sigil salon, inscrutable poise. No story spoilers, no human transformation, no gore.",
+      "note": "面貌、服饰与场景为艺术演绎，不代表官方定稿形象。",
+      "generated_source": "exec-4ad347b8-488e-4f60-944e-51d6e71ef3fc.png",
+      "sha256": "0a1cf4892d7a17cd4b79caab44d11c9aa943f421aa77028b7cd7fffe45b5500a",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "id": "ps-terrance",
+      "name": "特伦斯",
+      "file": "assets/archives/ps-terrance.webp",
+      "kind": "portrait",
+      "prompt": "Use case: stylized-concept. Asset type: a finished illustration for a Chinese Dungeons & Dragons knowledge archive. Style: exquisite fantasy anime illustration, hand-painted JRPG art direction, confident fine linework, painterly environments, luminous magic, intricate materials, coherent anatomy. Composition: landscape 3:2, a complete self-contained scene, main subject fully readable with comfortable margins, cinematic depth; vary the camera and pose to suit the subject. Constraints: no text, no letters, no labels, no interface, no watermark; not photorealistic, not a photograph, not a 3D render. Interpretive concept art, not a reproduction of official art or evidence of a canonical appearance. Subject and scene: Terrance, human male leader of the Athar in Planescape, an older thoughtful scholar with an ordinary human face, weathered features, greying hair and a short beard. Understated layered slate and earth-colored scholarly robes, an open hand making a measured point to unseen listeners in the overgrown Shattered Temple ruins of Sigil. Broken columns, small living plants and shafts of dawn light. Waist-up three-quarter side view; thoughtful, compassionate and skeptical rather than a sinister cult leader. Face, clothing and exact meeting are artistic interpretation, no deity physically appears.",
+      "note": "面貌、服饰与场景为艺术演绎，不代表官方定稿形象。",
+      "generated_source": "exec-e26fdf59-3036-4641-bdec-4e8a10d922bc.png",
+      "sha256": "42c24f8ac6c94736fc47874b1ebb281e6a89ef89707bde26989ebab04b04f741",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "id": "ps-rhys",
+      "name": "瑞斯",
+      "file": "assets/archives/ps-rhys.webp",
+      "kind": "portrait",
+      "prompt": "Use case: stylized-concept. Asset type: a finished illustration for a Chinese Dungeons & Dragons knowledge archive. Style: exquisite fantasy anime illustration, hand-painted JRPG art direction, confident fine linework, painterly environments, luminous magic, intricate materials, coherent anatomy. Composition: landscape 3:2, a complete self-contained scene, main subject fully readable with comfortable margins, cinematic depth; vary the camera and pose to suit the subject. Constraints: no text, no letters, no labels, no interface, no watermark; not photorealistic, not a photograph, not a 3D render. Interpretive concept art, not a reproduction of official art or evidence of a canonical appearance. Subject and scene: Rhys, an adult female tiefling leader of the Transcendent Order in Planescape. Graceful athletic build, distinctly nonhuman tiefling features, small swept-back horns, a long slender reptilian tail and digitigrade lower legs. Elegant practical layered martial robes in muted terracotta, ivory and dark teal, natural protective carapace-like accents interpreted as fantasy costume. A fluid balanced stepping pose in the Great Gymnasium courtyard, focused calm expression, hair and sash sweeping with the motion. Three-quarter full-figure view with the entire silhouette inside the frame. No sexualization, no wings, no human-only anatomy; costume is interpretation rather than a canonical uniform.",
+      "note": "面貌、服饰与场景为艺术演绎，不代表官方定稿形象。",
+      "generated_source": "exec-65898936-4d34-41bd-b688-f92ba45f9842.png",
+      "sha256": "d5aee1c4320caf104ceb1dad5da7d982fe5097e3c159f018b2afe10174820d21",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "id": "eb-mournland",
+      "name": "哀伤之地",
+      "file": "assets/archives/eb-mournland.webp",
+      "kind": "place",
+      "prompt": "Use case: stylized-concept. Asset type: a finished illustration for a Chinese Dungeons & Dragons knowledge archive. Style: exquisite fantasy anime illustration, hand-painted JRPG art direction, confident fine linework, painterly environments, luminous magic, intricate materials, coherent anatomy. Composition: landscape 3:2, a complete self-contained scene, main subject fully readable with comfortable margins, cinematic depth; vary the camera and pose to suit the subject. Constraints: no text, no letters, no labels, no interface, no watermark; not photorealistic, not a photograph, not a 3D render. Interpretive concept art, not a reproduction of official art or evidence of a canonical appearance. Subject and scene: The Mournland of Eberron: an abandoned ruined city and broken arcane machinery disappear into a towering wall of pale grey dead mist. Cracked streets, silent lightning-rail wreckage, warped silhouettes and an eerie faint cyan glow. A small cautious expedition seen from behind near the bottom edge. Wide elevated view, melancholy beautiful atmosphere, not gore; do not depict or explain the unknown cause of the Mourning.",
+      "note": "地点氛围意象，不是准确地图或建筑复原。",
+      "generated_source": "exec-c80ef496-ff31-407b-80ae-250492f3c550.png",
+      "sha256": "44f971491c3d11a8348b74d4b71696e5a20ffcd5c0dc980f7a65a6fea2454e9d",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "id": "eb-callestan",
+      "name": "卡勒斯坦",
+      "file": "assets/archives/eb-callestan.webp",
+      "kind": "place",
+      "prompt": "Use case: stylized-concept. Asset type: a finished illustration for a Chinese Dungeons & Dragons knowledge archive. Style: exquisite fantasy anime illustration, hand-painted JRPG art direction, confident fine linework, painterly environments, luminous magic, intricate materials, coherent anatomy. Composition: landscape 3:2, a complete self-contained scene, main subject fully readable with comfortable margins, cinematic depth; vary the camera and pose to suit the subject. Constraints: no text, no letters, no labels, no interface, no watermark; not photorealistic, not a photograph, not a 3D render. Interpretive concept art, not a reproduction of official art or evidence of a canonical appearance. Subject and scene: Callestan, a dangerous lower district of Sharn in Eberron. A narrow multilevel street far below enormous tower foundations, wooden balconies, patched awnings, tiny food stalls, blue dragonshard lamps and warm windows. A few ordinary residents and a discreet meeting under an arch show a living community. Eye-level perspective down the rainy lane, rich amber and teal noir fantasy atmosphere, no modern signs or guns.",
+      "note": "地点氛围意象，不是准确地图或建筑复原。",
+      "generated_source": "exec-7e2cf61b-11b3-4e12-b92d-500e9f953a0f.png",
+      "sha256": "8634fe2dc30353b2291196d72ad0c039f24550ba21c07b1fd0b894492c5fc0a8",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "id": "eb-clifftop",
+      "name": "峭壁区",
+      "file": "assets/archives/eb-clifftop.webp",
+      "kind": "place",
+      "prompt": "Use case: stylized-concept. Asset type: a finished illustration for a Chinese Dungeons & Dragons knowledge archive. Style: exquisite fantasy anime illustration, hand-painted JRPG art direction, confident fine linework, painterly environments, luminous magic, intricate materials, coherent anatomy. Composition: landscape 3:2, a complete self-contained scene, main subject fully readable with comfortable margins, cinematic depth; vary the camera and pose to suit the subject. Constraints: no text, no letters, no labels, no interface, no watermark; not photorealistic, not a photograph, not a 3D render. Interpretive concept art, not a reproduction of official art or evidence of a canonical appearance. Subject and scene: Clifftop, an adventurers guild district of Sharn. A bustling elevated stone terrace between vertiginous towers, a welcoming guild doorway, backpacks, rolled maps and travelers with varied fantasy equipment preparing an expedition. Brass lifts and skybridges in the distance, cloud banks below. Bright morning sun, warm stone and teal magic; expansive adventurous mood. No written notices, lettering, or named invented headquarters.",
+      "note": "地点氛围意象，不是准确地图或建筑复原。",
+      "generated_source": "exec-d1df57f3-1107-4a13-b2e5-c6c6cd90fe92.png",
+      "sha256": "acf9c4582979807ff1e01f9c7f0457600541f86bdcb3ef52deb3a807143424dc",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "id": "eb-qbarra",
+      "name": "奎巴拉",
+      "file": "assets/archives/eb-qbarra.webp",
+      "kind": "place",
+      "prompt": "Use case: stylized-concept. Asset type: a finished illustration for a Chinese Dungeons & Dragons knowledge archive. Style: exquisite fantasy anime illustration, hand-painted JRPG art direction, confident fine linework, painterly environments, luminous magic, intricate materials, coherent anatomy. Composition: landscape 3:2, a complete self-contained scene, main subject fully readable with comfortable margins, cinematic depth; vary the camera and pose to suit the subject. Constraints: no text, no letters, no labels, no interface, no watermark; not photorealistic, not a photograph, not a 3D render. Interpretive concept art, not a reproduction of official art or evidence of a canonical appearance. Subject and scene: Qbarra in Eberron: a frontier settlement of timber walkways and river docks at the edge of a vast humid jungle. A few prospectors inspect small dragonshard crystals, ancient stone ruins are barely visible beneath distant vegetation, lizardfolk silhouettes watch from the riverside at a respectful distance. Sweeping river composition, lush emerald canopy, amber late afternoon and sparkling turquoise water. No battle, no colonial triumph tableau, no modern machinery.",
+      "note": "地点氛围意象，不是准确地图或建筑复原。",
+      "generated_source": "exec-8ba315cd-2175-479e-8f69-11097e17adfa.png",
+      "sha256": "e61a901dbbe117966befdfbb5169615e0f8a6d6ec621980ce9e25a30e02aea61",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "id": "eb-xendrik",
+      "name": "泽恩德瑞克",
+      "file": "assets/archives/eb-xendrik.webp",
+      "kind": "place",
+      "prompt": "Use case: stylized-concept. Asset type: a finished illustration for a Chinese Dungeons & Dragons knowledge archive. Style: exquisite fantasy anime illustration, hand-painted JRPG art direction, confident fine linework, painterly environments, luminous magic, intricate materials, coherent anatomy. Composition: landscape 3:2, a complete self-contained scene, main subject fully readable with comfortable margins, cinematic depth; vary the camera and pose to suit the subject. Constraints: no text, no letters, no labels, no interface, no watermark; not photorealistic, not a photograph, not a 3D render. Interpretive concept art, not a reproduction of official art or evidence of a canonical appearance. Subject and scene: Xendrik in Eberron: a tiny expedition on a vine-covered stone bridge approaches colossal shattered ruins of a lost giant civilization in a wild jungle. Massive stone stairs and broken monumental doorways dwarf the explorers; a waterfall falls into luminous green mist, orchids and deep foliage frame the foreground. Dramatic low wide angle, ancient wonder, warm sunlight on pale stone, no precise map or invented readable inscriptions.",
+      "note": "地点氛围意象，不是准确地图或建筑复原。",
+      "generated_source": "exec-3615683b-ae30-437e-9a81-c90a3a9f439c.png",
+      "sha256": "b8402bc0c466d7d342ec5f8e10c1303034321767aa045b2003726c93872e2786",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "id": "ps-outlands-place",
+      "name": "外域",
+      "file": "assets/archives/ps-outlands-place.webp",
+      "kind": "place",
+      "prompt": "Use case: stylized-concept. Asset type: a finished illustration for a Chinese Dungeons & Dragons knowledge archive. Style: exquisite fantasy anime illustration, hand-painted JRPG art direction, confident fine linework, painterly environments, luminous magic, intricate materials, coherent anatomy. Composition: landscape 3:2, a complete self-contained scene, main subject fully readable with comfortable margins, cinematic depth; vary the camera and pose to suit the subject. Constraints: no text, no letters, no labels, no interface, no watermark; not photorealistic, not a photograph, not a 3D render. Interpretive concept art, not a reproduction of official art or evidence of a canonical appearance. Subject and scene: The Outlands in Planescape: a vast fantastical neutral landscape with an impossibly tall slender Spire rising at the remote center and fading into a luminous overcast sky. Pastoral valleys, impossible distant horizons and tiny travelers along a winding road establish scale. A very small hazy suggestion of ring-shaped Sigil far above the Spire is acceptable but not a giant planet. Wide panoramic outlook, pearly lavender, moss green and antique gold, exquisite otherworldly serenity. Concept landscape, not a scale map.",
+      "note": "地点氛围意象，不是准确地图或建筑复原。",
+      "generated_source": "exec-287cf305-c502-489b-8d12-a6f78a34c175.png",
+      "sha256": "459d2dd3ab42962a071e702c5bf4f2cdec288c6325b542f17bb5c11dd4308a68",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "id": "ps-gatetowns",
+      "name": "十六门镇",
+      "file": "assets/archives/ps-gatetowns.webp",
+      "kind": "place",
+      "prompt": "Use case: stylized-concept. Asset type: a finished illustration for a Chinese Dungeons & Dragons knowledge archive. Style: exquisite fantasy anime illustration, hand-painted JRPG art direction, confident fine linework, painterly environments, luminous magic, intricate materials, coherent anatomy. Composition: landscape 3:2, a complete self-contained scene, main subject fully readable with comfortable margins, cinematic depth; vary the camera and pose to suit the subject. Constraints: no text, no letters, no labels, no interface, no watermark; not photorealistic, not a photograph, not a 3D render. Interpretive concept art, not a reproduction of official art or evidence of a canonical appearance. Subject and scene: A gate-town concept scene for Planescape, one interpretive example among the sixteen towns, NOT a literal arrangement of all sixteen. A crossroads settlement built around a tall magical doorway, the quiet town on this side contrasting with a strange luminous planar vista glimpsed through the arch. Traveling caravans and improbable silhouettes pause on stone steps. Rich color transition from warm gold houses to indigo portal light, eye-level cinematic framing, no named invented town, no labels or map.",
+      "note": "地点氛围意象，不是准确地图或建筑复原。",
+      "generated_source": "exec-b23bd990-eb95-4a20-b16a-5245c2aefbbb.png",
+      "sha256": "ee6cc74b8d484956217ecc88a8885aad92535541d1209a45862f2a51cade228d",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "id": "ps-hive",
+      "name": "蜂巢区",
+      "file": "assets/archives/ps-hive.webp",
+      "kind": "place",
+      "prompt": "Use case: stylized-concept. Asset type: a finished illustration for a Chinese Dungeons & Dragons knowledge archive. Style: exquisite fantasy anime illustration, hand-painted JRPG art direction, confident fine linework, painterly environments, luminous magic, intricate materials, coherent anatomy. Composition: landscape 3:2, a complete self-contained scene, main subject fully readable with comfortable margins, cinematic depth; vary the camera and pose to suit the subject. Constraints: no text, no letters, no labels, no interface, no watermark; not photorealistic, not a photograph, not a 3D render. Interpretive concept art, not a reproduction of official art or evidence of a canonical appearance. Subject and scene: The Hive ward of Sigil, Planescape: dense crooked tenements, narrow tangled alleys, hanging walkways, patches of razorvine and an uncanny city curve overhead in haze. Ordinary tired residents, a street cook and travelers give the impoverished district human presence. Deep layered composition from a slightly raised street corner, slate blue and rusty amber lamplight, atmospheric rain. No monsters attacking citizens, no gore, no readable signs.",
+      "note": "地点氛围意象，不是准确地图或建筑复原。",
+      "generated_source": "exec-912be125-4d85-4b53-974a-e26215f270d4.png",
+      "sha256": "5c3bee91ae262d8e82a306d6eccd8463e0f55f4557b0e23eb43b4157b5688f11",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "id": "ps-lower-ward",
+      "name": "下城区",
+      "file": "assets/archives/ps-lower-ward.webp",
+      "kind": "place",
+      "prompt": "Use case: stylized-concept. Asset type: a finished illustration for a Chinese Dungeons & Dragons knowledge archive. Style: exquisite fantasy anime illustration, hand-painted JRPG art direction, confident fine linework, painterly environments, luminous magic, intricate materials, coherent anatomy. Composition: landscape 3:2, a complete self-contained scene, main subject fully readable with comfortable margins, cinematic depth; vary the camera and pose to suit the subject. Constraints: no text, no letters, no labels, no interface, no watermark; not photorealistic, not a photograph, not a 3D render. Interpretive concept art, not a reproduction of official art or evidence of a canonical appearance. Subject and scene: The Lower Ward of Sigil, Planescape: a strange industrial fantasy district with soaring foundry chimneys, bronze pipes, giant stone arches, furnaces and workshops; restrained red-violet light leaks from a distant planar doorway. Craftspeople with long tools and aprons in the foreground, smoke curls into an impossible city sky. Low-angle wide composition, copper firelight and smoky blue shadows, intricate handcrafted machinery, not modern factories or science fiction.",
+      "note": "地点氛围意象，不是准确地图或建筑复原。",
+      "generated_source": "exec-3e3b1042-d5e8-4f21-9cda-55d5e9096668.png",
+      "sha256": "672e404ce26a1cdb91daec4b89ce243f69b4e3cae9de166cb8122103b7283c1b",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "id": "ps-market",
+      "name": "市场区",
+      "file": "assets/archives/ps-market.webp",
+      "kind": "place",
+      "prompt": "Use case: stylized-concept. Asset type: a finished illustration for a Chinese Dungeons & Dragons knowledge archive. Style: exquisite fantasy anime illustration, hand-painted JRPG art direction, confident fine linework, painterly environments, luminous magic, intricate materials, coherent anatomy. Composition: landscape 3:2, a complete self-contained scene, main subject fully readable with comfortable margins, cinematic depth; vary the camera and pose to suit the subject. Constraints: no text, no letters, no labels, no interface, no watermark; not photorealistic, not a photograph, not a 3D render. Interpretive concept art, not a reproduction of official art or evidence of a canonical appearance. Subject and scene: The Market Ward of Sigil, Planescape: a beautiful crowded interplanar bazaar beneath layered fantastical arches. Elegant fabric canopies, peculiar magical curios, crystals and unlabelled jars; varied humanoid and nonhuman merchants exchange a glowing trinket. A few distant portals suggest many destinations without dominating the scene. Diagonal street composition, jewel-toned lanterns, gold, teal and lilac, joyful intricate fantasy anime environment, no text, no money price signs.",
+      "note": "地点氛围意象，不是准确地图或建筑复原。",
+      "generated_source": "exec-10ec7902-bad4-4975-af40-3cf58ba33e31.png",
+      "sha256": "0fc7329648dacea6e07b11b7293741b30a8978b10ef359f345c49a49fabc44a4",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "id": "eb-houses",
+      "name": "龙纹家族",
+      "file": "assets/archives/eb-houses.webp",
+      "kind": "faction",
+      "prompt": "Use case: stylized-concept. Asset type: a finished illustration for a Chinese Dungeons & Dragons knowledge archive. Style: exquisite fantasy anime illustration, hand-painted JRPG art direction, confident fine linework, painterly environments, luminous magic, intricate materials, coherent anatomy. Composition: landscape 3:2, a complete self-contained scene, main subject fully readable with comfortable margins, cinematic depth; vary the camera and pose to suit the subject. Constraints: no text, no letters, no labels, no interface, no watermark; not photorealistic, not a photograph, not a 3D render. Interpretive concept art, not a reproduction of official art or evidence of a canonical appearance. Subject and scene: Eberron dragonmarked houses, a thematic scene of competing magical commercial dynasties. Diverse adult envoys around a brass-and-stone trade hall table, shipping manifests without legible writing, small dragonshards and arcane service devices; subtle luminous abstract dragonmark-like lines on one hand, not an invented official logo. Tower-city skyline beyond high windows. Elegant teal and brass atmosphere, three-quarter elevated composition, no suggestion the houses are a single royal family.",
+      "note": "组织理念与活动场景意象，不是已发生事件或官方制服。",
+      "generated_source": "exec-fd1cf23e-d788-4ef7-9f54-1e4dbc69b460.png",
+      "sha256": "eadd6f58d28ba5aef504e910fadab14468d92e41543e117e2fb5959e1022081e",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "id": "eb-cannith",
+      "name": "坎尼斯家族",
+      "file": "assets/archives/eb-cannith.webp",
+      "kind": "faction",
+      "prompt": "Use case: stylized-concept. Asset type: a finished illustration for a Chinese Dungeons & Dragons knowledge archive. Style: exquisite fantasy anime illustration, hand-painted JRPG art direction, confident fine linework, painterly environments, luminous magic, intricate materials, coherent anatomy. Composition: landscape 3:2, a complete self-contained scene, main subject fully readable with comfortable margins, cinematic depth; vary the camera and pose to suit the subject. Constraints: no text, no letters, no labels, no interface, no watermark; not photorealistic, not a photograph, not a 3D render. Interpretive concept art, not a reproduction of official art or evidence of a canonical appearance. Subject and scene: House Cannith in Eberron: skilled adult artificers in a magnificent arcane workshop assemble an unpowered humanoid warforged chassis with articulated tools, brass clamps and blue dragonshard light. Intricate stone, wood and metal craft rather than futuristic robotics, a noble workshop tradition. Focus on hands, tools and unfinished sculpture, warm amber forge light and cyan magic. No birth or hidden secret revealed, no official logo, no letters.",
+      "note": "组织理念与活动场景意象，不是已发生事件或官方制服。",
+      "generated_source": "exec-d4c94a5f-963b-4859-8f95-77b95af59608.png",
+      "sha256": "7119a9792b2559b8833954319968c28360b885e5ba6408fa0464660d40ea5c36",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "id": "eb-boromar",
+      "name": "博罗玛氏族",
+      "file": "assets/archives/eb-boromar.webp",
+      "kind": "faction",
+      "prompt": "Use case: stylized-concept. Asset type: a finished illustration for a Chinese Dungeons & Dragons knowledge archive. Style: exquisite fantasy anime illustration, hand-painted JRPG art direction, confident fine linework, painterly environments, luminous magic, intricate materials, coherent anatomy. Composition: landscape 3:2, a complete self-contained scene, main subject fully readable with comfortable margins, cinematic depth; vary the camera and pose to suit the subject. Constraints: no text, no letters, no labels, no interface, no watermark; not photorealistic, not a photograph, not a 3D render. Interpretive concept art, not a reproduction of official art or evidence of a canonical appearance. Subject and scene: The Boromar Clan in Sharn, Eberron, as an interpretive discreet halfling criminal network gathering. Clearly adult short-statured halfling negotiators in refined practical coats exchange a sealed packet across a private tavern table, large bodyguard only in soft background. Close low three-quarter camera respects their scale. Warm amber lamps, polished dark wood, rain-streaked tower-city windows, subtle noir tension. No infantilization, no caricature, no specific named leader or official insignia.",
+      "note": "组织理念与活动场景意象，不是已发生事件或官方制服。",
+      "generated_source": "exec-1def3c23-fb91-43fb-a5b1-6e0d70b1aed4.png",
+      "sha256": "d876c220d6a9160029285c53efee4a00c63fdff36085258f054367d46ee27a8f",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "id": "eb-claw",
+      "name": "翡翠利爪教团",
+      "file": "assets/archives/eb-claw.webp",
+      "kind": "faction",
+      "prompt": "Use case: stylized-concept. Asset type: a finished illustration for a Chinese Dungeons & Dragons knowledge archive. Style: exquisite fantasy anime illustration, hand-painted JRPG art direction, confident fine linework, painterly environments, luminous magic, intricate materials, coherent anatomy. Composition: landscape 3:2, a complete self-contained scene, main subject fully readable with comfortable margins, cinematic depth; vary the camera and pose to suit the subject. Constraints: no text, no letters, no labels, no interface, no watermark; not photorealistic, not a photograph, not a 3D render. Interpretive concept art, not a reproduction of official art or evidence of a canonical appearance. Subject and scene: Order of the Emerald Claw in Eberron: an ominous armored knight in dark emerald-trimmed armor and a hooded necromantic operative in an abandoned stone crypt, restrained green magic illuminating old sealed stone slabs. A faint skeleton sentinel in background, no gore. Strong asymmetric composition, green, steel grey and candle gold. A faction atmosphere illustration, not a named individual, not a confirmed plot event, no text or invented official logo.",
+      "note": "组织理念与活动场景意象，不是已发生事件或官方制服。",
+      "generated_source": "exec-5c0a68dd-f3fe-465b-89a0-7160a3ce5666.png",
+      "sha256": "41d44f52d6d8bc6867e1ce3114347566f1beb39f5606c71906125bcb6419d9f9",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "id": "ps-faction-athar",
+      "name": "无神论者",
+      "file": "assets/archives/ps-faction-athar.webp",
+      "kind": "faction",
+      "prompt": "Use case: stylized-concept. Asset type: a finished illustration for a Chinese Dungeons & Dragons knowledge archive. Style: exquisite fantasy anime illustration, hand-painted JRPG art direction, confident fine linework, painterly environments, luminous magic, intricate materials, coherent anatomy. Composition: landscape 3:2, a complete self-contained scene, main subject fully readable with comfortable margins, cinematic depth; vary the camera and pose to suit the subject. Constraints: no text, no letters, no labels, no interface, no watermark; not photorealistic, not a photograph, not a 3D render. Interpretive concept art, not a reproduction of official art or evidence of a canonical appearance. Subject and scene: Athar faction of Sigil, Planescape: a small diverse group of skeptics and scholars discuss an empty weathered pedestal in the Shattered Temple, with broken columns and a delicate living garden emerging through cracks. No physically present god. Wide calm composition, slate, sage and sunrise gold, the mood of inquiry and community rather than evil cult ritual. No named leader, no official faction emblem or readable books.",
+      "note": "组织理念与活动场景意象，不是已发生事件或官方制服。",
+      "generated_source": "exec-bde3f145-f891-4e46-afca-0776c09b6918.png",
+      "sha256": "b4f699295354cf5f5b5dd9d1a05821083ee28b1eee3474e7c444e01bac58ca17",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "id": "ps-faction-bleak",
+      "name": "黯然会",
+      "file": "assets/archives/ps-faction-bleak.webp",
+      "kind": "faction",
+      "prompt": "Use case: stylized-concept. Asset type: a finished illustration for a Chinese Dungeons & Dragons knowledge archive. Style: exquisite fantasy anime illustration, hand-painted JRPG art direction, confident fine linework, painterly environments, luminous magic, intricate materials, coherent anatomy. Composition: landscape 3:2, a complete self-contained scene, main subject fully readable with comfortable margins, cinematic depth; vary the camera and pose to suit the subject. Constraints: no text, no letters, no labels, no interface, no watermark; not photorealistic, not a photograph, not a 3D render. Interpretive concept art, not a reproduction of official art or evidence of a canonical appearance. Subject and scene: Bleak Cabal of Sigil, Planescape: compassionate attendants offer a warm bowl and a blanket to a weary traveler at a rain-dark gatehouse shelter. A larger mysterious city and a starless violet sky beyond the doorway. Focus on small kindness despite an indifferent universe, beautiful empathetic anime painting, blue-grey stone and gentle amber light. No madness caricature, no gore, no named leader, no official emblems or text.",
+      "note": "组织理念与活动场景意象，不是已发生事件或官方制服。",
+      "generated_source": "exec-465fac69-e922-4e30-84e4-bcbe67fb3ae2.png",
+      "sha256": "c9717de424fc8dc5814fec1912bd3147f20839b823de47bfeef7ad76bdfa3c24",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "id": "ps-faction-doomguard",
+      "name": "毁灭守卫",
+      "file": "assets/archives/ps-faction-doomguard.webp",
+      "kind": "faction",
+      "prompt": "Use case: stylized-concept. Asset type: a finished illustration for a Chinese Dungeons & Dragons knowledge archive. Style: exquisite fantasy anime illustration, hand-painted JRPG art direction, confident fine linework, painterly environments, luminous magic, intricate materials, coherent anatomy. Composition: landscape 3:2, a complete self-contained scene, main subject fully readable with comfortable margins, cinematic depth; vary the camera and pose to suit the subject. Constraints: no text, no letters, no labels, no interface, no watermark; not photorealistic, not a photograph, not a 3D render. Interpretive concept art, not a reproduction of official art or evidence of a canonical appearance. Subject and scene: Doomguard of Sigil, Planescape: a composed armored entropist in the Armory examines a cracked sword as tiny rust flakes drift from its edge; ancient weapons and eroding stone behind, one lit forge on the far side. Dynamic close three-quarter composition, tarnished copper, slate and ember orange. Illustrate contemplation of decay and craft, not indiscriminate slaughter. No named leader, no official emblem or text.",
+      "note": "组织理念与活动场景意象，不是已发生事件或官方制服。",
+      "generated_source": "exec-6aea9b59-03b4-45da-a562-3b794ee6ca09.png",
+      "sha256": "c7688d3baa15e489e36ba2cd22bd54f7e1a2af0d0e568f8c41c2ba95d9c60411",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "id": "ps-faction-fated",
+      "name": "命定者",
+      "file": "assets/archives/ps-faction-fated.webp",
+      "kind": "faction",
+      "prompt": "Use case: stylized-concept. Asset type: a finished illustration for a Chinese Dungeons & Dragons knowledge archive. Style: exquisite fantasy anime illustration, hand-painted JRPG art direction, confident fine linework, painterly environments, luminous magic, intricate materials, coherent anatomy. Composition: landscape 3:2, a complete self-contained scene, main subject fully readable with comfortable margins, cinematic depth; vary the camera and pose to suit the subject. Constraints: no text, no letters, no labels, no interface, no watermark; not photorealistic, not a photograph, not a 3D render. Interpretive concept art, not a reproduction of official art or evidence of a canonical appearance. Subject and scene: The Fated of Sigil, Planescape: a confident adult collector in tailored fantasy travel clothes negotiates at the Hall of Records, one hand on an unlettered ledger and the other holding a heavy key. Towering shelves, sealed document rolls and a sunlit high window. Off-center medium composition, antique gold, burgundy and dark blue, ambition and resourcefulness, no named leader, no readable documents, no official emblem.",
+      "note": "组织理念与活动场景意象，不是已发生事件或官方制服。",
+      "generated_source": "exec-e61ea693-c0bd-41f9-8b11-e9c037ef733e.png",
+      "sha256": "53709a2e8ba78360de5ff30721a21378c1ef9e10a9df89ec501eb701fd3637d4",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "id": "ps-faction-order",
+      "name": "秩序兄弟会",
+      "file": "assets/archives/ps-faction-order.webp",
+      "kind": "faction",
+      "prompt": "Use case: stylized-concept. Asset type: a finished illustration for a Chinese Dungeons & Dragons knowledge archive. Style: exquisite fantasy anime illustration, hand-painted JRPG art direction, confident fine linework, painterly environments, luminous magic, intricate materials, coherent anatomy. Composition: landscape 3:2, a complete self-contained scene, main subject fully readable with comfortable margins, cinematic depth; vary the camera and pose to suit the subject. Constraints: no text, no letters, no labels, no interface, no watermark; not photorealistic, not a photograph, not a 3D render. Interpretive concept art, not a reproduction of official art or evidence of a canonical appearance. Subject and scene: Fraternity of Order of Sigil, Planescape: scholars and jurists in an intricate High Courts archive trace a geometric diagram made of thin light above a stone desk, open books show abstract nonlinguistic marks only. Symmetrical vaulted perspective, suspended brass measuring tools, orderly shelves, cool ivory and blue with gold accents. Elegant study of universal laws, not modern courtroom or a literal accurate cosmology. No named leader, no readable text or official emblem.",
+      "note": "组织理念与活动场景意象，不是已发生事件或官方制服。",
+      "generated_source": "exec-8094a32c-4e10-4180-9fe9-22c9052b88a6.png",
+      "sha256": "c1d105d0b5e207659138fddf5bdf6b0ec10d8f2d2c733aedc2432f878d2c5f2c",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "id": "ps-faction-havoc",
+      "name": "浩劫之手",
+      "file": "assets/archives/ps-faction-havoc.webp",
+      "kind": "faction",
+      "prompt": "Use case: stylized-concept. Asset type: a finished illustration for a Chinese Dungeons & Dragons knowledge archive. Style: exquisite fantasy anime illustration, hand-painted JRPG art direction, confident fine linework, painterly environments, luminous magic, intricate materials, coherent anatomy. Composition: landscape 3:2, a complete self-contained scene, main subject fully readable with comfortable margins, cinematic depth; vary the camera and pose to suit the subject. Constraints: no text, no letters, no labels, no interface, no watermark; not photorealistic, not a photograph, not a 3D render. Interpretive concept art, not a reproduction of official art or evidence of a canonical appearance. Subject and scene: Hands of Havoc of Sigil, Planescape: a diverse group of adult masked dissidents in an abandoned warehouse push open a heavy barred door toward multicolored dawn, torn ribbons and sparks carried by the wind. Energetic low-angle scene, indigo, crimson and warm gold. Express breaking constraints and social upheaval without targeting civilians, no gore or modern weapons. No named leader, no readable slogans or invented official emblem.",
+      "note": "组织理念与活动场景意象，不是已发生事件或官方制服。",
+      "generated_source": "exec-e7d2913e-607a-4ae4-a0c5-24cff20fffb2.png",
+      "sha256": "241a635f229f5c9120bd67e846c9b08b79152f47540434f1027f793f07a10c6c",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "id": "ps-faction-harmonium",
+      "name": "和谐会",
+      "file": "assets/archives/ps-faction-harmonium.webp",
+      "kind": "faction",
+      "prompt": "Use case: stylized-concept. Asset type: a finished illustration for a Chinese Dungeons & Dragons knowledge archive. Style: exquisite fantasy anime illustration, hand-painted JRPG art direction, confident fine linework, painterly environments, luminous magic, intricate materials, coherent anatomy. Composition: landscape 3:2, a complete self-contained scene, main subject fully readable with comfortable margins, cinematic depth; vary the camera and pose to suit the subject. Constraints: no text, no letters, no labels, no interface, no watermark; not photorealistic, not a photograph, not a 3D render. Interpretive concept art, not a reproduction of official art or evidence of a canonical appearance. Subject and scene: Harmonium of Sigil, Planescape: disciplined fantasy city peacekeepers with polished red and brass armor stand in formation at a tall barracks archway, one officer calmly directing travelers through the square with an open hand. Wide diagonal composition and imposing architecture suggest enforced order. Clear morning light, muted crimson and limestone. No violence, no named leader or canonical uniform claim, no readable signs or official emblems.",
+      "note": "组织理念与活动场景意象，不是已发生事件或官方制服。",
+      "generated_source": "exec-cc9e5e72-4838-45d9-b927-bbeab4adf3b0.png",
+      "sha256": "f3db7012a5a11e32c7af799ea3c4519927427ed51d7c10730ad424d1bfafba47",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "id": "ps-faction-dust",
+      "name": "尘埃先驱",
+      "file": "assets/archives/ps-faction-dust.webp",
+      "kind": "faction",
+      "prompt": "Use case: stylized-concept. Asset type: a finished illustration for a Chinese Dungeons & Dragons knowledge archive. Style: exquisite fantasy anime illustration, hand-painted JRPG art direction, confident fine linework, painterly environments, luminous magic, intricate materials, coherent anatomy. Composition: landscape 3:2, a complete self-contained scene, main subject fully readable with comfortable margins, cinematic depth; vary the camera and pose to suit the subject. Constraints: no text, no letters, no labels, no interface, no watermark; not photorealistic, not a photograph, not a 3D render. Interpretive concept art, not a reproduction of official art or evidence of a canonical appearance. Subject and scene: Heralds of Dust of Sigil, Planescape: serene shrouded attendants in the Mortuary tend a quiet hall of closed stone biers, placing a small white flower beside a lantern. A distant undead attendant is dignified and unobtrusive. Still contemplative composition, blue-grey stone, silver and candle amber. Beautiful meditation on mortality without exposed corpses or gore. No named leader, no readable inscriptions or official emblem.",
+      "note": "组织理念与活动场景意象，不是已发生事件或官方制服。",
+      "generated_source": "exec-0352317b-2027-4c8a-a33f-06487d39ca80.png",
+      "sha256": "b98312a8ba5f351019aee48c57c1344c36946a805f25b3cbf037794871db55e7",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "id": "ps-faction-mercykillers",
+      "name": "慈悲杀手",
+      "file": "assets/archives/ps-faction-mercykillers.webp",
+      "kind": "faction",
+      "prompt": "Use case: stylized-concept. Asset type: a finished illustration for a Chinese Dungeons & Dragons knowledge archive. Style: exquisite fantasy anime illustration, hand-painted JRPG art direction, confident fine linework, painterly environments, luminous magic, intricate materials, coherent anatomy. Composition: landscape 3:2, a complete self-contained scene, main subject fully readable with comfortable margins, cinematic depth; vary the camera and pose to suit the subject. Constraints: no text, no letters, no labels, no interface, no watermark; not photorealistic, not a photograph, not a 3D render. Interpretive concept art, not a reproduction of official art or evidence of a canonical appearance. Subject and scene: Mercykillers of Sigil, Planescape: an austere adult armored jailer stands beside a heavy iron gate in a fantastical prison corridor, holding a key ring and a balanced metal scale, sword sheathed. Strong vertical geometry, cold slate and dark crimson with narrow golden light. Resolve and moral tension, not cruelty celebrated, no prisoner abuse or gore. No named leader, no exact official uniform, no text or faction emblem.",
+      "note": "组织理念与活动场景意象，不是已发生事件或官方制服。",
+      "generated_source": "exec-174ab3d3-3d13-49f4-88fe-9472e4f90bd8.png",
+      "sha256": "08271f65398f9e759aaf38a35aea513a2e2cd2065042a72013872fdbce90bfd8",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "id": "ps-faction-eye",
+      "name": "心眼会",
+      "file": "assets/archives/ps-faction-eye.webp",
+      "kind": "faction",
+      "prompt": "Use case: stylized-concept. Asset type: a finished illustration for a Chinese Dungeons & Dragons knowledge archive. Style: exquisite fantasy anime illustration, hand-painted JRPG art direction, confident fine linework, painterly environments, luminous magic, intricate materials, coherent anatomy. Composition: landscape 3:2, a complete self-contained scene, main subject fully readable with comfortable margins, cinematic depth; vary the camera and pose to suit the subject. Constraints: no text, no letters, no labels, no interface, no watermark; not photorealistic, not a photograph, not a 3D render. Interpretive concept art, not a reproduction of official art or evidence of a canonical appearance. Subject and scene: The Minds Eye faction of Sigil, Planescape: a visionary artisan in the Great Foundry transforms rough stone into a delicate luminous crystalline form with careful hands, a small group of fellow crafters watching. The workshop opens toward a vast hazy cosmic horizon suggesting personal growth and changing existence. Sweeping diagonal composition, copper, violet and celestial gold. No actual ascension to godhood, no named leader, no readable symbols or official emblem.",
+      "note": "组织理念与活动场景意象，不是已发生事件或官方制服。",
+      "generated_source": "exec-f2b8c64e-08c3-4144-8aa4-2d45648fc2eb.png",
+      "sha256": "62bee049d6124c1ab54431829e861fd27f2fd1f2073e9c96a59acf32261a7780",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "id": "ps-faction-sensates",
+      "name": "感官会",
+      "file": "assets/archives/ps-faction-sensates.webp",
+      "kind": "faction",
+      "prompt": "Use case: stylized-concept. Asset type: a finished illustration for a Chinese Dungeons & Dragons knowledge archive. Style: exquisite fantasy anime illustration, hand-painted JRPG art direction, confident fine linework, painterly environments, luminous magic, intricate materials, coherent anatomy. Composition: landscape 3:2, a complete self-contained scene, main subject fully readable with comfortable margins, cinematic depth; vary the camera and pose to suit the subject. Constraints: no text, no letters, no labels, no interface, no watermark; not photorealistic, not a photograph, not a 3D render. Interpretive concept art, not a reproduction of official art or evidence of a canonical appearance. Subject and scene: Society of Sensation of Sigil, Planescape: an adult elven or human artist in an elaborate but modest jewel-toned costume touches a softly glowing sensory crystal in the Civic Festhall, surrounding translucent visual echoes of music, a distant landscape and colored light. Curving elegant composition, deep teal, amethyst and gold, immersive beauty and curiosity. No intimate or explicit scene, no named leader, no official logo or readable text.",
+      "note": "组织理念与活动场景意象，不是已发生事件或官方制服。",
+      "generated_source": "exec-a93fb6e7-dd75-4134-bae1-f44aeca4f483.png",
+      "sha256": "7652c99669ab288a33290a8ec927b05c41edbdf96386e8d99dac802c8a49002f",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "id": "ps-faction-transcendent",
+      "name": "超然之会",
+      "file": "assets/archives/ps-faction-transcendent.webp",
+      "kind": "faction",
+      "prompt": "Use case: stylized-concept. Asset type: a finished illustration for a Chinese Dungeons & Dragons knowledge archive. Style: exquisite fantasy anime illustration, hand-painted JRPG art direction, confident fine linework, painterly environments, luminous magic, intricate materials, coherent anatomy. Composition: landscape 3:2, a complete self-contained scene, main subject fully readable with comfortable margins, cinematic depth; vary the camera and pose to suit the subject. Constraints: no text, no letters, no labels, no interface, no watermark; not photorealistic, not a photograph, not a 3D render. Interpretive concept art, not a reproduction of official art or evidence of a canonical appearance. Subject and scene: Transcendent Order of Sigil, Planescape: adult martial artists of varied fantasy peoples practice a fluid synchronized movement in a spacious Great Gymnasium courtyard, no combat opponent. One foreground figure balanced on a stone step, a sweep of fabric guides the eye through the composition. Serene dynamic morning light, ivory, terracotta and muted teal. Embodied instinct and harmony, no named leader, no sacred deity, no readable text or official emblem.",
+      "note": "组织理念与活动场景意象，不是已发生事件或官方制服。",
+      "generated_source": "exec-81ad46a3-016b-4c40-a5a7-f05a070688b7.png",
+      "sha256": "0c262d097cbc297efe45318de5b4d74d15154f83d5570daca2d68086f32fe225",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "id": "harpers",
+      "name": "竖琴手同盟",
+      "file": "assets/archives/harpers.webp",
+      "kind": "faction",
+      "prompt": "Use case: stylized-concept. Asset type: a finished illustration for a Chinese Dungeons & Dragons knowledge archive. Style: exquisite fantasy anime illustration, hand-painted JRPG art direction, confident fine linework, painterly environments, luminous magic, intricate materials, coherent anatomy. Composition: landscape 3:2, a complete self-contained scene, main subject fully readable with comfortable margins, cinematic depth; vary the camera and pose to suit the subject. Constraints: no text, no letters, no labels, no interface, no watermark; not photorealistic, not a photograph, not a 3D render. Interpretive concept art, not a reproduction of official art or evidence of a canonical appearance. Subject and scene: The Harpers in the Forgotten Realms: a discreet group of adult travelers, an elven bard and a hooded scholar exchange a sealed message beside a small harp in a lantern-lit tavern alcove, a window onto the Sword Coast night. Fine silver details and midnight blue, subtle musical magic as a few light motes. Secret network and quiet solidarity, not an army or monarchy. No named leader or fabricated official seal, no text.",
+      "note": "组织理念与活动场景意象，不是已发生事件或官方制服。",
+      "generated_source": "exec-417038d9-507b-4ba2-b404-3615b393f198.png",
+      "sha256": "38ac9c9f8f60bb11b45c9e4195852f519bb84b9a2b02cfdaa6896e090203c3aa",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "id": "lords",
+      "name": "领主联盟",
+      "file": "assets/archives/lords.webp",
+      "kind": "faction",
+      "prompt": "Use case: stylized-concept. Asset type: a finished illustration for a Chinese Dungeons & Dragons knowledge archive. Style: exquisite fantasy anime illustration, hand-painted JRPG art direction, confident fine linework, painterly environments, luminous magic, intricate materials, coherent anatomy. Composition: landscape 3:2, a complete self-contained scene, main subject fully readable with comfortable margins, cinematic depth; vary the camera and pose to suit the subject. Constraints: no text, no letters, no labels, no interface, no watermark; not photorealistic, not a photograph, not a 3D render. Interpretive concept art, not a reproduction of official art or evidence of a canonical appearance. Subject and scene: The Lords Alliance in the Forgotten Realms: adult envoys from several distinct Sword Coast cities meet at a dignified round council table, an unlabelled coast chart, wax seals without readable heraldry, differing elegant cloaks and armor. Tall windows show a harbor in daylight, warm gold and deep navy. A coalition of rulers and cities, not one king with subjects. Wide three-quarter composition, no named figures, no text or official emblems.",
+      "note": "组织理念与活动场景意象，不是已发生事件或官方制服。",
+      "generated_source": "exec-b3716c33-8e96-457e-94b5-7de798981d3d.png",
+      "sha256": "a92d2bb0b7abca4bed47aa4c61dfded2c2184b2b9c6eb75bc20c8cbae1236d6c",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "id": "zhents",
+      "name": "散塔林会",
+      "file": "assets/archives/zhents.webp",
+      "kind": "faction",
+      "prompt": "Use case: stylized-concept. Asset type: a finished illustration for a Chinese Dungeons & Dragons knowledge archive. Style: exquisite fantasy anime illustration, hand-painted JRPG art direction, confident fine linework, painterly environments, luminous magic, intricate materials, coherent anatomy. Composition: landscape 3:2, a complete self-contained scene, main subject fully readable with comfortable margins, cinematic depth; vary the camera and pose to suit the subject. Constraints: no text, no letters, no labels, no interface, no watermark; not photorealistic, not a photograph, not a 3D render. Interpretive concept art, not a reproduction of official art or evidence of a canonical appearance. Subject and scene: The Zhentarim in the Forgotten Realms: a calculating adult mercenary broker in black leather and dark gold negotiates an escort contract with a traveler in a shadowy merchant courtyard; guarded wagons, crates and a coiled rope frame the background. Eye-level asymmetric composition, black-green shadows and warm amber lamps, wealth and secretive influence. No named leader, no gore, no fabricated official logo or readable contract.",
+      "note": "组织理念与活动场景意象，不是已发生事件或官方制服。",
+      "generated_source": "exec-873f3db1-a9e2-4324-9530-a0d4674578ca.png",
+      "sha256": "f8e509bfeab3abcf1ae0be53601e7f813556f2bc2a43d5aec74b5670a8e67506",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "id": "emerald",
+      "name": "翠绿闲庭",
+      "file": "assets/archives/emerald.webp",
+      "kind": "faction",
+      "prompt": "Use case: stylized-concept. Asset type: a finished illustration for a Chinese Dungeons & Dragons knowledge archive. Style: exquisite fantasy anime illustration, hand-painted JRPG art direction, confident fine linework, painterly environments, luminous magic, intricate materials, coherent anatomy. Composition: landscape 3:2, a complete self-contained scene, main subject fully readable with comfortable margins, cinematic depth; vary the camera and pose to suit the subject. Constraints: no text, no letters, no labels, no interface, no watermark; not photorealistic, not a photograph, not a 3D render. Interpretive concept art, not a reproduction of official art or evidence of a canonical appearance. Subject and scene: The Emerald Enclave in the Forgotten Realms: an adult female ranger and a weathered druid carefully tend a living woodland spring, a wild deer at a distance, roots entwined with ancient standing stones. Verdant forest canopy, fern textures, flowing water and soft golden green magic. Wide tranquil composition emphasizing balance between wilderness and settlement, no named leader or invented deity, no text or official emblem.",
+      "note": "组织理念与活动场景意象，不是已发生事件或官方制服。",
+      "generated_source": "exec-1c17c1e4-5056-4bd6-8b38-d224f03cef74.png",
+      "sha256": "85412862cc1436595ec7bafc3d0dfec03f7be89f1a627dfdb45c51b5c41bff09",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "id": "gauntlet",
+      "name": "铁手教团",
+      "file": "assets/archives/gauntlet.webp",
+      "kind": "faction",
+      "prompt": "Use case: stylized-concept. Asset type: a finished illustration for a Chinese Dungeons & Dragons knowledge archive. Style: exquisite fantasy anime illustration, hand-painted JRPG art direction, confident fine linework, painterly environments, luminous magic, intricate materials, coherent anatomy. Composition: landscape 3:2, a complete self-contained scene, main subject fully readable with comfortable margins, cinematic depth; vary the camera and pose to suit the subject. Constraints: no text, no letters, no labels, no interface, no watermark; not photorealistic, not a photograph, not a 3D render. Interpretive concept art, not a reproduction of official art or evidence of a canonical appearance. Subject and scene: The Order of the Gauntlet in the Forgotten Realms: a disciplined adult paladin and armored companions prepare to protect travelers outside a modest stone chapel, polishing a shield and sharing provisions, a gauntleted hand in the foreground. Dawn light, steel, ivory and crimson, earnest resolve and mutual trust. Heroic fantasy anime composition without battle or named figures. No canonical uniform claim, no readable text or official logo.",
+      "note": "组织理念与活动场景意象，不是已发生事件或官方制服。",
+      "generated_source": "exec-f404eaa3-692c-4b55-a780-38b0dbfeb659.png",
+      "sha256": "97a25f027cd8315fef94adda96af48a3fc47b6eae20caa952e567b768d91e3b0",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "id": "bregan",
+      "name": "达耶特佣兵团",
+      "file": "assets/archives/bregan.webp",
+      "kind": "faction",
+      "prompt": "Use case: stylized-concept. Asset type: a finished illustration for a Chinese Dungeons & Dragons knowledge archive. Style: exquisite fantasy anime illustration, hand-painted JRPG art direction, confident fine linework, painterly environments, luminous magic, intricate materials, coherent anatomy. Composition: landscape 3:2, a complete self-contained scene, main subject fully readable with comfortable margins, cinematic depth; vary the camera and pose to suit the subject. Constraints: no text, no letters, no labels, no interface, no watermark; not photorealistic, not a photograph, not a 3D render. Interpretive concept art, not a reproduction of official art or evidence of a canonical appearance. Subject and scene: Bregan Daerthe in the Forgotten Realms: a small group of adult drow mercenaries with dark grey skin, pointed ears, white hair and elegant dark practical clothes trade information on an underground city balcony, curved bridges and blue-violet cavern lights beyond. Off-center three-quarter view, one hand with a sealed coin purse, discreet dangerous sophistication. No specific named leader, no identical copied faces, no text or fabricated official emblem.",
+      "note": "组织理念与活动场景意象，不是已发生事件或官方制服。",
+      "generated_source": "exec-930953c6-78d5-4857-ba1a-72a50a6ec1de.png",
+      "sha256": "3a2dd094d8733a0e7172eaedec94abd3dcb183da3cf72f5c5e4ab417bb93a012",
+      "width": 1536,
+      "height": 1024
+    }
+  ]
+}

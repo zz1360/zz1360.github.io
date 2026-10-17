@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "archives": 73,
+  "newIllustrations": 39,
+  "coverage": {
+    "realms": {
+      "people": 22,
+      "locations": 8,
+      "factions": 6
+    },
+    "eberron": {
+      "people": 4,
+      "locations": 6,
+      "factions": 4
+    },
+    "planescape": {
+      "people": 5,
+      "locations": 6,
+      "factions": 12
+    }
+  },
+  "uniqueFiles": 282,
+  "newSourceBytes": 16428786
+}

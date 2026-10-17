@@ -42,16 +42,11 @@ def json_script(page,id,data):
     assert count==1,id
     return page
 
-def guide_chapters(data,base,root,scenes):
+def guide_chapters(data,base,root,scenes,archive_figures):
     sources=data['sources'];nums={k:i+1 for i,k in enumerate(sources)}
     def refs(ids):
         return '<div class="sources-inline"><span>来源</span>'+''.join(f'<a href="{e(sources[k]["url"])}" target="_blank" rel="noopener noreferrer">[{nums[k]:02d}] {e(sources[k]["kind"])}</a>' for k in dict.fromkeys(ids))+'</div>'
-    art={}
-    # Reuse approved artwork only for the same character, under a setting-local ID.
-    for x in data['people']:
-        if not x.get('art'):continue
-        found=re.search(r'<figure class="art-figure">(?:(?!</figure>).)*\bid="art-'+re.escape(x['art'])+r'".*?</figure>',base,re.S)
-        if found:art[x['id']]=found[0].replace('art-'+x['art'],'art-'+x['id']).replace('data-art="'+x['art']+'"','data-art="'+x['id']+'"')
+    art=archive_figures
     def card(x,i=0):
         detail=''.join('<h4>'+e(a)+'</h4><p>'+e(b)+'</p>' for a,b in x['details'])
         return f'<article class="card'+(' illustrated-card' if x['id'] in art else '')+f'" data-entry="{e(x["id"])}" id="entry-{e(x["id"])}" style="--accent:{e(x["color"])}">'+art.get(x['id'],f'<div class="setting-sigil" aria-hidden="true"><span>{i+1:02d}</span>✦</div>')+f'<span class="index">{e(x.get("cat",x.get("tag",x.get("kind","知识档案"))))}</span><h3>{e(x["name"])}</h3><div class="en">{e(x["en"])}</div><p>{e(x["body"])}</p>'+('<details><summary>继续阅读</summary>'+detail+'</details>' if detail else '')+refs(x['src'])+f'<div class="card-bottom"><span>{e(data["setting"]["name"])}</span><button class="entry-open" data-open="{e(x["id"])}">查看档案 ↗</button></div></article>'
@@ -137,6 +132,8 @@ def publish(base,root,output):
     base=json_script(base,'codex-data',original)
     from setting_overviews import render as render_overview,published_scenes
     scenes=published_scenes(root,output,base)
+    from archive_art import publish as publish_archive_art
+    archive_figures,archive_manifest=publish_archive_art(root,output,base,scenes)
     parsed=Chapters(base)
     start,end=next((start,end) for id,start,end in parsed.spans if id=='worlds')
     base=base[:start]+render_overview(root,'realms',original,scenes['realms'])+base[end:]
@@ -144,7 +141,7 @@ def publish(base,root,output):
     gallery=json.loads(re.search(r'<script id="art-gallery-data"[^>]*>(.*?)</script>',base,re.S)[1])
     for meta in registry(root)[1:]:
         data=json.loads((root/'settings'/(meta['id']+'.json')).read_text());validate(data)
-        page=base;chapters=guide_chapters(data,base,root,scenes)
+        page=base;chapters=guide_chapters(data,base,root,scenes,archive_figures)
         parsed=Chapters(page);assert len(parsed.spans)==9
         for id,start,end in reversed(parsed.spans):page=page[:start]+chapters[id]+page[end:]
         ui_data={k:v for k,v in data.items() if k not in ['relations','flows','works']}
@@ -162,4 +159,4 @@ def publish(base,root,output):
         page=theme(page,root,data)
         dest=Path(output)/'settings'/meta['id'];dest.mkdir(parents=True,exist_ok=True);(dest/'index.html').write_text(page)
         records.append({'id':meta['id'],'url':meta['path'],'entries':sum(len(data[k]) for k in GROUPS),'graphNodes':len(data['planes'])})
-    return theme(base,root,original),records,scenes
+    return theme(base,root,original),records,scenes,archive_manifest

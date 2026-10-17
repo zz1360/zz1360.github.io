@@ -96,7 +96,7 @@ function artVariants(id){
 function entryIllustration(id){
  const original=document.getElementById('art-'+id);if(!original)return '';
  const action=hasGallery(id)?`浏览 ${1+GALLERY_DATA[id].length} 幅人物画廊 ↗`:'查看大图 ↗';
- return `<figure class="dialog-plate"><button class="art-open" type="button" data-art="${esc(id)}" aria-label="${esc(action+' · '+BYID[id].name)}"><img src="${original.src}" ${original.dataset.srcset?`srcset="${esc(original.dataset.srcset)}" sizes="(max-width:620px) 90vw, 800px"`:""} alt="${esc(original.alt)}" decoding="async" width="1536" height="1024"><span class="art-enlarge">${action}</span></button><figcaption>AI 概念插画 · 艺术演绎</figcaption></figure>`;
+ return `<figure class="dialog-plate"><button class="art-open" type="button" data-art="${esc(id)}" aria-label="${esc(action+' · '+BYID[id].name)}"><img src="${original.src}" ${original.dataset.srcset?`srcset="${esc(original.dataset.srcset)}" sizes="(max-width:620px) 90vw, 800px"`:""} alt="${esc(original.alt)}" decoding="async" width="${original.getAttribute('width')||1536}" height="${original.getAttribute('height')||1024}"><span class="art-enlarge">${action}</span></button><figcaption>${esc(original.closest('figure')?.querySelector('figcaption')?.textContent||'AI 概念插画 · 艺术演绎')}</figcaption></figure>`;
 }
 function artSiblings(id){const x=BYID[id];return ALL.filter(y=>y.section===x.section&&document.getElementById('art-'+y.id))}
 function openArt(id,variant=0,updateRoute=true){

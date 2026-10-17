@@ -9,6 +9,9 @@ from setting_overviews import render as render_setting_overview
 e=lambda x:html.escape(str(x),quote=True)
 
 art_manifest=json.loads((root/'art-manifest.json').read_text()) if (root/'art-manifest.json').exists() else []
+from archive_art import root_assets
+original_art_count=len(art_manifest)
+art_manifest+=root_assets(root)
 ART={x['id']:x for x in art_manifest}
 gallery_manifest=json.loads((root/'gallery-manifest.json').read_text()) if (root/'gallery-manifest.json').exists() else []
 GALLERIES={}
@@ -61,7 +64,7 @@ if ART:
  H=re.sub(r'(<label for="person-world">.*?</select>)',r'<span class="filter-field">\1</span>',H,flags=re.S)
  H=re.sub(r'(<label for="person-role">.*?</select>)',r'<span class="filter-field">\1</span>',H,flags=re.S)
  H=H.replace('正文、样式、内容索引和 Three.js 均嵌入本文件','正文、样式、内容索引、插图和 Three.js 均嵌入本文件')
- H=H.replace('<strong>剧透范围：</strong>',f'<strong>插图说明：</strong>本次使用内置 imagegen 生图工具生成 {len(ART)} 幅二次元魔幻风格概念插画，创作日期为 2026-10-07。人物的服饰、神祇象征形态、城市建筑和构图均属艺术演绎，不能作为官方形象或准确地理证据。资料核对日期仍为 2026-10-02。<br><br><strong>剧透范围：</strong>')
+ H=H.replace('<strong>剧透范围：</strong>',f'<strong>插图说明：</strong>本次使用内置 imagegen 生图工具制作二次元魔幻风格概念插画。首批 {original_art_count} 幅创作于 2026-10-07，人物、地点与组织档案在 2026-10-17 补充完善。人物的服饰、神祇象征形态、城市建筑和构图均属艺术演绎，不能作为官方形象或准确地理证据。资料核对日期仍为 2026-10-02。<br><br><strong>剧透范围：</strong>')
  art_dialog='''<dialog id="art-dialog" aria-labelledby="art-title"><div class="dialog-top"><div><span class="eyebrow">ILLUSTRATED CODEX</span><h2 id="art-title">典藏插画</h2></div><button class="close" aria-label="关闭插画大图" data-close="art-dialog">×</button></div><figure class="art-stage"><img id="art-full" alt=""><figcaption id="art-caption"></figcaption></figure><div class="art-variant-line" id="art-variant-line" hidden><span id="art-variant-title"></span><small>左右切换姿态与服装 · 手机可左右滑动</small></div><div id="art-gallery-list" class="art-gallery-list" role="group" aria-label="选择人物插图" hidden></div><div class="art-dialog-bottom"><button class="plain" id="art-prev" aria-label="上一幅插画">← 上一幅</button><span id="art-counter" role="status"></span><button class="plain" id="art-next" aria-label="下一幅插画">下一幅 →</button><button class="primary" id="art-read">阅读档案 ↗</button></div></dialog>'''
  gallery_data={id:[{'title':a['title'],'note':a['note'],'src':'data:image/webp;base64,'+base64.b64encode((root/a['file']).read_bytes()).decode('ascii'),'alt':a['name']+' · '+a['title']} for a in assets] for id,assets in GALLERIES.items()}
  gallery_script='<script id="art-gallery-data" type="application/json">'+json.dumps(gallery_data,ensure_ascii=False).replace('</','<\\/')+'</script>'
