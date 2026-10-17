@@ -9,7 +9,7 @@
       "image_count": 39
     }
   ],
-  "source_sha256": "e134442699af3045f67cc2f821138cc374d92edb13b764a8b271abda06ac5a08",
+  "source_sha256": "92a86cbc40dc9ffc815e29203793ccfb3c392d4e3771b6a41d1958ba05cf6c6d",
   "originals": [
     {
       "id": "elminster",
@@ -228,141 +228,6 @@
       ]
     },
     {
-      "id": "mordenkainen",
-      "name": "魔邓肯",
-      "url": "/dnd/assets/art-65d49d68513da068570c.webp",
-      "sha256": "65d49d68513da068570cd593495a734481dc98f94564a8100b73943d324845d8",
-      "width": 1536,
-      "variants": [
-        {
-          "width": 320,
-          "url": "/dnd/assets/art-65d49d68513da068570c-w320-q82-v1.webp",
-          "sha256": "7f2780bb6bff42325b9f6cd689b33438e1bec434239462d368cec6f955c10c11",
-          "bytes": 19368
-        },
-        {
-          "width": 640,
-          "url": "/dnd/assets/art-65d49d68513da068570c-w640-q82-v1.webp",
-          "sha256": "ba0fb2ad920cc9301a783e62dbbaa0a4c284ec23e055aa9147e3666e561c8f60",
-          "bytes": 60958
-        },
-        {
-          "width": 960,
-          "url": "/dnd/assets/art-65d49d68513da068570c-w960-q82-v1.webp",
-          "sha256": "37b435699a8ac55d4798fb4b8095080b501de3449d519ee5030e8b1698decfee",
-          "bytes": 115770
-        }
-      ]
-    },
-    {
-      "id": "tasha",
-      "name": "塔莎",
-      "url": "/dnd/assets/art-af7c2037472296770bb5.webp",
-      "sha256": "af7c2037472296770bb54b3c34e3d0c2cf2871a0231d6eb8466c9193e7010f9b",
-      "width": 1536,
-      "variants": [
-        {
-          "width": 320,
-          "url": "/dnd/assets/art-af7c2037472296770bb5-w320-q82-v1.webp",
-          "sha256": "79f293df71328045a1fb75fd70c637a4362652d2c1cb57c11d3d5beec2aa28c3",
-          "bytes": 18538
-        },
-        {
-          "width": 640,
-          "url": "/dnd/assets/art-af7c2037472296770bb5-w640-q82-v1.webp",
-          "sha256": "87eced9b59b5c6b47b4e51a78d35e53741b7007d7f6674398506a505259fb370",
-          "bytes": 53860
-        },
-        {
-          "width": 960,
-          "url": "/dnd/assets/art-af7c2037472296770bb5-w960-q82-v1.webp",
-          "sha256": "00ff7402cabf3e2d6343c6bdf95dbcfdcc3376de466210353f9b86836ddfc16a",
-          "bytes": 94358
-        }
-      ]
-    },
-    {
-      "id": "vecna",
-      "name": "维克那",
-      "url": "/dnd/assets/art-5d80ceae63ceb5ea40f4.webp",
-      "sha256": "5d80ceae63ceb5ea40f4aabf00a87c6bea61c260b2db42f817ff2ec67f8cdd6e",
-      "width": 1536,
-      "variants": [
-        {
-          "width": 320,
-          "url": "/dnd/assets/art-5d80ceae63ceb5ea40f4-w320-q82-v1.webp",
-          "sha256": "9836635343079073530754f580366cee15b1224de5ca3621792c19d535633000",
-          "bytes": 21846
-        },
-        {
-          "width": 640,
-          "url": "/dnd/assets/art-5d80ceae63ceb5ea40f4-w640-q82-v1.webp",
-          "sha256": "30567b53deb1ee06e846d9448b570417f309cd5ea2fd39ac566ef5ff9eef2e60",
-          "bytes": 70538
-        },
-        {
-          "width": 960,
-          "url": "/dnd/assets/art-5d80ceae63ceb5ea40f4-w960-q82-v1.webp",
-          "sha256": "ec59c6fa069e0f40889f6c62df31ca028c7a0d39b07cd6ef955634f0395742b1",
-          "bytes": 128742
-        }
-      ]
-    },
-    {
-      "id": "strahd",
-      "name": "斯特拉德",
-      "url": "/dnd/assets/art-5a4fc618a749fca0a877.webp",
-      "sha256": "5a4fc618a749fca0a877a57db7043522ecb2526ea03669a56876178cea1babdb",
-      "width": 1536,
-      "variants": [
-        {
-          "width": 320,
-          "url": "/dnd/assets/art-5a4fc618a749fca0a877-w320-q82-v1.webp",
-          "sha256": "919b773622ba2bcd16babe8dac2057c7209a3400d7e7d161c394b3b96df77904",
-          "bytes": 17484
-        },
-        {
-          "width": 640,
-          "url": "/dnd/assets/art-5a4fc618a749fca0a877-w640-q82-v1.webp",
-          "sha256": "39496073d60301c67df422ea2066a50a67657ae8094c0cc56b4d82f05051783b",
-          "bytes": 54528
-        },
-        {
-          "width": 960,
-          "url": "/dnd/assets/art-5a4fc618a749fca0a877-w960-q82-v1.webp",
-          "sha256": "f9735a1c3af3f53043b6771a7a43e8a86f9533b9c23a6c04b128be6097a9a8d3",
-          "bytes": 101922
-        }
-      ]
-    },
-    {
-      "id": "lady",
-      "name": "痛苦女士",
-      "url": "/dnd/assets/art-b3e2408fa9aabd511476.webp",
-      "sha256": "b3e2408fa9aabd511476fbb157a4ce870fe5751e97b637a2e302ed9edcfc81b0",
-      "width": 1536,
-      "variants": [
-        {
-          "width": 320,
-          "url": "/dnd/assets/art-b3e2408fa9aabd511476-w320-q82-v1.webp",
-          "sha256": "8bb35b0405991a6600dbd7c886ce4849cbda50f988d8de042e4e7a75e461dd89",
-          "bytes": 23662
-        },
-        {
-          "width": 640,
-          "url": "/dnd/assets/art-b3e2408fa9aabd511476-w640-q82-v1.webp",
-          "sha256": "e1fc20f02245cc8bdac8b20b30e3651795e7c46c4054e4fa9b56eaa5926e0d6c",
-          "bytes": 72316
-        },
-        {
-          "width": 960,
-          "url": "/dnd/assets/art-b3e2408fa9aabd511476-w960-q82-v1.webp",
-          "sha256": "fa3811a85c6ddc2dc8405ce47b07d47f559b27deaefe7ae7c7725d72cf8aba61",
-          "bytes": 132044
-        }
-      ]
-    },
-    {
       "id": "mystra",
       "name": "密斯特拉",
       "url": "/dnd/assets/art-c2d205de7fcaab6a69c4.webp",
@@ -521,6 +386,141 @@
           "url": "/dnd/assets/art-17332a031acdf682866b-w960-q82-v1.webp",
           "sha256": "e71b047ef112030e0e33df103be33724674f5c4448361e8b6ea56be2d3a0f2cb",
           "bytes": 119244
+        }
+      ]
+    },
+    {
+      "id": "mordenkainen",
+      "name": "魔邓肯",
+      "url": "/dnd/assets/art-65d49d68513da068570c.webp",
+      "sha256": "65d49d68513da068570cd593495a734481dc98f94564a8100b73943d324845d8",
+      "width": 1536,
+      "variants": [
+        {
+          "width": 320,
+          "url": "/dnd/assets/art-65d49d68513da068570c-w320-q82-v1.webp",
+          "sha256": "7f2780bb6bff42325b9f6cd689b33438e1bec434239462d368cec6f955c10c11",
+          "bytes": 19368
+        },
+        {
+          "width": 640,
+          "url": "/dnd/assets/art-65d49d68513da068570c-w640-q82-v1.webp",
+          "sha256": "ba0fb2ad920cc9301a783e62dbbaa0a4c284ec23e055aa9147e3666e561c8f60",
+          "bytes": 60958
+        },
+        {
+          "width": 960,
+          "url": "/dnd/assets/art-65d49d68513da068570c-w960-q82-v1.webp",
+          "sha256": "37b435699a8ac55d4798fb4b8095080b501de3449d519ee5030e8b1698decfee",
+          "bytes": 115770
+        }
+      ]
+    },
+    {
+      "id": "tasha",
+      "name": "塔莎",
+      "url": "/dnd/assets/art-af7c2037472296770bb5.webp",
+      "sha256": "af7c2037472296770bb54b3c34e3d0c2cf2871a0231d6eb8466c9193e7010f9b",
+      "width": 1536,
+      "variants": [
+        {
+          "width": 320,
+          "url": "/dnd/assets/art-af7c2037472296770bb5-w320-q82-v1.webp",
+          "sha256": "79f293df71328045a1fb75fd70c637a4362652d2c1cb57c11d3d5beec2aa28c3",
+          "bytes": 18538
+        },
+        {
+          "width": 640,
+          "url": "/dnd/assets/art-af7c2037472296770bb5-w640-q82-v1.webp",
+          "sha256": "87eced9b59b5c6b47b4e51a78d35e53741b7007d7f6674398506a505259fb370",
+          "bytes": 53860
+        },
+        {
+          "width": 960,
+          "url": "/dnd/assets/art-af7c2037472296770bb5-w960-q82-v1.webp",
+          "sha256": "00ff7402cabf3e2d6343c6bdf95dbcfdcc3376de466210353f9b86836ddfc16a",
+          "bytes": 94358
+        }
+      ]
+    },
+    {
+      "id": "vecna",
+      "name": "维克那",
+      "url": "/dnd/assets/art-5d80ceae63ceb5ea40f4.webp",
+      "sha256": "5d80ceae63ceb5ea40f4aabf00a87c6bea61c260b2db42f817ff2ec67f8cdd6e",
+      "width": 1536,
+      "variants": [
+        {
+          "width": 320,
+          "url": "/dnd/assets/art-5d80ceae63ceb5ea40f4-w320-q82-v1.webp",
+          "sha256": "9836635343079073530754f580366cee15b1224de5ca3621792c19d535633000",
+          "bytes": 21846
+        },
+        {
+          "width": 640,
+          "url": "/dnd/assets/art-5d80ceae63ceb5ea40f4-w640-q82-v1.webp",
+          "sha256": "30567b53deb1ee06e846d9448b570417f309cd5ea2fd39ac566ef5ff9eef2e60",
+          "bytes": 70538
+        },
+        {
+          "width": 960,
+          "url": "/dnd/assets/art-5d80ceae63ceb5ea40f4-w960-q82-v1.webp",
+          "sha256": "ec59c6fa069e0f40889f6c62df31ca028c7a0d39b07cd6ef955634f0395742b1",
+          "bytes": 128742
+        }
+      ]
+    },
+    {
+      "id": "strahd",
+      "name": "斯特拉德",
+      "url": "/dnd/assets/art-5a4fc618a749fca0a877.webp",
+      "sha256": "5a4fc618a749fca0a877a57db7043522ecb2526ea03669a56876178cea1babdb",
+      "width": 1536,
+      "variants": [
+        {
+          "width": 320,
+          "url": "/dnd/assets/art-5a4fc618a749fca0a877-w320-q82-v1.webp",
+          "sha256": "919b773622ba2bcd16babe8dac2057c7209a3400d7e7d161c394b3b96df77904",
+          "bytes": 17484
+        },
+        {
+          "width": 640,
+          "url": "/dnd/assets/art-5a4fc618a749fca0a877-w640-q82-v1.webp",
+          "sha256": "39496073d60301c67df422ea2066a50a67657ae8094c0cc56b4d82f05051783b",
+          "bytes": 54528
+        },
+        {
+          "width": 960,
+          "url": "/dnd/assets/art-5a4fc618a749fca0a877-w960-q82-v1.webp",
+          "sha256": "f9735a1c3af3f53043b6771a7a43e8a86f9533b9c23a6c04b128be6097a9a8d3",
+          "bytes": 101922
+        }
+      ]
+    },
+    {
+      "id": "lady",
+      "name": "痛苦女士",
+      "url": "/dnd/assets/art-b3e2408fa9aabd511476.webp",
+      "sha256": "b3e2408fa9aabd511476fbb157a4ce870fe5751e97b637a2e302ed9edcfc81b0",
+      "width": 1536,
+      "variants": [
+        {
+          "width": 320,
+          "url": "/dnd/assets/art-b3e2408fa9aabd511476-w320-q82-v1.webp",
+          "sha256": "8bb35b0405991a6600dbd7c886ce4849cbda50f988d8de042e4e7a75e461dd89",
+          "bytes": 23662
+        },
+        {
+          "width": 640,
+          "url": "/dnd/assets/art-b3e2408fa9aabd511476-w640-q82-v1.webp",
+          "sha256": "e1fc20f02245cc8bdac8b20b30e3651795e7c46c4054e4fa9b56eaa5926e0d6c",
+          "bytes": 72316
+        },
+        {
+          "width": 960,
+          "url": "/dnd/assets/art-b3e2408fa9aabd511476-w960-q82-v1.webp",
+          "sha256": "fa3811a85c6ddc2dc8405ce47b07d47f559b27deaefe7ae7c7725d72cf8aba61",
+          "bytes": 132044
         }
       ]
     },
