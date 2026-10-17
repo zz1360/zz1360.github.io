@@ -1,0 +1,55 @@
+{
+  "passed": true,
+  "origin": "http://127.0.0.1:8916",
+  "checks": [
+    {
+      "setting": "realms",
+      "expandedEntries": 71,
+      "localPeople": 14,
+      "duplicateSelectorRemoved": true,
+      "filters": true
+    },
+    {
+      "setting": "eberron",
+      "expandedEntries": 41,
+      "localPeople": 4,
+      "duplicateSelectorRemoved": true,
+      "filters": true
+    },
+    {
+      "setting": "planescape",
+      "expandedEntries": 54,
+      "localPeople": 5,
+      "duplicateSelectorRemoved": true,
+      "filters": true
+    }
+  ],
+  "totalExpandedEntries": 166,
+  "viewportWidths": [
+    1920,
+    1440,
+    1024,
+    390,
+    320
+  ],
+  "themes": [
+    "dark",
+    "light"
+  ],
+  "mapLandmarks": 8,
+  "mapKeyboard": true,
+  "mapNoClipping": true,
+  "historyNoDuplicateBody": true,
+  "galleryPreserved": true,
+  "errors": [],
+  "failed": [],
+  "screenshots": [
+    "refined-people-realms.png",
+    "refined-people-eberron.png",
+    "refined-people-planescape.png",
+    "refined-map-1920-dark.png",
+    "refined-map-1920-light.png",
+    "refined-map-390-dark.png",
+    "refined-map-390-light.png"
+  ]
+}

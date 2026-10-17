@@ -54,7 +54,7 @@ const sizes=[[2048,1280],[1440,900],[1280,800],[390,844],[320,760]];
     assert.equal(await p.locator('#map-preview').count(),0);assert.ok(!(await p.locator('#works').innerText()).includes('阴魂'));
     assert.equal(await p.locator('#timeline .time-event').count(),data.groups.history);
     await chapter(p,'history');await p.locator('#history-filters button').nth(1).click();assert.ok(await p.locator('#timeline .time-event:visible').count());assert.ok(await p.locator('#timeline .time-event:visible').count()<data.groups.history);
-    await chapter(p,'people');const role=await p.locator('#person-role option').nth(1).getAttribute('value')||await p.locator('#person-role option').nth(1).textContent();await p.locator('#person-role').selectOption(role);assert.ok(await p.locator('#people-grid [data-entry]:visible').count());assert.ok(await p.locator('#people-grid [data-entry]:visible').count()<data.groups.people);await p.locator('#reset-people').click();assert.equal(await p.locator('#people-grid [data-entry]:visible').count(),data.groups.people);
+    await chapter(p,'people');assert.equal(await p.locator('#person-world').count(),0);await p.locator('[data-person-role]').nth(1).click();assert.ok(await p.locator('#people-grid [data-entry]:visible').count());assert.ok(await p.locator('#people-grid [data-entry]:visible').count()<data.groups.people);await p.locator('#reset-people').click();assert.equal(await p.locator('#people-grid [data-entry]:visible').count(),data.groups.people);
    }
    await chapter(p,'cosmos');
    for(const plane of data.planes){await p.locator(`.plane-selector [data-plane="${plane.id}"]`).click();assert.equal(await p.locator('#plane-panel h3').innerText(),plane.name)}

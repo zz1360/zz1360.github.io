@@ -33,7 +33,7 @@ function openEntry(id,updateRoute=true){
  const x=BYID[id];if(!x)return;
  if(updateRoute)setEntryRoute(id);closeCodexDialog(artDialog);entryDialog.dataset.entry=id;showSection(x.section,false);
  document.getElementById('entry-title').textContent=sectionNames[x.section]+' / 知识档案';
- document.getElementById('entry-content').innerHTML=`${window.codexNavigation?.markup(id)||''}${entryTools(id)}${referenceNotice(x)}${entryIllustration(id)}<span class="eyebrow">${esc(x.date||x.setting||x.tag||x.cat||x.kind||'D&D CODEX')}</span><h3 style="margin-top:14px">${esc(x.name)}</h3><div class="en">${esc(x.en)}</div><p>${esc(x.body)}</p>${x.details.map(([a,b])=>`<h4>${esc(a)}</h4><p>${esc(b)}</p>`).join('')}${refHtml(x)}${historyFlow(id)}${knowledgeLinks(id)}`;
+ document.getElementById('entry-content').innerHTML=`${window.codexNavigation?.markup(id)||''}${entryTools(id)}${referenceNotice(x)}${entryIllustration(id)}<span class="eyebrow">${esc(x.date||x.setting||x.tag||x.cat||x.kind||'D&D CODEX')}</span><h3 style="margin-top:14px">${esc(x.name)}</h3><div class="en">${esc(x.en)}</div><p>${esc(x.body)}</p>${HISTORY_FLOW[id]?historyFlow(id):x.details.map(([a,b])=>`<h4>${esc(a)}</h4><p>${esc(b)}</p>`).join('')}${refHtml(x)}${knowledgeLinks(id)}`;
  if(!entryDialog.open)entryDialog.showModal();if(window.codexNavigation)window.codexNavigation.surfaceOpened('entry',id);else entryDialog.scrollTop=0;
 }
 [entryDialog,document.getElementById('search-dialog')].forEach(d=>d.addEventListener('click',e=>{const r=d.getBoundingClientRect();if(e.target===d&&(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom))d.close()}));
@@ -51,14 +51,31 @@ function groupFilter(group,attr,list,container,count,noun){
  });
 }
 groupFilter('history-filters','era',DATA.history,'timeline','history-count','个节点');
+let personRole='all';
 function filterPeople(){
- const w=document.getElementById('person-world').value,r=document.getElementById('person-role').value;let n=0;
- document.querySelectorAll('#people-grid [data-entry]').forEach(el=>{const x=BYID[el.dataset.entry];el.hidden=(w!=='all'&&x.setting!==w)||(r!=='all'&&x.role!==r);if(!el.hidden)n++});
- document.getElementById('people-count').textContent=`${n} 个档案`;document.getElementById('people-empty').hidden=n!==0;
+ const query=document.getElementById('person-query').value.trim().toLocaleLowerCase();let local=0,guests=0;
+ document.querySelectorAll('#people [data-entry]').forEach(el=>{
+  const x=BYID[el.dataset.entry];
+  const text=[x.name,x.en,...(x.aliases||[])].join(' ').toLocaleLowerCase();
+  el.hidden=(personRole!=='all'&&x.role!==personRole)||(query&&!text.includes(query));
+  if(!el.hidden){if(el.closest('#crossworld-grid'))guests++;else local++}
+ });
+ const cross=document.getElementById('people-crossworld');
+ if(cross){cross.hidden=guests===0;document.getElementById('crossworld-count').textContent=guests;if(query&&guests)cross.open=true}
+ document.getElementById('people-count').textContent=`${local} 个档案${guests?' · 跨界 '+guests:''}`;
+ document.getElementById('people-empty').hidden=local+guests!==0;
 }
-document.getElementById('person-world').addEventListener('change',filterPeople);
-document.getElementById('person-role').addEventListener('change',filterPeople);
-document.getElementById('reset-people').addEventListener('click',()=>{document.getElementById('person-world').value='all';document.getElementById('person-role').value='all';filterPeople()});
+document.getElementById('person-query').addEventListener('input',filterPeople);
+document.querySelector('.people-roles').addEventListener('click',e=>{
+ const button=e.target.closest('[data-person-role]');if(!button)return;personRole=button.dataset.personRole;
+ document.querySelectorAll('[data-person-role]').forEach(b=>{const on=b===button;b.classList.toggle('active',on);b.setAttribute('aria-pressed',on)});filterPeople();
+});
+document.getElementById('reset-people').addEventListener('click',()=>{
+ document.getElementById('person-query').value='';personRole='all';
+ document.querySelectorAll('[data-person-role]').forEach(b=>{const on=b.dataset.personRole==='all';b.classList.toggle('active',on);b.setAttribute('aria-pressed',on)});
+ const cross=document.getElementById('people-crossworld');if(cross)cross.open=false;filterPeople();
+});
+filterPeople();
 let selectedPlane=DATA.setting?.center||'material';
 function selectPlane(id){
  const x=DATA.planes.find(x=>x.id===id);if(!x)return;selectedPlane=id;

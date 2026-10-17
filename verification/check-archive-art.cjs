@@ -14,7 +14,7 @@ const sizes=[[1920,1080],[1440,900],[1024,768],[390,844],[320,760],[844,390]];
   async function imageFits(selector){
    const img=p.locator(selector);
    await img.evaluate(n=>{n.loading='eager';return new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r)))});
-   await p.waitForFunction(selector=>{const n=document.querySelector(selector);return n?.complete&&n.naturalWidth>0},selector);
+   await p.waitForFunction(selector=>{const n=document.querySelector(selector);return n?.complete&&n.naturalWidth>0},selector).catch(async e=>{const state=await img.evaluate(n=>({id:n.id,src:n.src,current:n.currentSrc,complete:n.complete,width:n.naturalWidth,chapter:n.closest('.chapter')?.id,hidden:n.closest('.chapter')?.hidden,cardHidden:n.closest('[data-entry]')?.hidden,hash:location.hash}));throw new Error(selector+': '+e.message+' '+JSON.stringify(state))});
    await img.evaluate(n=>n.decode()).catch(error=>{throw new Error(selector+': '+error.message)});
    const m=await img.evaluate(n=>{const r=n.getBoundingClientRect(),s=getComputedStyle(n),parent=n.parentElement.getBoundingClientRect();return{w:r.width,h:r.height,nw:n.naturalWidth,nh:n.naturalHeight,fit:s.objectFit,contained:r.left>=parent.left-1&&r.right<=parent.right+1,src:n.currentSrc,full:n.dataset.full,aw:Number(n.getAttribute('width')),ah:Number(n.getAttribute('height'))}});
    assert.ok(m.w>0&&m.h>0&&m.nw>0,selector+' '+JSON.stringify(m));assert.ok(m.contained,selector+' bounds');
@@ -35,7 +35,7 @@ const sizes=[[1920,1080],[1440,900],[1024,768],[390,844],[320,760],[844,390]];
    for(const group of Object.keys(expected))assert.equal(groups[group].length,expected[group]);
    // Every entity card and archive modal has the correct setting-local art.
    for(const record of records){
-    const section=record.group==='people'?'people':'atlas';await p.evaluate(id=>showSection(id,false),section);
+    const section=record.group==='people'?'people':'atlas';await p.evaluate(id=>{showSection(id,false);const cross=document.getElementById('people-crossworld');if(cross)cross.open=true},section);
     const card=p.locator('[data-entry="'+record.id+'"]');assert.equal(await card.count(),1);assert.equal(await card.locator('.setting-sigil').count(),0);
     const im=await imageFits('#art-'+record.id);assert.equal(im.full,record.full);
     const open=card.locator('[data-open="'+record.id+'"]');

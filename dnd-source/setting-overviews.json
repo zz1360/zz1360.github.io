@@ -2,7 +2,6 @@
   "realms": {
     "title": "被遗忘的国度",
     "en": "Forgotten Realms",
-    "summary": "从托瑞尔到剑湾，沿着尺度走进费伦。",
     "layout": "hierarchy",
     "sceneEntry": "waterdeep",
     "sceneLabel": "剑湾城市 · 艺术演绎",
@@ -94,7 +93,6 @@
   "eberron": {
     "title": "艾伯伦",
     "en": "Eberron",
-    "summary": "穿过魔法都市与战后世界，再探寻创世传说。",
     "layout": "hierarchy",
     "sceneFile": "assets/settings/sharn.webp",
     "sceneLabel": "沙恩 · 艺术演绎",
@@ -212,7 +210,6 @@
   "planescape": {
     "title": "异度风景",
     "en": "Planescape",
-    "summary": "以城为枢纽，循门镇与信念走向诸位面。",
     "layout": "network",
     "sceneFile": "assets/settings/sigil.webp",
     "sceneLabel": "印记城 · 艺术演绎",
