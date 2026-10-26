@@ -1,0 +1,56 @@
+{
+  "passed": true,
+  "origin": "https://blog.luckydogs.top",
+  "publishedCommit": "bed664c56be2c999c962ac3d15b94cf5a6acab84",
+  "previousCommit": "7c0e6825d050adf169c3a1c85fb1ba22f9395d09",
+  "recoveryTag": "before-tavern-20261026-180139",
+  "sourceCommit": "582ad44edb4bc5aa9ec6213f11e0e321fcc0851b",
+  "research": {
+    "title": "《阴魂》D&D 设定考据：哪些是官方规则，哪些是作者原创？",
+    "source_sha256": "0f5b84df9d4c2926f9ab6bf2058d8c8418ed20d3c6d7c2c049a05f4a4fe205cf",
+    "integrated": "2026-10-26",
+    "sections": 10,
+    "verified_srd_notes": 8,
+    "spoilers": "Full manuscript requires full mode; basic SRD notes remain readable."
+  },
+  "novelSourceUnchanged": true,
+  "illustrationFilesUnchanged": true,
+  "pages": [
+    {
+      "path": "/",
+      "sha256": "e73936e71a6a60f39b5353df1f22af5b3e82c4d0219d135bee673b3be6631de0"
+    },
+    {
+      "path": "/blog/",
+      "sha256": "5ebe223f9448b4cd209e1ba783912fb04e9716183e9d0d17e79a2536e4dacb5d"
+    },
+    {
+      "path": "/dnd/",
+      "sha256": "ae38280eb397c0adc454630e57994ac1dbb111eed382ede2a344a7e3ed4e8e94"
+    },
+    {
+      "path": "/dnd/settings/eberron/",
+      "sha256": "2e04911de6e6721df404129db6fda20b8682c64f9aa72326ce2dd6d8bfd3432b"
+    },
+    {
+      "path": "/dnd/settings/planescape/",
+      "sha256": "e7bd5becb5cdc51835ad619df149736e711e213da7d1d8d53dbea5fef2ba5975"
+    },
+    {
+      "path": "/dnd/works/yinhun/",
+      "sha256": "fa29733ce1bf1cefce7d5f6f4223e91d1fb712b981e7b0fc967b6b26d614289f"
+    },
+    {
+      "path": "/dnd/works/yinhun/manifest.json",
+      "sha256": "6bbf6a4446b15456c1e65b1aa83572166506dbd851edf85321906cc2a5080df4"
+    },
+    {
+      "path": "/privacy/",
+      "sha256": "186757e7d9bcf56308c6ad0746343ca2c4096af4806a854d3a356de39a9c7434"
+    },
+    {
+      "path": "/support/",
+      "sha256": "a0d021cd050b69b3ad5d2d050990c4e1a0a006a3d6843e32e8477848169aadc0"
+    }
+  ]
+}
