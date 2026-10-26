@@ -2,7 +2,7 @@ function readerLabel(route){
  if(!route)return '';if(route.kind==='volume')return '第 '+route.id+' 卷'+(readerLimit()>=route.id?' · '+DATA.volumes[route.id-1].title:' · 未解锁');
  if(route.kind==='event'){const e=DATA.events.find(x=>x.id===route.id);return e.volume<=readerLimit()?e.title:'第 '+e.volume+' 卷事件 · 未解锁'}
  if(route.kind==='character'){const c=DATA.characters.find(x=>x.id===route.id);return readerKnown(c)?(readerFull()?c.name:safeName(c))+(route.variant?' · 插画 '+(route.variant+1):''):'人物收藏 · 未解锁'}
- return ({world:'世界观',history:'历史脉络',volumes:'卷纲',events:'重大事件',characters:'人物档案',relations:'关系图谱',boundaries:'未解线索'})[route.id]||'';
+ return ({world:'世界观',research:'设定考据',history:'历史脉络',volumes:'卷纲',events:'重大事件',characters:'人物档案',relations:'关系图谱',boundaries:'未解线索'})[route.id]||'';
 }
 function readerDesk(){
  $('#reader-storage').textContent=readerStorage?'阅读位置与收藏保存在当前浏览器；可导出备份。':'浏览器无法保存本地数据；本次仍可使用，关闭页面后不会保留。';
@@ -14,7 +14,7 @@ function readerDesk(){
 }
 function readerApply(){
  const wasBooting=readerBooting;readerBooting=true;
- const full=readerFull(),limit=readerLimit();document.documentElement.dataset.readerMode=readerState.mode;
+ const full=readerFull(),limit=readerLimit();document.documentElement.dataset.readerMode=readerState.mode;researchApply();
  $$('#history,#volumes,#events,#characters,#relations').forEach(n=>n.hidden=readerState.mode==='intro');
  const start=$('.hero-links a');start.href=limit?'#volumes':'#reading';start.textContent=limit?'沿着剧情阅读 ↓':'设置阅读进度 ↓';
  $('#reader-mode').value=readerState.mode;$('#reader-volume').value=readerState.volume;$('#reader-volume-field').hidden=readerState.mode!=='progress';
@@ -48,7 +48,7 @@ function readerOpen(route){
 }
 function readerLore(id){
  const x=LORE.find(x=>x.id===id);if(!x)return;
- showDialog(`<div class="source-detail"><div class="eyebrow">NOVEL × CODEX / 概念对照</div><h2>${esc(x.name)}</h2><h4>官方设定 · 基础概念</h4><p>${esc(x.official)}</p><a class="source-btn" href="${esc(x.source)}" target="_blank" rel="noopener">${esc(x.source_title)} ↗</a><h4>小说中的用法</h4><p>${esc(x.novel)}</p><h4>对应范围与待核实差异</h4><p>${esc(x.boundary)}</p><p class="small-note">编者整理 · 官方来源核对日期 ${esc(x.checked)}。小说依据来自所提供的 HTML，未重新核对 EPUB。</p><button class="source-btn" data-reader-lore-source="${esc(id)}" ${readerCitations(x.citations.map(index=>({index}))).length?'':'disabled'}>查看已读范围内的小说章节依据 ↗</button><p class="small-note">百科完整档案可能含官方历史信息；这是游戏设定资料，不等于小说未来剧情。</p><a class="btn gold" href="/dnd/#entry/${esc(id)}">打开百科档案 ↗</a></div>`);
+ showDialog(`<div class="source-detail"><div class="eyebrow">NOVEL × CODEX / 概念对照</div><h2>${esc(x.name)}</h2><h4>官方设定 · 5E 基础概念</h4><p>${esc(x.official)}</p><a class="source-btn" href="${esc(x.source)}" target="_blank" rel="noopener">${esc(x.source_title)} ↗</a><h4>小说中的用法</h4><p>${esc(x.novel)}</p><h4>对应范围与待核实差异</h4><p>${esc(x.boundary)}</p><p class="small-note">编者整理 · 官方来源核对日期 ${esc(x.checked)}。小说依据来自所提供的 HTML，未重新核对 EPUB。</p><button class="source-btn" data-reader-lore-source="${esc(id)}" ${readerCitations(x.citations.map(index=>({index}))).length?'':'disabled'}>查看已读范围内的小说章节依据 ↗</button><p class="small-note">百科完整档案可能含官方历史信息；这是游戏设定资料，不等于小说未来剧情。</p><a class="btn gold" href="/dnd/#entry/${esc(id)}">打开百科档案 ↗</a></div>`);
 }
 $('#reader-mode').onchange=()=>{readerState.mode=$('#reader-mode').value;if(dialog.open)closeDialog();readerApply();readerPersist();};
 $('#reader-volume').onchange=()=>{readerState.volume=Number($('#reader-volume').value);if(dialog.open)closeDialog();readerApply();readerPersist();};
@@ -66,6 +66,6 @@ document.addEventListener('click',e=>{
 });
 window.addEventListener('dnd-reading-imported',()=>{readerState=DndReadingBackup.work(DndReadingBackup.read(DndReadingBackup.workKey));readerDesk()});
 window.addEventListener('storage',e=>{if(e.key===DndReadingBackup.workKey){readerState=DndReadingBackup.work(DndReadingBackup.read(DndReadingBackup.workKey));if(dialog.open)closeDialog();readerApply()}});
-function readerRoute(){const parts=location.hash.slice(1).split('/');if(parts[0]==='lore')readerLore(parts[1]);}
+function readerRoute(){const parts=location.hash.slice(1).split('/');if(parts[0]==='lore')readerLore(parts[1]);if(parts[0]==='research'&&parts[1])researchOpen(parts[1]);}
 window.addEventListener('hashchange',readerRoute);
 readerApply();readerBooting=false;readerRoute();

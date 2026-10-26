@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "origin": "http://127.0.0.1:8916",
+  "importedDocumentSha256": "0f5b84df9d4c2926f9ab6bf2058d8c8418ed20d3c6d7c2c049a05f4a4fe205cf",
+  "topics": 10,
+  "tables": 9,
+  "verifiedSrdNotes": 8,
+  "spoilerModes": [
+    "intro",
+    "progress-14",
+    "full",
+    "lowered-to-1",
+    "blocked-storage"
+  ],
+  "deepLinks": true,
+  "search": true,
+  "print": true,
+  "validBackupSection": true,
+  "viewportWidths": [
+    1440,
+    1024,
+    390,
+    320
+  ],
+  "originalNovelAndImagesUnchanged": true,
+  "errors": [],
+  "failed": []
+}

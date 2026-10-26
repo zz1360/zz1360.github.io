@@ -2,7 +2,7 @@
 (() => {
  const index=JSON.parse(document.getElementById('reader-index-data').textContent), workKey='dnd-work-yinhun-reading-v1';
  const characters=new Set(index.characters),events=new Set(index.events);
- const route=x=>x&&((x.kind==='volume'&&Number.isInteger(x.id)&&x.id>=1&&x.id<=14)||(x.kind==='event'&&events.has(x.id))||(x.kind==='character'&&characters.has(x.id))||(x.kind==='section'&&['world','history','volumes','events','characters','relations','boundaries'].includes(x.id)));
+ const route=x=>x&&((x.kind==='volume'&&Number.isInteger(x.id)&&x.id>=1&&x.id<=14)||(x.kind==='event'&&events.has(x.id))||(x.kind==='character'&&characters.has(x.id))||(x.kind==='section'&&['world','research','history','volumes','events','characters','relations','boundaries'].includes(x.id)));
  function work(x={}){
   if(!x||typeof x!=='object'||Array.isArray(x))throw Error('作品记录格式不正确');
   return {mode:['intro','progress','full'].includes(x.mode)?x.mode:'intro',volume:Number.isInteger(x.volume)&&x.volume>=1&&x.volume<=14?x.volume:1,book:!!x.book,saved:[...new Set((Array.isArray(x.saved)?x.saved:[]).filter(k=>typeof k==='string'&&(k.startsWith('character:')&&characters.has(k.slice(10))||k.startsWith('event:')&&events.has(k.slice(6))||/^volume:(?:[1-9]|1[0-4])$/.test(k))))].slice(0,92),last:route(x.last)?{kind:x.last.kind,id:x.last.id,variant:Number.isInteger(x.last.variant)?Math.max(0,Math.min(3,x.last.variant)):0}:null};

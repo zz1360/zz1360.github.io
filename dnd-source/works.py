@@ -42,7 +42,7 @@ def catalogue(page,root):
     cards=[]
     for x in works:
         stats=x['stats']
-        cards.append(f'''<article class="work-card" data-work="{e(x['id'])}"><a href="{e(x['url'])}" class="work-cover-link" aria-label="打开《{e(x['title'])}》剧情与世界图谱"><img class="work-cover" data-work-cover="{e(x['id'])}" src="{x['cover']}" alt="{e(x['cover_alt'])}" width="800" height="1200" loading="lazy" decoding="async"><span>作品图谱 ↗</span></a><div class="work-copy"><span class="eyebrow">NOVEL ATLAS / {e(x['category'])}</span><h3>《{e(x['title'])}》</h3><p class="work-tagline">{e(x['tagline'])}</p><p class="work-author">作者：{e(x['author'])}</p><p>{e(x['description'])}</p><div class="work-stats"><span><b>{stats['volumes']}</b> 卷纲</span><span><b>{stats['events']}</b> 重大事件</span><span><b>{stats['characters']}</b> 人物档案</span></div><p class="work-scope"><strong>收录范围</strong>{e(x['scope'])}</p><div class="work-actions"><a class="primary" href="{e(x['url'])}">打开作品图谱 ↗</a><a class="plain" href="{e(x['url'])}#volumes">从卷纲开始</a><a class="plain" href="{e(x['url'])}#characters">人物与画廊</a></div><p class="small-copy work-reading-note">{e(x['reading_note'])}</p></div></article>''')
+        cards.append(f'''<article class="work-card" data-work="{e(x['id'])}"><a href="{e(x['url'])}" class="work-cover-link" aria-label="打开《{e(x['title'])}》剧情与世界图谱"><img class="work-cover" data-work-cover="{e(x['id'])}" src="{x['cover']}" alt="{e(x['cover_alt'])}" width="800" height="1200" loading="lazy" decoding="async"><span>作品图谱 ↗</span></a><div class="work-copy"><span class="eyebrow">NOVEL ATLAS / {e(x['category'])}</span><h3>《{e(x['title'])}》</h3><p class="work-tagline">{e(x['tagline'])}</p><p class="work-author">作者：{e(x['author'])}</p><p>{e(x['description'])}</p><div class="work-stats"><span><b>{stats['volumes']}</b> 卷纲</span><span><b>{stats['events']}</b> 重大事件</span><span><b>{stats['characters']}</b> 人物档案</span></div><p class="work-scope"><strong>收录范围</strong>{e(x['scope'])}</p><div class="work-actions"><a class="primary" href="{e(x['url'])}">打开作品图谱 ↗</a><a class="plain" href="{e(x['url'])}#volumes">从卷纲开始</a><a class="plain" href="{e(x['url'])}#characters">人物与画廊</a><a class="plain" href="{e(x['url'])}#research">设定考据</a></div><p class="small-copy work-reading-note">{e(x['reading_note'])}</p></div></article>''')
     section='''<section class="chapter" id="works"><header class="section-head"><h2>衍生作品</h2></header><div class="works-grid">'''+''.join(cards)+'''</div><div class="note"><strong>阅读边界：</strong>作品中的时代划分、魔法机制与人物经历按其自身文本理解。作品页保留剧透提示与来源说明；百科的基础设定另行查阅。</div></section>'''
     nav='<a href="#works" data-section="works"><span>08</span>衍生作品</a>'
     assert page.count('</nav>')==1
@@ -122,6 +122,10 @@ def prepare_online_works(codex,output,root):
         assert '/Users/' not in page
         (directory/'index.html').write_text(page)
         manifest=dict(id=work['id'],title=work['title'],url=work['url'],imported_source_sha256=work['imported_source_sha256'],maintained_source_sha256=hashlib.sha256(original.encode()).hexdigest(),html_sha256=hashlib.sha256(page.encode()).hexdigest(),stats=work['stats'],gallery_count=len(gallery),images=[{k:v for k,v in x.items() if k not in ['thumb','card','srcset']} for x in images.values()])
+        if work['id']=='yinhun':
+            from research import load as load_research
+            research_meta,research_parts=load_research(root)
+            manifest['research']={'title':research_meta['title'],'source_sha256':research_meta['sourceSha256'],'integrated':research_meta['integrated'],'sections':len(research_parts),'verified_srd_notes':len(research_meta['checks']),'spoilers':'Full manuscript requires full mode; basic SRD notes remain readable.'}
         (directory/'manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
         cover=images[work['cover']];codex=codex.replace(work['cover'],cover['card'])
         marker='data-work-cover="'+work['id']+'"'

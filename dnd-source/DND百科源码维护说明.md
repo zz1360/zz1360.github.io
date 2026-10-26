@@ -200,3 +200,17 @@ python3 dnd-source/build.py \
 `archive-ui.css` 维护人物目录、展开内容与地图样式。栏目头部长说明、重复入口及旧人物世界选择器已从模板移除，版本与模型说明集中到资料栏目。异度风景的外层位面地貌补充使用 2024 DMG 在 Roll20 的公开授权转载，来源逐项注明，不引入环境检定等数值规则。设计者个人阐释与社区汇编仍分别标注。
 
 本轮验证入口是 `verification/check-content-refinement.cjs`；同时更新 `check-settings.cjs` 的人物类别筛选检查，以及 `check-archive-art.cjs` 对跨界折叠区的展开检查。
+
+## 《阴魂》设定考据
+
+2026-10-26 将所提供的《阴魂_DND官方设定与作者原创考据》整合到 `/dnd/works/yinhun/#research`，并在衍生作品卡片及小说专题导航中增加入口。原稿的十个主题、九张对照表与书目按主题折叠展示，支持全文主题检索及 `#research/主题ID` 直达；完整分析只在“允许完整剧透”模式显示，按进度读完第十四卷也不会自动解锁。基础规则校注可直接阅读。
+
+- `works/yinhun/research/source.txt` 保存原稿字节，未修改用户原文件；`index.json` 记录来源 SHA-256、范围、十个主题、八项 SRD 校注及整合备注。
+- `research.py` 将受支持的 Markdown 结构安全转为静态 HTML；先转义原文，不执行原稿中的 HTML。导入内容与校注分开呈现，哈希变化会要求重新检查来源记录。
+- `works/yinhun/research.js`、`research.css` 管理主题目录、搜索、直达、打印与窄屏表格。主题直达不会改变剧透模式，降低进度时关闭并隐藏完整文章；无账号或服务器阅读存储。
+- `reader.py` 在在线适配时插入考据，`reader.js` 与现有阅读设置共同控制展示。原始 `works/yinhun/source.html` 及全部插图、九组画廊保持不变。
+- 阅读备份沿用版本 2，仅增加 `research` 为合法章节位置；不会通过导入备份开放剧透。
+
+原稿聚焦 D&D 3.0／3.5 和费伦资料；本次八项校注核对公开 3.5／史诗／神祇 SRD 转载，不把 5E 概念对照当成旧版规则证据。分裂命匣原书页码、七秘器形态及其他未取得原书正文的判断保留原稿属性；跨作品相似性不直接确认作者的创作来源。未重新核对完整 EPUB。
+
+验证入口为 `verification/check-yinhun-research.cjs`，覆盖剧透切换与降低、主题直达、搜索、表格、打印、存储禁用、阅读备份位置及原图校验；`check-reader.cjs` 回归原有小说阅读与画廊。公开发布用 `check-yinhun-research-production.py` 核对 release、页面字节及来源元数据。

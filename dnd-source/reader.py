@@ -29,14 +29,17 @@ def adapt(page,root,data):
     note('<div class="cast-grid">','reader-characters-empty','人物档案与画廊将随已读进度开放。')
     note('<div class="relationship">','reader-relations-note','完整人物关系含跨卷反转，当前暂时隐藏；已读人物的行动可在档案中查看。')
     note('<div class="mysteries">','reader-boundaries-note','未解线索包含后续反转与结局讨论，当前暂时隐藏。')
-    cards=''.join('<article class="lore-card"><span class="eyebrow">NOVEL × CODEX / 概念对照</span><h3>'+html.escape(x['name'])+'</h3><p>'+html.escape(x['official'])+'</p><button class="source-btn" data-reader-lore="'+x['id']+'">对照小说与百科 ↗</button></article>' for x in lore)
-    page=page.replace('<section class="section" id="history">','<div class="lore-grid">'+cards+'</div><p class="reader-note">仅关联已核对的基础概念。具体情节、机制与年代分别理解；尚未核实的差异不直接判为作者改写。</p><section class="section" id="history">',1)
-    page=page.replace('</head>','<style>'+ (work/'reader.css').read_text()+'</style></head>',1)
+    cards=''.join('<article class="lore-card"><span class="eyebrow">5E 百科 / 基础概念对照</span><h3>'+html.escape(x['name'])+'</h3><p>'+html.escape(x['official'])+'</p><button class="source-btn" data-reader-lore="'+x['id']+'">对照小说与百科 ↗</button></article>' for x in lore)
+    page=page.replace('<section class="section" id="history">','<div class="lore-grid">'+cards+'</div><p class="reader-note">这里保留 5E 百科的基础概念入口；3.x 规则与小说改写的比较见下方“设定考据”。</p><section class="section" id="history">',1)
+    from research import render as render_research
+    page=page.replace('<section class="section" id="history">',render_research(root)+'<section class="section" id="history">',1)
+    page=page.replace('<a href="#history">历史脉络</a>','<a href="#research">设定考据</a><a href="#history">历史脉络</a>',1)
+    page=page.replace('</head>','<style>'+(work/'reader.css').read_text()+(work/'research.css').read_text()+'</style></head>',1)
     extras=script('reader-index-data',index(root,data))+script('novel-lore-data',lore)+'<script>'+(root/'reader-backup.js').read_text()+'</script>'
     def adapt_app(match):
         body=match[1]
         if "const DATA=JSON.parse" not in body:return match[0]
-        body=body.replace('let lastFocus=null, activeGallery=null;','let lastFocus=null, activeGallery=null;\n'+(work/'reader-bootstrap.js').read_text(),1)
+        body=body.replace('let lastFocus=null, activeGallery=null;','let lastFocus=null, activeGallery=null;\n'+(work/'reader-bootstrap.js').read_text()+'\n'+(work/'research.js').read_text(),1)
         body=body.replace("return `<div class=\"source-detail\">", "citations=readerCitations(citations);return `<div class=\"source-detail\">",1)
         body=body.replace("const c=DATA.characters.find(x=>x.id===id);if(!c)return;", "const c=readerCharacter(DATA.characters.find(x=>x.id===id));if(!c)return;readerRemember('character',id);",1)
         body=body.replace("const variants=GALLERIES[id]||[];", "const variants=(GALLERIES[id]||[]).map((x,i)=>readerFull()?x:{...x,title:'姿势与换装 '+(i+1),note:'美术演绎'});",1)

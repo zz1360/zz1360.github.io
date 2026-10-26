@@ -1,0 +1,10 @@
+{
+  "sourceSha256": "db1080ecb60e6bf4117647eed3ffac4acdf1f72012267b225604216edd46b034",
+  "imageManifestSha256": "e3cbc2a4ac8287721433ab6b59bb9cfcd2d30adaef31f41d76caf03136d03774",
+  "stats": {
+    "volumes": 14,
+    "events": 66,
+    "characters": 12
+  },
+  "galleryCount": 9
+}

@@ -1,0 +1,149 @@
+{
+  "title": "《阴魂》D&D 设定考据：哪些是官方规则，哪些是作者原创？",
+  "sourceName": "阴魂_DND官方设定与作者原创考据.md",
+  "sourceSha256": "0f5b84df9d4c2926f9ab6bf2058d8c8418ed20d3c6d7c2c049a05f4a4fe205cf",
+  "integrated": "2026-10-26",
+  "scope": "第十四卷 东域篇（下）·第十一章 各人的心思",
+  "edition": "D&D 3.0 / 3.5",
+  "verification": "原稿沿用此前分析，不是逐条新核验。本次复核公开 SRD 中的八项基础规则与概念；其余出版物页码、小说章节与原创归属保留原稿判断。",
+  "sections": [
+    {
+      "id": "overview",
+      "label": "整体判断",
+      "status": "原稿归纳"
+    },
+    {
+      "id": "layers",
+      "label": "三类来源",
+      "status": "原稿框架"
+    },
+    {
+      "id": "official",
+      "label": "官方规则与背景",
+      "status": "部分复核"
+    },
+    {
+      "id": "adaptation",
+      "label": "借用与改写",
+      "status": "原稿分析"
+    },
+    {
+      "id": "original",
+      "label": "原创机制与剧情",
+      "status": "原稿分析"
+    },
+    {
+      "id": "differences",
+      "label": "规则差异",
+      "status": "部分复核"
+    },
+    {
+      "id": "intertext",
+      "label": "跨作品线索",
+      "status": "推测与互文"
+    },
+    {
+      "id": "method",
+      "label": "创作方法",
+      "status": "原稿归纳"
+    },
+    {
+      "id": "bibliography",
+      "label": "对照书目",
+      "status": "原稿书目"
+    },
+    {
+      "id": "conclusion",
+      "label": "结论回顾",
+      "status": "原稿归纳"
+    }
+  ],
+  "checks": [
+    {
+      "id": "rest",
+      "title": "休息与法术准备",
+      "label": "3.5 法师",
+      "text": "准备每日法术前通常需要 8 小时安静休息，准备全部法术再花 1 小时；只准备一部分可按比例缩短，但至少 15 分钟。不需要睡眠，也不等于免除休息条件。",
+      "url": "https://www.d20srd.org/srd/magicOverview/arcaneSpells.htm",
+      "source": "3.5 SRD 转载 · Arcane Spells"
+    },
+    {
+      "id": "schools",
+      "title": "专精学派有例外",
+      "label": "3.5 法师",
+      "text": "专精法师通常放弃另外两个学派，占卜专精只放弃一个；不能把占卜选作禁阻学派。这是 3.5 的规则，不能笼统套用到所有版本。",
+      "url": "https://www.d20srd.org/srd/classes/sorcererWizard.htm#schoolSpecialization",
+      "source": "3.5 SRD 转载 · School Specialization"
+    },
+    {
+      "id": "components",
+      "title": "成分与法术环级",
+      "label": "3.5 法术",
+      "text": "0—9 环是常规法术描述中的等级。V、S、M 等成分按每个法术单独列出，并非每个法术都同时需要语言、姿势和材料；环级表也不能证明魔网具有九层同心结构。",
+      "url": "https://www.d20srd.org/srd/magicOverview/spellDescriptions.htm#components",
+      "source": "3.5 SRD 转载 · Spell Descriptions"
+    },
+    {
+      "id": "dragon",
+      "title": "虹彩龙确有规则条目",
+      "label": "史诗 SRD",
+      "text": "史诗 SRD 收录 Prismatic Dragon，包括年龄分类、虹光喷吐与施法能力。可以确认怪物有规则原型；小说怎样安排它出场和战斗，仍属于另一层判断。",
+      "url": "https://www.d20srd.org/srd/epic/monsters/dragonEpic.htm#prismaticDragon",
+      "source": "史诗 SRD 转载 · Prismatic Dragon"
+    },
+    {
+      "id": "ranks",
+      "title": "神格等级有独立规则",
+      "label": "神祇 SRD",
+      "text": "神祇 SRD 以 Divine Rank 区分神祇层级，并讨论神职和神域。这只能确认规则框架存在，不能证明小说设计的神权竞赛就是官方通用程序。",
+      "url": "https://www.d20srd.org/srd/divine/divineRanksAndPowers.htm",
+      "source": "神祇 SRD 转载 · Divine Ranks and Powers"
+    },
+    {
+      "id": "golem",
+      "title": "粘土魔像：狂暴与加速分开看",
+      "label": "3.5 怪物",
+      "text": "狂暴是战斗中逐轮累积的失控风险；加速则是另一项能力：至少战斗 1 轮后，每日一次以自由动作发动，持续 3 轮。不能把突然加速本身当成小说原创，也不能把“受重创触发”写成规则原文。",
+      "url": "https://www.d20srd.org/srd/monsters/golem.htm#clayGolem",
+      "source": "3.5 SRD 转载 · Clay Golem"
+    },
+    {
+      "id": "globe",
+      "title": "次级结界看法术等级",
+      "label": "3.5 法术",
+      "text": "次级法术无效结界排除进入区域的 3 环及以下法术效果，也包括物品产生的相应法术效果。伤害更高不自动提高环级；分析特殊施法时，还要核对是否存在其他有效机制。",
+      "url": "https://www.d20srd.org/srd/spells/globeOfInvulnerabilityLesser.htm",
+      "source": "3.5 SRD 转载 · Lesser Globe of Invulnerability"
+    },
+    {
+      "id": "shadow",
+      "title": "幽影位面的版本分类",
+      "label": "3.5 位面",
+      "text": "3.5 SRD 把幽影位面与星界、以太位面归入过渡位面。对照小说时应使用相应版本，不能直接把 5E 影界的分类和名称搬回去。",
+      "url": "https://www.d20srd.org/srd/planes.htm",
+      "source": "3.5 SRD 转载 · Planes"
+    }
+  ],
+  "notes": [
+    {
+      "section": "official",
+      "text": "此节“来自官方”的表述沿用原稿。本页 SRD 校注只复核公开规则；《毁灭之冠军》第 37 页、七秘器形态、雷鸣祝福比例等资料尚未在本次取得对应原书正文，保留为待核对。"
+    },
+    {
+      "section": "adaptation",
+      "text": "“魔网九层与源”“七秘器重做”等属于原稿的比较结论。未找到相同规则，不足以单独证明某项机制由作者首先发明；此处不把未核实的原创归属写回官方百科。"
+    },
+    {
+      "section": "original",
+      "text": "这一节含身世、记忆与后期神权情节反转。剧情判断来自所提供的考据稿，未重新核对 EPUB 全文；收录范围之外的伏笔不视为已发生结局。"
+    },
+    {
+      "section": "differences",
+      "text": "粘土魔像需要补充区分狂暴与加速：两项能力在 3.5 SRD 都存在，差异应落在触发条件与具体表现。关于双胞胎比例等其余数字，保留待查原始设定书。"
+    },
+    {
+      "section": "intertext",
+      "text": "名称与元素相似可以构成互文线索，不能在没有作者说明时直接确认创作来源、授权关系，或断定小说与另一作品使用同一角色。"
+    }
+  ]
+}
