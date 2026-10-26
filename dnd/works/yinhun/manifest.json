@@ -4,7 +4,7 @@
   "url": "https://blog.luckydogs.top/dnd/works/yinhun/",
   "imported_source_sha256": "cb026be64c056c8e13c3ddccd95e42a18c4f4cbdae19d51f4e773dfada2b7f82",
   "maintained_source_sha256": "db1080ecb60e6bf4117647eed3ffac4acdf1f72012267b225604216edd46b034",
-  "html_sha256": "4b2bac3bce49709256003466c552981638cb50536196520eb2d3d6b52886c3ee",
+  "html_sha256": "fa29733ce1bf1cefce7d5f6f4223e91d1fb712b981e7b0fc967b6b26d614289f",
   "stats": {
     "volumes": 14,
     "events": 66,
@@ -831,5 +831,13 @@
         }
       ]
     }
-  ]
+  ],
+  "research": {
+    "title": "《阴魂》D&D 设定考据：哪些是官方规则，哪些是作者原创？",
+    "source_sha256": "0f5b84df9d4c2926f9ab6bf2058d8c8418ed20d3c6d7c2c049a05f4a4fe205cf",
+    "integrated": "2026-10-26",
+    "sections": 10,
+    "verified_srd_notes": 8,
+    "spoilers": "Full manuscript requires full mode; basic SRD notes remain readable."
+  }
 }
