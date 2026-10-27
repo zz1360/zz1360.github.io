@@ -69,7 +69,7 @@
   const canvas=renderer.domElement;
   canvas.addEventListener('pointerdown',e=>{if(pointer!==null||e.button!==0)return;pointer=e.pointerId;lastX=downX=e.clientX;lastY=downY=e.clientY;dragging=e.pointerType!=='touch';if(dragging)canvas.setPointerCapture(e.pointerId)});
   canvas.addEventListener('pointermove',e=>{if(dragging&&e.pointerId===pointer){group.rotation.y+=(e.clientX-lastX)*.004;group.rotation.x=Math.max(-.8,Math.min(.8,group.rotation.x+(e.clientY-lastY)*.003));lastX=e.clientX;lastY=e.clientY;dirty=labelsDirty=true;request()}});
-  canvas.addEventListener('pointerup',e=>{if(e.pointerId!==pointer)return;pointer=null;dragging=false;if(Math.hypot(e.clientX-downX,e.clientY-downY)<5){const rect=canvas.getBoundingClientRect(),ray=new THREE.Raycaster();ray.setFromCamera(new THREE.Vector2((e.clientX-rect.left)/w*2-1,-(e.clientY-rect.top)/h*2+1),camera);const hit=ray.intersectObjects(nodes.map(n=>n.mesh));if(hit.length){const id=hit[0].object.userData.id;selectPlane(id);if(chapter==='overview')openEntry(id)}}dirty=labelsDirty=true;request()});
+  canvas.addEventListener('pointerup',e=>{if(e.pointerId!==pointer)return;pointer=null;dragging=false;if(Math.hypot(e.clientX-downX,e.clientY-downY)<5){const rect=canvas.getBoundingClientRect(),ray=new THREE.Raycaster();ray.setFromCamera(new THREE.Vector2((e.clientX-rect.left)/w*2-1,-(e.clientY-rect.top)/h*2+1),camera);const hit=ray.intersectObjects(nodes.map(n=>n.mesh));if(hit.length){const id=hit[0].object.userData.id;selectPlane(id);openEntry(id)}}dirty=labelsDirty=true;request()});
   canvas.addEventListener('pointercancel',()=>{pointer=null;dragging=false});
   function scale(factor){zoom=Math.max(.8,Math.min(1.4,zoom*factor));fit();dirty=labelsDirty=true;request()}
   canvas.addEventListener('wheel',e=>{if(document.activeElement!==canvas)return;e.preventDefault();scale(e.deltaY>0?1.05:.95)},{passive:false});
@@ -87,5 +87,5 @@
   canvas.addEventListener('webglcontextlost',e=>{e.preventDefault();paused=true;if(frame!==null)cancelAnimationFrame(frame);frame=null;canvas.hidden=true;layer.hidden=true;container.querySelector('.fallback').hidden=false;container.querySelectorAll('.pause-viz,.reset-viz').forEach(b=>b.disabled=true)});
   views.push({container,renderer,scene,camera,nodes,group,ornament});size();request();
  }
- build(document.getElementById('home-viz'),'overview');build(document.getElementById('cosmos-viz'),'cosmos');window.CODEX_VIEWS=views;
+ build(document.getElementById('home-viz'),'cosmos');window.CODEX_VIEWS=views;
 })();

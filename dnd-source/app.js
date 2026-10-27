@@ -3,19 +3,19 @@ const DATA=JSON.parse(document.getElementById('codex-data').textContent);
 const WORKS=JSON.parse(document.getElementById('works-data')?.textContent||'[]');
 const ALL=[...DATA.worlds,...DATA.planes,...DATA.history,...DATA.people,...DATA.locations,...DATA.factions,...DATA.terms];
 const BYID=Object.assign(Object.create(null),Object.fromEntries([...ALL,...(DATA.reference_worlds||[])].map(x=>[x.id,x])));
-const sectionNames={overview:'阅览入口',worlds:'设定概览',cosmos:'位面宇宙',history:DATA.setting?.id==='planescape'?'历史与事件':'历史年表',people:'人物与神祇',atlas:'地理与势力',primer:'术语与入门',sources:'资料与边界',works:DATA.setting?.id&&DATA.setting.id!=='realms'?'关联作品':'衍生作品'};
+const sectionNames={worlds:'设定概览',cosmos:'位面宇宙',history:DATA.setting?.id==='planescape'?'历史与事件':'历史年表',people:'人物与神祇',atlas:'地理与势力',primer:'术语与入门',sources:'资料与边界',works:DATA.setting?.id&&DATA.setting.id!=='realms'?'关联作品':'衍生作品'};
 const siteTitle=DATA.setting?.id&&DATA.setting.id!=='realms'?DATA.setting.name+' · 5E · DND world':'DND world · D&D 世界百科';
 const sourceNums=Object.fromEntries(Object.keys(DATA.sources).map((k,i)=>[k,String(i+1).padStart(2,'0')]));
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const refHtml=x=>`<div class="sources-inline"><span>来源</span>${[...new Set(x.src)].map(k=>`<a href="${esc(DATA.sources[k].url)}" target="_blank" rel="noopener noreferrer">[${sourceNums[k]}] ${esc(DATA.sources[k].title)}</a>`).join('')}</div>`;
 const referenceNotice=x=>x.reference?`<div class="reference-notice"><strong>跨设定参考</strong> · 此档案不属于当前设定概览。${x.guidePath?`<a href="${location.protocol==='file:'?'https://blog.luckydogs.top':''}${esc(x.guidePath)}#worlds">进入${esc(x.name)} →</a>`:''}</div>`:'';
-let activeSection='overview';
+let activeSection='cosmos';
 function showSection(id,scroll=true){
- if(!sectionNames[id])id='overview'; if(activeSection!==id)window.codexNavigation?.rememberSection(activeSection); activeSection=id;
+ if(id==='cosmos'||!sectionNames[id])id='cosmos'; if(activeSection!==id)window.codexNavigation?.rememberSection(activeSection); activeSection=id;
  document.querySelectorAll('.chapter').forEach(s=>s.hidden=s.id!==id);
  document.querySelectorAll('[data-section]').forEach(a=>{if(a.dataset.section===id)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')});
  document.getElementById('crumb').textContent=sectionNames[id];
- document.body.classList.toggle('overview-active',id==='overview');
+ document.body.classList.toggle('overview-active',id==='cosmos');
  if(scroll){if(window.codexNavigation)window.codexNavigation.restoreSection(id);else (document.body.classList.contains('stage-mode')?document.getElementById('main'):window).scrollTo({top:0,behavior:'instant'})}
  window.dispatchEvent(new CustomEvent('chapterchange',{detail:id}));
 }
@@ -25,14 +25,15 @@ document.addEventListener('click',e=>{
  const art=e.target.closest('[data-art]');if(art)openArt(art.dataset.art);
  const open=e.target.closest('[data-open]');if(open)openEntry(open.dataset.open);
  const close=e.target.closest('[data-close]');if(close)document.getElementById(close.dataset.close).close();
- const plane=e.target.closest('[data-plane]');if(plane){selectPlane(plane.dataset.plane);if(plane.closest('#home-viz'))openEntry(plane.dataset.plane)}
+ const plane=e.target.closest('[data-plane]');if(plane){selectPlane(plane.dataset.plane);openEntry(plane.dataset.plane)}
 });
 showSection(location.hash.slice(1),false);
 const entryDialog=document.getElementById('entry-dialog');
 function openEntry(id,updateRoute=true){
  const x=BYID[id];if(!x)return;
  if(updateRoute)setEntryRoute(id);closeCodexDialog(artDialog);entryDialog.dataset.entry=id;showSection(x.section,false);
- document.getElementById('entry-title').textContent=sectionNames[x.section]+' / 知识档案';
+ document.getElementById('entry-title').textContent=x.section==='cosmos'?'位面宇宙':sectionNames[x.section]+' / 知识档案';
+ if(x.section==='cosmos'){document.getElementById('entry-content').innerHTML=`<h3>${esc(x.name)}</h3><div class="en">${esc(x.en)}</div><p>${esc(x.body)}</p>${x.details[0]?`<p>${esc(x.details[0][1])}</p>`:''}${refHtml(x)}`;if(!entryDialog.open)entryDialog.showModal();if(window.codexNavigation)window.codexNavigation.surfaceOpened('entry',id);else entryDialog.scrollTop=0;return}
  document.getElementById('entry-content').innerHTML=`${window.codexNavigation?.markup(id)||''}${entryTools(id)}${referenceNotice(x)}${entryIllustration(id)}<span class="eyebrow">${esc(x.date||x.setting||x.tag||x.cat||x.kind||'D&D CODEX')}</span><h3 style="margin-top:14px">${esc(x.name)}</h3><div class="en">${esc(x.en)}</div><p>${esc(x.body)}</p>${HISTORY_FLOW[id]?historyFlow(id):x.details.map(([a,b])=>`<h4>${esc(a)}</h4><p>${esc(b)}</p>`).join('')}${refHtml(x)}${knowledgeLinks(id)}`;
  if(!entryDialog.open)entryDialog.showModal();if(window.codexNavigation)window.codexNavigation.surfaceOpened('entry',id);else entryDialog.scrollTop=0;
 }
@@ -79,8 +80,6 @@ filterPeople();
 let selectedPlane=DATA.setting?.center||'material';
 function selectPlane(id){
  const x=DATA.planes.find(x=>x.id===id);if(!x)return;selectedPlane=id;
- document.getElementById('plane-panel').innerHTML=`<span class="tag gold">${esc(x.cat)}</span><h3>${esc(x.name)}</h3><div class="en">${esc(x.en)}</div><p>${esc(x.body)}</p>${x.details[0]?`<p>${esc(x.details[0][1])}</p>`:''}${refHtml(x)}`;
- document.querySelectorAll('.plane-selector [data-plane]').forEach(b=>{const on=b.dataset.plane===id;b.classList.toggle('active',on);b.setAttribute('aria-pressed',on)});
  window.dispatchEvent(new CustomEvent('planeselect',{detail:id}));
 }
 selectPlane(selectedPlane);

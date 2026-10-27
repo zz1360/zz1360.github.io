@@ -3,8 +3,8 @@
  const narrow=matchMedia('(max-width:1100px)'),button=document.getElementById('mobile-menu'),dialog=document.getElementById('mobile-menu-dialog'),reader=document.getElementById('main'),chapter=document.getElementById('mobile-current-chapter'),current=document.getElementById('mobile-menu-current');
  let followReading=false;
  function syncChapter(){
-  const active=document.querySelector('.topbar .nav a[aria-current="page"]'),id=active?.dataset.section||document.querySelector('.chapter:not([hidden])')?.id||'overview';
-  const label=typeof sectionNames!=='undefined'&&sectionNames[id]?sectionNames[id]:'阅览入口';
+  const active=document.querySelector('.topbar .nav a[aria-current="page"]'),id=active?.dataset.section||document.querySelector('.chapter:not([hidden])')?.id||'cosmos';
+  const label=typeof sectionNames!=='undefined'&&sectionNames[id]?sectionNames[id]:'位面宇宙';
   chapter.textContent=label;current.textContent='当前：'+label;button.setAttribute('aria-label','打开阅览目录，当前章节：'+label);
   dialog.querySelectorAll('[data-section]').forEach(link=>{if(link.dataset.section===id)link.setAttribute('aria-current','page');else link.removeAttribute('aria-current')});
  }

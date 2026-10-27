@@ -24,7 +24,7 @@ function setEntryRoute(id,mode='entry',variant=0){
  document.title=BYID[id].name+' · '+siteTitle;
 }
 function applyRoute(){
- const hash=location.hash.slice(1),parts=hash.split('/');
+ let hash=location.hash.slice(1);if(hash==='overview'){history.replaceState(history.state,'','#cosmos');hash='cosmos'}const parts=hash.split('/');
  if((parts[0]==='entry'||parts[0]==='art')&&BYID[parts[1]]){
   const id=parts[1];document.title=BYID[id].name+' · '+siteTitle;showSection(BYID[id].section,false);
   closeCodexDialog(searchDialog);closeCodexDialog(document.getElementById('share-dialog'));
@@ -33,8 +33,8 @@ function applyRoute(){
   else{history.replaceState(null,'','#entry/'+id);closeCodexDialog(artDialog);openEntry(id,false)}
  }else{
   closeCodexDialog(artDialog);closeCodexDialog(entryDialog);closeCodexDialog(searchDialog);closeCodexDialog(document.getElementById('share-dialog'));
-  const section=sectionNames[hash]?hash:'overview';showSection(section,false);document.title=siteTitle;
-  if(hash&&!sectionNames[hash]&&hash!=='main'){history.replaceState(null,'','#overview');announce('没有找到这个入口，已回到阅览目录。')}
+  const section=sectionNames[hash]?hash:'cosmos';showSection(section,false);document.title=siteTitle;
+  if(hash&&!sectionNames[hash]&&hash!=='main'){history.replaceState(null,'','#cosmos');announce('没有找到这个入口，已回到阅览目录。')}
  }
  window.codexNavigation?.restoreRoute();
 }

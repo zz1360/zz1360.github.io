@@ -3,7 +3,7 @@
  const config=JSON.parse(document.getElementById('settings-data').textContent),selects=[...document.querySelectorAll('[data-setting-select]')];
  for(const select of selects){select.value=config.current.id;select.addEventListener('change',()=>{
   const target=config.catalog.find(x=>x.id===select.value);if(!target||target.id===config.current.id)return;
-  const section=document.querySelector('.topbar .nav [aria-current="page"][data-section]')?.dataset.section||'overview';
+  const section=document.querySelector('.topbar .nav [aria-current="page"][data-section]')?.dataset.section||'cosmos';
   window.codexNavigation?.capture();const url=new URL(target.path,location.origin);url.hash=section;location.assign(url.href);
  })}
  // Companion illustrations are independent of the setting's actual inhabitants.

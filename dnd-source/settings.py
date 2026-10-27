@@ -82,10 +82,9 @@ def guide_chapters(data,base,root,scenes,archive_figures):
         parser=Viz(id);parser.feed(base);text=''.join(parser.parts)
         text=re.sub(r'<div class="fallback-grid">.*?</div>', '<div class="fallback-grid">'+''.join(f'<button data-plane="{e(x["id"])}">{e(x["name"])}</button>' for x in data['planes'])+'</div>',text,flags=re.S)
         return text.replace('THE PLANAR ATLAS',e(data['cosmology']['eyebrow']))
-    result={'overview':section('overview','<header class="overview-edition"></header>'+viz('home-viz'))}
+    result={'cosmos':section('cosmos',viz('home-viz'))}
     from setting_overviews import render as render_overview
     result['worlds']=render_overview(root,data['setting']['id'],data,scenes[data['setting']['id']])
-    result['cosmos']=section('cosmos',title('cosmos','位面宇宙')+'<div class="cosmos-layout setting-cosmos">'+viz('cosmos-viz')+'<article class="plane-panel" id="plane-panel" aria-live="polite"></article></div><div class="plane-selector" aria-label="选择位面条目">'+''.join(f'<button data-plane="{e(x["id"])}" aria-pressed="false">{e(x["name"])}</button>' for x in data['planes'])+'</div>'+cards('planes','plane-grid'))
     history=choices('history-filters','era',[x['era'] for x in data['history']],'history',len(data['history']))+'<div class="timeline" id="timeline">'
     for x in data['history']:
         history+=f'<article class="time-event" data-entry="{e(x["id"])}"><div class="time-date">{e(x["date"])}<small>{e(x["era"])}</small></div><div class="time-body"><h3>{e(x["name"])}</h3><div class="en">{e(x["en"])}</div><p>{e(x["body"])}</p>'+('<details><summary>继续阅读</summary>'+''.join('<h4>'+e(a)+'</h4><p>'+e(b)+'</p>' for a,b in x['details'])+'</details>' if x['details'] else '')+refs(x['src'])+f'<div class="card-bottom"><span>{e(data["setting"]["name"])}</span><button class="entry-open" data-open="{e(x["id"])}">查看档案 ↗</button></div></div></article>'
@@ -142,7 +141,7 @@ def publish(base,root,output):
     for meta in registry(root)[1:]:
         data=json.loads((root/'settings'/(meta['id']+'.json')).read_text());validate(data)
         page=base;chapters=guide_chapters(data,base,root,scenes,archive_figures)
-        parsed=Chapters(page);assert len(parsed.spans)==9
+        parsed=Chapters(page);assert len(parsed.spans)==8
         for id,start,end in reversed(parsed.spans):page=page[:start]+chapters[id]+page[end:]
         ui_data={k:v for k,v in data.items() if k not in ['relations','flows','works']}
         page=json_script(page,'codex-data',ui_data);page=json_script(page,'relations-data',data['relations']);page=json_script(page,'history-flow-data',data['flows']);page=json_script(page,'works-data',data['works'])
