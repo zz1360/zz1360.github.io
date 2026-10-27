@@ -38,6 +38,14 @@ def export(source,output):
         info['thumb']=info['variants'][0]['url'];info['card']=info['variants'][1]['url']
         info['srcset']=', '.join(f'{v["url"]} {v["width"]}w' for v in info['variants'][1:])+f', {info["url"]} 1536w'
         images[uri]=info
+    # Keep the offline map self-contained and publish a compact independent asset online.
+    map_blob=(Path(__file__).resolve().parent/'assets/maps/faerun-1492-concept.png').read_bytes()
+    map_uri='data:image/png;base64,'+base64.b64encode(map_blob).decode('ascii')
+    if source.count(map_uri)!=1: raise ValueError('Expected one Faerûn map image')
+    map_digest=hashlib.sha256(map_blob).hexdigest()[:20]
+    map_file=f'faerun-map-{map_digest}.webp'
+    subprocess.run([encoder,'-quiet','-q','85',str(Path(__file__).resolve().parent/'assets/maps/faerun-1492-concept.png'),'-o',str(assets/map_file)],check=True)
+    source=source.replace(map_uri,'/dnd/assets/'+map_file)
     page=re.sub(r'data:image/webp;base64,[A-Za-z0-9+/=]+',lambda m:images[m[0]]['url'],source)
     for p in plates.plates:
         im=images[p['src']]

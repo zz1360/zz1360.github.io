@@ -36,9 +36,9 @@
     "dark",
     "light"
   ],
-  "mapLandmarks": 8,
+  "mapLandmarks": 15,
   "mapKeyboard": true,
-  "mapNoClipping": true,
+  "mapHorizontalScroll": true,
   "historyNoDuplicateBody": true,
   "galleryPreserved": true,
   "errors": [],
@@ -46,10 +46,6 @@
   "screenshots": [
     "refined-people-realms.png",
     "refined-people-eberron.png",
-    "refined-people-planescape.png",
-    "refined-map-1920-dark.png",
-    "refined-map-1920-light.png",
-    "refined-map-390-dark.png",
-    "refined-map-390-light.png"
+    "refined-people-planescape.png"
   ]
 }

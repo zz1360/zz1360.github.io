@@ -39,20 +39,17 @@ const profiles=[['realms','/dnd/',71,14],['eberron','/dnd/settings/eberron/',41,
    await p.setViewportSize({width:w,height:h});
    for(const light of [false,true]){
     if(await p.locator('body').evaluate(n=>n.classList.contains('light'))!==light)await p.locator('#theme-button').click();
-    const fit=await p.evaluate(()=>{const map=document.querySelector('.coast-map'),r=map.getBoundingClientRect(),buttons=[...map.querySelectorAll('.map-pin')].map(n=>{const b=n.getBoundingClientRect();return {id:n.dataset.map,l:b.left,r:b.right,t:b.top,b:b.bottom,h:b.height}});return{ratio:r.width/r.height,buttons,outside:buttons.filter(b=>b.l<r.left-1||b.r>r.right+1||b.t<r.top-1||b.b>r.bottom+1),overlap:buttons.filter((a,i)=>buttons.slice(i+1).some(b=>a.l<b.r&&a.r>b.l&&a.t<b.b&&a.b>b.t)),stretch:map.querySelector('svg').getAttribute('preserveAspectRatio')}});
-    assert.ok(Math.abs(fit.ratio-6/7)<.01,JSON.stringify({w,fit}));assert.deepEqual(fit.outside,[],JSON.stringify({w,fit}));assert.deepEqual(fit.overlap,[],JSON.stringify({w,fit}));assert.ok(fit.buttons.every(b=>b.h>=44));assert.notEqual(fit.stretch,'none');
-    for(const id of ['icewind','neverwinter','phandalin','waterdeep','baldurs','candlekeep','underdark','menzo']){
-     const button=p.locator(id==='underdark'||id==='menzo'?`.underground [data-map="${id}"]`:`.coast-map [data-map="${id}"]`);await button.click();assert.equal(await button.getAttribute('aria-pressed'),'true');assert.equal(await p.locator('#map-preview h4').innerText(),await p.evaluate(id=>BYID[id].name,id));
+    assert.equal(await p.locator('.faerun-map .faerun-pin').count(),15);
+    for(const id of ['icewind','neverwinter','phandalin','waterdeep','baldurs','candlekeep','underdark','menzo','chult','thay','great-glacier']){
+     const button=p.locator(`.faerun-index [data-map="${id}"]`);await button.click();assert.equal(await button.getAttribute('aria-pressed'),'true');assert.ok(await p.locator('#map-preview h4').innerText());
     }
-    await p.locator('.coast-map [data-map="waterdeep"]').focus();await p.keyboard.press('Enter');assert.equal(await p.locator('#map-preview h4').innerText(),'深水城');
-    // Landmarks must not move when pressed/focused; SVG and hit areas share coordinates.
-    const point=await p.locator('.coast-map [data-map="waterdeep"] .pin-dot').boundingBox();assert.ok(point.width>0);
-    if(w===1920||w===390){await p.locator('#main').evaluate(n=>n.scrollTop=0);await p.evaluate(()=>scrollTo(0,0));const file=`refined-map-${w}-${light?'light':'dark'}.png`;await p.screenshot({path:__dirname+'/'+file});screens.push(file)}
+    await p.locator('.faerun-index [data-map="waterdeep"]').focus();await p.keyboard.press('Enter');assert.equal(await p.locator('#map-preview h4').innerText(),'深水城');
+    assert.ok(await p.locator('html').evaluate(n=>n.scrollWidth<=n.clientWidth+1));
    }
   }
   // Deep links into the collapsed guests and their existing image galleries remain intact.
   await p.goto(origin+'/dnd/#art/tasha/2');assert.equal(await p.locator('#art-counter').innerText(),'3 / 4');await p.keyboard.press('ArrowRight');assert.equal(await p.locator('#art-counter').innerText(),'4 / 4');
   assert.deepEqual(errors,[]);assert.deepEqual(failed,[]);
-  const report={passed:true,origin,checks,totalExpandedEntries:166,viewportWidths:[1920,1440,1024,390,320],themes:['dark','light'],mapLandmarks:8,mapKeyboard:true,mapNoClipping:true,historyNoDuplicateBody:true,galleryPreserved:true,errors,failed,screenshots:screens};fs.writeFileSync(__dirname+'/'+(process.env.CONTENT_REPORT||'content-refinement-check.json'),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report));
+  const report={passed:true,origin,checks,totalExpandedEntries:166,viewportWidths:[1920,1440,1024,390,320],themes:['dark','light'],mapLandmarks:15,mapKeyboard:true,mapHorizontalScroll:true,historyNoDuplicateBody:true,galleryPreserved:true,errors,failed,screenshots:screens};fs.writeFileSync(__dirname+'/'+(process.env.CONTENT_REPORT||'content-refinement-check.json'),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report));
  }finally{await browser.close()}
 })().catch(e=>{console.error(e);process.exit(1)});

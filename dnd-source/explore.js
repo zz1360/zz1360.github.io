@@ -49,12 +49,25 @@ async function shareEntry(id){
 }
 document.addEventListener('click',e=>{
  const share=e.target.closest('[data-share]');if(share)shareEntry(share.dataset.share);
- const map=e.target.closest('[data-map]');if(map)selectMapLocation(map.dataset.map);
+ const map=e.target.closest('[data-map]');if(map){selectMapLocation(map.dataset.map);if(map.closest('.faerun-index')){const pin=document.querySelector('.faerun-map [data-map="'+map.dataset.map+'"]'),scroll=document.querySelector('.faerun-map-scroll');if(pin&&scroll)scroll.scrollLeft=Math.max(0,pin.offsetLeft-scroll.clientWidth/2)}}
 });
+const FAERUN_REGIONS={
+ moonshae:['月影群岛','Moonshae Isles','剑湾以西的群岛，森林、海岸与古老信仰共同构成它的传说。'],
+ anauroch:['安诺瑞沙漠','Anauroch','费伦北部的大沙漠；它的沙海下埋藏着古代耐瑟瑞尔的遗迹。'],
+ cormyr:['科米尔','Cormyr','坠星海西部附近的王国，以紫龙骑士和战争法师闻名。'],
+ dalelands:['谷地','The Dalelands','科曼索森林周围的一片谷地，各个社群有着自己的领袖和历史。'],
+ thay:['塞尔','Thay','费伦东部的魔法国度，红袍法师及其统治者在这里拥有重要影响力。'],
+ 'fallen-stars':['坠星海','Sea of Fallen Stars','深入费伦内陆的广阔海域，海上贸易连接着周边众多国家和港口。'],
+ chult:['楚尔特','Chult','费伦西南方的热带半岛，丛林、古代遗迹和危险的生物吸引着冒险者。'],
+ 'high-ice':['至高冰原','The High Ice','安诺瑞沙漠北方的寒冷冰原，是北地广阔的冰雪区域之一。'],
+ 'great-glacier':['大冰川','Great Glacier','费伦东北部的大型冰雪地区，南缘与寒冷的北方土地相接。']
+};
 function selectMapLocation(id){
- const x=BYID[id],img=document.getElementById('art-'+id);if(!x||x.section!=='atlas'||!img)return;
+ const region=FAERUN_REGIONS[id], x=BYID[id],img=document.getElementById('art-'+id);if(!region&&(!x||x.section!=='atlas'||!img))return;
  document.querySelectorAll('[data-map]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.map===id));
+ const panel=document.getElementById('map-preview');
+ if(region){panel.innerHTML=`<span class="faerun-preview-kicker">✦ 费伦地点</span><h4>${esc(region[0])}</h4><div class="en">${esc(region[1])}</div><p>${esc(region[2])}</p><a class="faerun-source" href="https://www.dndbeyond.com/resources/2037-the-forgotten-realms" target="_blank" rel="noopener noreferrer">探索被遗忘的国度 ↗</a>`;return}
  const linked=linksFor(id).filter(r=>['people','atlas'].includes(BYID[r.id].section));
- document.getElementById('map-preview').innerHTML=`<figure><button class="art-open" data-art="${id}" aria-label="查看${esc(x.name)}概念插画"><img src="${img.src}" ${img.dataset.srcset?`srcset="${esc(img.dataset.srcset)}" sizes="(max-width:620px) 90vw, 480px"`:''} width="1536" height="1024" alt="${esc(img.alt)}" decoding="async"></button><figcaption class="small-copy">AI 概念插画 · 艺术演绎</figcaption></figure><h4>${esc(x.name)}</h4><div class="en">${esc(x.en)}</div><p>${esc(x.body)}</p><div class="map-related">${linked.length?linked.map(r=>`<button class="plain" data-open="${r.id}">${esc(BYID[r.id].name)} ↗</button>`).join(''):''}</div><button class="primary" data-open="${id}">查看档案 ↗</button><details class="map-sources"><summary>资料来源</summary>${refHtml(x)}</details>`;
+ panel.innerHTML=`<figure><button class="art-open" data-art="${id}" aria-label="查看${esc(x.name)}概念插画"><img src="${img.src}" ${img.dataset.srcset?`srcset="${esc(img.dataset.srcset)}" sizes="(max-width:620px) 90vw, 480px"`:''} width="1536" height="1024" alt="${esc(img.alt)}" decoding="async"></button><figcaption class="small-copy">AI 概念插画 · 艺术演绎</figcaption></figure><h4>${esc(x.name)}</h4><div class="en">${esc(x.en)}</div><p>${esc(x.body)}</p><div class="map-related">${linked.length?linked.map(r=>`<button class="plain" data-open="${r.id}">${esc(BYID[r.id].name)} ↗</button>`).join(''):''}</div><button class="primary" data-open="${id}">查看档案 ↗</button><details class="map-sources"><summary>资料来源</summary>${refHtml(x)}</details>`;
 }
 selectMapLocation('waterdeep');applyRoute();window.codexNavigation?.initialize();
