@@ -78,6 +78,11 @@ body.stage-mode .reading-chamber .chamber-cap .chamber-edition{font-size:12px;le
 @media(max-width:1000px){.map-layout{grid-template-columns:1fr}.coast-map{max-width:680px;margin:auto;height:auto}.map-preview{display:block}.map-preview img{max-height:420px}.map-explorer{padding:20px}}
 @media(max-width:620px){.people-search input{width:min(220px,100%);flex:1}.people-search #people-count{width:100%;margin:4px 0 0}.people-roles .chip{font-size:.75rem;min-height:40px}.map-explorer{padding:12px;border-radius:7px}.map-heading{flex-direction:row;align-items:center;gap:8px}.map-heading h3{font-size:1.3rem}.map-heading>a{font-size:.7rem}.coast-map{height:auto}.map-pin{gap:4px;font-size:12px}.map-pin>span:last-child{padding:4px 5px}.map-ocean{left:11%;font-size:15px}.map-ocean small{display:none}.map-seal{font-size:7px}.map-index .chip{font-size:.75rem}.underground{align-items:flex-start;gap:8px}.underground>span{padding-top:10px}.history-step{padding:14px}.people-crossworld>summary{font-size:1rem}}
 @media print{.people-controls{display:none}.people-crossworld{display:block}.map-layout{grid-template-columns:1fr 1fr}.coast-map{height:auto;print-color-adjust:exact;-webkit-print-color-adjust:exact}.map-explorer{break-inside:avoid}.map-index{display:none}}
+/* Faerûn illustration: its landmarks and artwork share one coordinate system. */
+.faerun-explorer .map-heading{align-items:end}.faerun-kicker,.faerun-preview-kicker{display:block;color:var(--gold);font-size:.68rem;letter-spacing:.16em;margin-bottom:6px}.faerun-layout{display:grid;grid-template-columns:minmax(0,2fr) minmax(230px,1fr);gap:22px;align-items:start}.faerun-map-scroll{overflow:auto;border:1px solid var(--line);border-radius:5px;background:#0b2330}.faerun-map{position:relative;min-width:720px;line-height:0;isolation:isolate}.faerun-map>img{display:block;width:100%;height:auto}.faerun-pin{position:absolute;translate:-50% -50%;z-index:2;display:grid;place-items:center;width:44px;height:44px;padding:0;border:0;background:transparent;cursor:pointer}.faerun-pin>span{width:11px;height:11px;border:2px solid #17343b;border-radius:50%;background:#f6d58f;box-shadow:0 0 0 2px #f1d49c,0 0 14px #ffe4a1}.faerun-pin>b{display:none;position:absolute;top:30px;left:50%;translate:-50% 0;padding:4px 7px;background:#10232cec;border:1px solid #d8bd84;border-radius:3px;color:#fff3d6;white-space:nowrap;font:600 12px/1.3 var(--sans);pointer-events:none}.faerun-pin:hover,.faerun-pin:focus-visible,.faerun-pin[aria-pressed=true]{z-index:4}.faerun-pin:hover>b,.faerun-pin:focus-visible>b,.faerun-pin[aria-pressed=true]>b{display:block}.faerun-pin:focus-visible{outline:2px solid #fff;outline-offset:-3px;border-radius:50%}.faerun-pin[aria-pressed=true]>span{background:#fff7d7;box-shadow:0 0 0 3px #e5c17c,0 0 22px #fff}.faerun-preview{border:1px solid var(--line);background:var(--panel2);border-radius:5px;padding:16px;min-height:190px}.faerun-preview h4{margin:14px 0 3px}.faerun-preview p{line-height:1.8}.faerun-source{display:inline-block;margin-top:20px;font-size:.8rem}.faerun-index{display:grid;gap:10px;margin-top:18px}.faerun-group{display:flex;gap:12px;align-items:baseline}.faerun-group>span{min-width:5.8em;color:var(--muted);font-size:.75rem}.faerun-group>div{display:flex;flex-wrap:wrap;gap:6px}.faerun-group .chip{font-size:.75rem;min-height:36px}.faerun-group [aria-pressed=true]{background:var(--gold);color:var(--bg)}.faerun-note{font-size:.75rem;color:var(--muted);margin:15px 0 0}.faerun-note a{margin-left:8px}.light .faerun-preview{background:var(--panel2)}
+@media(max-width:1000px){.faerun-layout{grid-template-columns:1fr}.faerun-preview{display:block}.faerun-preview figure{max-width:500px}.faerun-map{min-width:720px}}
+@media(max-width:620px){.faerun-group{display:block}.faerun-group>span{display:block;margin-bottom:5px}.faerun-pin>b{font-size:11px}.faerun-note a{margin-left:0;display:block}.faerun-explorer .map-heading{display:flex!important}}
+@media print{.faerun-map{min-width:0}.faerun-index{display:none}.faerun-pin{width:20px;height:20px}.faerun-map-scroll{overflow:visible}}
 /* Search is deliberately still: keyboard selection updates immediately. */
 #search-dialog{background:var(--panel);color:var(--ink);width:min(760px,calc(100vw - 28px));max-height:85dvh}
 #search-dialog[open]{display:flex;flex-direction:column;overflow:hidden}
@@ -1040,13 +1045,26 @@ async function shareEntry(id){
 }
 document.addEventListener('click',e=>{
  const share=e.target.closest('[data-share]');if(share)shareEntry(share.dataset.share);
- const map=e.target.closest('[data-map]');if(map)selectMapLocation(map.dataset.map);
+ const map=e.target.closest('[data-map]');if(map){selectMapLocation(map.dataset.map);if(map.closest('.faerun-index')){const pin=document.querySelector('.faerun-map [data-map="'+map.dataset.map+'"]'),scroll=document.querySelector('.faerun-map-scroll');if(pin&&scroll)scroll.scrollLeft=Math.max(0,pin.offsetLeft-scroll.clientWidth/2)}}
 });
+const FAERUN_REGIONS={
+ moonshae:['月影群岛','Moonshae Isles','剑湾以西的群岛，森林、海岸与古老信仰共同构成它的传说。'],
+ anauroch:['安诺瑞沙漠','Anauroch','费伦北部的大沙漠；它的沙海下埋藏着古代耐瑟瑞尔的遗迹。'],
+ cormyr:['科米尔','Cormyr','坠星海西部附近的王国，以紫龙骑士和战争法师闻名。'],
+ dalelands:['谷地','The Dalelands','科曼索森林周围的一片谷地，各个社群有着自己的领袖和历史。'],
+ thay:['塞尔','Thay','费伦东部的魔法国度，红袍法师及其统治者在这里拥有重要影响力。'],
+ 'fallen-stars':['坠星海','Sea of Fallen Stars','深入费伦内陆的广阔海域，海上贸易连接着周边众多国家和港口。'],
+ chult:['楚尔特','Chult','费伦西南方的热带半岛，丛林、古代遗迹和危险的生物吸引着冒险者。'],
+ 'high-ice':['至高冰原','The High Ice','安诺瑞沙漠北方的寒冷冰原，是北地广阔的冰雪区域之一。'],
+ 'great-glacier':['大冰川','Great Glacier','费伦东北部的大型冰雪地区，南缘与寒冷的北方土地相接。']
+};
 function selectMapLocation(id){
- const x=BYID[id],img=document.getElementById('art-'+id);if(!x||x.section!=='atlas'||!img)return;
+ const region=FAERUN_REGIONS[id], x=BYID[id],img=document.getElementById('art-'+id);if(!region&&(!x||x.section!=='atlas'||!img))return;
  document.querySelectorAll('[data-map]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.map===id));
+ const panel=document.getElementById('map-preview');
+ if(region){panel.innerHTML=`<span class="faerun-preview-kicker">✦ 费伦地点</span><h4>${esc(region[0])}</h4><div class="en">${esc(region[1])}</div><p>${esc(region[2])}</p><a class="faerun-source" href="https://www.dndbeyond.com/resources/2037-the-forgotten-realms" target="_blank" rel="noopener noreferrer">探索被遗忘的国度 ↗</a>`;return}
  const linked=linksFor(id).filter(r=>['people','atlas'].includes(BYID[r.id].section));
- document.getElementById('map-preview').innerHTML=`<figure><button class="art-open" data-art="${id}" aria-label="查看${esc(x.name)}概念插画"><img src="${img.src}" ${img.dataset.srcset?`srcset="${esc(img.dataset.srcset)}" sizes="(max-width:620px) 90vw, 480px"`:''} width="1536" height="1024" alt="${esc(img.alt)}" decoding="async"></button><figcaption class="small-copy">AI 概念插画 · 艺术演绎</figcaption></figure><h4>${esc(x.name)}</h4><div class="en">${esc(x.en)}</div><p>${esc(x.body)}</p><div class="map-related">${linked.length?linked.map(r=>`<button class="plain" data-open="${r.id}">${esc(BYID[r.id].name)} ↗</button>`).join(''):''}</div><button class="primary" data-open="${id}">查看档案 ↗</button><details class="map-sources"><summary>资料来源</summary>${refHtml(x)}</details>`;
+ panel.innerHTML=`<figure><button class="art-open" data-art="${id}" aria-label="查看${esc(x.name)}概念插画"><img src="${img.src}" ${img.dataset.srcset?`srcset="${esc(img.dataset.srcset)}" sizes="(max-width:620px) 90vw, 480px"`:''} width="1536" height="1024" alt="${esc(img.alt)}" decoding="async"></button><figcaption class="small-copy">AI 概念插画 · 艺术演绎</figcaption></figure><h4>${esc(x.name)}</h4><div class="en">${esc(x.en)}</div><p>${esc(x.body)}</p><div class="map-related">${linked.length?linked.map(r=>`<button class="plain" data-open="${r.id}">${esc(BYID[r.id].name)} ↗</button>`).join(''):''}</div><button class="primary" data-open="${id}">查看档案 ↗</button><details class="map-sources"><summary>资料来源</summary>${refHtml(x)}</details>`;
 }
 applyRoute();window.codexNavigation?.initialize();
 </script><script>/* Short state feedback; keyboard and reduced-motion actions stay immediate. */
