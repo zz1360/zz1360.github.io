@@ -14,4 +14,4 @@ def render(people, card, split=False):
     grid = '<div class="grid" id="people-grid">'+''.join(card(x,i) for i,x in enumerate(local))+'</div>'
     if guests:
         grid += '<details class="people-crossworld" id="people-crossworld"><summary>跨界人物 <span id="crossworld-count">'+str(len(guests))+'</span></summary><div class="grid" id="crossworld-grid">'+''.join(card(x,i) for i,x in enumerate(guests))+'</div></details>'
-    return controls+grid+'<p id="people-empty" class="empty" hidden>没有找到匹配的人物。</p>'
+    return controls+'<p class="art-provenance">插画为 AI 概念演绎</p>'+grid+'<p id="people-empty" class="empty" hidden>没有找到匹配的人物。</p>'

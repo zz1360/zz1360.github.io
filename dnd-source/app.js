@@ -77,6 +77,8 @@ document.getElementById('reset-people').addEventListener('click',()=>{
  const cross=document.getElementById('people-crossworld');if(cross)cross.open=false;filterPeople();
 });
 filterPeople();
+const termQuery=document.getElementById('term-query');
+if(termQuery)termQuery.addEventListener('input',()=>{const q=termQuery.value.trim().toLocaleLowerCase();let count=0;document.querySelectorAll('#term-list [data-entry]').forEach(row=>{const x=BYID[row.dataset.entry];row.hidden=![x.name,x.en,...(x.aliases||[])].join(' ').toLocaleLowerCase().includes(q);if(!row.hidden)count++});document.getElementById('term-count').textContent=count+' 个词条';document.getElementById('term-empty').hidden=count!==0});
 let selectedPlane=DATA.setting?.center||'material';
 function selectPlane(id){
  const x=DATA.planes.find(x=>x.id===id);if(!x)return;selectedPlane=id;

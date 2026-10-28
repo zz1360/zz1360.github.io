@@ -1,6 +1,7 @@
 """Publish complete, independently addressable 5E setting guides from shared UI."""
 from pathlib import Path
 from html.parser import HTMLParser
+from ui_sections import archive_card,history_item,terms
 import html, json, re
 
 GROUPS=('worlds','planes','history','people','locations','factions','terms')
@@ -85,21 +86,19 @@ def guide_chapters(data,base,root,scenes,archive_figures):
     result={'cosmos':section('cosmos',viz('home-viz'))}
     from setting_overviews import render as render_overview
     result['worlds']=render_overview(root,data['setting']['id'],data,scenes[data['setting']['id']])
-    history=choices('history-filters','era',[x['era'] for x in data['history']],'history',len(data['history']))+'<div class="timeline" id="timeline">'
-    for x in data['history']:
-        history+=f'<article class="time-event" data-entry="{e(x["id"])}"><div class="time-date">{e(x["date"])}<small>{e(x["era"])}</small></div><div class="time-body"><h3>{e(x["name"])}</h3><div class="en">{e(x["en"])}</div><p>{e(x["body"])}</p>'+('<details><summary>继续阅读</summary>'+''.join('<h4>'+e(a)+'</h4><p>'+e(b)+'</p>' for a,b in x['details'])+'</details>' if x['details'] else '')+refs(x['src'])+f'<div class="card-bottom"><span>{e(data["setting"]["name"])}</span><button class="entry-open" data-open="{e(x["id"])}">查看档案 ↗</button></div></div></article>'
-    result['history']=section('history',title('history','历史年表' if data['setting']['id']=='eberron' else '历史与事件')+history+'</div>')
+    history=choices('history-filters','era',[x['era'] for x in data['history']],'history',len(data['history']))+'<div class="timeline" id="timeline">'+''.join(history_item(x) for x in data['history'])+'</div>'
+    result['history']=section('history',title('history','历史年表' if data['setting']['id']=='eberron' else '历史与事件')+history)
     from people import render as render_people
-    result['people']=section('people',title('people','人物与神祇')+render_people(data['people'],card))
-    result['atlas']=section('atlas',title('atlas','地理与势力')+cards('locations','setting-places','grid two')+'<div class="section-title"><h3>组织与权力网络</h3><small>'+e(data['setting']['name'])+'</small></div>'+cards('factions','setting-factions'))
-    result['primer']=section('primer',title('primer','术语与入门')+cards('terms','setting-terms','grid two'))
+    result['people']=section('people',title('people','人物与神祇')+render_people(data['people'],lambda x,i:archive_card(x,art.get(x['id'],''),person=True)))
+    result['atlas']=section('atlas',title('atlas','地理与势力')+'<div class="section-title"><h3>地点</h3></div><div class="grid two">'+''.join(archive_card(x,art.get(x['id'],'')) for x in data['locations'])+'</div><div class="section-title"><h3>势力</h3></div><div class="grid">'+''.join(archive_card(x,art.get(x['id'],'')) for x in data['factions'])+'</div>')
+    result['primer']=section('primer',title('primer','术语与入门')+terms(data['terms'],refs))
     books='<div class="grid two">'
     for work in data['works']:
         books+='<article class="card"><span class="eyebrow">'+e(work['category'])+'</span><h3>'+e(work['title'])+'</h3><p>'+e(work['description'])+'</p>'+refs(work['src'])+'<a class="plain setting-work-link" target="_blank" rel="noopener noreferrer" href="'+e(work['url'])+'">查阅官方资料 ↗</a></article>'
     result['works']=section('works','<header class="section-head"><span class="eyebrow">'+e(data['setting']['en'].upper())+'</span><h2>关联作品与冒险</h2></header>'+books+'</div>')
-    sources_html='<header class="section-head"><span class="eyebrow">SOURCES & SCOPE</span><h2>资料与边界</h2><p class="sub">'+e(data['setting']['scope'])+'</p></header><div class="note">资料核对：'+e(data['setting']['checked'])+'。官方公开文章、目录、设计者解释和社区汇编分别标明；书籍正文未取得的部分不声称已核读。中文译名可能有差异，保留英文名便于对照。</div><ol class="source-list">'
+    sources_html='<header class="section-head"><h2>资料与边界</h2></header><div class="source-boundaries"><details><summary>版本与资料范围</summary><p>'+e(data['setting']['scope'])+' 资料核对：'+e(data['setting']['checked'])+'。书籍正文未取得的部分不声称已核读。</p></details><details><summary>插画与设定边界</summary><p>AI 插画为艺术演绎。'+e(data['model_note'])+'</p></details></div><div class="section-title"><h3>来源目录</h3></div><ol class="source-list">'
     for id,x in sources.items():sources_html+=f'<li id="source-{e(id)}"><b>{nums[id]:02d}</b><div><a target="_blank" rel="noopener noreferrer" href="{e(x["url"])}">{e(x["title"])} ↗</a><small>{e(x["kind"])}</small><p>{e(x["note"])}</p></div></li>'
-    result['sources']=section('sources',sources_html+'</ol><div class="note">'+e(data['model_note'])+'</div>')
+    result['sources']=section('sources',sources_html+'</ol>')
     return result
 
 def validate(data):

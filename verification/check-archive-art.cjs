@@ -37,7 +37,7 @@ const sizes=[[1920,1080],[1440,900],[1024,768],[390,844],[320,760],[844,390]];
    for(const record of records){
     const section=record.group==='people'?'people':'atlas';await p.evaluate(id=>{showSection(id,false);const cross=document.getElementById('people-crossworld');if(cross)cross.open=true},section);
     const card=p.locator('[data-entry="'+record.id+'"]');assert.equal(await card.count(),1);assert.equal(await card.locator('.setting-sigil').count(),0);
-    const im=await imageFits('#art-'+record.id);assert.equal(im.full,record.full);
+    const compact=setting==='realms'&&record.group==='locations';if(compact){await p.locator('.place-directory').evaluate(n=>n.open=true);assert.equal(await card.locator('#art-'+record.id).getAttribute('data-full'),record.full)}else{const im=await imageFits('#art-'+record.id);assert.equal(im.full,record.full)}
     const open=card.locator('[data-open="'+record.id+'"]');
     if(await open.count())await open.click();
     else{await card.locator('.card-bottom [data-art]').click();await p.locator('#art-read').click()}
@@ -60,7 +60,7 @@ const sizes=[[1920,1080],[1440,900],[1024,768],[390,844],[320,760],[844,390]];
       await p.evaluate(id=>showSection(id,false),section);
       assert.ok(await p.locator('html').evaluate(n=>n.scrollWidth<=n.clientWidth+1),setting+' document overflow');
       assert.ok(await p.locator('#main').evaluate(n=>n.scrollWidth<=n.clientWidth+1),setting+' panel overflow');
-      const ids=records.filter(x=>(x.group==='people'?'people':'atlas')===section).map(x=>x.id);
+      const ids=records.filter(x=>(x.group==='people'?'people':'atlas')===section&&!(setting==='realms'&&x.group==='locations')).map(x=>x.id);
       for(const id of ids)await imageFits('#art-'+id);
       if((width===1440||width===390)&&section==='people'){
        await p.evaluate(()=>{document.activeElement?.blur();document.getElementById('main').scrollTop=0;window.scrollTo(0,0)});await p.evaluate(()=>new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r))));

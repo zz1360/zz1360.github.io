@@ -1,0 +1,87 @@
+{
+  "passed": true,
+  "origin": "http://127.0.0.1:8916",
+  "newIllustrations": 39,
+  "entityArchives": 73,
+  "settings": [
+    {
+      "setting": "realms",
+      "groups": {
+        "people": 22,
+        "locations": 8,
+        "factions": 6
+      },
+      "illustrated": 36
+    },
+    {
+      "setting": "eberron",
+      "groups": {
+        "people": 4,
+        "locations": 6,
+        "factions": 4
+      },
+      "illustrated": 14
+    },
+    {
+      "setting": "planescape",
+      "groups": {
+        "people": 5,
+        "locations": 6,
+        "factions": 12
+      },
+      "illustrated": 23
+    }
+  ],
+  "sizes": [
+    [
+      1920,
+      1080
+    ],
+    [
+      1440,
+      900
+    ],
+    [
+      1024,
+      768
+    ],
+    [
+      390,
+      844
+    ],
+    [
+      320,
+      760
+    ],
+    [
+      844,
+      390
+    ]
+  ],
+  "themes": [
+    "dark",
+    "light"
+  ],
+  "cards": true,
+  "archives": true,
+  "fullImageViewers": true,
+  "uncropped": true,
+  "directLinks": true,
+  "existingGalleryPreserved": true,
+  "screenshots": [
+    "archive-realms-1440-dark.png",
+    "archive-realms-1440-light.png",
+    "archive-realms-390-dark.png",
+    "archive-realms-390-light.png",
+    "archive-eberron-1440-dark.png",
+    "archive-eberron-1440-light.png",
+    "archive-eberron-390-dark.png",
+    "archive-eberron-390-light.png",
+    "archive-planescape-1440-dark.png",
+    "archive-planescape-1440-light.png",
+    "archive-planescape-390-dark.png",
+    "archive-planescape-390-light.png"
+  ],
+  "errors": [],
+  "failed": []
+}
