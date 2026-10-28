@@ -31,7 +31,6 @@ body.stage-mode #cosmos{height:100%;min-height:440px}
 #cosmos .viz{height:100%;min-height:440px}
 body:not(.stage-mode) #cosmos .viz{height:min(78vh,900px);min-height:620px}
 .viz{--atlas-line:#c2a268;--atlas-copy:#cdd9ec;--atlas-muted:#899ab6;--atlas-label:#111d30eb;--atlas-field:#101827;--atlas-glow:#5379c324;--atlas-mist:#8961b521;--atlas-edge:#b5a0d35c;isolation:isolate;border-radius:12px!important;border:1px solid var(--atlas-edge);background:radial-gradient(ellipse at 48% 50%,var(--atlas-glow),transparent 52%),radial-gradient(ellipse at 74% 66%,var(--atlas-mist),transparent 48%),var(--atlas-field)!important;box-shadow:inset 0 0 80px #00000024;overflow:hidden}
-.viz:before{content:'';position:absolute;inset:66px 24px 55px;border:1px solid color-mix(in srgb,var(--atlas-line) 25%,transparent);border-radius:50%;box-shadow:0 0 0 8px color-mix(in srgb,var(--atlas-line) 3%,transparent),0 0 0 9px color-mix(in srgb,var(--atlas-line) 12%,transparent);pointer-events:none;z-index:-1}
 .viz:after{content:'';position:absolute;inset:9px;border:1px solid color-mix(in srgb,var(--atlas-line) 16%,transparent);border-radius:7px;pointer-events:none}
 .atlas-ornament{position:absolute;inset:22px;display:flex;justify-content:space-between;pointer-events:none;color:var(--atlas-line);font-size:15px;opacity:.7}
 .atlas-ornament span:nth-child(3),.atlas-ornament span:nth-child(4){position:absolute;bottom:0}
@@ -56,7 +55,7 @@ body.light .viz{--atlas-line:#896632;--atlas-copy:#354560;--atlas-muted:#626f85;
 @media(hover:hover) and (pointer:fine){.viz .node-label:hover{border-color:var(--atlas-line);background:color-mix(in srgb,var(--atlas-label) 85%,var(--atlas-line))}}
 @media(max-width:1250px){.chamber-cap .chamber-edition{gap:8px;font-size:.6875rem}body.stage-mode .reading-chamber .chamber-cap{grid-template-columns:auto 1fr}body.stage-mode .chamber-cap>small{display:none}}
 @media(max-width:1100px){body.mobile-reader #cosmos .viz{height:680px;min-height:0}.overview-edition{padding:8px 0 20px}body.mobile-reader .viz .node-label{min-height:44px}body.mobile-reader #cosmos .viz-bottom .plain{min-height:44px}}
-@media(max-width:620px){.overview-edition{gap:12px;font-size:.75rem;letter-spacing:.04em}body.mobile-reader #cosmos .viz{height:650px}.viz{border-radius:8px!important}.viz .viz-top{top:22px;max-width:calc(100% - 50px)}.viz .viz-top .eyebrow{font-size:9px}.viz .viz-top :is(h1,h3){font-size:1.25rem;letter-spacing:.08em}.viz .node-label,body.light .viz .node-label{padding:6px 8px;font-size:11px;gap:4px}.viz:before{inset:88px 15px 94px}.atlas-ornament{inset:16px;font-size:12px}.viz .viz-bottom{left:20px;right:20px;bottom:20px;align-items:flex-end}.viz-bottom>span{font-size:10px;max-width:125px}.viz-bottom small{font-size:9px}.viz .viz-bottom .plain{padding:7px 9px;font-size:10px}.viz-bottom>div{gap:5px}.cosmos-layout .viz{height:650px}}
+@media(max-width:620px){.overview-edition{gap:12px;font-size:.75rem;letter-spacing:.04em}body.mobile-reader #cosmos .viz{height:650px}.viz{border-radius:8px!important}.viz .viz-top{top:22px;max-width:calc(100% - 50px)}.viz .viz-top .eyebrow{font-size:9px}.viz .viz-top :is(h1,h3){font-size:1.25rem;letter-spacing:.08em}.viz .node-label,body.light .viz .node-label{padding:6px 8px;font-size:11px;gap:4px}.atlas-ornament{inset:16px;font-size:12px}.viz .viz-bottom{left:20px;right:20px;bottom:20px;align-items:flex-end}.viz-bottom>span{font-size:10px;max-width:125px}.viz-bottom small{font-size:9px}.viz .viz-bottom .plain{padding:7px 9px;font-size:10px}.viz-bottom>div{gap:5px}.cosmos-layout .viz{height:650px}}
 @media(prefers-reduced-motion:reduce){.viz .node-label{transition:none}}
 @media print{body.stage-mode #cosmos{height:auto;min-height:0}.overview-edition{display:flex!important}.chapter#cosmos{display:none!important}}
 
@@ -946,10 +945,27 @@ window.codexNavigation=window.createCodexNavigation({reader:document.getElementB
   const links=new THREE.Group();group.add(links);
   const connections=graph.connections||[['material','feywild'],['material','shadowfell'],['material','ethereal'],['material','astral'],['material','demiplane'],['ethereal','elemental'],['astral','outer'],['outer','sigil'],['outer','hells'],['outer','abyss']];
   function connect(){for(const line of [...links.children]){links.remove(line);line.geometry.dispose();line.material.dispose()}for(const [a,b] of connections){const start=byId.get(a).mesh.position,end=byId.get(b).mesh.position,mid=start.clone().lerp(end,.5);mid.z-=.5;const curve=new THREE.QuadraticBezierCurve3(start.clone(),mid,end.clone());links.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(curve.getPoints(40)),new THREE.LineBasicMaterial({color:byId.get(b).mesh.material.color,transparent:true,opacity:.25})))}}
+  // Broken engraved arcs frame the chart without suggesting literal orbits.
   const ornament=new THREE.Group();scene.add(ornament);
-  [3.5,3.72,4.02].forEach((r,i)=>{const orbit=ring(r,0xc3a56e,i===1?.25:.13);orbit.scale.y=.87;ornament.add(orbit)});
-  const marks=[];for(let i=0;i<96;i++){const a=i*Math.PI/48,r=i%8===0?3.81:3.92;marks.push(Math.cos(a)*r,Math.sin(a)*r*.87,-.8,Math.cos(a)*4,Math.sin(a)*4*.87,-.8)}
-  ornament.add(new THREE.LineSegments(new THREE.BufferGeometry().setAttribute('position',new THREE.Float32BufferAttribute(marks,3)),new THREE.LineBasicMaterial({color:0xd8b779,transparent:true,opacity:.32})));
+  const decorationMaterials=[];
+  function decorationMaterial(opacity){const material=new THREE.LineBasicMaterial({color:0xd6b979,transparent:true,opacity,depthWrite:false});decorationMaterials.push({material,opacity});return material}
+  function arc(radius,start,end,opacity){
+   const points=[];for(let i=0;i<=48;i++){const a=start+(end-start)*i/48;points.push(new THREE.Vector3(Math.cos(a)*radius,Math.sin(a)*radius*.87,-1.6))}
+   ornament.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(points),decorationMaterial(opacity)));
+  }
+  [[4.10,.30,.93,.27],[4.10,2.22,2.87,.27],[4.10,3.37,4.02,.25],[4.10,5.28,5.92,.25],
+   [4.27,.46,.84,.13],[4.27,2.34,2.73,.13],[4.27,3.52,3.90,.13],[4.27,5.41,5.80,.13]].forEach(args=>arc(...args));
+  const marks=[];for(const start of [.30,2.22,3.37,5.28])for(let i=0;i<13;i++){
+   const a=start+.035+i*.047,r=4.10,inner=r-(i%4===0?.09:.045);
+   marks.push(Math.cos(a)*inner,Math.sin(a)*inner*.87,-1.6,Math.cos(a)*r,Math.sin(a)*r*.87,-1.6);
+  }
+  ornament.add(new THREE.LineSegments(new THREE.BufferGeometry().setAttribute('position',new THREE.Float32BufferAttribute(marks,3)),decorationMaterial(.25)));
+  // Four small diamonds echo the node facets; keep them behind the labels.
+  const diamonds=[];for(const a of [1.22,1.92,4.36,4.90]){
+   const x=Math.cos(a)*4.17,y=Math.sin(a)*4.17*.87,d=.045,z=-1.6;
+   diamonds.push(x,y+d,z,x+d,y,z, x+d,y,z,x,y-d,z, x,y-d,z,x-d,y,z, x-d,y,z,x,y+d,z);
+  }
+  ornament.add(new THREE.LineSegments(new THREE.BufferGeometry().setAttribute('position',new THREE.Float32BufferAttribute(diamonds,3)),decorationMaterial(.35)));
   const dust=[];let seed=41;function rnd(){seed=seed*16807%2147483647;return(seed-1)/2147483646}
   for(let i=0;i<500;i++)dust.push((rnd()-.5)*22,(rnd()-.5)*17,-4-rnd()*5);
   const stars=new THREE.Points(new THREE.BufferGeometry().setAttribute('position',new THREE.Float32BufferAttribute(dust,3)),new THREE.PointsMaterial({color:0xbacdeb,size:.016,transparent:true,opacity:.58}));scene.add(stars);
@@ -985,7 +1001,7 @@ window.codexNavigation=window.createCodexNavigation({reader:document.getElementB
   window.addEventListener('chapterchange',()=>{last=0;if(activeSection===chapter)size();else if(frame!==null){cancelAnimationFrame(frame);frame=null}});
   document.addEventListener('visibilitychange',()=>{last=0;if(document.hidden&&frame!==null){cancelAnimationFrame(frame);frame=null}else request()});
   reduced.addEventListener('change',()=>{syncPause();last=0;dirty=labelsDirty=true;request()});
-  function palette(){const isLight=document.body.classList.contains('light');stars.material.color.set(isLight?0x68809d:0xbacdeb);stars.material.opacity=isLight?.42:.58;dirty=labelsDirty=true;request()}palette();
+  function palette(){const isLight=document.body.classList.contains('light');stars.material.color.set(isLight?0x68809d:0xbacdeb);stars.material.opacity=isLight?.42:.58;decorationMaterials.forEach(({material,opacity})=>{material.color.set(isLight?0x896632:0xd6b979);material.opacity=isLight?Math.min(1,opacity*1.2):opacity});dirty=labelsDirty=true;request()}palette();
   new MutationObserver(palette).observe(document.body,{attributes:true,attributeFilter:['class']});
   new ResizeObserver(size).observe(container);
   canvas.addEventListener('webglcontextlost',e=>{e.preventDefault();paused=true;if(frame!==null)cancelAnimationFrame(frame);frame=null;canvas.hidden=true;layer.hidden=true;container.querySelector('.fallback').hidden=false;container.querySelectorAll('.pause-viz,.reset-viz').forEach(b=>b.disabled=true)});
