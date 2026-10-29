@@ -502,11 +502,16 @@
         ]
       ],
       "src": [
-        "planes"
+        "planes",
+        "fr",
+        "places"
       ],
       "color": "#d7b478",
       "section": "cosmos",
-      "aliases": []
+      "aliases": [],
+      "settingContext": [
+        "被遗忘的国度是战役设定，托瑞尔是其中的世界。费伦是托瑞尔上的大陆，剑湾位于费伦西部；深水城、无冬城和博德之门都在剑湾一带。"
+      ]
     },
     {
       "id": "feywild",

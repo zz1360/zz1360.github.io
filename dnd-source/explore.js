@@ -24,7 +24,7 @@ function setEntryRoute(id,mode='entry',variant=0){
  document.title=BYID[id].name+' · '+siteTitle;
 }
 function applyRoute(){
- let hash=location.hash.slice(1);if(hash==='overview'){history.replaceState(history.state,'','#cosmos');hash='cosmos'}const parts=hash.split('/');
+ let hash=location.hash.slice(1);if(hash==='overview'||hash==='worlds'){history.replaceState(history.state,'','#cosmos');hash='cosmos'}const parts=hash.split('/');
  if((parts[0]==='entry'||parts[0]==='art')&&BYID[parts[1]]){
   const id=parts[1];document.title=BYID[id].name+' · '+siteTitle;showSection(BYID[id].section,false);
   closeCodexDialog(searchDialog);closeCodexDialog(document.getElementById('share-dialog'));

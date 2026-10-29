@@ -84,8 +84,6 @@ def guide_chapters(data,base,root,scenes,archive_figures):
         text=re.sub(r'<div class="fallback-grid">.*?</div>', '<div class="fallback-grid">'+''.join(f'<button data-plane="{e(x["id"])}">{e(x["name"])}</button>' for x in data['planes'])+'</div>',text,flags=re.S)
         return text.replace('THE PLANAR ATLAS',e(data['cosmology']['eyebrow']))
     result={'cosmos':section('cosmos',viz('home-viz'))}
-    from setting_overviews import render as render_overview
-    result['worlds']=render_overview(root,data['setting']['id'],data,scenes[data['setting']['id']])
     history=choices('history-filters','era',[x['era'] for x in data['history']],'history',len(data['history']))+'<div class="timeline" id="timeline">'+''.join(history_item(x) for x in data['history'])+'</div>'
     result['history']=section('history',title('history','历史年表' if data['setting']['id']=='eberron' else '历史与事件')+history)
     from people import render as render_people
@@ -128,19 +126,16 @@ def publish(base,root,output):
     original=json.loads(re.search(r'<script id="codex-data"[^>]*>(.*?)</script>',base,re.S)[1])
     original['setting']=current
     base=json_script(base,'codex-data',original)
-    from setting_overviews import render as render_overview,published_scenes
+    from setting_overviews import published_scenes
     scenes=published_scenes(root,output,base)
     from archive_art import publish as publish_archive_art
     archive_figures,archive_manifest=publish_archive_art(root,output,base,scenes)
-    parsed=Chapters(base)
-    start,end=next((start,end) for id,start,end in parsed.spans if id=='worlds')
-    base=base[:start]+render_overview(root,'realms',original,scenes['realms'])+base[end:]
     records=[]
     gallery=json.loads(re.search(r'<script id="art-gallery-data"[^>]*>(.*?)</script>',base,re.S)[1])
     for meta in registry(root)[1:]:
         data=json.loads((root/'settings'/(meta['id']+'.json')).read_text());validate(data)
         page=base;chapters=guide_chapters(data,base,root,scenes,archive_figures)
-        parsed=Chapters(page);assert len(parsed.spans)==8
+        parsed=Chapters(page);assert len(parsed.spans)==7
         for id,start,end in reversed(parsed.spans):page=page[:start]+chapters[id]+page[end:]
         ui_data={k:v for k,v in data.items() if k not in ['relations','flows','works']}
         page=json_script(page,'codex-data',ui_data);page=json_script(page,'relations-data',data['relations']);page=json_script(page,'history-flow-data',data['flows']);page=json_script(page,'works-data',data['works'])

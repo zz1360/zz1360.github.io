@@ -67,6 +67,7 @@
   const fields=[field(item.name,'名称','name'),field(item.en,'英文原名','name')];
   (Array.isArray(item.aliases)?item.aliases:[]).forEach(alias=>fields.push(field(alias,'别名','alias')));
   fields.push(field(item.id,'条目编号','alias'),field(item.body,'正文','content'));
+  (Array.isArray(item.settingContext)?item.settingContext:[]).forEach(text=>fields.push(field(text,'设定说明','content')));
   (Array.isArray(item.details)?item.details:[]).forEach(detail=>{
    const values=Array.isArray(detail)?detail.flat(Infinity).map(clean).filter(Boolean):[clean(detail)];
    fields.push(field(values.join('：'),'详细档案','content'));

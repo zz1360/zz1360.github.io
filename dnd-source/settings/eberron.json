@@ -121,7 +121,8 @@
       "src": [
         "thirteen",
         "faith",
-        "plane-origin"
+        "plane-origin",
+        "introduction"
       ],
       "details": [
         [
@@ -135,7 +136,11 @@
       ],
       "aliases": [],
       "color": "#d9bd83",
-      "cat": "凡世"
+      "cat": "凡世",
+      "settingContext": [
+        "艾伯伦的科瓦雷大陆是末次战争和战后政治的重要舞台，沙恩的高塔、闪电列车与龙纹家族展现出魔法融入日常生活的一面。",
+        "创世传说以西伯瑞斯、艾伯伦和吉波尔三条祖龙解释天空之环、大地与地下世界；这是世界的神话，不能直接当作已经证实的地质结构。"
+      ]
     },
     {
       "id": "eb-daanvi",

@@ -5,7 +5,6 @@ D=json.loads((root/'data.json').read_text()); S=D['sources']; nums={k:i+1 for i,
 # Keep cross-setting reference links addressable, outside the active setting directory.
 D['reference_worlds']=[dict(x,reference=True,guidePath={'eberron':'/dnd/settings/eberron/','planescape':'/dnd/settings/planescape/'}.get(x['id'])) for x in D['worlds'] if x['id']!='fr']
 D['worlds']=[x for x in D['worlds'] if x['id']=='fr']
-from setting_overviews import render as render_setting_overview
 from ui_sections import archive_card,history_item,terms,place_directory
 e=lambda x:html.escape(str(x),quote=True)
 
@@ -37,9 +36,8 @@ def viz(id):
  title='h1' if id=='home-viz' else 'h3'
  return f'''<div class="viz" id="{id}" role="group" aria-label="可交互的位面概念关系图"><div class="atlas-ornament" aria-hidden="true"><span>✦</span><span>✦</span><span>✦</span><span>✦</span></div><div class="viz-top"><span class="eyebrow">THE PLANAR ATLAS</span><{title}>位面概念关系图</{title}></div><div class="fallback"><strong>多元宇宙</strong><div class="fallback-grid">{''.join(f'<button data-plane="{x["id"]}">{x["name"]}</button>' for x in D['planes'])}</div><p>选择位面，查看档案</p></div><div class="label-layer"></div><div class="viz-bottom"><span>拖动旋转 · 点击位面<br><small>概念示意，非天体轨道</small></span><div><button class="plain pause-viz" aria-label="暂停星盘光效">暂停光效</button><button class="plain reset-viz" aria-label="复位星盘视角">复位</button></div></div></div>'''
 
-nav=[('cosmos','00','位面宇宙'),('worlds','01','设定概览'),('history','03','历史年表'),('people','04','人物与神祇'),('atlas','05','地理与势力'),('primer','06','术语与入门'),('sources','07','资料与边界')]
+nav=[('cosmos','00','位面宇宙'),('history','03','历史年表'),('people','04','人物与神祇'),('atlas','05','地理与势力'),('primer','06','术语与入门'),('sources','07','资料与边界')]
 H='''<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="dark light"><meta name="description" content="以被遗忘的国度为主线的中文 D&D 世界百科：世界观、位面、历史、重大事件、人物与神祇。单文件离线阅读，内嵌 Three.js 位面图。"><title>D&D 世界百科 · 多元宇宙知识图谱</title><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23101c18'/%3E%3Cpath d='M32 7 55 21v25L32 59 9 46V21zM9 21l23 10 23-10M32 7v24m0 28V31M9 46l23-15 23 15' stroke='%23d0ad75' fill='none' stroke-width='2'/%3E%3C/svg%3E"><style>'''+(root/'style.css').read_text()+(root/'planar-atlas.css').read_text()+'''</style></head><body><a class="skip" href="#main">跳到正文</a><aside class="rail"><div class="brand"><svg viewBox="0 0 60 64" aria-hidden="true"><path d="M30 4 55 18v28L30 60 5 46V18zM5 18l25 12 25-12M30 4v26m0 30V30M5 46l25-16 25 16" fill="none" stroke="currentColor" stroke-width="1.1"/></svg><div>万界典藏<small>D&D · WORLD CODEX</small></div></div><div class="rail-label">阅览目录 / CONTENTS</div><nav class="nav" aria-label="百科章节">'''+''.join(f'<a href="#{k}" data-section="{k}" {"aria-current=page" if k=="cosmos" else ""}><span>{n}</span>{name}</a>' for k,n,name in nav)+'''</nav><div class="rail-foot"><strong>被遗忘的国度 · 主线</strong>多个世界，一座知识书库。<br>资料核对：2026 · 10 · 02<br>可离线阅读 / 来源联网打开</div></aside><div class="shell"><header class="topbar"><div class="crumb">DUNGEONS & DRAGONS <em> / </em><span id="crumb">位面宇宙</span></div><div class="tools"><button class="search-launch" id="launch-search" aria-haspopup="dialog">⌕ 搜索百科 <kbd>⌘ K</kbd></button><button class="plain" id="theme-button" aria-label="切换到浅色阅读模式">浅色</button><button class="plain" id="print-button" aria-label="打印全百科">打印</button></div></header><main id="main"><noscript><p class="noscript">当前未启用 JavaScript，所有章节仍可阅读；三维模型、筛选与搜索需启用 JavaScript。</p></noscript><section class="chapter" id="cosmos" aria-label="位面宇宙"><header class="overview-edition"><span>D&amp;D 5E</span><i aria-hidden="true">✦</i><strong>被遗忘的国度</strong></header>'''+viz('home-viz')+'''</section>'''
-H+=render_setting_overview(root,'realms',D)
 H+='''<section class="chapter" id="history"><header class="section-head"><h2>历史年表</h2></header><div class="controls" id="history-filters"><button class="chip active" data-era="all" aria-pressed="true">全部年代</button>'''+''.join(f'<button class="chip" data-era="{x}" aria-pressed="false">{x}</button>' for x in ['古代','动荡时代','重整时代'])+'''<span class="result-count" id="history-count" role="status">13 个节点</span></div><div class="timeline" id="timeline">'''
 H+=''.join(history_item(x) for x in D['history'])+'</div></section>'
 from people import render as render_people
@@ -69,8 +67,6 @@ license='''<!-- Three.js (https://threejs.org) MIT License\nCopyright © 2010-20
 H=H.replace('<script>'+ (root/'three.min.js').read_text()[:40],license+'<script>'+(root/'three.min.js').read_text()[:40])
 from enhancements import enhance
 H=enhance(H,D,root)
-H=H.replace('</head>','<style>'+(root/'setting-overviews.css').read_text()+'</style></head>',1)
-H=H.replace('</body>','<script>'+(root/'setting-overviews.js').read_text()+'</script></body>',1)
 
 import argparse
 parser=argparse.ArgumentParser()

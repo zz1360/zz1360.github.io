@@ -52,7 +52,7 @@
    });
   }
   function markup(id){
-   const previous=trail().at(-1),name=previous?.mode==='search'?'搜索结果':previous?.id&&o.byId[previous.id]?o.byId[previous.id].name:o.sectionNames[o.byId[id]?.section]||'阅览目录';
+   const section=o.byId[id]?.section,originSection=section==='worlds'?'cosmos':section,previous=trail().at(-1),name=previous?.mode==='search'?'搜索结果':previous?.id&&o.byId[previous.id]?o.byId[previous.id].name:o.sectionNames[originSection]||'阅览目录';
    return `<div class="reading-trail" role="navigation" aria-label="阅读路径"><button type="button" class="plain" data-reading-back>← 返回${o.esc(name)}</button><span>${o.esc(o.sectionNames[o.byId[id]?.section]||'知识档案')}</span></div>`;
   }
   function back(){
