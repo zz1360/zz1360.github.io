@@ -36,3 +36,15 @@ body.stage-mode.light .reading-chamber .art-figure figcaption{background:#eae4d7
 @media(max-width:1000px){body:not(.stage-mode) .map-layout{grid-template-columns:1fr}}
 @media(max-width:620px){#layout-select{font-size:10px;max-width:78px;padding:7px 4px}.topbar .tools{gap:4px}.world-logo{gap:5px}.world-wordmark strong{font-size:21px}.world-emblem{width:31px}.chamber-cap small{display:none}}
 @media print{#layout-select,body.stage-mode .reader-scrollbar{display:none!important}body:not(.stage-mode) .shell{min-height:0}}
+
+/* Focus the archive on its content; the close control remains available. */
+#entry-dialog .dialog-top{min-height:52px;display:flex;justify-content:flex-end;align-items:center;border-bottom:0;padding:8px 18px;background:var(--panel)}
+#entry-title{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+#entry-dialog .dialog-body{padding-top:4px}
+#entry-dialog .entry-heading{display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap;margin:0 0 5px}
+#entry-dialog .entry-heading h3{margin:0;font-size:clamp(1.6rem,3vw,2rem)}
+#entry-dialog .entry-date{color:var(--gold);font:600 .88rem/1.5 var(--sans);letter-spacing:.06em;text-align:right;white-space:normal}
+#entry-dialog .history-chain{border:0;padding:0;margin:24px 0}
+#entry-dialog .history-chain-grid{margin:0}
+#entry-dialog .sources-inline{border-top:1px solid var(--line);padding-top:16px;margin-top:24px}
+@media(max-width:480px){#entry-dialog .entry-heading{gap:8px}#entry-dialog .entry-date{font-size:.78rem}}

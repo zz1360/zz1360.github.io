@@ -43,20 +43,22 @@
   const connections=graph.connections||[['material','feywild'],['material','shadowfell'],['material','ethereal'],['material','astral'],['material','demiplane'],['ethereal','elemental'],['astral','outer'],['outer','sigil'],['outer','hells'],['outer','abyss']];
   function connect(){for(const line of [...links.children]){links.remove(line);line.geometry.dispose();line.material.dispose()}for(const [a,b] of connections){const start=byId.get(a).mesh.position,end=byId.get(b).mesh.position,mid=start.clone().lerp(end,.5);mid.z-=.5;const curve=new THREE.QuadraticBezierCurve3(start.clone(),mid,end.clone());links.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(curve.getPoints(40)),new THREE.LineBasicMaterial({color:byId.get(b).mesh.material.color,transparent:true,opacity:.25})))}}
   // Broken engraved arcs frame the chart without suggesting literal orbits.
-  const ornament=new THREE.Group();scene.add(ornament);
+  const ornament=new THREE.Group(),lightDial=new THREE.Group(),darkDial=new THREE.Group();scene.add(ornament);ornament.add(lightDial,darkDial);
   const decorationMaterials=[];
   function decorationMaterial(opacity){const material=new THREE.LineBasicMaterial({color:0xd6b979,transparent:true,opacity,depthWrite:false});decorationMaterials.push({material,opacity});return material}
-  function arc(radius,start,end,opacity){
+  function arc(target,radius,start,end,opacity){
    const points=[];for(let i=0;i<=48;i++){const a=start+(end-start)*i/48;points.push(new THREE.Vector3(Math.cos(a)*radius,Math.sin(a)*radius*.87,-1.6))}
-   ornament.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(points),decorationMaterial(opacity)));
+   target.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(points),decorationMaterial(opacity)));
   }
+  [[4.02,.16,1.40,.38],[4.02,1.74,2.98,.38],[4.02,3.30,4.54,.38],[4.02,4.88,6.12,.38],
+   [4.18,.20,1.36,.19],[4.18,1.78,2.94,.19],[4.18,3.34,4.50,.19],[4.18,4.92,6.08,.19]].forEach(args=>arc(lightDial,...args));
   [[4.10,.30,.93,.27],[4.10,2.22,2.87,.27],[4.10,3.37,4.02,.25],[4.10,5.28,5.92,.25],
-   [4.27,.46,.84,.13],[4.27,2.34,2.73,.13],[4.27,3.52,3.90,.13],[4.27,5.41,5.80,.13]].forEach(args=>arc(...args));
-  const marks=[];for(const start of [.30,2.22,3.37,5.28])for(let i=0;i<13;i++){
-   const a=start+.035+i*.047,r=4.10,inner=r-(i%4===0?.09:.045);
+   [4.27,.46,.84,.13],[4.27,2.34,2.73,.13],[4.27,3.52,3.90,.13],[4.27,5.41,5.80,.13]].forEach(args=>arc(darkDial,...args));
+  function ticks(target,starts,count,r,offset,spacing){const marks=[];for(const start of starts)for(let i=0;i<count;i++){
+   const a=start+offset+i*spacing,inner=r-(i%(target===lightDial?3:4)===0?.10:.045);
    marks.push(Math.cos(a)*inner,Math.sin(a)*inner*.87,-1.6,Math.cos(a)*r,Math.sin(a)*r*.87,-1.6);
-  }
-  ornament.add(new THREE.LineSegments(new THREE.BufferGeometry().setAttribute('position',new THREE.Float32BufferAttribute(marks,3)),decorationMaterial(.25)));
+  }target.add(new THREE.LineSegments(new THREE.BufferGeometry().setAttribute('position',new THREE.Float32BufferAttribute(marks,3)),decorationMaterial(.25)))}
+  ticks(lightDial,[.16,1.74,3.30,4.88],19,4.02,.04,.064);ticks(darkDial,[.30,2.22,3.37,5.28],13,4.10,.035,.047);
   // Four small diamonds echo the node facets; keep them behind the labels.
   const diamonds=[];for(const a of [1.22,1.92,4.36,4.90]){
    const x=Math.cos(a)*4.17,y=Math.sin(a)*4.17*.87,d=.045,z=-1.6;
@@ -98,7 +100,7 @@
   window.addEventListener('chapterchange',()=>{last=0;if(activeSection===chapter)size();else if(frame!==null){cancelAnimationFrame(frame);frame=null}});
   document.addEventListener('visibilitychange',()=>{last=0;if(document.hidden&&frame!==null){cancelAnimationFrame(frame);frame=null}else request()});
   reduced.addEventListener('change',()=>{syncPause();last=0;dirty=labelsDirty=true;request()});
-  function palette(){const isLight=document.body.classList.contains('light');stars.material.color.set(isLight?0x68809d:0xbacdeb);stars.material.opacity=isLight?.42:.58;decorationMaterials.forEach(({material,opacity})=>{material.color.set(isLight?0x896632:0xd6b979);material.opacity=isLight?Math.min(1,opacity*1.2):opacity});dirty=labelsDirty=true;request()}palette();
+  function palette(){const isLight=document.body.classList.contains('light');lightDial.visible=isLight;darkDial.visible=!isLight;stars.material.color.set(isLight?0x68809d:0xbacdeb);stars.material.opacity=isLight?.42:.58;decorationMaterials.forEach(({material,opacity})=>{material.color.set(isLight?0x795328:0xd6b979);material.opacity=isLight?Math.min(.78,opacity*2):opacity});dirty=labelsDirty=true;request()}palette();
   new MutationObserver(palette).observe(document.body,{attributes:true,attributeFilter:['class']});
   new ResizeObserver(size).observe(container);
   canvas.addEventListener('webglcontextlost',e=>{e.preventDefault();paused=true;if(frame!==null)cancelAnimationFrame(frame);frame=null;canvas.hidden=true;layer.hidden=true;container.querySelector('.fallback').hidden=false;container.querySelectorAll('.pause-viz,.reset-viz').forEach(b=>b.disabled=true)});

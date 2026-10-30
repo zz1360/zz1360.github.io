@@ -32,9 +32,9 @@ const entryDialog=document.getElementById('entry-dialog');
 function openEntry(id,updateRoute=true){
  const x=BYID[id];if(!x)return;
  if(updateRoute)setEntryRoute(id);closeCodexDialog(artDialog);entryDialog.dataset.entry=id;showSection(x.section,false);
- document.getElementById('entry-title').textContent=x.section==='cosmos'?'位面宇宙':sectionNames[x.section]+' / 知识档案';
+ document.getElementById('entry-title').textContent=x.name;
  if(x.section==='cosmos'){document.getElementById('entry-content').innerHTML=`<h3>${esc(x.name)}</h3><div class="en">${esc(x.en)}</div><p>${esc(x.body)}</p>${x.details[0]?`<p>${esc(x.details[0][1])}</p>`:''}${(x.settingContext||[]).map(text=>`<p>${esc(text)}</p>`).join('')}${refHtml(x)}`;if(!entryDialog.open)entryDialog.showModal();if(window.codexNavigation)window.codexNavigation.surfaceOpened('entry',id);else entryDialog.scrollTop=0;return}
- document.getElementById('entry-content').innerHTML=`${window.codexNavigation?.markup(id)||''}${entryTools(id)}${referenceNotice(x)}${entryIllustration(id)}<span class="eyebrow">${esc(x.date||x.setting||x.tag||x.cat||x.kind||'D&D CODEX')}</span><h3 style="margin-top:14px">${esc(x.name)}</h3><div class="en">${esc(x.en)}</div><p>${esc(x.body)}</p>${HISTORY_FLOW[id]?historyFlow(id):x.details.map(([a,b])=>`<h4>${esc(a)}</h4><p>${esc(b)}</p>`).join('')}${refHtml(x)}${knowledgeLinks(id)}`;
+ document.getElementById('entry-content').innerHTML=`${referenceNotice(x)}${entryIllustration(id)}<div class="entry-heading"><h3>${esc(x.name)}</h3>${x.date?`<span class="entry-date">${esc(x.date)}</span>`:''}</div><div class="en">${esc(x.en)}</div><p>${esc(x.body)}</p>${HISTORY_FLOW[id]?historyFlow(id):x.details.map(([a,b])=>`<h4>${esc(a)}</h4><p>${esc(b)}</p>`).join('')}${refHtml(x)}`;
  if(!entryDialog.open)entryDialog.showModal();if(window.codexNavigation)window.codexNavigation.surfaceOpened('entry',id);else entryDialog.scrollTop=0;
 }
 [entryDialog,document.getElementById('search-dialog')].forEach(d=>d.addEventListener('click',e=>{const r=d.getBoundingClientRect();if(e.target===d&&(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom))d.close()}));
