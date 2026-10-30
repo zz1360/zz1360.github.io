@@ -257,6 +257,18 @@
       "url": "https://forgottenrealms.fandom.com/wiki/Crown_Wars",
       "kind": "社区资料汇编",
       "note": "通过可检索条目核对参战王国、黑暗灾难与卓尔放逐；未完整取得条目正文，原始引书未逐页核读。"
+    },
+    "seven-sisters": {
+      "title": "The Seven Sisters · The Simbul（AD&D 2E，1995）",
+      "url": "https://candlekeep.com/bookshelf/products/9475.htm",
+      "kind": "设定集资料",
+      "note": "Ed Greenwood 所著《The Seven Sisters》；链接为书目介绍，人物描述依据原设定集。"
+    },
+    "simbul-wiki": {
+      "title": "Simbul · Forgotten Realms Wiki",
+      "url": "https://forgottenrealms.fandom.com/wiki/Simbul",
+      "kind": "社区资料汇编",
+      "note": "人物生平与小说事件的索引；版本和年代需分别看待。"
     }
   },
   "worlds": [
@@ -1238,6 +1250,41 @@
       ],
       "section": "people",
       "aliases": []
+    },
+    {
+      "id": "simbul",
+      "name": "欣布 · 银手",
+      "en": "The Simbul (Alassra Silverhand)",
+      "role": "英雄与法师",
+      "setting": "被遗忘的国度",
+      "body": "银手七姐妹之一、密斯特拉的选民，曾是阿格拉隆的女巫女王。",
+      "details": [
+        [
+          "女巫女王",
+          "欣布本名阿拉斯拉·银手。她是银手七姐妹之一，也是一位力量惊人的施法者；她继任阿格拉隆的统治者后，以“欣布”为人所知。"
+        ],
+        [
+          "守护阿格拉隆",
+          "阿格拉隆与塞尔相邻。欣布长期抵御塞尔红袍法师的威胁，以强大魔法保卫自己的国度；她的性情和做事方式也以难以预测闻名。"
+        ],
+        [
+          "与伊尔明斯特",
+          "欣布与阴影谷的伊尔明斯特关系亲密。小说《Bury Elminster Deep》写到她为救他而耗尽自身力量；因此，历史上的女王身份不代表她在所有时代都仍在位。"
+        ]
+      ],
+      "src": [
+        "seven-sisters",
+        "simbul-wiki"
+      ],
+      "section": "people",
+      "aliases": [
+        "辛布",
+        "The Simbul",
+        "Simbul",
+        "Alassra Shentrantra Silverhand",
+        "阿拉斯拉·银手",
+        "女巫女王"
+      ]
     },
     {
       "id": "minsc",
