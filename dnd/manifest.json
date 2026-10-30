@@ -9,7 +9,7 @@
       "image_count": 39
     }
   ],
-  "source_sha256": "4fc26572433206d8f2f7b2225581d5480a3240d2288baeea4bb17dd2040ea5ef",
+  "source_sha256": "c84972a2c9e14f18ac2bacd6e705d16ed5ef86c4dbdaa2d66a7704f930dcf24b",
   "originals": [
     {
       "id": "elminster",
@@ -143,6 +143,33 @@
           "url": "/dnd/assets/art-30e9f821acfcf76cf684-w960-q82-v1.webp",
           "sha256": "532a1a791f0e572d9377f26cb8f49b64873d018c6db16e61bb8d817359e12372",
           "bytes": 162300
+        }
+      ]
+    },
+    {
+      "id": "simbul",
+      "name": "欣布 · 银手",
+      "url": "/dnd/assets/art-d9b22770d2753e85a086.webp",
+      "sha256": "d9b22770d2753e85a08670073bd18a7b2734865d6d7d7f615313659135a71168",
+      "width": 1536,
+      "variants": [
+        {
+          "width": 320,
+          "url": "/dnd/assets/art-d9b22770d2753e85a086-w320-q82-v1.webp",
+          "sha256": "51567bbc27ea47b1a2820e266b0a58be0354f630e4b7ca8ccde56e62a51d14b3",
+          "bytes": 24758
+        },
+        {
+          "width": 640,
+          "url": "/dnd/assets/art-d9b22770d2753e85a086-w640-q82-v1.webp",
+          "sha256": "f822e8c04694ab748d2aff13a5a8ca0240135410b78b26f7bc93d87f396f4a6e",
+          "bytes": 82196
+        },
+        {
+          "width": 960,
+          "url": "/dnd/assets/art-d9b22770d2753e85a086-w960-q82-v1.webp",
+          "sha256": "640589b836f2c0146f47216ffd66dc642d0ce0c276e0ad796be09ff3125fcbf5",
+          "bytes": 160476
         }
       ]
     },
@@ -1706,7 +1733,7 @@
       }
     ]
   },
-  "image_count": 63,
+  "image_count": 64,
   "responsive_sizes": [
     320,
     640,
@@ -1929,6 +1956,10 @@
     "art-d072669c253e6f8fe92b-w640-q82-v1.webp",
     "art-d072669c253e6f8fe92b-w960-q82-v1.webp",
     "art-d072669c253e6f8fe92b.webp",
+    "art-d9b22770d2753e85a086-w320-q82-v1.webp",
+    "art-d9b22770d2753e85a086-w640-q82-v1.webp",
+    "art-d9b22770d2753e85a086-w960-q82-v1.webp",
+    "art-d9b22770d2753e85a086.webp",
     "art-d9fa5d884a20453764e7-w320-q82-v1.webp",
     "art-d9fa5d884a20453764e7-w640-q82-v1.webp",
     "art-d9fa5d884a20453764e7-w960-q82-v1.webp",
@@ -2324,7 +2355,7 @@
     "newIllustrations": 39,
     "coverage": {
       "realms": {
-        "people": 22,
+        "people": 23,
         "locations": 8,
         "factions": 6
       },
@@ -2534,6 +2565,45 @@
         "width": 1536,
         "height": 1024,
         "note": "AI 生成的二次元魔幻概念插画；形象及构图为艺术演绎。"
+      },
+      {
+        "id": "simbul",
+        "setting": "realms",
+        "group": "people",
+        "variants": [
+          {
+            "width": 320,
+            "url": "/dnd/assets/art-d9b22770d2753e85a086-w320-q82-v1.webp",
+            "sha256": "51567bbc27ea47b1a2820e266b0a58be0354f630e4b7ca8ccde56e62a51d14b3",
+            "bytes": 24758
+          },
+          {
+            "width": 640,
+            "url": "/dnd/assets/art-d9b22770d2753e85a086-w640-q82-v1.webp",
+            "sha256": "f822e8c04694ab748d2aff13a5a8ca0240135410b78b26f7bc93d87f396f4a6e",
+            "bytes": 82196
+          },
+          {
+            "width": 960,
+            "url": "/dnd/assets/art-d9b22770d2753e85a086-w960-q82-v1.webp",
+            "sha256": "640589b836f2c0146f47216ffd66dc642d0ce0c276e0ad796be09ff3125fcbf5",
+            "bytes": 160476
+          },
+          {
+            "width": 1536,
+            "url": "/dnd/assets/art-d9b22770d2753e85a086.webp",
+            "sha256": "d9b22770d2753e85a08670073bd18a7b2734865d6d7d7f615313659135a71168",
+            "bytes": 416844
+          }
+        ],
+        "src": "/dnd/assets/art-d9b22770d2753e85a086-w640-q82-v1.webp",
+        "full": "/dnd/assets/art-d9b22770d2753e85a086.webp",
+        "thumb": "/dnd/assets/art-d9b22770d2753e85a086-w320-q82-v1.webp",
+        "srcset": "/dnd/assets/art-d9b22770d2753e85a086-w640-q82-v1.webp 640w, /dnd/assets/art-d9b22770d2753e85a086-w960-q82-v1.webp 960w, /dnd/assets/art-d9b22770d2753e85a086.webp 1536w",
+        "thumbWidth": 320,
+        "width": 1536,
+        "height": 1024,
+        "note": "AI 生成的二次元奇幻概念插画；服饰、场景与施法动作均为艺术演绎。"
       },
       {
         "id": "minsc",
