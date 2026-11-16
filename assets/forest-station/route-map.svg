@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 320" role="img" aria-labelledby="title desc">
+  <title id="title">世界巴士线路图</title>
+  <desc id="desc">虚构的樱花、鸢尾和星湖三条巴士线路，在云端总站交会。</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff9ed"/><stop offset="1" stop-color="#ecdfc9"/></linearGradient>
+    <pattern id="grain" width="10" height="10" patternUnits="userSpaceOnUse"><circle cx="2" cy="3" r=".35" fill="#9a836a" opacity=".16"/><circle cx="8" cy="8" r=".3" fill="#9a836a" opacity=".12"/></pattern>
+    <style>
+      .heading{font:700 14px 'PingFang SC','Microsoft YaHei',sans-serif;letter-spacing:2px;fill:#4a3831}.sub{font:600 6px Georgia,serif;letter-spacing:1.7px;fill:#9d725e}.legend{font:600 7px 'PingFang SC',sans-serif;fill:#634e43}.track{fill:none;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}.japan{stroke:#ba6456}.europe{stroke:#8a9468}.america{stroke:#628492}.stop{fill:#fbf2e3;stroke-width:2.3}.jp{stroke:#ba6456}.eu{stroke:#8a9468}.us{stroke:#628492}.name{font:600 9px 'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;fill:#51453d;paint-order:stroke;stroke:#f8f0e2;stroke-width:3.5px;stroke-linejoin:round}.tiny{font:600 6px Georgia,serif;letter-spacing:.8px;fill:#9c806d}
+    </style>
+  </defs>
+  <rect width="280" height="320" fill="url(#paper)"/><rect width="280" height="320" fill="url(#grain)"/>
+  <rect x="8" y="8" width="264" height="304" fill="none" stroke="#b49a7b" stroke-opacity=".45"/>
+  <path d="M18 17h10M18 17v10M262 17h-10M262 17v10M18 303h10M18 303v-10M262 303h-10M262 303v-10" fill="none" stroke="#b69a79" stroke-width=".7"/>
+  <text x="21" y="31" class="heading">世界巴士线路图</text><text x="21" y="42" class="sub">IMAGINARY TRANSIT MAP</text>
+  <path d="M21 54h238" stroke="#bda78d" stroke-width=".6"/>
+  <g transform="translate(22 65)"><path d="M0 0h12" stroke="#ba6456" stroke-width="3" stroke-linecap="round"/><text x="17" y="2.7" class="legend">樱花线</text><path d="M78 0h12" stroke="#8a9468" stroke-width="3" stroke-linecap="round"/><text x="95" y="2.7" class="legend">鸢尾线</text><path d="M158 0h12" stroke="#628492" stroke-width="3" stroke-linecap="round"/><text x="175" y="2.7" class="legend">星湖线</text></g>
+  <g transform="translate(0 14)">
+    <path class="track japan" d="M27 92H64L103 131 135 163 181 209H246"/>
+    <path class="track europe" d="M246 93H208L173 126 135 163 99 199 71 227H28"/>
+    <path class="track america" d="M135 82V247"/>
+    <g><circle class="stop jp" cx="27" cy="92" r="3.7"/><circle class="stop jp" cx="64" cy="92" r="3.7"/><circle class="stop jp" cx="103" cy="131" r="3.7"/><circle class="stop jp" cx="181" cy="209" r="3.7"/><circle class="stop jp" cx="246" cy="209" r="3.7"/>
+      <circle class="stop eu" cx="246" cy="93" r="3.7"/><circle class="stop eu" cx="208" cy="93" r="3.7"/><circle class="stop eu" cx="173" cy="126" r="3.7"/><circle class="stop eu" cx="71" cy="227" r="3.7"/><circle class="stop eu" cx="28" cy="227" r="3.7"/>
+      <circle class="stop us" cx="135" cy="82" r="3.7"/><circle class="stop us" cx="135" cy="116" r="3.7"/><circle class="stop us" cx="135" cy="213" r="3.7"/><circle class="stop us" cx="135" cy="247" r="3.7"/></g>
+    <circle cx="135" cy="163" r="7" fill="#f8f0e2" stroke="#59483d" stroke-width="1.4"/><circle cx="135" cy="163" r="2.5" fill="#59483d"/>
+    <g class="name"><text x="17" y="82">桜之森</text><text x="61" y="107">鈴川町</text><text x="72" y="129">月見台</text><text x="170" y="224">花見町</text><text x="222" y="201">月之丘</text>
+      <text x="218" y="84">阿尔维纳</text><text x="194" y="110">鸢尾谷</text><text x="175" y="137">白鸽丘</text><text x="57" y="242">晨钟港</text><text x="12" y="218">蔷薇岭</text>
+      <text x="142" y="85">松影谷</text><text x="142" y="119">银溪镇</text><text x="142" y="215">星湖城</text><text x="142" y="250">枫湾</text><text x="145" y="161">云端总站</text></g>
+  </g>
+  <path d="M21 284h238" stroke="#bda78d" stroke-width=".6"/><text x="21" y="298" class="tiny">JAPAN · EUROPE · AMERICA</text><text x="259" y="298" text-anchor="end" class="tiny">01—03</text>
+</svg>

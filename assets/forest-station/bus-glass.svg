@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2172 724" preserveAspectRatio="none">
+  <defs><linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d9f5f2" stop-opacity=".20"/><stop offset=".48" stop-color="#a6c6bd" stop-opacity=".08"/><stop offset="1" stop-color="#eff7e9" stop-opacity=".15"/></linearGradient></defs>
+  <g fill="url(#glass)">
+    <path d="M120 181 Q132 179 141 184 L123 327 Q119 334 102 334 L102 318 Z"/>
+    <path d="M171 207 H258 V340 H171 Z M301 207 H554 V340 H301 Z M596 207 H877 V340 H596 Z M921 207 H1219 V340 H921 Z M1261 207 H1512 V340 H1261 Z"/>
+    <path d="M1594 192 H1732 Q1743 193 1747 209 L1781 315 L1781 337 H1594 Z M1791 169 L1813 164 L1850 297 L1823 300 Z"/>
+  </g>
+</svg>
