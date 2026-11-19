@@ -21,6 +21,7 @@ const chrome = '/Users/zhangzhuang/Library/Caches/ms-playwright/chromium-1228/ch
       await page.keyboard.press('Escape');
       assert.equal(await page.locator('.route-dialog').evaluate(dialog => dialog.open), false);
       await page.locator('.sign-next').click();
+      await sign.and(page.locator('[data-active="soda"]')).waitFor();
       assert.equal(await sign.getAttribute('data-active'), 'soda');
       await page.locator('.sign-prev').click();
       assert.equal(await sign.getAttribute('data-active'), 'stations');
@@ -29,6 +30,7 @@ const chrome = '/Users/zhangzhuang/Library/Caches/ms-playwright/chromium-1228/ch
       await page.mouse.down();
       await page.mouse.move(rect.x + rect.width * .2, rect.y + rect.height * .5, { steps: 6 });
       await page.mouse.up();
+      await sign.and(page.locator('[data-active="soda"]')).waitFor();
       assert.equal(await sign.getAttribute('data-active'), 'soda');
       assert.equal(await page.locator('.route-dialog').evaluate(dialog => dialog.open), false);
       assert.equal(await page.locator('#motion').getAttribute('aria-pressed'), 'true');
@@ -46,6 +48,7 @@ const chrome = '/Users/zhangzhuang/Library/Caches/ms-playwright/chromium-1228/ch
     await cdp.send('Input.dispatchTouchEvent', { type: 'touchStart', touchPoints: [{ x: start, y }] });
     for (let i = 1; i <= 6; i++) await cdp.send('Input.dispatchTouchEvent', { type: 'touchMove', touchPoints: [{ x: start + (end - start) * i / 6, y }] });
     await cdp.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] });
+    await sign.and(page.locator('[data-active="soda"]')).waitFor();
     assert.equal(await sign.getAttribute('data-active'), 'soda');
     await page.locator('.sign-prev').tap();
     await page.locator('.map-trigger').tap();
