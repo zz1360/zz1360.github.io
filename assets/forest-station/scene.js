@@ -437,7 +437,7 @@
   });
   routeDialog.querySelector('.route-close').addEventListener('click', () => routeDialog.close());
   routeDialog.addEventListener('close', () => scheduleAd(12000));
-  sign.querySelectorAll('.fictional-ad').forEach(ad => ad.addEventListener('click', () => goTo('stations')));
+  sign.querySelectorAll('.station-poster').forEach(poster => poster.addEventListener('click', () => goTo('stations')));
   sign.addEventListener('focusin', cancelAd);
   sign.addEventListener('focusout', () => setTimeout(() => {
     if (!sign.contains(document.activeElement) && !sign.hasAttribute('aria-busy')) scheduleAd(12000);
