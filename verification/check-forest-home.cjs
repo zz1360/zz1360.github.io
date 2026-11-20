@@ -23,7 +23,20 @@ const chrome = '/Users/zhangzhuang/Library/Caches/ms-playwright/chromium-1228/ch
       await page.locator('.sign-next').click();
       await sign.and(page.locator('[data-active="soda"]')).waitFor();
       assert.equal(await sign.getAttribute('data-active'), 'soda');
+      const soda = sign.locator('[data-screen="soda"]');
+      assert(await soda.isVisible());
+      assert.match(await soda.evaluate(panel => getComputedStyle(panel).backgroundImage), /ad-moonlight\.webp/);
       await page.locator('.sign-prev').click();
+      assert.equal(await sign.getAttribute('data-active'), 'stations');
+      // EasyList's cosmetic rule previously hid the entire Starlight Post panel.
+      await page.addStyleTag({ content: '.ad-post { display: none !important; }' });
+      await page.locator('.sign-prev').click();
+      await sign.and(page.locator('[data-active="post"]')).waitFor();
+      const post = sign.locator('[data-screen="post"]');
+      assert(await post.getByText('星光邮局', { exact: true }).isVisible());
+      assert.match(await post.evaluate(panel => getComputedStyle(panel).backgroundImage), /ad-post\.webp/);
+      assert.equal(await sign.locator('[data-page="post"]').getAttribute('aria-current'), 'true');
+      await post.click();
       assert.equal(await sign.getAttribute('data-active'), 'stations');
       const rect = await sign.boundingBox();
       await page.mouse.move(rect.x + rect.width * .75, rect.y + rect.height * .5);
